@@ -189,4 +189,84 @@
 |51  | [Jump Game III](https://leetcode.com/problems/jump-game-iii) |
 |52  | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation) |
 |53  | [Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii) |
-
+|   | **Facebook** |
+|1  | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) |
+|2  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) |
+|3  | [3Sum](https://leetcode.com/problems/3sum) |
+|4  | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) |
+|5  | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) |
+|6  | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) |
+|7  | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) |
+|8  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) |
+|9  | [Implement strStr()](https://leetcode.com/problems/implement-strstr) |
+|10  | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) |
+|11  | [Count and Say](https://leetcode.com/problems/count-and-say) |
+|12  | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching) |
+|13  | [Pow(x, n)](https://leetcode.com/problems/powx-n) |
+|14  | [Merge Intervals](https://leetcode.com/problems/merge-intervals) |
+|15  | [Insert Interval](https://leetcode.com/problems/insert-interval) |
+|16  | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) |
+|17  | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) |
+|18  | [Clone Graph](https://leetcode.com/problems/clone-graph) |
+|19  | [Word Break](https://leetcode.com/problems/word-break) |
+|20  | [LRU Cache](https://leetcode.com/problems/lru-cache) |
+|21  | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) |
+|22  | [Number of Islands](https://leetcode.com/problems/number-of-islands) |
+|23  | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) |
+|24  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) |
+|25  | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem) |
+|26  | [Maximal Square](https://leetcode.com/problems/maximal-square) |
+|27  | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) |
+|28  | [H-Index](https://leetcode.com/problems/h-index) |
+|29  | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators) |
+|30  | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) |
+|31  | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) |
+|32  | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv) |
+|33  | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) |
+|34  | [Target Sum](https://leetcode.com/problems/target-sum) |
+|35  | [Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl) |
+|36  | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) |
+|37  | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) |
+|38  | [Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays) |
+|39  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) |
+|40  | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) |
+|41  | [Valid Number](https://leetcode.com/problems/valid-number) |
+|42  | [Plus One](https://leetcode.com/problems/plus-one) |
+|43  | [Add Binary](https://leetcode.com/problems/add-binary) |
+|44  | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite) |
+|45  | [Custom Sort String](https://leetcode.com/problems/custom-sort-string) |
+|46  | [Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes) |
+|47  | [Shortest Bridge](https://leetcode.com/problems/shortest-bridge) |
+|48  | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst) |
+|49  | [Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary) |
+|50  | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) |
+|51  | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections) |
+|52  | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) |
+|53  | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses) |
+|54  | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) |
+|55  | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) |
+|56  | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) |
+|57  | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) |
+|58  | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv) |
+|59  | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) |
+|60  | [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal) |
+|61  | [Simplify Path](https://leetcode.com/problems/simplify-path) |
+|62  | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) |
+|63  | [Course Schedule](https://leetcode.com/problems/course-schedule) |
+|64  | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure) |
+|65  | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) |
+|66  | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) |
+|67  | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) |
+|68  | [Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions) |
+|69  | [First Bad Version](https://leetcode.com/problems/first-bad-version) |
+|70  | [Move Zeroes](https://leetcode.com/problems/move-zeroes) |
+|71  | [Task Scheduler](https://leetcode.com/problems/task-scheduler) |
+|72  | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) |
+|73  | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) |
+|74  | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) |
+|75  | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal) |
+|76  | [Add Strings](https://leetcode.com/problems/add-strings) |
+|77  | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) |
+|78  | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) |
+|79  | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) |
+|80  | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) |
