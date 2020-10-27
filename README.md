@@ -6,9 +6,20 @@
 
 ### Interview Questions
 
+
+| SNo. | ### Contents |
+| --- | --------- |
+| 1. | [FAANG Must Do Problems](#faang-must-do-problems) |
+| 1. | [Amazon](#amazon) |
+| 1. | [Microsoft](#microsoft) |
+| 1. | [Facebook](#facebook) |
+| 1. | [Google Top 50](#google-top-50) |
+| 1. | [Google](#google) |
+
+
 | No. | Questions |
 | --- | --------- |
-|   | **FAANG Must Do Problems** |
+|   | 1. ### **FAANG Must Do Problems** |
 |1  | [Two Sum](https://leetcode.com/problems/two-sum) |
 |2  | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) |
 |3  | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) |
@@ -85,7 +96,7 @@
 |74  | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree) |
 |75  | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) |
 |76  | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) |
-|   | **Amazon** |
+|   | ### **Amazon** |
 |1  | [Two Sum](https://leetcode.com/problems/two-sum) |
 |2  | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) |
 |3  | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) |
@@ -212,7 +223,7 @@
 |124  | [Search Suggestions System](https://leetcode.com/problems/search-suggestions-system) |
 |125  | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero) |
 |126  | [Stone Game III](https://leetcode.com/problems/stone-game-iii) |
-|   | **Microsoft** |
+|   | ### **Microsoft** |
 |1  | [Two Sum](https://leetcode.com/problems/two-sum) |
 |2  | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) |
 |3  | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) |
@@ -266,7 +277,7 @@
 |51  | [Jump Game III](https://leetcode.com/problems/jump-game-iii) |
 |52  | [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation) |
 |53  | [Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii) |
-|   | **Facebook** |
+|   | ### **Facebook** |
 |1  | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) |
 |2  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) |
 |3  | [3Sum](https://leetcode.com/problems/3sum) |
@@ -347,7 +358,7 @@
 |78  | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) |
 |79  | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) |
 |80  | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) |
-|   | **Google Top 50** |
+|   | ### **Google Top 50** |
 |1  | [Two Sum](https://leetcode.com/problems/two-sum) |
 |2  | [Insert Interval](https://leetcode.com/problems/insert-interval) |
 |3  | [Text Justification](https://leetcode.com/problems/text-justification) |
@@ -385,7 +396,7 @@
 |35  | [Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers) |
 |36  | [Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers) |
 |37  | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees) |
-|   | **Google** |
+|   | ### **Google** |
 |1  | [Two Sum](https://leetcode.com/problems/two-sum) |
 |2  | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) |
 |3  | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) |
