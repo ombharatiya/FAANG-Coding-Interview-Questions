@@ -347,6 +347,44 @@
 |78  | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) |
 |79  | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) |
 |80  | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) |
+|   | **Google Top 50** |
+|1  | [Two Sum](https://leetcode.com/problems/two-sum) |
+|2  | [Insert Interval](https://leetcode.com/problems/insert-interval) |
+|3  | [Text Justification](https://leetcode.com/problems/text-justification) |
+|4  | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) |
+|5  | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) |
+|6  | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem) |
+|7  | [Maximal Square](https://leetcode.com/problems/maximal-square) |
+|8  | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) |
+|9  | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows) |
+|10  | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) |
+|11  | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) |
+|12  | [Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k) |
+|13  | [Decode String](https://leetcode.com/problems/decode-string) |
+|14  | [Evaluate Division](https://leetcode.com/problems/evaluate-division) |
+|15  | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) |
+|16  | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) |
+|17  | [Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences) |
+|18  | [24 Game](https://leetcode.com/problems/24-game) |
+|19  | [Network Delay Time](https://leetcode.com/problems/network-delay-time) |
+|20  | [Open the Lock](https://leetcode.com/problems/open-the-lock) |
+|21  | [Expressive Words](https://leetcode.com/problems/expressive-words) |
+|22  | [Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string) |
+|23  | [Guess the Word](https://leetcode.com/problems/guess-the-word) |
+|24  | [Hand of Straights](https://leetcode.com/problems/hand-of-straights) |
+|25  | [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k) |
+|26  | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) |
+|27  | [X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards) |
+|28  | [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle) |
+|29  | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences) |
+|30  | [Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees) |
+|31  | [Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row) |
+|32  | [Longest String Chain](https://leetcode.com/problems/longest-string-chain) |
+|33  | [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest) |
+|34  | [Snapshot Array](https://leetcode.com/problems/snapshot-array) |
+|35  | [Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers) |
+|36  | [Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers) |
+|37  | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees) |
 |   | **Google** |
 |1  | [Two Sum](https://leetcode.com/problems/two-sum) |
 |2  | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) |
