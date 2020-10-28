@@ -96,6 +96,7 @@
 |74  | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree) |
 |75  | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) |
 |76  | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) |
+|77  | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) |
 
 2. ### Amazon
 | No. | Questions |
