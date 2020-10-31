@@ -615,3 +615,24 @@
 |2  | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii) |
 |3  | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii) |
 |4  | [Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design) |
+|5  | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum) |
+|6  | [Max Stack](https://leetcode.com/problems/max-stack) |
+|7  | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) |
+|8  | [All O'one Data Structure](https://leetcode.com/problems/all-oone-data-structure) |
+|9  | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers) |
+|10  | [Factor Combinations](https://leetcode.com/problems/factor-combinations) |
+|11  | [Paint House](https://leetcode.com/problems/paint-house) |
+|12  | [Paint House II](https://leetcode.com/problems/paint-house-ii) |
+|13  | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) |
+|14  | [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance) |
+|15  | [Text Justification](https://leetcode.com/problems/text-justification) |
+|16  | [Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences) |
+|17  | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down) |
+|18  | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) |
+|19  | [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets) |
+|20  | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) |
+|21  | [Number of Islands](https://leetcode.com/problems/number-of-islands) |
+|22  | [Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions) |
+|23  | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number) |
+|24  | [Valid Number](https://leetcode.com/problems/valid-number) |
+|25  | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences) |
