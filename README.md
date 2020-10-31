@@ -17,6 +17,7 @@
 | 6. | [Google](#google) |
 | 7. | [LinkedIn](#linkedin) |
 | 8. | [Flipkart](#flipkart) |
+| 9. | [Netflix](#netflix) |
 
 
 1. ### FAANG Must Do Problems
@@ -642,3 +643,9 @@
 | No. | Questions |
 | --- | --------- |
 |1  | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) |
+
+8. ### Netflix
+| No. | Questions |
+| --- | --------- |
+|1  | [LRU Cache](https://leetcode.com/problems/lru-cache) |
+|2  | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries) |
