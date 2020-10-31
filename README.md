@@ -16,6 +16,7 @@
 | 5. | [Google Top 50](#google-top-50) |
 | 6. | [Google](#google) |
 | 7. | [LinkedIn](#linkedin) |
+| 8. | [Flipkart](#flipkart) |
 
 
 1. ### FAANG Must Do Problems
@@ -636,3 +637,8 @@
 |23  | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number) |
 |24  | [Valid Number](https://leetcode.com/problems/valid-number) |
 |25  | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences) |
+
+7. ### Flipkart
+| No. | Questions |
+| --- | --------- |
+|1  | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) |
