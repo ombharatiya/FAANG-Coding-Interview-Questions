@@ -15,6 +15,7 @@
 | 4. | [Facebook](#facebook) |
 | 5. | [Google Top 50](#google-top-50) |
 | 6. | [Google](#google) |
+| 7. | [LinkedIn](#linkedin) |
 
 
 1. ### FAANG Must Do Problems
@@ -606,3 +607,11 @@
 |192  | [Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character) |
 |193  | [Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares) |
 |194  | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays) |
+
+6. ### LinkedIn
+| No. | Questions |
+| --- | --------- |
+|1  | [Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii) |
+|2  | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii) |
+|3  | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii) |
+|4  | [Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design) |
