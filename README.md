@@ -623,3 +623,11 @@
 |10  | [Factor Combinations](https://leetcode.com/problems/factor-combinations) |
 |11  | [Paint House](https://leetcode.com/problems/paint-house) |
 |12  | [Paint House II](https://leetcode.com/problems/paint-house-ii) |
+|13  | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) |
+|14  | [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance) |
+|15  | [Text Justification](https://leetcode.com/problems/text-justification) |
+|16  | [Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences) |
+|17  | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down) |
+|18  | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) |
+|19  | [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets) |
+|20  | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) |
