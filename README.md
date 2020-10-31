@@ -615,3 +615,11 @@
 |2  | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii) |
 |3  | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii) |
 |4  | [Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design) |
+|5  | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum) |
+|6  | [Max Stack](https://leetcode.com/problems/max-stack) |
+|7  | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) |
+|8  | [All O'one Data Structure](https://leetcode.com/problems/all-oone-data-structure) |
+|9  | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers) |
+|10  | [Factor Combinations](https://leetcode.com/problems/factor-combinations) |
+|11  | [Paint House](https://leetcode.com/problems/paint-house) |
+|12  | [Paint House II](https://leetcode.com/problems/paint-house-ii) |
