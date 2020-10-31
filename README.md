@@ -631,3 +631,8 @@
 |18  | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) |
 |19  | [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets) |
 |20  | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) |
+|21  | [Number of Islands](https://leetcode.com/problems/number-of-islands) |
+|22  | [Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions) |
+|23  | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number) |
+|24  | [Valid Number](https://leetcode.com/problems/valid-number) |
+|25  | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences) |
