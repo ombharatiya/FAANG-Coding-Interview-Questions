@@ -1,6 +1,10 @@
 # Top 75 LeetCode Questions to Crack The Coding Interviews
 
 
+> Click :star: if you like the project. Pull Request are highly appreciated. 
+
+---
+
 ## Array
 
 - [ ] [Two Sum](https://leetcode.com/problems/two-sum/)
@@ -131,9 +135,13 @@
 
 - [FAANG Coding Interview Question](https://github.com/ombharatiya/FAANG-Coding-Interview-Questions)
 
+- [Data Structures and Sorting Cheat Sheet](https://docs.google.com/document/d/1PMoL1xJ9xa6ywQQ8HCc1oxLf2TUCiCaKaatlKYv6RZw/mobilebasic)
+
 - [14 Patterns to Ace Any Coding Interview Question](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
 
 - [A to Z Learning Resources for Students by Deepak](https://github.com/ombharatiya/A-to-Z-Resources-for-Students)
+
+- [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
 
 - [Low Level Design Primer](https://github.com/prasadgujar/low-level-design-primer/blob/master/solutions.md)
 
