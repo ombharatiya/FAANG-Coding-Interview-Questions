@@ -1,0 +1,780 @@
+MCQ Questions:
+
+Please Go And Upvote this Guy's post on leetcode as an appreciation. 
+https://leetcode.com/discuss/interview-question/1098600/Data-structureCNDBMSOSSystem-Design
+
+--------------------------------------------
+OPERATING SYSTEM MCQs
+--------------------------------------------
+
+Which of the following is/ are the part of operating system?
+A) Kernel services
+B) Library services
+C) Application level services
+D) All of the above
+
+The system of ............... generally ran one job at a time. These were called single stream batch
+processing.
+A) 40's
+B) 50's
+C) 60's
+D) 70's
+
+In ............. generation of operating system, operating system designers develop the concept of
+multiprogramming in which several jobs are in main memory at once.
+A) First
+B) Second
+C) Third
+D) Fourth
+
+State True or False.
+i) In spooling high speed device like a disk is interposed between running program and low-speed device
+in Input/output.
+ii) By using spooling for example instead of writing directly to a printer, outputs are written to the disk.
+A) i-True, ii-False
+B) i-True, ii-True
+C) i-False, ii-True
+D) i-False, ii-False
+
+Which of the following is/are the functions of operating system?
+i) Sharing hardware among users. ii) Allowing users to share data among themselves.
+iii) Recovering from errors. iv) Preventing users from interfering with one another.
+v) Scheduling resources among users.
+A) i, ii, iii and iv only
+B) ii, iii, iv and v only
+C) i, iii, iv and v only
+D) All i, ii, iii, iv and v
+
+.................. executes must frequently and makes the fine grained decision of which process to
+execute the next.
+A) Long-term scheduling
+B) Medium-term scheduling
+C) Short-term scheduling
+D) None of the above
+
+With ................ a page is brought into main memory only when the reference is made to a location
+on that page.
+A) demand paging
+B) main paging
+C) prepaging
+D) postpaging
+
+....................... provides a larger sized of virtual memory but require virtual memory which provides
+multidimensional memory.
+A) Paging method
+B) Segmentation method
+C) Paging and segmentation method
+D) None of these
+
+............... is a large kernel containing virtually the complete operating system, including,
+scheduling, file system, device drivers and memory management.
+A) Multilithic kernel
+B) Monolithic kernel
+C) Micro kernel
+D) Macro kernel
+
+............... is a large operating system core provides a wide range of services.
+A) Multilithic kernel
+B) Monolithic kernel
+C) Micro kernel
+D) Macro kernel
+
+Which of the following is not the function of Microkernel?
+A) File management
+B) Low-level memory management
+C) Inter-process communication
+D) I/O interrupts management
+
+Match the following.
+i) Mutual exclusion a) A process may hold allocated resources while waiting assignment.
+ii) Hold and wait b) No resource can be forcibly removed from a process holding it.
+iii) No preemption c) Only one process may use a resource at a time.
+A) i-a, ii-b, iii-c
+B) i-a, ii-c, iii-b
+C) i-b, ii-c, iii-a
+D) i-c, ii-a, iii-b
+
+A direct method of deadlock prevention is to prevent the occurrences of ...................
+A) Mutual exclusion
+B) Hold and wait
+C) Circular waits
+D) No preemption
+
+The methods or algorithms which are used to increase the performance of disk storage sub-system
+is called .............
+A) Disk performing
+B) Disk scheduling
+C) Disk storing
+D) Disk extending
+
+................. is the time required to move the disk arm to the required track.
+A) Seek time
+B) Rotational delay
+C) Latency time
+D) Access time
+
+The ............... policy restricts scanning to one direction only.
+A) SCAN
+B) C-SCAN
+C) N-Step SCAN
+D) Both A and B
+
+............... policy selects the disk I/O request that requires the least movement of the disk arm
+from its current position.
+A) FSCAN
+B) SSTF
+C) SCAN
+D) C-SCAN
+
+.................. refers to the ability of an operating system to support multiple threads of execution
+with a single process.
+A) Multithreading
+B) Multiprocessing
+C) Multiexecuting
+D) Bi-threading
+
+State whether the following statement is true.
+i) It takes less time to terminate a thread than a process.
+ii) Threads enhance efficiency in communication between different executing programs.
+A) i-True, ii-False
+B) i-True, ii-True
+C) i-False, ii-True
+D) i-False, ii-False
+
+............ is a special type of programming language used to provide instructions to the monitor
+simple batch processing schema.
+A) Job control language (JCL)
+B) Processing control language (PCL)
+C) Batch control language (BCL)
+D) Monitor control language (MCL)
+
+Answers:
+
+D) All of the above
+B) 50's
+C) Third
+B) i-True, ii-True
+D) All i, ii, iii, iv and v
+C) Short-term scheduling
+A) demand paging
+B) Segmentation method
+B) Monolithic kernel
+D) Macro kernel
+A) File management
+D) i-c, ii-a, iii-b
+C) Circular waits
+B) Disk scheduling
+A) Seek time
+A) SCAN
+B) SSTF
+A) Multithreading
+B) i-True, ii-True
+A) Job control language (JCL)
+
+--------------------------------------------
+COMPUTER NETWORKS
+--------------------------------------------
+
+The computer network is
+A) Network computer with cable
+B) Network computer without cable
+C) Both of the above
+D) None of the above
+
+FDDI used which type of physical topology?
+A) Bus
+B) Ring
+C) Star
+D) Tree
+
+FTP stands for
+A) File transfer protocol
+B) File transmission protocol
+C) Form transfer protocol
+D) Form transmission protocol
+
+Ethernet system uses which of the following technology.
+A) Bus
+B) Ring
+C) Star
+D) Tree
+
+Which of the following are the network services?
+A) File service
+B) Print service
+C) Database service
+D) All of the above
+
+If all devices are connected to a central hub, then topology is called
+A) Bus Topology
+B) Ring Topology
+C) Star Topology
+D) Tree Topology
+
+FDDI stands for
+A) Fiber Distributed Data Interface
+B) Fiber Data Distributed Interface
+C) Fiber Dual Distributed Interface
+D) Fiber Distributed Data Interface
+
+Which of the following is an application layer service?
+A) Network virtual terminal
+B) File transfer, access and management
+C) Mail service
+D) All of the above
+
+Which is the main function of transport layer?
+A) Node to node delivery
+B) End to end delivery
+C) Synchronization
+d) Updating and maintaining routing tables
+
+The ............ layer change bits onto electromagnetic signals.
+A) Physical
+B) Transport
+C) Data Link
+D) Presentation
+
+In mesh topology, relationship between one device and another is ..............
+A) Primary to peer
+B) Peer to primary
+C) Primary to secondary
+D) Peer to Peer
+
+The performance of data communications network depends on ..............
+A) Number of users
+B) The hardware and software
+C) The transmission
+D) All of the above
+
+Find out the OSI layer, which performs token management.
+A) Network Layer
+B) Transport Layer
+C) Session Layer
+D) Presentation Layer
+
+The name of the protocol which provides virtual terminal in TCP/IP model is.
+A) Telnet
+B) SMTP
+C) HTTP
+
+The layer one of the OSI model is
+A) Physical layer
+B) Link layer
+C) Router layer
+D) Broadcast layer
+
+What is the name of the network topology in which there are bi-directional links between each
+possible node?
+A) Ring
+B) Star
+C) Tree
+D) Mesh
+
+What is the commonly used unit for measuring the speed of data transmission?
+A) Bytes per second
+B) Baud
+C) Bits per second
+D) Both B and C
+
+Which of the communication modes support two way traffic but in only once direction of a time?
+A) Simplex
+B) Half-duplex
+C) Three - quarter's duplex
+D) Full duplex
+
+The loss in signal power as light travels down the fiber is called .............
+A) Attenuation
+B) Propagation
+C) Scattering
+D) Interruption
+
+Which of the following TCP/IP protocols is used for transferring files form one machine to another.
+A) FTP
+B) SNMP
+C) SMTP
+D) RPC
+
+Answers:
+
+C) Both of the above
+B) Ring
+A) File transfer protocol
+A) Bus
+D) All of the above
+C) Star Topology
+A) Fiber Distributed Data Interface
+D) All of the above
+B) End to end delivery
+A) Physical
+D) Peer to Peer
+D) All of the above
+C) Session Layer
+A) Telnet
+A) Physical layer
+D) Mesh
+B) Baud
+B) Half-duplex
+A) Attenuation
+A) FTP
+
+
+--------------------------------------------
+DATABASE MANAGEMENT SYSTEM
+--------------------------------------------
+
+DBMS is a collection of ………….. that enables user to create and maintain a database.
+A) Keys
+B) Translators
+C) Program
+D) Language Activity
+
+In a relational schema, each tuple is divided into fields called
+A) Relations
+B) Domains
+C) Queries
+D) All of the above
+
+In an ER model, ……………. is described in the database by storing its data.
+A) Entity
+B) Attribute
+C) Relationship
+D) Notation
+
+DFD stands for
+A) Data Flow Document
+B) Data File Diagram
+C) Data Flow Diagram
+D) Non of the above
+
+A top-to-bottom relationship among the items in a database is established by a
+A) Hierarchical schema
+B) Network schema
+C) Relational Schema
+D) All of the above
+
+……………… table store information about database or about the system.
+A) SQL
+B) Nested
+C) System
+D) None of these
+
+…………..defines the structure of a relation which consists of a fixed set of attribute-domain pairs.
+A) Instance
+B) Schema
+c) Program
+D) Super Key
+
+……………… clause is an additional filter that is applied to the result.
+A) Select
+B) Group-by
+C) Having
+D) Order by
+
+A logical schema
+A) is the entire database
+B) is a standard way of organizing information into accessible parts.
+C) Describes how data is actually stored on disk.
+D) All of the above
+
+………………… is a full form of SQL.
+A) Standard query language
+B) Sequential query language
+C) Structured query language
+D) Server side query language
+
+Processed data is called ………………..
+A) Raw data
+B) Information
+C) Useful data
+D) Source
+
+…………….. is a utility to capture a continuous record of server activity and provide auditing
+capability.
+A) SQL server Profile
+B) SQL server service manager
+C) SQL server setup
+D) SQL server wizard.
+
+Data items grouped together for storage purposes are called a
+A) record
+B) title
+C) list
+D) string
+
+…………. contains data assisting day to day activities of the organization.
+A) Control database
+B) Operational database
+C) Strategic database
+D) Sequential database
+
+………………… approach reduces time and effort required for design and lesser risk in database
+management.
+A) Single global database
+B) Top-down approach
+C) Multiple databases
+D) None of the above
+
+HSAM stands for ……….
+A) Hierarchic Sequential Access Method
+B) Hierarchic Standard Access Method
+C) Hierarchic Sequential and Method
+D) Hierarchic Standard and Method
+
+SQL server stores index information in the ………… system table
+A) systindexes
+B) systemindexes
+C) sysind
+D) sysindexes
+
+The one guideline to be followed while designing the database is
+A) A database design may be ambiguous.
+B) Unrelated data should be in the same table so that updating the data will be easy.
+C) It should avoid/reduce the redundancy.
+D) An entity should not have attributes.
+
+Which of the following is not a logical database structure?
+A) Chain
+B) Network
+C) Tree
+D) Relational
+
+……………. is a preferred method for enforcing data integrity
+A) Constraints
+B) Stored procedure
+C) Triggers
+D) Cursors
+
+Answers:
+
+C) Program
+B) Domains
+A) Entity
+C) Data Flow Diagram
+A) Hierarchical schema
+C) System
+B) Schema
+C) Having
+B) is a standard …... accessible parts.
+C) Structured query language
+B) Information
+B) SQL server service manager
+A) record
+B) Operational database
+C) Multiple databases
+A) Hierarchic Sequential Access Method
+D) sysindexes
+C) It should avoid/reduce … redundancy.
+A) Chain
+A) Constraints
+
+
+--------------------------------------------
+DATA STRUCTURE
+--------------------------------------------
+
+Which if the following is/are the levels of implementation of data structure
+A) Abstract level
+B) Application level
+C) Implementation level
+D) All of the above
+
+A binary search tree whose left subtree and right subtree differ in hight by at most 1 unit is called
+A) AVL tree
+B) Red-black tree
+C) Lemma tree
+D) None of the above
+
+……………….. level is where the model becomes compatible executable code
+A) Abstract level
+B) Application level
+C) Implementation level
+D) All of the above
+
+Stack is also called as
+A) Last in first out
+B) First in last out
+C) Last in last out
+D) First in first out
+
+Which of the following is true about the characteristics of abstract data types?
+i) It exports a type.
+ii) It exports a set of operations
+A) True, False
+B) False, True
+C) True, True
+D) False, False
+
+…………… is not the component of data structure.
+A) Operations
+B) Storage Structures
+C) Algorithms
+D) None of above
+
+Which of the following is not the part of ADT description?
+A) Data
+B) Operations
+C) Both of the above
+D) None of the above
+
+Inserting an item into the stack when stack is not full is called …………. Operation and deletion of
+item form the stack, when stack is not empty is called ………..operation.
+A) push, pop
+B) pop, push
+C) insert, delete
+D) delete, insert
+
+……………. Is a pile in which items are added at one end and removed from the other.
+A) Stack
+B) Queue
+C) List
+D) None of the above
+
+………… is very useful in situation when data have to stored and then retrieved in reverse order.
+A) Stack
+B) Queue
+C) List
+D) Link list
+
+Which of the following is not the type of queue?
+A) Ordinary queue
+B) Single ended queue
+C) Circular queue
+D) Priority queue
+
+The property of binary tree is
+A) The first subset is called left subtree
+B) The second subtree is called right subtree
+C) The root cannot contain NULL
+D) The right subtree can be empty
+
+State true or false.
+i) The degree of root node is always zero.
+ii) Nodes that are not root and not leaf are called as internal nodes.
+A) True, True
+B) True, False
+C) False, True
+D) False, False
+
+Any node is the path from the root to the node is called
+A) Successor node
+B) Ancestor node
+C) Internal node
+D) None of the above
+
+State true of false.
+i) A node is a parent if it has successor nodes.
+ii) A node is child node if out degree is one.
+A) True, True
+B) True, False
+C) False, True
+D) False, False
+
+………………. is not an operation performed on linear list
+a) Insertion b) Deletion c) Retrieval d) Traversal
+A) only a,b and c
+B) only a and b
+C) All of the above
+D) None of the above
+
+Which is/are the application(s) of stack
+A) Function calls
+B) Large number Arithmetic
+C) Evaluation of arithmetic expressions
+D) All of the above
+
+A …………… is an acyclic digraph, which has only one node with indegree 0, and other nodes have
+indegree 1.
+A) Directed tree
+B) Undirected tree
+C) Dis-joint tree
+D) Direction oriented tree
+
+…………………. Is a directed tree in which outdegree of each node is less than or equal to two.
+A) Unary tree
+B) Binary tree
+C) Dinary tree
+D) Both B and C
+
+State true or false.
+i) An empty tree is also a binary tree.
+ii) In strictly binary tree, the outdegree of every node is either o or 2.
+A) True, False
+B) False, True
+C) True, True
+D) False, False
+
+Answers:
+
+D) All of the above
+A) AVL tree
+C) Implementation level
+A) Last in first out
+C) True, True
+D) None of above
+D) None of the above
+A) push, pop
+B) Queue
+A) Stack
+B) Single ended queue
+D) The right subtree can be empty
+C) False, True
+B) Ancestor node
+B) True, False
+D) None of the above
+D) All of the above
+A) Directed tree
+B) Binary tree
+C) True, True
+
+--------------------------------------------
+SYSTEM ANALYSIS AND DESIGN
+--------------------------------------------
+
+Q. 1 …………………………. is an important factor of management information system.
+A) System
+B) Data
+C) Process
+D) All
+
+Q.2 Which are the following is / are the level(s) of documentation?
+A) Documentation for management
+B) Documentation for user
+C) Documentation for data processing department
+D) All of the above
+
+Q.3 ………………………….. level supply information to strategic tier for the use of top management.
+A) Operational
+B) Environmental
+C) Competitive
+D) Tactical
+
+Q.4 In a DFD external entities are represented by a
+A) Rectangle
+B) Ellipse
+C) Diamond shaped box
+D) Circle
+
+Q.5 …………… can be defined as data that has been processed into a form that is meaningful to the
+recipient and is of real or perceive value in current or prospective decisions.
+A) System
+B) Information
+C) Technology
+D) Service
+
+Q.6 Use the new system as the same time as the old system to compare the results. This is known as …
+A) Procedure Writing
+B) Simultaneous processing
+C) Parallel Operation
+D) File Conversion
+
+Q.7 Decision making model was proposed by ………………….
+A) Harry Goode
+B) Herbert A Simon
+C) Recon Michal
+D) None of this
+
+Q.8 A data flow can
+A) Only emanate from an external entity
+B) Only terminate in an external entity
+C) May emanate and terminate in an external entity
+D) May either emanate or terminate in an external entity but not both.
+
+Q. 9 …………… can be defined as most recent and perhaps the most comprehensive technique for
+solving computer problems.
+A) System Analysis
+B) System Data
+C) System Procedure
+D) System Record
+
+Q.10 SDLC stands for
+A) System Development Life Cycle
+B) Structure Design Life Cycle
+C) System Design Life Cycle
+D) Structure development Life Cycle
+
+Q.11 ……………….. includes review of the existing procedures and information flow.
+A) Feasibility Study
+B) Feasibility report
+C) System Design
+D) System analysis
+
+Q.12 A rectangle in a DFD represents
+A) a process
+B) a data store
+C) an external entity
+D) an input unit
+
+Q.13 …………….. refers to the collection of information pertinent to systems Project.
+A) Data transfer
+B) Data gathering
+C) Data Embedding
+D) Data Request
+
+Q.14 ………………….. means coordinated effort, to communicate the information of the system written
+form.
+A) System documentation
+B) Resource required
+C) Development schedule
+D) User Document
+
+Q.15 MDP stands for
+A) Master Development Plan
+B) Master Design Program
+C) Mandatory Database Program
+D) Master Database Plan
+
+Q.16 External Entities may be a
+A) Source of input data only
+B) Source of input data or destination of results
+C) Destination of results only
+D) Repository of data
+
+Q.17 …………………. is a group of interested components working together towards a common goal by
+accepting inputs and producing outputs in an organized transformation process.
+A) System
+B) Network
+C) Team
+D) System Unit
+
+Q.18 To create vehicle of information to provide evidence in the development process and to monitor
+the process. This is one of the objectives of
+A) Analysis
+B) Design
+C) Development
+D) Documentation
+
+Q.19 A …………. System is no more than idea
+A) Conceptual
+B) Logical
+C) Physical
+D) All of the above
+
+Q.20 By an external entity we mean a
+A) Unit outside the system being designed which can be controlled by an analyst.
+B) Unit outside the system whose behavior is independent of the system being designed
+C) A unit external to the system being designed
+D) A unit which is not part of a DFD
+
+Answers:
+
+A) System
+D) All of the above
+D) Tactical
+A) Rectangle
+B) Information
+C) Parallel Operation
+B) Herbert A Simon
+C) May emanate and ………entity
+A) System Analysis
+A) System Development Life Cycle
+A) Feasibility Study
+C) an external entity
+B) Data gathering
+A) System documentation
+A) Master Development Plan
+B) Source of …… destination of results
+A) System
+D) Documentation
+A) Conceptual
+C) A unit external to the system being designed
