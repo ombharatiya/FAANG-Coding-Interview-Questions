@@ -22,13 +22,20 @@
   <a href="https://twitter.com/ombharatiya">
     <img src="https://img.shields.io/twitter/follow/ombharatiya?style=for-the-badge&color=1DA1F2&logo=twitter" alt="Twitter Follow" />
   </a>
+</div>
+
+<div align="center">
+  <p><em>Your star helps keep this collection updated with fresh interview questions. Follow for notifications on new resources that could help you land your dream tech job.</em></p>
   
-  <div align="center" style="margin-top: 20px; margin-bottom: 20px; padding: 15px; background-color: #0D1117; border: 2px solid #39D353; border-radius: 10px;">
-    <h3 style="color: #39D353;">⭐ <span style="color: #7CE38B;">PLEASE STAR THIS REPOSITORY</span> AND FOLLOW <a href="https://github.com/ombharatiya" style="color: #7CE38B;">@OMBHARATIYA</a> FOR REGULAR UPDATES! ⭐</h3>
-    <p style="color: #77BC65;">Your support helps maintain this resource and ensures you receive notifications about new interview questions and resources.</p>
-    <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers" style="display: inline-block; margin-top: 10px; padding: 8px 16px; background-color: #238636; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold;">⭐ Star This Repository</a>
-  </div>
-  
+  <p>
+    <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
+      <img src="https://img.shields.io/badge/⭐%20STAR%20THIS%20REPO-yellow?style=for-the-badge" alt="Star This Repo" />
+    </a>
+    <a href="https://github.com/ombharatiya?tab=followers">
+      <img src="https://img.shields.io/badge/👨‍💻%20FOLLOW%20@OMBHARATIYA-39D353?style=for-the-badge" alt="Follow @ombharatiya" />
+    </a>
+  </p>
+
   <h3>🚨 NEW: Check out <a href="./SYSTEM_DESIGN_INTERVIEW.md">System Design Interview Guide</a> and <a href="./FAANG-Recent-Questions.md">Most Recently Asked FAANG Questions</a> including OpenAI and Tesla! 🚨</h3>
   
   <p><i>A curated collection of coding and system design questions asked at top tech companies. Helping you ace your next interview!</i></p>
