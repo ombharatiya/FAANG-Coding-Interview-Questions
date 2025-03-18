@@ -1,4 +1,4 @@
-# Machine Learning Interview Preparation Guide 🧠
+# Complete Machine Learning Interview Preparation Guide for Beginners to Experts 🧠
 
 <div align="center">
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
@@ -19,18 +19,18 @@
 
 ## Table of Contents
 
-- [Machine Learning Fundamentals](#machine-learning-fundamentals)
-- [Deep Learning](#deep-learning)
-- [Natural Language Processing](#natural-language-processing)
-- [Computer Vision](#computer-vision)
-- [Reinforcement Learning](#reinforcement-learning)
-- [Model Deployment & MLOps](#model-deployment--mlops)
-- [ML System Design](#ml-system-design)
-- [Statistics & Mathematics](#statistics--mathematics)
-- [Top Companies' ML Interview Process](#top-companies-ml-interview-process)
-- [Additional Resources](#additional-resources)
+- [Essential Machine Learning Theory for Interviews](#essential-machine-learning-theory-for-interviews)
+- [Deep Learning Concepts from Basic to Advanced](#deep-learning-concepts-from-basic-to-advanced)
+- [Natural Language Processing Interview Questions](#natural-language-processing-interview-questions)
+- [Computer Vision Interview Questions](#computer-vision-interview-questions)
+- [Reinforcement Learning for ML Interviews](#reinforcement-learning-for-ml-interviews)
+- [MLOps and Model Deployment Interview Topics](#mlops-and-model-deployment-interview-topics)
+- [ML System Design Questions and Strategies](#ml-system-design-questions-and-strategies)
+- [Statistics & Mathematics for ML Interviews](#statistics--mathematics-for-ml-interviews)
+- [FAANG and Top Tech Companies' ML Interview Process](#top-companies-ml-interview-process)
+- [Learning Resources for ML Interview Preparation](#additional-resources)
 
-## Machine Learning Fundamentals
+## Essential Machine Learning Theory for Interviews
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
@@ -45,7 +45,7 @@
 | What is feature selection and why is it important? | [Answer](https://machinelearningmastery.com/an-introduction-to-feature-selection/) | Medium |
 | How does PCA work? When would you use it? | [Answer](https://builtin.com/data-science/step-step-explanation-principal-component-analysis) | Hard |
 
-## Deep Learning
+## Deep Learning Concepts from Basic to Advanced
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
@@ -60,7 +60,7 @@
 | Explain the architecture of CNNs. | [Answer](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53) | Medium |
 | What are LSTMs and GRUs? How do they solve the vanishing gradient problem? | [Answer](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) | Hard |
 
-## Natural Language Processing
+## Natural Language Processing Interview Questions
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
@@ -75,7 +75,7 @@
 | Explain ROUGE, BLEU, and METEOR metrics. | [Answer](https://medium.com/explorations-in-language-and-learning/metrics-for-nlg-evaluation-c89b6a781054) | Medium |
 | What are subword tokenization methods? Compare BPE, WordPiece, and SentencePiece. | [Answer](https://huggingface.co/docs/transformers/tokenizer_summary) | Medium |
 
-## Computer Vision
+## Computer Vision Interview Questions
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
@@ -90,7 +90,7 @@
 | How do you handle class imbalance in image classification? | [Answer](https://towardsdatascience.com/handling-imbalanced-datasets-in-deep-learning-f48407a0e758) | Medium |
 | What is the difference between semantic segmentation, instance segmentation, and panoptic segmentation? | [Answer](https://www.v7labs.com/blog/panoptic-segmentation-guide) | Medium |
 
-## Reinforcement Learning
+## Reinforcement Learning for ML Interviews
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
@@ -105,7 +105,7 @@
 | Explain the difference between on-policy and off-policy learning. | [Answer](https://towardsdatascience.com/on-policy-vs-off-policy-in-reinforcement-learning-bba950d9f0d0) | Medium |
 | What is Proximal Policy Optimization (PPO)? | [Answer](https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-77f014ec3f12) | Hard |
 
-## Model Deployment & MLOps
+## MLOps and Model Deployment Interview Topics
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
@@ -120,7 +120,7 @@
 | Explain CI/CD in the context of ML systems. | [Answer](https://neptune.ai/blog/ci-cd-for-machine-learning-mlops) | Medium |
 | What are the ethical considerations in deploying ML models? | [Answer](https://towardsdatascience.com/ethics-in-machine-learning-9fa5b1aadc12) | Medium |
 
-## ML System Design
+## ML System Design Questions and Strategies
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
@@ -135,7 +135,7 @@
 | How would you design a machine translation system? | [Answer](https://machinelearningmastery.com/introduction-neural-machine-translation/) | Hard |
 | Design a system for dynamic pricing. | [Answer](https://towardsdatascience.com/dynamic-pricing-using-machine-learning-is-the-future-of-retail-85698c12b8a) | Hard |
 
-## Statistics & Mathematics
+## Statistics & Mathematics for ML Interviews
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
@@ -150,7 +150,7 @@
 | What is the difference between a PDF and CDF? | [Answer](https://www.statology.org/pdf-vs-cdf/) | Medium |
 | Explain the concepts of gradient descent, stochastic gradient descent, and mini-batch gradient descent. | [Answer](https://towardsdatascience.com/gradient-descent-algorithm-and-its-variants-10f652806a3) | Medium |
 
-## Top Companies' ML Interview Process
+## FAANG and Top Tech Companies' ML Interview Process
 
 ### Google ML Interview Process
 
@@ -217,9 +217,9 @@ OpenAI's ML interviews typically focus on:
 
 [More about AI Research Interviews](https://blog.interviews.ai/openai-and-anthropic-interview-preparation/)
 
-## Additional Resources
+## Learning Resources for ML Interview Preparation
 
-### Books
+### Books for ML Interview Prep
 
 - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
 - [Deep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville](https://www.deeplearningbook.org/)
@@ -227,7 +227,7 @@ OpenAI's ML interviews typically focus on:
 - [Machine Learning Yearning by Andrew Ng](https://www.deeplearning.ai/machine-learning-yearning/)
 - [The Hundred-Page Machine Learning Book by Andriy Burkov](http://themlbook.com/)
 
-### Online Courses
+### Top Online Courses for ML Interviews
 
 - [Machine Learning by Andrew Ng (Stanford/Coursera)](https://www.coursera.org/learn/machine-learning)
 - [Deep Learning Specialization (Coursera)](https://www.coursera.org/specializations/deep-learning)
@@ -244,7 +244,7 @@ OpenAI's ML interviews typically focus on:
 - [Educative.io ML Interview Prep Course](https://www.educative.io/courses/grokking-the-machine-learning-interview)
 - [StrataScratch](https://www.stratascratch.com/)
 
-### ML Communities
+### ML Communities for Interview Questions
 
 - [Kaggle](https://www.kaggle.com/)
 - [ML subreddit](https://www.reddit.com/r/MachineLearning/)
