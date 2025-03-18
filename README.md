@@ -47,6 +47,8 @@
 - [Python Programming Language Resources to Learn](./PythonResources.md)
 - [Most Recently Asked Questions at FAANG and other top companies](./FAANG-Recent-Questions.md)
 - [System Design Interview Guide](./SYSTEM_DESIGN_INTERVIEW.md)
+- [LLM Papers Cheatsheet for Beginners and Experts - Essential Research Papers for LLMs](./LLM_PAPERS_CHEATSHEET.md)
+- [Complete Machine Learning Interview Preparation Guide for Beginners to Experts](./ML_INTERVIEW_PREP.md)
 
 ## Table of Contents
 
@@ -61,6 +63,7 @@
 | 7. | [LinkedIn](#linkedin) |
 | 8. | [Flipkart](#flipkart) |
 | 9. | [Netflix](#netflix) |
+| 10. | [Machine Learning & AI Resources](#resources) |
 
 ## FAANG Must Do Problems
 
