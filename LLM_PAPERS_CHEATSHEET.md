@@ -1,4 +1,4 @@
-# LLM Papers Cheatsheet 📚
+# LLM Papers Cheatsheet for Beginners and Experts 📚
 
 <div align="center">
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
@@ -17,7 +17,7 @@
   </p>
 </div>
 
-## Foundational Papers
+## Must-Read Foundational Papers for LLM Beginners
 
 | Paper | Authors | Year | Key Contribution | Link |
 |-------|---------|------|-----------------|------|
@@ -27,7 +27,7 @@
 | [Improving Language Understanding by Generative Pre-Training (GPT)](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) | Radford et al. | 2018 | First GPT model with generative pre-training | [PDF](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
 | [Language Models are Unsupervised Multitask Learners (GPT-2)](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) | Radford et al. | 2019 | Zero-shot task transfer and larger scale | [PDF](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) |
 
-## Training and Scaling
+## Training Methods and Scaling for Advanced Engineers
 
 | Paper | Authors | Year | Key Contribution | Link |
 |-------|---------|------|-----------------|------|
@@ -38,7 +38,7 @@
 | [LLaMA: Open and Efficient Foundation Language Models](https://arxiv.org/abs/2302.13971) | Touvron et al. | 2023 | Efficient training of competitive open models | [PDF](https://arxiv.org/pdf/2302.13971.pdf) |
 | [Chinchilla: Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556) | Hoffmann et al. | 2022 | Optimal allocation of compute between model size and training tokens | [PDF](https://arxiv.org/pdf/2203.15556.pdf) |
 
-## Alignment and Safety
+## Safety, Ethics and Alignment Techniques
 
 | Paper | Authors | Year | Key Contribution | Link |
 |-------|---------|------|-----------------|------|
@@ -48,7 +48,7 @@
 | [Llama 2: Open Foundation and Fine-Tuned Chat Models](https://arxiv.org/abs/2307.09288) | Touvron et al. | 2023 | Safety improvements via RLHF | [PDF](https://arxiv.org/pdf/2307.09288.pdf) |
 | [RLHF: Reinforcement Learning from Human Feedback](https://arxiv.org/abs/1706.03741) | Christiano et al. | 2017 | Original RLHF formulation | [PDF](https://arxiv.org/pdf/1706.03741.pdf) |
 
-## Capabilities and Evaluation
+## Capabilities Evaluation and Benchmarking
 
 | Paper | Authors | Year | Key Contribution | Link |
 |-------|---------|------|-----------------|------|
@@ -58,7 +58,7 @@
 | [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903) | Wei et al. | 2022 | Improving reasoning through prompting | [PDF](https://arxiv.org/pdf/2201.11903.pdf) |
 | [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682) | Wei et al. | 2022 | Analysis of capabilities that emerge with scale | [PDF](https://arxiv.org/pdf/2206.07682.pdf) |
 
-## Recent Advances
+## Latest Breakthroughs in LLM Research
 
 | Paper | Authors | Year | Key Contribution | Link |
 |-------|---------|------|-----------------|------|
@@ -68,7 +68,7 @@
 | [Mistral 7B](https://arxiv.org/abs/2310.06825) | Mistral AI | 2023 | Efficient architecture and sliding window attention | [PDF](https://arxiv.org/pdf/2310.06825.pdf) |
 | [Mixture-of-Experts (MoE)](https://arxiv.org/abs/2101.03961) | Fedus et al. | 2022 | Sparse expert models for efficient scaling | [PDF](https://arxiv.org/pdf/2101.03961.pdf) |
 
-## Multimodal Models
+## Multimodal Models and Visual-Language Integration
 
 | Paper | Authors | Year | Key Contribution | Link |
 |-------|---------|------|-----------------|------|
@@ -78,7 +78,7 @@
 | [GPT-4V Technical Report](https://openai.com/research/gpt-4v-system-card) | OpenAI | 2023 | Multimodal capabilities | [Link](https://openai.com/research/gpt-4v-system-card) |
 | [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020) | Driess et al. | 2023 | Survey of multimodal architectures | [PDF](https://arxiv.org/pdf/2309.10020.pdf) |
 
-## Recommended Reading Order for Beginners
+## Beginner's Learning Path: Where to Start with LLMs
 
 If you're new to LLMs, here's the recommended order to approach these papers:
 
@@ -89,7 +89,7 @@ If you're new to LLMs, here's the recommended order to approach these papers:
 5. **Recent Architecture**: "LLaMA: Open and Efficient Foundation Language Models"
 6. **Multimodal Integration**: "CLIP: Learning Transferable Visual Models From Natural Language Supervision"
 
-## Additional Resources
+## Resources for LLM Practitioners and Researchers
 
 - [Hugging Face Model Hub](https://huggingface.co/models) - Repository of thousands of pre-trained models
 - [Papers With Code](https://paperswithcode.com/task/language-modelling) - LLM papers with implementation code
