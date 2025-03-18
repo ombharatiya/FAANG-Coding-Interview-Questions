@@ -2,81 +2,158 @@
 
 ## 25 Must-Do System Design Problems for Tech Interviews
 
-| No. | System Design Problem | Complexity | Common in Companies | Target Roles |
-|-----|----------------------|------------|---------------------|-------------|
-| 1 | [Design a URL Shortening Service (TinyURL)](https://leetcode.com/discuss/interview-question/124658/Design-a-URL-Shortener-(-TinyURL-)-System/) | Medium | Google, Microsoft, Twitter, Salesforce | SWE, Senior SWE |
-| 2 | [Design Twitter/X](https://leetcode.com/discuss/interview-question/system-design/124689/Design-Twitter) | Hard | Twitter, Meta, Microsoft, OpenAI | Senior SWE, Staff Engineer |
-| 3 | [Design Netflix/Video Streaming Platform](https://leetcode.com/discuss/interview-question/system-design/158698/Design-Netflix) | Hard | Netflix, Amazon, Google, Meta | Senior SWE, Systems Architect |
-| 4 | [Design a Distributed Cache](https://leetcode.com/discuss/interview-question/system-design/125751/Design-a-distributed-cache) | Hard | Google, Amazon, Microsoft, Rippling | Senior SWE, Infrastructure Engineer |
-| 5 | [Design Instagram](https://leetcode.com/discuss/interview-question/system-design/124802/Design-Instagram) | Hard | Meta, Snap, ByteDance, Tesla | Senior SWE, Backend Engineer |
-| 6 | [Design Uber/Ride-sharing Service](https://leetcode.com/discuss/interview-question/system-design/124542/Design-Uber-or-Lyft) | Hard | Uber, Lyft, Intuit, Tesla | Senior SWE, Backend Engineer |
-| 7 | [Design WhatsApp/Messaging System](https://leetcode.com/discuss/interview-question/system-design/124613/Design-WhatsApp) | Medium-Hard | Meta, Microsoft, Telegram | Senior SWE, Mobile Engineer |
-| 8 | [Design Google Drive/Dropbox](https://leetcode.com/discuss/interview-question/system-design/123605/Design-Google-Drive-or-Dropbox-File-Sharing-and-Storage-Service) | Hard | Google, Dropbox, Microsoft, Box | Senior SWE, Storage Engineer |
-| 9 | [Design a Web Crawler](https://leetcode.com/discuss/interview-question/system-design/124657/Design-a-Web-Crawler) | Medium-Hard | Google, Microsoft, Amazon, OpenAI | Senior SWE, Search Engineer |
-| 10 | [Design Ticketmaster/Booking System](https://www.hellointerview.com/learn/system-design/answer-keys/ticketmaster) | Medium-Hard | Microsoft, Salesforce, Intuit | Senior SWE, Full Stack Engineer |
-| 11 | [Design Google Maps](https://leetcode.com/discuss/interview-question/system-design/124673/Design-Google-Maps) | Hard | Google, Uber, Tesla, Amazon | Senior SWE, ML Engineer |
-| 12 | [Design YouTube](https://leetcode.com/discuss/interview-question/system-design/133251/Design-YouTube) | Hard | Google, Meta, Netflix, ByteDance | Senior SWE, Media Engineer |
-| 13 | [Design Facebook Newsfeed](https://leetcode.com/discuss/interview-question/system-design/124682/Design-Facebook-Newsfeed) | Hard | Meta, LinkedIn, Twitter | Senior SWE, Data Engineer |
-| 14 | [Design Spotify/Music Streaming Service](https://www.educative.io/blog/favorite-system-design-question) | Medium-Hard | Spotify, Apple, Amazon, Salesforce | Senior SWE, Full Stack Engineer |
-| 15 | [Design Typeahead Suggestion/Autocomplete](https://leetcode.com/discuss/interview-question/system-design/124671/Design-typeahead-search-or-autocomplete) | Medium | Google, Meta, Amazon, Intuit | Senior SWE, Search Engineer |
-| 16 | [Design a Rate Limiter](https://leetcode.com/discuss/interview-question/system-design/124558/Designing-API-Rate-Limiter) | Medium | Stripe, Rippling, AWS, Cloudflare | Senior SWE, Backend Engineer |
-| 17 | [Design Nearby Friends Feature](https://leetdesign.com/problems/nearby-friends) | Medium | Meta, Snap, Tinder, Uber | Senior SWE, Mobile Engineer |
-| 18 | [Design Google Search](https://leetcode.com/discuss/interview-question/system-design/124584/Design-a-search-engine-like-Google) | Very Hard | Google, Microsoft, OpenAI | Staff Engineer, Search Engineer |
-| 19 | [Design a Collaborative Document Editing System (Google Docs)](https://leetcode.com/discuss/interview-question/system-design/133751/Design-Google-Docs) | Hard | Google, Microsoft, Salesforce | Senior SWE, Full Stack Engineer |
-| 20 | [Design an LLM-powered Enterprise Search System](https://igotanoffer.com/blogs/tech/system-design-interviews) | Hard | OpenAI, Google, Microsoft, Salesforce | Senior SWE, ML Engineer |
-| 21 | [Design an E-commerce Platform](https://leetcode.com/discuss/interview-question/system-design/124752/Design-an-E-commerce-Website) | Medium-Hard | Amazon, Walmart, Intuit, Salesforce | Senior SWE, Full Stack Engineer |
-| 22 | [Design a Notification System](https://leetcode.com/discuss/interview-question/system-design/123881/Design-a-notification-system) | Medium | Meta, Slack, Twitter, Rippling | Senior SWE, Backend Engineer |
-| 23 | [Design a Distributed Job Scheduler](https://leetcode.com/discuss/interview-question/system-design/124628/Design-a-distributed-job-scheduler) | Hard | AWS, Google, Microsoft, Tesla | Senior SWE, Infrastructure Engineer |
-| 24 | [Design a Payment System](https://leetcode.com/discuss/interview-question/system-design/158842/Design-Payment-System) | Hard | PayPal, Stripe, Square, Intuit | Senior SWE, Financial Tech Engineer |
-| 25 | [Design a Stock Trading System](https://leetcode.com/discuss/interview-question/system-design/125218/Design-a-stock-trading-system) | Very Hard | Robinhood, Bloomberg, Intuit, Rippling | Senior SWE, Financial Tech Engineer |
+<div align="center">
+  <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
+    <img src="https://img.shields.io/badge/🏗️%20System%20Design%20Guide-000000?style=for-the-badge" alt="System Design Guide" />
+  </a>
+  
+  <p><em>A curated collection of system design problems frequently asked in interviews at top tech companies</em></p>
+  
+  <p>
+    <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
+      <img src="https://img.shields.io/badge/⭐%20STAR%20THIS%20REPO-yellow?style=for-the-badge" alt="Star This Repo" />
+    </a>
+    <a href="https://github.com/ombharatiya?tab=followers">
+      <img src="https://img.shields.io/badge/👨‍💻%20FOLLOW%20@OMBHARATIYA-39D353?style=for-the-badge" alt="Follow @ombharatiya" />
+    </a>
+  </p>
+</div>
 
-## Key Complexity Factors for System Design Interviews
+## Table of System Design Interview Problems
 
-When preparing for these system design problems, focus on these key aspects that determine their complexity:
+This table presents 25 essential system design problems that are frequently asked in technical interviews at top technology companies. Each problem is categorized by complexity level (Low, Medium, High) and includes information about which companies commonly ask these questions and for which engineering roles.
 
-1. **Scale**: How many users/requests must the system handle?
-2. **Availability**: What level of uptime is required?
-3. **Consistency**: What consistency model is needed (eventual vs. strong)?
-4. **Latency**: What are the response time requirements?
-5. **Data Storage**: What volume and type of data must be managed?
-6. **Security**: What security considerations are critical?
+| # | Problem | Complexity | Companies | Roles | Resources |
+|---|---------|------------|-----------|-------|-----------|
+| 1 | Design a URL Shortening Service (like Bit.ly) | Medium | Google, Amazon, Microsoft, Uber | SWE, SDE, Backend | [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/pastebin/README.md), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/tiny-url-design-tinyurl) |
+| 2 | Design Twitter | High | Twitter, Meta, Google, Microsoft | SWE, SDE, Full-stack | [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/twitter/README.md), [High Scalability](http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html) |
+| 3 | Design a Rate Limiter | Medium | Stripe, Cloudflare, Google, Amazon | SDE, SRE, Backend | [Stripe Engineering Blog](https://stripe.com/blog/rate-limiters), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/API-Rate-Limiter) |
+| 4 | Design Netflix or YouTube (Video Streaming Service) | High | Netflix, YouTube, Amazon, Meta | SWE, Media, Backend | [Netflix Tech Blog](https://netflixtechblog.com/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/youtube/README.md) |
+| 5 | Design an Online Chat System (like WhatsApp) | Medium | Meta, Signal, Snap, Microsoft | SWE, Backend, Mobile | [WhatsApp Architecture](https://highscalability.com/blog/2022/1/25/whatsapp-architecture.html), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/messenger-design) |
+| 6 | Design Uber or Lyft | High | Uber, Lyft, DoorDash, Instacart | SWE, Backend, Mobile | [Uber Engineering Blog](https://eng.uber.com/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/uber-backend) |
+| 7 | Design a Web Crawler | Medium | Google, Microsoft, Amazon, ByteDance | SWE, Search, Data | [Google Research](https://research.google/pubs/pub36701/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/web_crawler/README.md) |
+| 8 | Design Dropbox / Google Drive | High | Dropbox, Google, Microsoft, Box | SWE, Storage, Cloud | [Dropbox Tech Blog](https://dropbox.tech/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/dropbox/README.md) |
+| 9 | Design a Distributed Key-Value Store | High | Amazon, Google, Redis Labs, MongoDB | SWE, Database, Cloud | [DynamoDB Paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf), [Google Spanner](https://research.google/pubs/pub39966/) |
+| 10 | Design Instagram | Medium | Meta, Snap, ByteDance, Pinterest | SWE, Full-stack, Mobile | [Instagram Engineering](https://instagram-engineering.com/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/instagram/README.md) |
+| 11 | Design a Payment System | High | Stripe, PayPal, Square, Rippling | SWE, Financial, Security | [Stripe Engineering Blog](https://stripe.com/blog/engineering), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/payment-processing-system-design) |
+| 12 | Design a Search Autocomplete System | Medium | Google, Microsoft, Amazon, LinkedIn | SWE, Search, UX | [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/autocomplete/README.md), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/typeahead-suggestion) |
+| 13 | Design a Recommendation System | High | Netflix, Amazon, Spotify, TikTok | SWE, ML, Data | [Netflix Recommendation](https://netflixtechblog.com/system-architectures-for-personalization-and-recommendation-e081aa94b5d8), [Amazon ML Blog](https://aws.amazon.com/blogs/machine-learning/) |
+| 14 | Design an API Rate Limiter | Medium | AWS, Google Cloud, Cloudflare, Akamai | SWE, Cloud, Security | [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/API-Rate-Limiter) |
+| 15 | Design a Notification Service | Medium | Meta, Slack, Discord, Salesforce | SWE, Mobile, Cloud | [Slack Engineering Blog](https://slack.engineering/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/notification-service-design) |
+| 16 | Design Airbnb or Booking.com | High | Airbnb, Booking, Expedia, Tripadvisor | SWE, Full-stack, Search | [Airbnb Engineering Blog](https://medium.com/airbnb-engineering), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
+| 17 | Design a Content Delivery Network (CDN) | High | Cloudflare, Akamai, Fastly, AWS | SWE, Infrastructure, Network | [Cloudflare Blog](https://blog.cloudflare.com/), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
+| 18 | Design a Distributed Cache | Medium | Redis, Memcached, AWS, Google | SWE, Infrastructure, Cloud | [Redis Architecture](https://redis.com/redis-enterprise/technology/redis-architecture/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/key-value-store) |
+| 19 | Design a Task Scheduler | Medium | Airflow, AWS, Google, Microsoft | SWE, Cloud, Data | [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/index.html), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
+| 20 | Design a Distributed Message Queue | High | Kafka, RabbitMQ, AWS, Google | SWE, Cloud, Infrastructure | [Kafka Architecture](https://kafka.apache.org/documentation/#design), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
+| 21 | Design a Distributed Logging System | Medium | Splunk, Elastic, Datadog, New Relic | SWE, DevOps, SRE | [Elastic Blog](https://www.elastic.co/blog/), [Splunk Architecture](https://docs.splunk.com/Documentation/Splunk/latest/Deploy/Distributedoverview) |
+| 22 | Design Google Maps | High | Google, Apple, Uber, Tesla | SWE, Maps, Mobile | [Google Maps Platform Blog](https://cloud.google.com/blog/products/maps-platform), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
+| 23 | Design an AI Large Language Model (LLM) System | High | OpenAI, Google, Microsoft, Anthropic | SWE, ML, AI | [OpenAI System Card](https://openai.com/research/gpt-4-system-card), [LLM Architecture Papers](https://arxiv.org/abs/2303.18223) |
+| 24 | Design a Real-time Collaboration Editor (like Google Docs) | High | Google, Microsoft, Notion, Coda | SWE, Frontend, Real-time | [Google Research](https://research.google/pubs/pub44830/), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
+| 25 | Design a Stock Trading System | High | Robinhood, Intuit, Citadel, JPMorgan | SWE, Financial, Real-time | [Robinhood Engineering Blog](https://robinhood.engineering/), [System Design Interview Vol 1](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF) |
 
-## Interview Tips for System Design
+## How to Prepare for System Design Interviews
 
-1. **Clarify Requirements**: Begin by asking questions to understand exactly what you need to design.
-2. **Define Scope**: Establish what's in and out of scope for the discussion.
-3. **High-Level Architecture**: Start with a high-level design before diving into details.
-4. **Focus on Trade-offs**: Discuss the pros and cons of your design choices.
-5. **Consider Scale**: Always think about how your system would scale to millions of users.
-6. **Data Model**: Define a clear data model with appropriate relationships.
-7. **Be Pragmatic**: Use existing technologies and patterns rather than inventing new ones.
+### Framework for Approaching System Design Questions
+
+Follow this structured approach to tackle system design problems effectively:
+
+1. **Clarify Requirements (3-5 minutes)**
+   - Functional requirements (what the system should do)
+   - Non-functional requirements (scale, performance, latency, reliability)
+   - Ask clarifying questions to narrow down the scope
+
+2. **High-Level Design (10-15 minutes)**
+   - Draw the major components and their connections
+   - Identify the core services and subsystems
+   - Discuss data flow between components
+
+3. **Deep Dive (15-20 minutes)**
+   - Pick 2-3 key components to detail further
+   - Discuss database schema, API design, algorithms
+   - Address potential bottlenecks and their solutions
+
+4. **Scaling & Optimization (5-10 minutes)**
+   - Discuss how to scale the system (horizontal vs. vertical)
+   - Propose optimizations for performance and reliability
+   - Consider caching strategies, load balancing, etc.
+
+5. **Wrap-up (3-5 minutes)**
+   - Summarize your approach
+   - Discuss additional considerations or improvements
+   - Reflect on trade-offs made in your design
+
+### Key Topics to Study
+
+To prepare thoroughly for system design interviews, ensure you understand these fundamental concepts:
+
+1. **Scalability Fundamentals**
+   - Horizontal vs. Vertical scaling
+   - Load balancing techniques
+   - Database sharding and partitioning
+
+2. **High Availability & Reliability**
+   - Redundancy and replication
+   - Failover strategies
+   - Disaster recovery
+
+3. **Performance Optimization**
+   - Caching strategies (CDN, in-memory, database)
+   - Content delivery optimization
+   - Read/write optimizations
+
+4. **Data Storage**
+   - SQL vs. NoSQL databases
+   - Data partitioning strategies
+   - Storage hierarchies (hot/warm/cold)
+
+5. **Communication Patterns**
+   - REST API design
+   - Synchronous vs. asynchronous communication
+   - Pub/Sub models
+   - Websockets & real-time communication
+
+6. **Monitoring & Error Handling**
+   - Metrics and logging
+   - Alerting systems
+   - Graceful degradation
 
 ## Company-Specific Focus Areas
 
-- **Google**: Search systems, distributed computing, scalability
-- **Meta**: Social networks, content delivery, real-time systems
-- **Amazon**: E-commerce, inventory systems, recommendation engines
-- **Microsoft**: Enterprise software, collaboration tools, cloud infrastructure
-- **Apple**: User experience, privacy-focused design, device integration
-- **Netflix**: Content delivery, recommendation systems, A/B testing
-- **OpenAI**: ML systems, content moderation, large-scale inference
-- **Tesla**: Real-time systems, sensor data processing, autonomous features
-- **Rippling**: HR systems, identity management, enterprise integrations
-- **Salesforce**: CRM systems, multi-tenancy, enterprise security
+Different companies tend to emphasize certain aspects of system design in their interviews:
+
+- **Google**: Scalability, distributed systems, and search-related components
+- **Amazon**: Highly available systems, microservices, and AWS infrastructure
+- **Microsoft**: API design, scalable architecture, and integration with Microsoft services
+- **Meta**: Social graph systems, content delivery, and real-time features
+- **Netflix**: Video streaming, recommendation engines, and global content delivery
+- **Uber/Lyft**: Location services, real-time matching, and distributed systems
+- **OpenAI/Anthropic**: ML infrastructure, model serving, and scaling AI systems
+- **Financial Companies** (Stripe, PayPal): Security, consistency, and transaction processing
+
+## Resources for Further Learning
+
+- [System Design Primer](https://github.com/donnemartin/system-design-primer)
+- [Grokking the System Design Interview](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers)
+- [System Design Interview: An Insider's Guide](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF)
+- [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+- [High Scalability Blog](http://highscalability.com/)
+- [Company Engineering Blogs](https://github.com/kilimchoi/engineering-blogs) (great for real-world architecture)
 
 ---
 
-## 💫 Connect With Me! 💫
+<div align="center">
 
-If you found this guide helpful, please consider following me on:
+### Connect With Me
+
+If you found this resource helpful, please consider following me:
 
 - **GitHub**: [@ombharatiya](https://github.com/ombharatiya)
 - **Twitter**: [@ombharatiya](https://twitter.com/ombharatiya)
 - **LinkedIn**: [ombharatiya](https://linkedin.com/in/ombharatiya)
 
-I regularly share more tech interview preparation resources, coding tips, and career advice for developers aiming for top tech companies. Your support means a lot! ⭐
+I regularly share tech interview resources, system design concepts, and career advice for engineers. Your support helps keep these resources updated!
 
-**Got questions or suggestions?** Feel free to reach out or contribute to this repository.
+</div>
 
 ---
 
