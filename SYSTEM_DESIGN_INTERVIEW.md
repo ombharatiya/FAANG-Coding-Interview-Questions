@@ -51,93 +51,193 @@ This table presents 25 essential system design problems that are frequently aske
 | 24 | Design a Real-time Collaboration Editor (like Google Docs) | High | Google, Microsoft, Notion, Coda | SWE, Frontend, Real-time | [Google Research](https://research.google/pubs/pub44830/), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
 | 25 | Design a Stock Trading System | High | Robinhood, Intuit, Citadel, JPMorgan | SWE, Financial, Real-time | [Robinhood Engineering Blog](https://robinhood.engineering/), [System Design Interview Vol 1](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF) |
 
-## How to Prepare for System Design Interviews
+## Latest System Design Questions for 2025
 
-### Framework for Approaching System Design Questions
+The system design landscape is rapidly evolving with new technologies and architectural patterns. Here are the most recent system design problems being asked in 2025 interviews at top tech companies:
 
-Follow this structured approach to tackle system design problems effectively:
+| # | Problem | Complexity | Companies | Roles | Key Considerations |
+|---|---------|------------|-----------|-------|-------------------|
+| 1 | Design a Multi-Agent AI Orchestration System | Very High | OpenAI, Microsoft, Google, Anthropic | SWE-AI, ML Infra | Coordination protocols, safety mechanisms, observability, task delegation |
+| 2 | Design an Edge Computing Platform for IoT | High | AWS, Google, Microsoft, Tesla | Cloud, IoT, Edge | Local processing, sync strategies, bandwidth optimization, hardware constraints |
+| 3 | Design a Privacy-Preserving Analytics System | High | Apple, Meta, Google, Snap | Privacy, Data | Differential privacy, homomorphic encryption, federated analytics, compliance |
+| 4 | Design a Real-time AI-assisted Coding Platform | High | GitHub, Microsoft, Google, JetBrains | SWE, Developer Tools | LLM integration, IDE extensions, model latency, context management |
+| 5 | Design a Serverless Data Pipeline System | Medium | AWS, Google, Snowflake, Databricks | Data, Cloud | Event-driven processing, cost optimization, scaling, observability |
+| 6 | Design a Voice-First Operating System | Very High | Amazon, Google, Apple, Meta | OS, Voice AI | Natural language understanding, ambient computing, privacy, context awareness |
+| 7 | Design a Decentralized Social Network | High | Block, Consensys, Discord | Blockchain, Social | Content distribution, moderation, identity management, consensus mechanisms |
+| 8 | Design a Spatial Computing OS | Very High | Apple, Meta, Microsoft, Magic Leap | AR/VR, OS | 3D rendering, gesture recognition, spatial mapping, device limitations |
+| 9 | Design a Low-latency Global ML Inference System | High | OpenAI, Google, Anthropic, Meta | ML Infra, Cloud | Load balancing, model serving, region optimization, model quantization |
+| 10 | Design a Quantum Computing Interface | Very High | IBM, Google, Microsoft, Amazon | Quantum, Cloud | Quantum-classical integration, error correction, abstraction layers |
 
-1. **Clarify Requirements (3-5 minutes)**
-   - Functional requirements (what the system should do)
-   - Non-functional requirements (scale, performance, latency, reliability)
-   - Ask clarifying questions to narrow down the scope
+### Emerging System Design Trends in 2025
 
-2. **High-Level Design (10-15 minutes)**
-   - Draw the major components and their connections
-   - Identify the core services and subsystems
-   - Discuss data flow between components
+Several key trends are shaping system design interviews in 2025:
 
-3. **Deep Dive (15-20 minutes)**
-   - Pick 2-3 key components to detail further
-   - Discuss database schema, API design, algorithms
-   - Address potential bottlenecks and their solutions
+1. **AI Integration at Scale**
+   - Systems now commonly incorporate AI/ML components
+   - Focus on handling model latency and unpredictability
+   - Managing prompt engineering and context at scale
+   - Robust handling of AI hallucinations and errors
 
-4. **Scaling & Optimization (5-10 minutes)**
-   - Discuss how to scale the system (horizontal vs. vertical)
-   - Propose optimizations for performance and reliability
-   - Consider caching strategies, load balancing, etc.
+2. **Multi-Agent Architectures**
+   - Systems with multiple specialized AI agents working together
+   - Orchestration and coordination mechanisms
+   - Conflict resolution between agents
+   - Safety guarantees and monitoring
 
-5. **Wrap-up (3-5 minutes)**
-   - Summarize your approach
-   - Discuss additional considerations or improvements
-   - Reflect on trade-offs made in your design
+3. **Edge-Cloud Hybrid Systems**
+   - Processing sensitive data at the edge
+   - Intelligent workload distribution
+   - Handling intermittent connectivity
+   - Resource-constrained optimization
 
-### Key Topics to Study
+4. **Privacy-Preserving Architectures**
+   - Federated learning and analytics
+   - Differential privacy implementations
+   - Zero-knowledge proofs for verification
+   - Data minimization and anonymization
 
-To prepare thoroughly for system design interviews, ensure you understand these fundamental concepts:
+5. **Real-time Collaboration at Scale**
+   - Global distributed collaboration
+   - Low-latency conflict resolution
+   - Eventual consistency with immediate feedback
+   - Multi-modal interaction (text, voice, visual)
 
-1. **Scalability Fundamentals**
-   - Horizontal vs. Vertical scaling
-   - Load balancing techniques
-   - Database sharding and partitioning
+## Advanced System Design Concepts for 2025
 
-2. **High Availability & Reliability**
-   - Redundancy and replication
-   - Failover strategies
-   - Disaster recovery
+To excel in 2025 system design interviews, candidates should be familiar with these advanced concepts:
 
-3. **Performance Optimization**
-   - Caching strategies (CDN, in-memory, database)
-   - Content delivery optimization
-   - Read/write optimizations
+### 1. Serverless and Function-as-a-Service Evolution
 
-4. **Data Storage**
-   - SQL vs. NoSQL databases
-   - Data partitioning strategies
-   - Storage hierarchies (hot/warm/cold)
+The serverless paradigm has evolved beyond simple functions to complex workflows:
 
-5. **Communication Patterns**
-   - REST API design
-   - Synchronous vs. asynchronous communication
-   - Pub/Sub models
-   - Websockets & real-time communication
+- **Stateful Serverless**: Managing state in serverless architectures
+- **Serverless Workflows**: Orchestration of complex function chains
+- **Cold Start Optimization**: Techniques to minimize cold start latency
+- **FinOps for Serverless**: Cost optimization strategies for serverless at scale
 
-6. **Monitoring & Error Handling**
-   - Metrics and logging
-   - Alerting systems
-   - Graceful degradation
+### 2. AI Infrastructure Design
 
-## Company-Specific Focus Areas
+With AI becoming central to most systems, understanding AI infrastructure is critical:
 
-Different companies tend to emphasize certain aspects of system design in their interviews:
+- **Inference Optimization**: Techniques like quantization, batching, and KV caching
+- **Model Lifecycle Management**: Versioning, A/B testing, and progressive rollouts
+- **Prompt Engineering Infrastructure**: Systems for managing and optimizing prompts
+- **Multi-Modal Integration**: Combining text, image, audio, and video models
 
-- **Google**: Scalability, distributed systems, and search-related components
-- **Amazon**: Highly available systems, microservices, and AWS infrastructure
-- **Microsoft**: API design, scalable architecture, and integration with Microsoft services
-- **Meta**: Social graph systems, content delivery, and real-time features
-- **Netflix**: Video streaming, recommendation engines, and global content delivery
-- **Uber/Lyft**: Location services, real-time matching, and distributed systems
-- **OpenAI/Anthropic**: ML infrastructure, model serving, and scaling AI systems
-- **Financial Companies** (Stripe, PayPal): Security, consistency, and transaction processing
+### 3. Distributed Systems Resilience
 
-## Resources for Further Learning
+Modern distributed systems require sophisticated resilience strategies:
 
-- [System Design Primer](https://github.com/donnemartin/system-design-primer)
-- [Grokking the System Design Interview](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers)
-- [System Design Interview: An Insider's Guide](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF)
-- [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
-- [High Scalability Blog](http://highscalability.com/)
-- [Company Engineering Blogs](https://github.com/kilimchoi/engineering-blogs) (great for real-world architecture)
+- **Chaos Engineering**: Designing systems that withstand unexpected failures
+- **Multi-Region Recovery**: Cross-region failover and replication strategies
+- **Gray Failures**: Detecting and handling partial system failures
+- **Backpressure Mechanisms**: Elegant degradation under load
+
+### 4. Data Mesh Architectures
+
+Data architecture has evolved from centralized lakes to distributed ownership:
+
+- **Domain-Oriented Ownership**: Distributing data ownership to domain experts
+- **Self-Serve Data Platforms**: Enabling teams to consume data without bottlenecks
+- **Federated Governance**: Maintaining consistency while distributing control
+- **Data Contracts**: Establishing clear interfaces between data producers and consumers
+
+### 5. Event-Driven Systems
+
+Event-driven architecture has become the backbone of reactive, scalable systems:
+
+- **Event Sourcing at Scale**: Practical implementations for large-scale systems
+- **CQRS Patterns**: Separating read and write models for performance
+- **Stream Processing**: Real-time analytics and processing of event streams
+- **Event Schema Evolution**: Managing changes to event structures over time
+
+## Updated Interview Framework for 2025
+
+The traditional system design interview framework has evolved to better assess candidates' ability to design modern systems:
+
+### 1. Problem Exploration (5 minutes)
+- Functional and non-functional requirements
+- Scale, performance, and reliability expectations
+- User profiles and access patterns
+- **New**: AI/ML integration requirements
+- **New**: Privacy and ethical considerations
+
+### 2. High-Level Architecture (10 minutes)
+- Core components and data flow
+- API design and interfaces
+- **New**: AI/ML component integration
+- **New**: Edge-cloud distribution strategy
+
+### 3. Component Deep Dive (15 minutes)
+- Detailed design of 2-3 critical components
+- Data models and schema design
+- **New**: AI model selection and integration
+- **New**: Privacy-preserving mechanisms
+
+### 4. Scaling and Optimization (10 minutes)
+- Horizontal vs. vertical scaling strategies
+- Caching and performance optimizations
+- **New**: AI inference optimization
+- **New**: Cost optimization strategies
+
+### 5. Operational Excellence (5 minutes)
+- Monitoring and observability
+- Deployment and rollback strategies
+- **New**: Explainability and debugging
+- **New**: Evolution and maintenance plans
+
+### 6. Tradeoff Discussion (5 minutes)
+- Explicit discussion of architectural tradeoffs
+- Alternative approaches considered
+- **New**: Ethical implications of design choices
+- **New**: Future-proofing considerations
+
+## Resources for 2025 System Design Preparation
+
+Here are the latest resources to prepare for system design interviews in 2025:
+
+1. **Books**
+   - "System Design for AI Engineers" (New for 2025)
+   - "Distributed Systems in the Age of AI" (Updated for 2025)
+   - "Edge Computing: Architectures, Applications and Technologies" (2024)
+   - "Designing Data-Intensive Applications" (Still relevant with 2025 updates)
+
+2. **Engineering Blogs**
+   - OpenAI System Design Blog
+   - Microsoft AI Architecture Patterns
+   - Google Cloud Architecture Center
+   - AWS Serverless Land
+   - Uber Engineering (Edge Computing section)
+
+3. **Courses and Platforms**
+   - "AI System Design Interviews" on Educative
+   - "Modern System Design for Software Engineers" (Updated for 2025)
+   - "EdgeComputing.io" - Specialized learning platform
+   - "AIInfrastructure.dev" - New practice platform
+
+## How to Stand Out in 2025 System Design Interviews
+
+To truly excel in system design interviews in 2025, demonstrate these differentiating qualities:
+
+1. **Balance Theoretical and Practical Knowledge**
+   - Explain theoretical concepts but ground them in practical implementation details
+   - Refer to real-world examples and case studies from industry
+
+2. **Showcase T-Shaped Knowledge**
+   - Demonstrate broad knowledge across multiple domains
+   - Show deep expertise in at least one critical area (AI, distributed systems, etc.)
+
+3. **Incorporate Emerging Technologies Judiciously**
+   - Know when to apply new technologies vs. traditional approaches
+   - Articulate clear reasoning for technology choices
+
+4. **Address Cross-Cutting Concerns**
+   - Proactively discuss security, privacy, and ethical considerations
+   - Show awareness of regulatory requirements like GDPR, CCPA, or AI Act
+
+5. **Demonstrate Systems Thinking**
+   - Consider how components interact and affect the whole system
+   - Anticipate emergent behaviors and failure modes
 
 ---
 
@@ -154,6 +254,156 @@ If you found this resource helpful, please consider following me:
 I regularly share tech interview resources, system design concepts, and career advice for engineers. Your support helps keep these resources updated!
 
 </div>
+
+---
+
+# Trending Coding Patterns for 2025
+
+Beyond system design, coding interviews remain a crucial part of the technical interview process at top tech companies. Here are the most important coding patterns and questions trending in 2025 interviews:
+
+## High-ROI Coding Patterns for 2025
+
+Focusing on these patterns will give you the highest return on investment for your interview preparation:
+
+### 1. Two Pointers Technique
+
+**Applications**: Arrays, strings, linked lists
+**Key Problems**:
+- Two Sum variations (three sum, four sum)
+- Container With Most Water
+- Trapping Rain Water
+- Palindrome verification
+- Removing duplicates
+
+**Example 2025 Question**:
+```
+Design an algorithm to find all unique quadruplets in an array that sum to a target, with O(n³) time complexity and optimized space usage.
+```
+
+### 2. Sliding Window
+
+**Applications**: Arrays, strings, hash tables
+**Key Problems**:
+- Maximum sum subarray of size K
+- Longest substring with K distinct characters
+- Minimum window substring
+- Longest substring without repeating characters
+
+**Example 2025 Question**:
+```
+Given a string and a pattern, find all start indices of pattern's anagrams in the string with optimal time and space complexity.
+```
+
+### 3. Tree & Graph Traversals (DFS/BFS)
+
+**Applications**: Binary trees, graphs, matrices
+**Key Problems**:
+- Path sum variations
+- Binary tree level order traversal
+- Course schedule (topological sort)
+- Number of islands
+- Word ladder
+
+**Example 2025 Question**:
+```
+Design an algorithm to find the shortest path between two nodes in a weighted graph where weights represent time, but some edges can only be traversed during specific time windows.
+```
+
+### 4. Binary Search Variations
+
+**Applications**: Sorted arrays, search space reduction
+**Key Problems**:
+- Search in rotated sorted array
+- Find first and last position of element
+- Median of two sorted arrays
+- Kth smallest element in a sorted matrix
+
+**Example 2025 Question**:
+```
+Design an algorithm to find the kth smallest element in a row-wise and column-wise sorted 2D array with optimal time complexity.
+```
+
+### 5. Dynamic Programming with Optimizations
+
+**Applications**: Optimization problems, counting problems
+**Key Problems**:
+- Longest increasing subsequence
+- Edit distance
+- Coin change
+- Unique paths
+- Knapsack problem variants
+
+**Example 2025 Question**:
+```
+Implement a space-optimized solution for the minimum cost to cut a rod into pieces of specific lengths, where each cut has a different cost.
+```
+
+### 6. Graph Algorithms (Advanced)
+
+**Applications**: Social networks, routing, scheduling
+**Key Problems**:
+- Network delay time
+- Minimum spanning tree
+- Strongly connected components
+- Shortest path algorithms (Dijkstra's, Bellman-Ford)
+
+**Example 2025 Question**:
+```
+Design an algorithm to find the most efficient way to connect multiple servers where connection costs vary based on data transfer rates and physical distance.
+```
+
+### 7. Interval Merging and Processing
+
+**Applications**: Calendar scheduling, resource allocation
+**Key Problems**:
+- Merge intervals
+- Insert interval
+- Meeting rooms
+- Non-overlapping intervals
+
+**Example 2025 Question**:
+```
+Implement an algorithm that can schedule optimal maintenance windows for a system with multiple components, each requiring different maintenance intervals.
+```
+
+## Latest Coding Questions at Top Companies (2025)
+
+| Company | Question | Difficulty | Pattern |
+|---------|----------|------------|---------|
+| Google | Design a time-based key-value store with versioning and queryable history | Hard | Hash Table + Binary Search |
+| Meta | Implement an algorithm to detect when a user's social feed should be refreshed based on friend activity patterns | Medium | Graph + Sliding Window |
+| Amazon | Design an inventory management system that optimizes for both space utilization and retrieval time | Hard | Heap + DP |
+| Microsoft | Implement a smart code autocomplete system that learns from user corrections | Hard | Trie + ML |
+| OpenAI | Design an algorithm to detect and rank the relevance of hallucinated content in an LLM output | Hard | NLP + DP |
+| Apple | Implement a privacy-preserving data structure for on-device analytics | Medium | Bloom Filter + Cryptography |
+| Netflix | Design a content recommendation system that balances user preferences with content diversity | Hard | Graph + Prioritization |
+| Uber | Optimize driver-to-rider matching in a dynamic environment with changing traffic conditions | Hard | Graph + Greedy |
+
+## Preparation Strategy for 2025
+
+1. **Master the Fundamentals**: Ensure you have a solid understanding of data structures, algorithms, and complexity analysis.
+
+2. **Pattern Recognition**: Group problems by patterns rather than by data structures. This helps apply solutions across different contexts.
+
+3. **Practice Optimization**: Don't stop at a working solution; focus on optimizing time and space complexity.
+
+4. **Mock Interviews**: Schedule regular mock interviews to simulate real interview conditions.
+
+5. **Verbalize Your Thinking**: Practice explaining your thought process while coding.
+
+6. **Learn from Solutions**: After solving a problem, study multiple approaches to understand different perspectives.
+
+7. **Consistent Practice**: Aim for consistent daily practice rather than cramming.
+
+## Advanced Topics to Master in 2025
+
+- **Quantum Algorithm Basics**: Understanding quantum computing principles is becoming relevant for specific roles.
+- **AI/ML Algorithms**: Familiarity with fundamental ML algorithms and data structures.
+- **Distributed Systems Coding**: Problems involving distributed data structures and algorithms.
+- **Blockchain Data Structures**: Understanding merkle trees, cryptographic hashes, and consensus algorithms.
+- **Edge Computing Optimizations**: Algorithms optimized for resource-constrained environments.
+
+By focusing on these patterns and topics, you'll be well-prepared for coding interviews at top tech companies in 2025.
 
 ---
 
