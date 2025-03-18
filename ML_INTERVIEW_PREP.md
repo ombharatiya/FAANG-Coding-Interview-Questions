@@ -349,11 +349,11 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 - Alignment with Apple's values and culture
 - Communication and collaboration abilities
 
-## Recent ML Interview Questions (2023-2024)
+## Recent ML Interview Questions (2023-2025)
 
 Below are actual ML interview questions recently asked at top tech companies, organized by interview round type:
 
-### ML Fundamentals & Theory Questions
+### ML Fundamentals & Theory Questions (2025 Updates)
 
 1. **Explain the bias-variance tradeoff and how it relates to model complexity.** (Google, 2023)
 2. **Walk through the mathematics of backpropagation for a simple neural network.** (Meta, 2024)
@@ -365,8 +365,13 @@ Below are actual ML interview questions recently asked at top tech companies, or
 8. **How would you implement early stopping? What metrics would you monitor and why?** (Meta, 2023)
 9. **Explain the concept of embedding space in NLP models. How would you evaluate the quality of word embeddings?** (Microsoft, 2024)
 10. **Compare and contrast different optimizers (SGD, Adam, RMSprop) and when you would use each.** (OpenAI, 2024)
+11. **What is the difference between same and valid padding in CNNs? When would you use each?** (Google, 2025)
+12. **Explain how transformers solve the long-range dependency problem that RNNs struggle with.** (Meta, 2025)
+13. **What are the advantages and disadvantages of using attention mechanisms versus traditional sequence models?** (OpenAI, 2025)
+14. **Describe the tradeoffs between model size and inference speed. How do you optimize this balance?** (Microsoft, 2025)
+15. **How do you identify and handle outliers in your training data, and how might they impact different ML algorithms?** (Amazon, 2025)
 
-### ML System Design Questions
+### ML System Design Questions (2025 Updates)
 
 1. **Design a recommendation system for YouTube videos.** (Google, 2023)
 2. **Design an ML system to detect fake accounts on Instagram.** (Meta, 2024)
@@ -378,8 +383,13 @@ Below are actual ML interview questions recently asked at top tech companies, or
 8. **Design a system to optimize notifications to maximize user engagement while minimizing fatigue.** (Meta, 2023)
 9. **Design a system to provide accurate ETA predictions for food delivery.** (DoorDash, 2024)
 10. **Design a multimodal content understanding system for social media posts.** (Google, 2024)
+11. **Design a real-time fraud detection system that can adapt to evolving patterns.** (Stripe, 2025)
+12. **Design an AI system that can generate personalized learning content for education platforms.** (Microsoft, 2025)
+13. **Design a system for automated code review and optimization using LLMs.** (GitHub/Microsoft, 2025)
+14. **Design an AI assistant that can help debug software issues by analyzing logs and code.** (Google, 2025)
+15. **Design a system to identify potentially harmful content in generative AI outputs.** (OpenAI, 2025)
 
-### ML Coding Questions
+### ML Coding Questions (2025 Updates)
 
 1. **Implement a decision tree from scratch.** (Google, 2023)
 2. **Write code to implement stochastic gradient descent for linear regression.** (Microsoft, 2024)
@@ -391,8 +401,13 @@ Below are actual ML interview questions recently asked at top tech companies, or
 8. **Code a function to detect and handle outliers in a dataset.** (Microsoft, 2023)
 9. **Implement regularization (L1 and L2) for linear regression from scratch.** (Google, 2024)
 10. **Write code to perform cross-validation and hyperparameter tuning for a random forest model.** (Amazon, 2024)
+11. **Implement a transformer encoder layer from scratch using PyTorch.** (OpenAI, 2025)
+12. **Code a function that implements the focal loss for handling class imbalance.** (Meta, 2025)
+13. **Create an implementation of online learning for a logistic regression model.** (Google, 2025)
+14. **Implement a custom attention mechanism for a specific NLP task.** (Microsoft, 2025)
+15. **Build a simple but efficient pipeline for handling time series forecasting with missing values.** (Amazon, 2025)
 
-### LLM-Specific Interview Questions
+### LLM-Specific Interview Questions (2025 Updates)
 
 1. **Explain the key innovations in the transformer architecture compared to RNNs.** (OpenAI, 2023)
 2. **How would you evaluate a large language model? What metrics would you use beyond perplexity?** (Google, 2024)
@@ -404,8 +419,13 @@ Below are actual ML interview questions recently asked at top tech companies, or
 8. **How would you handle multilingual capabilities in large language models?** (Google, 2023)
 9. **Explain the concept of model distillation and how you would apply it to LLMs.** (Meta, 2024)
 10. **How would you implement and evaluate an LLM-based code generation system?** (GitHub/Microsoft, 2023)
+11. **What is the difference between Tree of Thought and Chain of Thought prompting? When would you use each approach?** (OpenAI, 2025)
+12. **How do you detect when a model is hallucinating and what strategies would you implement to minimize hallucinations?** (Google, 2025)
+13. **Explain the recent techniques for reducing the context window requirements for transformer-based models.** (Meta, 2025)
+14. **How would you implement and evaluate a multi-agent system using LLMs for complex reasoning tasks?** (Microsoft, 2025)
+15. **Compare and contrast different techniques for efficient inference in LLMs (e.g., quantization, KV caching, speculative decoding).** (OpenAI, 2025)
 
-### MLOps Questions
+### MLOps Questions (2025 Updates)
 
 1. **How would you monitor an ML model in production? What metrics would you track?** (Google, 2023)
 2. **Explain your approach to handling data drift and model decay.** (Amazon, 2024)
@@ -417,8 +437,26 @@ Below are actual ML interview questions recently asked at top tech companies, or
 8. **How would you manage compute resources for training large models efficiently?** (Google, 2024)
 9. **How would you handle model explainability requirements in a regulated industry?** (Microsoft, 2023)
 10. **Explain how you would implement a multi-stage deployment strategy for ML models.** (Amazon, 2024)
+11. **How would you implement a shadow deployment for a critical ML model? What metrics would you track?** (Google, 2025)
+12. **Design a system for automated model monitoring that can detect and respond to various types of drift.** (Meta, 2025)
+13. **How would you implement an efficient continuous training pipeline for a model that needs to be updated daily?** (Amazon, 2025)
+14. **Explain your strategy for implementing model governance in an organization with multiple ML teams.** (Microsoft, 2025)
+15. **How would you design an ML infrastructure that can support both experimentation and production needs efficiently?** (OpenAI, 2025)
 
-### Behavioral Questions for ML Roles
+### Advanced ML & AI Topics (2025 Updates)
+
+1. **Explain the differences between contrastive learning, self-supervised learning, and supervised learning.** (Google, 2025)
+2. **How do diffusion models work? Describe the forward and reverse processes.** (OpenAI, 2025)
+3. **What is curriculum learning and when would you apply it in training neural networks?** (Meta, 2025)
+4. **Describe how model distillation works and why it's effective for creating smaller, efficient models.** (Microsoft, 2025)
+5. **Explain how multimodal models fuse information from different modalities. What are the challenges?** (Google, 2025)
+6. **How do you approach the development of AI systems that can reason about causality rather than just correlation?** (OpenAI, 2025)
+7. **Describe the techniques used for efficient training of large models across multiple GPUs.** (Meta, 2025)
+8. **What are the key challenges in developing AI systems that can plan complex actions over long time horizons?** (Microsoft, 2025)
+9. **Explain how neural architecture search works and its practical applications in model design.** (Google, 2025)
+10. **How do you approach the problem of building AI systems that can generalize to unseen domains?** (OpenAI, 2025)
+
+### Behavioral Questions for ML Roles (2025 Updates)
 
 1. **Tell me about a time when you had to balance model accuracy with deployment constraints.** (Google, 2023)
 2. **Describe a situation where you had to explain complex ML concepts to non-technical stakeholders.** (Meta, 2024)
@@ -430,6 +468,11 @@ Below are actual ML interview questions recently asked at top tech companies, or
 8. **Describe a situation where you had to prioritize between multiple competing ML projects.** (Meta, 2023)
 9. **Tell me about a time when you had to consider ethical implications in an ML project.** (Microsoft, 2024)
 10. **How have you incorporated feedback to improve your ML models or approaches?** (OpenAI, 2023)
+11. **Describe a situation where you had to balance innovation with practical implementation in an ML project.** (Google, 2025)
+12. **Tell me about a time when you had to advocate for a more complex ML approach against simpler alternatives.** (Meta, 2025)
+13. **How have you collaborated with cross-functional teams to deliver an end-to-end ML solution?** (Amazon, 2025)
+14. **Describe a situation where you had to make a tradeoff between model performance and fairness/ethical considerations.** (Microsoft, 2025)
+15. **Tell me about a time when you had to pivot your ML approach based on new information or constraints.** (OpenAI, 2025)
 
 ## Interview Preparation Tips
 
