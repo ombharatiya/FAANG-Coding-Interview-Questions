@@ -1,26 +1,41 @@
-# Coding Interview Questions
+# FAANG Coding Interview Preparation
 
 <div align="center">
+  <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
+    <img src="https://img.shields.io/badge/🚀%20FAANG%20Interview%20Prep-000000?style=for-the-badge" alt="FAANG Interview Prep" />
+  </a>
   
-![GitHub stars](https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=social)
-![GitHub forks](https://img.shields.io/github/forks/ombharatiya/FAANG-Coding-Interview-Questions?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/ombharatiya/FAANG-Coding-Interview-Questions?style=social)
-
+  <p></p>
+  
+  <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
+    <img src="https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=for-the-badge&color=yellow" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/network/members">
+    <img src="https://img.shields.io/github/forks/ombharatiya/FAANG-Coding-Interview-Questions?style=for-the-badge&color=orange" alt="GitHub forks" />
+  </a>
+  <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/watchers">
+    <img src="https://img.shields.io/github/watchers/ombharatiya/FAANG-Coding-Interview-Questions?style=for-the-badge&color=blue" alt="GitHub watchers" />
+  </a>
+  <a href="https://github.com/ombharatiya">
+    <img src="https://img.shields.io/github/followers/ombharatiya?label=Follow%20%40ombharatiya&style=for-the-badge&color=brightgreen" alt="GitHub followers" />
+  </a>
+  <a href="https://twitter.com/ombharatiya">
+    <img src="https://img.shields.io/twitter/follow/ombharatiya?style=for-the-badge&color=1DA1F2&logo=twitter" alt="Twitter Follow" />
+  </a>
 </div>
 
 <div align="center">
+  <h3>🚨 NEW: Check out <a href="./SYSTEM_DESIGN_INTERVIEW.md">System Design Interview Guide</a> and <a href="./FAANG-Recent-Questions.md">Most Recently Asked FAANG Questions</a> including OpenAI and Tesla! 🚨</h3>
   
-## 🚨 NEW: Check out [Most Recently Asked FAANG Questions](./FAANG-Recent-Questions.md) including OpenAI and Tesla! 🚨
-
+  <p><i>A curated collection of coding and system design questions asked at top tech companies. Helping you ace your next interview!</i></p>
 </div>
-
-> Click :star: if you like the project. Pull Requests are highly appreciated. Follow me [@OmBharatiya](https://twitter.com/ombharatiya) for technical updates.
 
 ## Resources
 
 - [Top 75 LeetCode Questions to Crack The Coding Interviews](./TopLeetCodeProblems.md)
 - [Python Programming Language Resources to Learn](./PythonResources.md)
 - [Most Recently Asked Questions at FAANG and other top companies](./FAANG-Recent-Questions.md)
+- [System Design Interview Guide](./SYSTEM_DESIGN_INTERVIEW.md)
 
 ## Table of Contents
 
@@ -343,3 +358,23 @@ This project is licensed under the GPL-3.0 license - see the [LICENSE](LICENSE) 
 ### If you found this resource helpful, give it a ⭐ and share it with others!
 
 </div>
+
+## System Design Interview Questions
+
+Looking for system design interview questions? Check out our comprehensive guide:
+
+[System Design Interview Guide](SYSTEM_DESIGN_INTERVIEW.md) - A curated list of the top 25 must-do system design problems for tech interviews with complexity ratings and company-specific information.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
+
+## Connect With Me
+
+If you found this repository helpful, please consider following me:
+
+- **GitHub**: [@ombharatiya](https://github.com/ombharatiya)
+- **Twitter**: [@ombharatiya](https://twitter.com/ombharatiya)
+- **LinkedIn**: [ombharatiya](https://linkedin.com/in/ombharatiya)
+
+I regularly share tech interview preparation resources, coding tips, and career advice for developers aiming for top tech companies. Your support means a lot! ⭐
