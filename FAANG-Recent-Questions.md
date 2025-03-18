@@ -1,6 +1,6 @@
 # FAANG Most Recently Asked Coding Interview Questions
 
-> This repository contains a comprehensive list of the most recently asked coding interview questions at FAANG (Facebook/Meta, Amazon, Apple, Netflix, Google) companies. Questions are organized by company and topic to help you prepare effectively.
+> This repository contains a comprehensive list of the most recently asked coding interview questions at FAANG (Facebook/Meta, Amazon, Apple, Netflix, Google) companies as well as other top tech companies like OpenAI and Tesla. Questions are organized by company and topic to help you prepare effectively.
 
 ## Table of Contents
 
@@ -28,6 +28,14 @@
   - [Trees and Graphs](#google-trees-and-graphs)
   - [Dynamic Programming](#google-dynamic-programming)
   - [Special Topics](#google-special-topics)
+- [OpenAI](#openai)
+  - [Machine Learning](#openai-machine-learning)
+  - [Algorithms](#openai-algorithms)
+  - [System Design](#openai-system-design)
+- [Tesla](#tesla)
+  - [Algorithms](#tesla-algorithms)
+  - [System Design](#tesla-system-design)
+  - [Embedded Systems](#tesla-embedded-systems)
 - [Topic-wise Questions](#topic-wise-questions)
   - [Array Manipulation](#array-manipulation)
   - [String Manipulation](#string-manipulation)
@@ -35,6 +43,7 @@
   - [Trees and Graphs](#trees-and-graphs)
   - [Dynamic Programming](#dynamic-programming)
   - [System Design](#system-design)
+  - [Machine Learning](#machine-learning)
 
 ## Meta (Facebook)
 
@@ -270,6 +279,83 @@
 | 5 | [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k) | Hard |
 | 6 | [Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers) | Medium |
 
+## OpenAI
+
+### OpenAI Machine Learning
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [K-Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium |
+| 2 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium |
+| 3 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Medium |
+| 4 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard |
+| 5 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard |
+| 6 | [Word Break](https://leetcode.com/problems/word-break) | Medium |
+| 7 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium |
+| 8 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium |
+
+### OpenAI Algorithms
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy |
+| 2 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | Hard |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium |
+| 4 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard |
+| 5 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium |
+| 6 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium |
+| 7 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard |
+| 8 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium |
+
+### OpenAI System Design
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system) | Hard |
+| 2 | [Design Twitter](https://leetcode.com/problems/design-twitter) | Medium |
+| 3 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | Hard |
+| 4 | [Design Log Storage System](https://leetcode.com/problems/design-log-storage-system) | Medium |
+| 5 | [Design Snake Game](https://leetcode.com/problems/design-snake-game) | Medium |
+| 6 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium |
+
+## Tesla
+
+### Tesla Algorithms
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy |
+| 2 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium |
+| 3 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium |
+| 4 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium |
+| 5 | [Word Search](https://leetcode.com/problems/word-search) | Medium |
+| 6 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium |
+| 7 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy |
+| 8 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium |
+
+### Tesla System Design
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium |
+| 2 | [Min Stack](https://leetcode.com/problems/min-stack) | Medium |
+| 3 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard |
+| 4 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy |
+| 5 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | Medium |
+
+### Tesla Embedded Systems
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Count Primes](https://leetcode.com/problems/count-primes) | Medium |
+| 2 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Easy |
+| 3 | [Reverse Bits](https://leetcode.com/problems/reverse-bits) | Easy |
+| 4 | [Single Number](https://leetcode.com/problems/single-number) | Easy |
+| 5 | [Counting Bits](https://leetcode.com/problems/counting-bits) | Medium |
+| 6 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium |
+| 7 | [Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths) | Medium |
+| 8 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | Medium |
+
 ## Topic-wise Questions
 
 ### Array Manipulation
@@ -341,4 +427,15 @@
 | 3 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Amazon |
 | 4 | [Min Stack](https://leetcode.com/problems/min-stack) | Medium | Amazon |
 | 5 | [Design Twitter](https://leetcode.com/problems/design-twitter) | Medium | Amazon |
-| 6 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | Hard | Amazon | 
+| 6 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | Hard | Amazon |
+
+### Machine Learning
+
+| No. | Question | Difficulty | Companies |
+| --- | -------- | ---------- | --------- |
+| 1 | [K-Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium | OpenAI, Google |
+| 2 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | OpenAI, Google, Amazon |
+| 3 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard | OpenAI, Google, Amazon |
+| 4 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | OpenAI, Meta |
+| 5 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system) | Hard | OpenAI, Amazon, Netflix |
+| 6 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | OpenAI, Google, Meta | 
