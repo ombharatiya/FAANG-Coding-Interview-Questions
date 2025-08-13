@@ -59,23 +59,6 @@
 ### 💻 Programming Resources
 - [Python Programming Language Resources to Learn](./PythonResources.md)
 
-## 🚀 Quick Start Guide
-
-### For Beginners (0-3 months preparation)
-1. Start with **[Blind 75](./Blind-75.md)** - Master the fundamentals
-2. Practice 2-3 problems daily with focus on understanding patterns
-3. Review [Python Resources](./PythonResources.md) for implementation tips
-
-### For Intermediate (1-6 months preparation)  
-1. Complete **[NeetCode 150](./NeetCode-150.md)** - Comprehensive coverage
-2. Focus on company-specific questions from [Recent FAANG Questions](./FAANG-Recent-Questions.md)
-3. Start practicing [System Design](./SYSTEM_DESIGN_INTERVIEW.md) concepts
-
-### For Advanced (Targeting specific companies)
-1. Review [Company-Specific Questions](#table-of-contents) below
-2. Practice [ML Interview Questions](./ML_INTERVIEW_PREP.md) for ML roles
-3. Study latest [AI/LLM Research Papers](./LLM_PAPERS_CHEATSHEET.md)
-
 ## Table of Contents
 
 | SNo. | Contents |
@@ -322,46 +305,21 @@
 
 ---
 
-## About
+## About This Repository
 
-A comprehensive collection of coding and system design questions for technical interview preparation. This repository features:
+**The ultimate collection for technical interview success!** This repository provides comprehensive coverage of:
 
-- **NeetCode 150**: 150 essential problems curated by a Google engineer
-- **Blind 75**: The original and most famous LeetCode preparation list  
-- **Latest FAANG Questions**: Recent questions from Meta, Amazon, Apple, Netflix, Google, and emerging tech companies
-- **Company-Specific Sections**: Targeted preparation for specific companies including Databricks
-- **System Design Guide**: Complete system design interview preparation
-- **AI/ML Resources**: Machine learning and LLM interview preparation
+- **400+ Curated Problems** across 15+ top tech companies
+- **NeetCode 150** & **Blind 75** - Industry-standard problem sets
+- **Latest 2025 Questions** from FAANG and emerging companies  
+- **System Design** interview preparation
+- **AI/ML Resources** for specialized roles
 
-Perfect for preparing for interviews at FAANG, unicorn startups, and top tech companies in 2025!
-
-## 📊 Repository Statistics
-
-| 📈 **Metric** | 🔢 **Count** | 📝 **Description** |
-|---------------|--------------|-------------------|
-| **Total Problems** | 400+ | Comprehensive problem coverage |
-| **Companies Covered** | 15+ | FAANG + emerging tech companies |
-| **Problem Categories** | 20+ | All major algorithmic patterns |
-| **Study Plans** | 3 | Blind 75, NeetCode 150, Custom |
-| **Difficulty Levels** | Easy/Medium/Hard | Balanced difficulty distribution |
-| **Success Rate** | 85%+ | Based on community feedback |
-
-## 🆕 What's New in 2025 Edition
-
-- ✨ **NeetCode 150**: Complete structured guide with 150 essential problems
-- 🎯 **Blind 75**: The legendary problem set with detailed explanations  
-- 🏢 **Databricks Section**: New company-specific interview questions
-- 🔄 **Meta Rebrand**: Updated Facebook references throughout
-- 📊 **Enhanced Structure**: Better organization and navigation
-- 🤖 **AI Focus**: Updated ML/AI interview questions and LLM papers
-- 🎨 **Visual Improvements**: Better formatting and user experience
-- 📈 **2025 Trends**: Latest interview patterns and question types
+Perfect for FAANG, unicorns, and top tech interviews!
 
 ## System Design Interview Questions
 
-Looking for system design interview questions? Check out our comprehensive guide:
-
-[System Design Interview Guide](SYSTEM_DESIGN_INTERVIEW.md) - A curated list of the top 25 must-do system design problems for tech interviews with complexity ratings and company-specific information.
+📚 **[Complete System Design Interview Guide](SYSTEM_DESIGN_INTERVIEW.md)** - Top 25 system design problems with complexity ratings and company tags.
 
 ## Contributing
 
