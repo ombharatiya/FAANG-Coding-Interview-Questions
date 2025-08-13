@@ -59,23 +59,6 @@
 ### 💻 Programming Resources
 - [Python Programming Language Resources to Learn](./PythonResources.md)
 
-## 🚀 Quick Start Guide
-
-### For Beginners (0-3 months preparation)
-1. Start with **[Blind 75](./Blind-75.md)** - Master the fundamentals
-2. Practice 2-3 problems daily with focus on understanding patterns
-3. Review [Python Resources](./PythonResources.md) for implementation tips
-
-### For Intermediate (1-6 months preparation)  
-1. Complete **[NeetCode 150](./NeetCode-150.md)** - Comprehensive coverage
-2. Focus on company-specific questions from [Recent FAANG Questions](./FAANG-Recent-Questions.md)
-3. Start practicing [System Design](./SYSTEM_DESIGN_INTERVIEW.md) concepts
-
-### For Advanced (Targeting specific companies)
-1. Review [Company-Specific Questions](#table-of-contents) below
-2. Practice [ML Interview Questions](./ML_INTERVIEW_PREP.md) for ML roles
-3. Study latest [AI/LLM Research Papers](./LLM_PAPERS_CHEATSHEET.md)
-
 ## Table of Contents
 
 | SNo. | Contents |
@@ -89,8 +72,26 @@
 | 7. | [LinkedIn](#linkedin) |
 | 8. | [Flipkart](#flipkart) |
 | 9. | [Netflix](#netflix) |
-| 10. | [Databricks](#databricks) |
-| 11. | [Machine Learning & AI Resources](#resources) |
+| 10. | [OpenAI](#openai) |
+| 11. | [Databricks](#databricks) |
+| 12. | [Machine Learning & AI Resources](#resources) |
+
+## 🚀 Quick Start Guide
+
+### 🎯 **Beginner Track** (0-3 months)
+- Start with **[Blind 75](./Blind-75.md)** for fundamentals
+- Practice 2-3 problems daily focusing on patterns  
+- Review [Python Resources](./PythonResources.md) for clean code
+
+### 📈 **Intermediate Track** (1-6 months)  
+- Complete **[NeetCode 150](./NeetCode-150.md)** for comprehensive coverage
+- Focus on [Recent FAANG Questions](./FAANG-Recent-Questions.md)
+- Start [System Design](./SYSTEM_DESIGN_INTERVIEW.md) preparation
+
+### 🎖️ **Advanced Track** (Targeting specific roles)
+- Review company-specific sections below
+- Practice [ML Interview Questions](./ML_INTERVIEW_PREP.md) for ML roles
+- Study [AI/LLM Papers](./LLM_PAPERS_CHEATSHEET.md) for cutting-edge roles
 
 ## FAANG Must Do Problems
 
@@ -290,6 +291,36 @@
 
 </details>
 
+## OpenAI
+
+<details>
+<summary>View Problems</summary>
+
+| No. | Problem | Difficulty | Time Complexity | Space Complexity | Notes |
+| --- | ------- | ---------- | --------------- | ---------------- | ----- |
+| 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | O(1) | O(capacity) | System design classic |
+| 2 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | O(log n) | O(n) | Practical data structure |
+| 3 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system) | Hard | O(p + q log q) | O(n) | Real-world system |
+| 4 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | O(m) | O(ALPHABET_SIZE×N×M) | NLP applications |
+| 5 | [Word Search II](https://leetcode.com/problems/word-search-ii) | Hard | O(m×n×4^s) | O(n) | Advanced trie usage |
+| 6 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | O(n) | O(n) | Data persistence |
+| 7 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | Hard | O(m + k log k) | O(n) | Unix cd simulation |
+| 8 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | Hard | O(1) | O(capacity) | Advanced caching |
+| 9 | [Design Twitter](https://leetcode.com/problems/design-twitter) | Medium | O(n log n) | O(n) | Social media system |
+| 10 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | O(n log k) | O(n + k) | ML preprocessing |
+| 11 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium | O(n log k) | O(k) | ML algorithms |
+| 12 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | O(n log k) | O(1) | Distributed systems |
+| 13 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | O(V + E) | O(V + E) | Dependency resolution |
+| 14 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard | O(M²×N) | O(M²×N) | NLP transformations |
+| 15 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard | O(|s| + |t|) | O(|s| + |t|) | String processing |
+| 16 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | O(1) amortized | O(1) | Rate limiting |
+| 17 | [Design Log Storage System](https://leetcode.com/problems/design-log-storage-system) | Medium | O(n) | O(n) | System monitoring |
+| 18 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | O(n) | O(n) | Code parsing |
+| 19 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard | O(m×n) | O(m×n) | DP optimization |
+| 20 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Medium | O(n) | O(1) | ML loss functions |
+
+</details>
+
 ## Databricks
 
 <details>
@@ -322,46 +353,21 @@
 
 ---
 
-## About
+## About This Repository
 
-A comprehensive collection of coding and system design questions for technical interview preparation. This repository features:
+**The ultimate collection for technical interview success!** This repository provides comprehensive coverage of:
 
-- **NeetCode 150**: 150 essential problems curated by a Google engineer
-- **Blind 75**: The original and most famous LeetCode preparation list  
-- **Latest FAANG Questions**: Recent questions from Meta, Amazon, Apple, Netflix, Google, and emerging tech companies
-- **Company-Specific Sections**: Targeted preparation for specific companies including Databricks
-- **System Design Guide**: Complete system design interview preparation
-- **AI/ML Resources**: Machine learning and LLM interview preparation
+- **400+ Curated Problems** across 15+ top tech companies
+- **NeetCode 150** & **Blind 75** - Industry-standard problem sets
+- **Latest 2025 Questions** from FAANG and emerging companies  
+- **System Design** interview preparation
+- **AI/ML Resources** for specialized roles
 
-Perfect for preparing for interviews at FAANG, unicorn startups, and top tech companies in 2025!
-
-## 📊 Repository Statistics
-
-| 📈 **Metric** | 🔢 **Count** | 📝 **Description** |
-|---------------|--------------|-------------------|
-| **Total Problems** | 400+ | Comprehensive problem coverage |
-| **Companies Covered** | 15+ | FAANG + emerging tech companies |
-| **Problem Categories** | 20+ | All major algorithmic patterns |
-| **Study Plans** | 3 | Blind 75, NeetCode 150, Custom |
-| **Difficulty Levels** | Easy/Medium/Hard | Balanced difficulty distribution |
-| **Success Rate** | 85%+ | Based on community feedback |
-
-## 🆕 What's New in 2025 Edition
-
-- ✨ **NeetCode 150**: Complete structured guide with 150 essential problems
-- 🎯 **Blind 75**: The legendary problem set with detailed explanations  
-- 🏢 **Databricks Section**: New company-specific interview questions
-- 🔄 **Meta Rebrand**: Updated Facebook references throughout
-- 📊 **Enhanced Structure**: Better organization and navigation
-- 🤖 **AI Focus**: Updated ML/AI interview questions and LLM papers
-- 🎨 **Visual Improvements**: Better formatting and user experience
-- 📈 **2025 Trends**: Latest interview patterns and question types
+Perfect for FAANG, unicorns, and top tech interviews!
 
 ## System Design Interview Questions
 
-Looking for system design interview questions? Check out our comprehensive guide:
-
-[System Design Interview Guide](SYSTEM_DESIGN_INTERVIEW.md) - A curated list of the top 25 must-do system design problems for tech interviews with complexity ratings and company-specific information.
+📚 **[Complete System Design Interview Guide](SYSTEM_DESIGN_INTERVIEW.md)** - Top 25 system design problems with complexity ratings and company tags.
 
 ## Contributing
 
