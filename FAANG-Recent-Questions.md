@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-- [Meta (Facebook)](#meta-facebook)
+- [Meta (formerly Facebook)](#meta-formerly-facebook)
   - [Arrays and Strings](#meta-arrays-and-strings)
   - [Linked Lists](#meta-linked-lists)
   - [Trees and Graphs](#meta-trees-and-graphs)
@@ -36,6 +36,10 @@
   - [Algorithms](#tesla-algorithms)
   - [System Design](#tesla-system-design)
   - [Embedded Systems](#tesla-embedded-systems)
+- [Databricks](#databricks)
+  - [Binary Search & Algorithms](#databricks-binary-search--algorithms)
+  - [System Design](#databricks-system-design)
+  - [Concurrency](#databricks-concurrency)
 - [Topic-wise Questions](#topic-wise-questions)
   - [Array Manipulation](#array-manipulation)
   - [String Manipulation](#string-manipulation)
@@ -45,7 +49,7 @@
   - [System Design](#system-design)
   - [Machine Learning](#machine-learning)
 
-## Meta (Facebook)
+## Meta (formerly Facebook)
 
 ### Meta Arrays and Strings
 
@@ -355,6 +359,46 @@
 | 6 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium |
 | 7 | [Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths) | Medium |
 | 8 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | Medium |
+
+## Databricks
+
+### Databricks Binary Search & Algorithms
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy |
+| 2 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy |
+| 3 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium |
+| 4 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium |
+| 5 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium |
+| 6 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Medium |
+| 7 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard |
+| 8 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | Medium |
+| 9 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium |
+| 10 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard |
+| 11 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium |
+| 12 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium |
+
+### Databricks System Design
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium |
+| 2 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium |
+| 3 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium |
+| 4 | [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter) | Easy |
+| 5 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium |
+| 6 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | Medium |
+
+### Databricks Concurrency
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Print in Order](https://leetcode.com/problems/print-in-order) | Easy |
+| 2 | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately) | Medium |
+| 3 | [Building H2O](https://leetcode.com/problems/building-h2o) | Medium |
+| 4 | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers) | Medium |
+| 5 | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded) | Medium |
 
 ## Topic-wise Questions
 
