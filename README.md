@@ -57,7 +57,7 @@
 | 1. | [FAANG Must Do Problems](#faang-must-do-problems) |
 | 2. | [Amazon](#amazon) |
 | 3. | [Microsoft](#microsoft) |
-| 4. | [Facebook](#facebook) |
+| 4. | [Meta (Facebook)](#meta-facebook) |
 | 5. | [Google Top 50](#google-top-50) |
 | 6. | [Google](#google) |
 | 7. | [LinkedIn](#linkedin) |
@@ -145,7 +145,7 @@
 
 </details>
 
-## Facebook
+## Meta (Facebook)
 
 <details>
 <summary>View Problems</summary>

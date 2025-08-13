@@ -185,7 +185,7 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 - Communication and collaboration skills
 - Googleyness and leadership qualities
 
-### Meta (Facebook) ML Interview Process
+### Meta (formerly Facebook) ML Interview Process
 
 <div align="center">
   <img src="https://miro.medium.com/v2/resize:fit:1400/1*qUf9ixQ4VT03vYEFrQziQA.png" alt="Meta ML Interview Process" width="700"/>

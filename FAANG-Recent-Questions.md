@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-- [Meta (Facebook)](#meta-facebook)
+- [Meta (formerly Facebook)](#meta-formerly-facebook)
   - [Arrays and Strings](#meta-arrays-and-strings)
   - [Linked Lists](#meta-linked-lists)
   - [Trees and Graphs](#meta-trees-and-graphs)
