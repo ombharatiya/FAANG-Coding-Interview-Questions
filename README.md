@@ -312,7 +312,7 @@
 | 13 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard | O(C) | O(1) | Topological sort |
 | 14 | [Valid IP Addresses](https://leetcode.com/problems/restore-ip-addresses) | Medium | O(3^4) | O(1) | IP validation |
 | 15 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | O(1) | O(capacity) | Data structure design |
-| 16 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | O(m) | O(ALPHABET_SIZE×N×M) | Trie data structure |
+| 16 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | O(m) | O(26×N×M) | Trie data structure |
 | 17 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | O(1) amortized | O(1) | Time series design |
 | 18 | [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter) | Easy | O(1) | O(M) | Rate limiting |
 | 19 | [Print in Order](https://leetcode.com/problems/print-in-order) | Easy | O(1) | O(1) | Concurrency |
