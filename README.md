@@ -44,7 +44,7 @@
 ## 🎯 Essential Interview Preparation Resources
 
 ### 🔥 Top Problem Collections
-- **[NeetCode 150 - Essential Problems for FAANG Interviews](./NeetCode-150.md)** ⭐ *NEW!*
+- **[LeetCode 150 - Essential Problems for FAANG Interviews](./NeetCode-150.md)** ⭐ *NEW!*
 - **[Blind 75 - The Ultimate Interview Preparation List](./Blind-75.md)** ⭐ *NEW!*
 - [Top 75 LeetCode Questions to Crack The Coding Interviews](./TopLeetCodeProblems.md)
 
