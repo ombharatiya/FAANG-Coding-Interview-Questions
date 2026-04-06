@@ -1,23 +1,8 @@
-# 🚀 FAANG System Design Interview Guide 🚀
+# FAANG System Design Interview Guide
 
 ## 25 Must-Do System Design Problems for Tech Interviews
 
-<div align="center">
-  <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
-    <img src="https://img.shields.io/badge/🏗️%20System%20Design%20Guide-000000?style=for-the-badge" alt="System Design Guide" />
-  </a>
-  
-  <p><em>A curated collection of system design problems frequently asked in interviews at top tech companies</em></p>
-  
-  <p>
-    <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
-      <img src="https://img.shields.io/badge/⭐%20STAR%20THIS%20REPO-yellow?style=for-the-badge" alt="Star This Repo" />
-    </a>
-    <a href="https://github.com/ombharatiya?tab=followers">
-      <img src="https://img.shields.io/badge/👨‍💻%20FOLLOW%20@OMBHARATIYA-39D353?style=for-the-badge" alt="Follow @ombharatiya" />
-    </a>
-  </p>
-</div>
+A curated collection of system design problems frequently asked in interviews at top tech companies.
 
 ## Table of System Design Interview Problems
 

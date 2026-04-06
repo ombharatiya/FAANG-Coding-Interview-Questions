@@ -1,21 +1,6 @@
-# Guide to Create an AI Agent in 2025 🤖
+# Guide to Building AI Agents
 
-<div align="center">
-  <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
-    <img src="https://img.shields.io/badge/🤖%20AI%20Agent%20Guide-000000?style=for-the-badge" alt="AI Agent Guide" />
-  </a>
-  
-  <p><em>A comprehensive guide to building effective AI agents in 2025</em></p>
-  
-  <p>
-    <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
-      <img src="https://img.shields.io/badge/⭐%20STAR%20THIS%20REPO-yellow?style=for-the-badge" alt="Star This Repo" />
-    </a>
-    <a href="https://github.com/ombharatiya?tab=followers">
-      <img src="https://img.shields.io/badge/👨‍💻%20FOLLOW%20@OMBHARATIYA-39D353?style=for-the-badge" alt="Follow @ombharatiya" />
-    </a>
-  </p>
-</div>
+A comprehensive guide to building effective AI agents.
 
 ## Table of Contents
 
