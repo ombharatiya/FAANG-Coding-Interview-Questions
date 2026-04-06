@@ -411,31 +411,40 @@ OpenAI interviews focus on practical engineering over LeetCode puzzles. Problems
 ## Palantir
 
 <details>
-<summary>View Interview Guide (2025-2026)</summary>
+<summary>View 20 Problems + Unique Interview Format (2025-2026)</summary>
 
-Palantir has a unique interview format with decomposition interviews, learning interviews, and system design.
+Palantir's onsite gives you 3 of 4 round types: **Decomposition**, **System Design**, **Re-engineering (Debugging)**, and **Coding**. Each round includes 20 min of behavioral questions.
 
-**Coding Problems (Reported)**
+**Most Frequently Asked Coding Problems**
 
-| No. | Problem | Difficulty | Category | Context |
-| --- | ------- | ---------- | -------- | ------- |
-| 1 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS / BFS | Graph traversal |
-| 2 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | Array / Sorting | Data integration |
-| 3 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium | Graph / Topological Sort | Dependency modeling |
-| 4 | [Word Search](https://leetcode.com/problems/word-search) | Medium | Backtracking / Grid | Matrix search |
-| 5 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | Tree / BFS | Tree traversal |
-| 6 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Tree / Design | Data persistence |
-| 7 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design | System design coding |
-| 8 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard | Graph / Topological Sort | Ordering problems |
-| 9 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers / Stack | Algorithm design |
-| 10 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | Dynamic Programming | Optimization |
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | Intervals / Sorting |
+| 2 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS / BFS |
+| 3 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design / Hash Map |
+| 4 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium | Graph / Topological Sort |
+| 5 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
+| 6 | [All Ancestors of a Node in DAG](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph) | Medium | Graph / DFS |
+| 7 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | Heap / Linked List |
+| 8 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers / Stack |
+| 9 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | DP / String |
+| 10 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count) | Medium | Hash Map / String |
+| 11 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | Medium | Array / Logic |
+| 12 | [UTF-8 Validation](https://leetcode.com/problems/utf-8-validation) | Medium | Bit Manipulation |
+| 13 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Medium | Two Pointers |
+| 14 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | Medium | Graph / DFS |
+| 15 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium | Array / Matrix |
+| 16 | [Integer to English Words](https://leetcode.com/problems/integer-to-english-words) | Hard | String / Math |
+| 17 | [Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys) | Hard | BFS / Bitmask |
+| 18 | [Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree) | Medium | Tree / Recursion |
+| 19 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst) | Medium | Tree / BST |
+| 20 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii) | Hard | BST / Bucket Sort |
 
-**Interview Format**
-- **Decomposition Interview**: Break down a vague, real-world problem into components and design a solution
-- **Learning Interview**: Given an unfamiliar domain, learn quickly and apply concepts
-- **Coding Interview**: Standard algorithmic problems with emphasis on clean, maintainable code
-- **System Design**: Focus on data modeling, ontology design, and large-scale data integration
-- **Forward-Deployed Engineer**: More emphasis on product thinking, client-facing scenarios, and rapid prototyping
+**Unique Interview Rounds**
+- **Decomposition**: Break down open-ended real-world problems (e.g., "Design tech to help elderly cook safely"). Non-coding.
+- **Re-engineering (Debugging)**: Debug 500-1000 lines of buggy code with red herrings
+- **System Design**: Focus on data integration, ontology design, access control (ABAC)
+- **FDSE vs SWE**: Forward-deployed roles emphasize client-facing scenarios; backend roles emphasize scale
 
 </details>
 

@@ -549,30 +549,52 @@ These are unique to OpenAI and not standard LeetCode problems.
 
 ## Palantir
 
-> **2025-2026 Trends**: Unique interview format with decomposition, learning, and coding rounds. Forward-deployed engineers face more product/client-facing scenarios. Data modeling and ontology design are key themes.
+> **2025-2026 Trends**: Unique 4-round format (you get 3 of 4: Decomposition, System Design, Re-engineering/Debugging, Coding). Each round includes 20 min behavioral. OA on HackerRank (1 coding + 1 SQL + 1 REST API). Graph/BFS/DFS and hash map problems dominate. FDSE roles emphasize client-facing scenarios.
 
 ### Palantir Coding Problems
 
 | No. | Question | Difficulty | Category |
 | --- | -------- | ---------- | -------- |
-| 1 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS / BFS |
-| 2 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | Array / Sorting |
-| 3 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium | Graph / Topological Sort |
-| 4 | [Word Search](https://leetcode.com/problems/word-search) | Medium | Backtracking / Grid |
-| 5 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | Tree / BFS |
-| 6 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Tree / Design |
-| 7 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design |
-| 8 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard | Graph / Topological Sort |
-| 9 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers / Stack |
-| 10 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | Dynamic Programming |
+| 1 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | Intervals / Sorting |
+| 2 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS / BFS |
+| 3 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design / Hash Map |
+| 4 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium | Graph / Topological Sort |
+| 5 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
+| 6 | [All Ancestors of a Node in DAG](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph) | Medium | Graph / DFS |
+| 7 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | Heap / Linked List |
+| 8 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers / Stack |
+| 9 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | DP / String |
+| 10 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count) | Medium | Hash Map / String |
+| 11 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | Medium | Array / Logic |
+| 12 | [UTF-8 Validation](https://leetcode.com/problems/utf-8-validation) | Medium | Bit Manipulation |
+| 13 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Medium | Two Pointers |
+| 14 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | Medium | Graph / DFS |
+| 15 | [Integer to English Words](https://leetcode.com/problems/integer-to-english-words) | Hard | String / Math |
 
-### Palantir Interview Format
+### Palantir System Design
 
-- **Decomposition Interview**: Break down a vague, real-world problem into components and design a solution
-- **Learning Interview**: Given an unfamiliar domain, learn quickly and apply concepts
-- **Coding Interview**: Standard algorithmic problems with emphasis on clean, maintainable code
-- **System Design**: Focus on data modeling, ontology design, and large-scale data integration
-- **Forward-Deployed Engineer**: More emphasis on product thinking, client-facing scenarios, and rapid prototyping
+Palantir system design ties directly to their product domain:
+
+| No. | Question | Key Concepts |
+| --- | -------- | ------------ |
+| 1 | Design multi-source data integration platform | Schema normalization, CDC, ETL/ELT pipelines |
+| 2 | Design fine-grained access control for sensitive datasets | ABAC vs RBAC, row/column-level security |
+| 3 | Design a knowledge graph for entity tracking | Entity resolution, ontology versioning, temporal modeling |
+| 4 | Design real-time anomaly detection on streaming data | Streaming ingestion, windowing, alerting |
+| 5 | Design immutable audit log with data lineage | Event sourcing, replayability |
+
+### Palantir Unique Rounds
+
+**Decomposition Interview** (Non-coding, most distinctive round):
+- "How would you design technology to help elderly people with poor vision cook safely?"
+- "How would you build a smart city traffic management system?"
+- Framework: Goal -> Inputs/Outputs -> Assumptions -> Subproblems -> Tests -> Integration
+
+**Re-engineering (Debugging) Interview**:
+- Debug 500-1000 lines of pre-written code with intentional bugs and red herrings
+- Examples: HashMap with incorrect if-else logic, contact tracing double-counting bug
+
+**FDSE vs SWE differences**: FDSE interviews weight decomposition higher with Easy-Medium coding; SWE interviews have Medium-Hard coding with infrastructure-scale system design
 
 ---
 
