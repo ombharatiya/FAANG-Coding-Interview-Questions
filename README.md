@@ -380,31 +380,37 @@ OpenAI interviews focus on practical engineering over LeetCode puzzles. Problems
 ## Anthropic
 
 <details>
-<summary>View Interview Guide (2025-2026)</summary>
+<summary>View Interview Guide (2025-2026 -- Custom Problems + Concurrency Round)</summary>
 
-*Section will be populated with detailed data. Anthropic's interview process emphasizes AI safety, systems engineering, and practical coding.*
+Anthropic uses CodeSignal OA (60-90 min) followed by a 4-6 hour onsite with 4-6 rounds. Python expected. AI tools strictly prohibited. Problems are drawn from a bank of ~6 core custom challenges with progressive difficulty layers.
 
-**Coding Problems (Reported)**
+**Core Custom Coding Problems (Most Frequently Reported)**
 
 | No. | Problem | Difficulty | Category | Context |
 | --- | ------- | ---------- | -------- | ------- |
-| 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design | Core design problem |
-| 2 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Trees / Design | Data persistence |
-| 3 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design | Rate limiting |
-| 4 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | Trie | NLP / tokenization |
-| 5 | [Word Break](https://leetcode.com/problems/word-break) | Medium | DP / Strings | Text processing |
-| 6 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | Heap / Linked List | Distributed systems |
-| 7 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort | Dependency resolution |
-| 8 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS | Graph traversal |
-| 9 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard | Sliding Window | String processing |
-| 10 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | Heap / Hash | Data processing |
+| 1 | In-Memory Database | Hard | Design | 4 levels: SET/GET/DELETE -> filtered scans -> TTL -> backup/restore |
+| 2 | Web Crawler | Hard | BFS / Concurrency | BFS crawl -> multithreaded/async optimization |
+| 3 | LRU Cache (Bugfix + Extend) | Hard | Design / Debugging | Fix bugs, add persistence, handle `*args`/`**kwargs` |
+| 4 | Stack Trace / Profiler | Hard | Parsing / Design | Convert sampling data to chronological events |
+| 5 | Tokenization Engine | Hard | String / NLP | Code review, tokenize/detokenize with vocabulary coverage |
+| 6 | Distributed Mode/Median | Hard | Distributed Systems | Compute across 10 nodes with bandwidth constraints |
 
-**Key Focus Areas**
-- AI safety and alignment (RLHF, Constitutional AI, red-teaming)
-- Systems engineering (distributed training, inference optimization)
-- Practical Python coding with production quality emphasis
-- Deep understanding of Transformer architecture and attention mechanisms
-- Ethics and responsible AI development
+**LeetCode Practice Problems (Mapped to Anthropic's Focus Areas)**
+
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design |
+| 2 | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded) | Medium | Concurrency / BFS |
+| 3 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | Trie / NLP |
+| 4 | [Word Break](https://leetcode.com/problems/word-break) | Medium | DP / Strings |
+| 5 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design |
+| 6 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | Design / Binary Search |
+| 7 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Trees / Design |
+| 8 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | Heap / Distributed |
+| 9 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
+| 10 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS |
+
+**Key Focus Areas**: AI safety/alignment (Constitutional AI, RLHF, red-teaming), systems engineering (distributed training, inference optimization), concurrency/parallel programming, Transformer architecture depth
 
 </details>
 

@@ -515,22 +515,45 @@ These are unique to OpenAI and not standard LeetCode problems.
 
 ## Anthropic
 
-> **2025-2026 Trends**: Emphasis on AI safety and alignment. Systems engineering focus (distributed training, inference optimization). Practical Python coding with production quality emphasis. Deep Transformer architecture knowledge expected.
+> **2025-2026 Trends**: CodeSignal OA (60-90 min) then 4-6 hour onsite with 4-6 rounds. Python expected. AI tools strictly prohibited. Custom problems drawn from a bank of ~6 core challenges with progressive difficulty layers. Concurrency/async round is common. Strong AI safety and alignment focus.
 
-### Anthropic Coding and System Design
+### Anthropic Core Custom Coding Problems
+
+These are Anthropic's own custom problems — not LeetCode. Each has multiple difficulty layers added progressively.
+
+| No. | Problem | Difficulty | Category | Details |
+| --- | ------- | ---------- | -------- | ------- |
+| 1 | In-Memory Database | Hard | Design | 4 levels: SET/GET/DELETE -> filtered scans -> TTL -> backup/restore |
+| 2 | Web Crawler | Hard | BFS / Concurrency | BFS crawl -> multithreaded/async optimization |
+| 3 | LRU Cache (Bugfix + Extend) | Hard | Design / Debugging | Fix bugs in given code, add persistence, handle `*args`/`**kwargs` |
+| 4 | Stack Trace / Profiler | Hard | Parsing / Design | Convert sampling profiler data to chronological events |
+| 5 | Tokenization Engine | Hard | String / NLP | Code review, tokenize/detokenize with vocabulary coverage |
+| 6 | Distributed Mode/Median | Hard | Distributed Systems | Compute statistics across 10 nodes with bandwidth constraints |
+
+### Anthropic LeetCode Practice (Mapped to Focus Areas)
 
 | No. | Question | Difficulty | Category |
 | --- | -------- | ---------- | -------- |
 | 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design |
-| 2 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Trees / Design |
-| 3 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design |
-| 4 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | Trie / NLP |
-| 5 | [Word Break](https://leetcode.com/problems/word-break) | Medium | DP / Strings |
-| 6 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | Heap / Distributed |
-| 7 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
-| 8 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS |
-| 9 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard | Sliding Window |
-| 10 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | Heap / Hash |
+| 2 | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded) | Medium | Concurrency / BFS |
+| 3 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | Trie / NLP |
+| 4 | [Word Break](https://leetcode.com/problems/word-break) | Medium | DP / Strings |
+| 5 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design |
+| 6 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | Design / Binary Search |
+| 7 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Trees / Design |
+| 8 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | Heap / Distributed |
+| 9 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
+| 10 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS |
+
+### Anthropic System Design
+
+| No. | Question | Key Concepts |
+| --- | -------- | ------------ |
+| 1 | Design RLHF training pipeline | Data collection, reward model, PPO loop |
+| 2 | Design distributed training system | Model parallelism, gradient sync, fault tolerance |
+| 3 | Design inference optimization system | KV cache, quantization, dynamic batching |
+| 4 | Design red-teaming and adversarial evaluation platform | Attack generation, defense layers, metrics |
+| 5 | Design Constitutional AI feedback loop | Principle-based critique, revision chains, scalable oversight |
 
 ### Anthropic ML and AI Safety
 
@@ -541,9 +564,7 @@ These are unique to OpenAI and not standard LeetCode problems.
 | 3 | Design RLHF training pipeline | Training / Alignment |
 | 4 | Red-teaming and adversarial evaluation design | Safety / Evaluation |
 | 5 | Model interpretability and mechanistic understanding | Research |
-| 6 | Distributed training system design | Systems / Infrastructure |
-| 7 | Inference optimization (KV cache, quantization, batching) | Systems / Optimization |
-| 8 | Scaling laws and compute-optimal training | Research / Scaling |
+| 6 | Scaling laws and compute-optimal training | Research / Scaling |
 
 ---
 
