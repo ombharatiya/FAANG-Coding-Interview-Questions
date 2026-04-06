@@ -578,32 +578,40 @@ These are unique to OpenAI and not standard LeetCode problems.
 
 ## Tesla
 
-> **2025-2026 Trends**: Mix of traditional algorithms, system design, and embedded systems / bit manipulation. Real-time processing and resource-constrained environments emphasized.
+> **2025-2026 Trends**: Greedy + string manipulation heavily tested (Reorganize String is most-asked). Prefix sum / subarray problems common. For embedded/firmware roles, expect C/C++ and real-time constraints. OA is 2-3 problems in 60-90 minutes on Codility/CoderPad.
 
 ### Tesla Algorithms
 
 | No. | Question | Difficulty |
 | --- | -------- | ---------- |
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy |
-| 2 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium |
-| 3 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium |
-| 4 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium |
-| 5 | [Word Search](https://leetcode.com/problems/word-search) | Medium |
-| 6 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium |
-| 7 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy |
-| 8 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium |
+| 1 | [Reorganize String](https://leetcode.com/problems/reorganize-string) | Medium |
+| 2 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy |
+| 3 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium |
+| 4 | [3Sum](https://leetcode.com/problems/3sum) | Medium |
+| 5 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Medium |
+| 6 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium |
+| 7 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index) | Easy |
+| 8 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium |
+| 9 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard |
+| 10 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard |
+| 11 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard |
+| 12 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard |
 
 ### Tesla System Design
 
 | No. | Question | Difficulty |
 | --- | -------- | ---------- |
 | 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium |
-| 2 | [Min Stack](https://leetcode.com/problems/min-stack) | Medium |
+| 2 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium |
 | 3 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard |
 | 4 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy |
 | 5 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | Medium |
 
+Tesla-specific system design: telemetry pipeline for vehicle data, real-time monitoring for energy systems, shortest path between Tesla chargers.
+
 ### Tesla Embedded Systems
+
+For firmware/embedded roles (Autopilot, battery management, motor controllers):
 
 | No. | Question | Difficulty |
 | --- | -------- | ---------- |
@@ -613,43 +621,36 @@ These are unique to OpenAI and not standard LeetCode problems.
 | 4 | [Counting Bits](https://leetcode.com/problems/counting-bits) | Medium |
 | 5 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium |
 | 6 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | Medium |
-| 7 | [Count Primes](https://leetcode.com/problems/count-primes) | Medium |
+
+Domain-specific: interrupt-safe circular buffers in C, CAN bus protocol design, RTOS task scheduling, mutex vs. semaphore, I2C/UART/SPI protocol selection.
 
 ---
 
 ## Databricks
 
-> **2025-2026 Trends**: Binary search and graph algorithms heavily tested. Concurrency/threading questions common. Data engineering focus with Spark-related system design.
+> **2025-2026 Trends**: OA is 4 problems in 70 minutes on CodeSignal (~30% pass rate). Onsite has a **dedicated concurrency/multithreading round** (unique among tech companies). Binary search, design, and BFS/graph problems heavily tested. Spark-related follow-ups common ("How would you distribute this with Spark?").
 
-### Databricks Binary Search & Algorithms
-
-| No. | Question | Difficulty |
-| --- | -------- | ---------- |
-| 1 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy |
-| 2 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy |
-| 3 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium |
-| 4 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium |
-| 5 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium |
-| 6 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Medium |
-| 7 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard |
-| 8 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium |
-| 9 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard |
-| 10 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium |
-| 11 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium |
-| 12 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard |
-
-### Databricks System Design
+### Databricks Algorithms and Design
 
 | No. | Question | Difficulty |
 | --- | -------- | ---------- |
-| 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium |
-| 2 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium |
-| 3 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium |
-| 4 | [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter) | Easy |
-| 5 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium |
-| 6 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | Medium |
+| 1 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days) | Medium |
+| 2 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard |
+| 3 | [Max Stack](https://leetcode.com/problems/max-stack) | Hard |
+| 4 | [All O'one Data Structure](https://leetcode.com/problems/all-oone-data-structure) | Hard |
+| 5 | [Word Break](https://leetcode.com/problems/word-break) | Medium |
+| 6 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | Medium |
+| 7 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | Medium |
+| 8 | [Decode String](https://leetcode.com/problems/decode-string) | Medium |
+| 9 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium |
+| 10 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | Medium |
+| 11 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium |
+| 12 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium |
+| 13 | [Snapshot Array](https://leetcode.com/problems/snapshot-array) | Medium |
+| 14 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium |
+| 15 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | Medium |
 
-### Databricks Concurrency
+### Databricks Concurrency (Dedicated Round)
 
 | No. | Question | Difficulty |
 | --- | -------- | ---------- |
@@ -658,6 +659,8 @@ These are unique to OpenAI and not standard LeetCode problems.
 | 3 | [Building H2O](https://leetcode.com/problems/building-h2o) | Medium |
 | 4 | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers) | Medium |
 | 5 | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded) | Medium |
+
+Custom concurrency problems also reported: thread-safe logger with disk flush, rate limiter with mutexes, producer-consumer with condition variables.
 
 ---
 

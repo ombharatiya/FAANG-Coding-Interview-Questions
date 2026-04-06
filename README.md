@@ -442,30 +442,37 @@ Palantir has a unique interview format with decomposition interviews, learning i
 ## Databricks
 
 <details>
-<summary>View 20 Problems (2025-2026 Most Frequent)</summary>
+<summary>View 25 Problems (2025-2026 Most Frequent -- includes dedicated concurrency round)</summary>
 
-| No. | Problem | Difficulty | Category | Notes |
-| --- | ------- | ---------- | -------- | ----- |
-| 1 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | Binary Search | Core algorithm |
-| 2 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | Binary Search | Modified binary search |
-| 3 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | Binary Search | Binary search on unsorted |
-| 4 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Medium | Binary Search | 2D binary search |
-| 5 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard | Binary Search | Advanced binary search |
-| 6 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS / BFS | Graph traversal |
-| 7 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard | BFS / Graphs | BFS word transformation |
-| 8 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium | Graph / Topological Sort | Topological sort |
-| 9 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort | Topological ordering |
-| 10 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard | Graph / Topological Sort | Ordering |
-| 11 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design | Data structure design |
-| 12 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | Trie | Trie data structure |
-| 13 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design | Time series design |
-| 14 | [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter) | Easy | Design | Rate limiting |
-| 15 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | Design / Binary Search | Versioned storage |
-| 16 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | Medium | Design / Hash Table | System design coding |
-| 17 | [Print in Order](https://leetcode.com/problems/print-in-order) | Easy | Concurrency | Threading |
-| 18 | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately) | Medium | Concurrency | Threading |
-| 19 | [Building H2O](https://leetcode.com/problems/building-h2o) | Medium | Concurrency | Synchronization |
-| 20 | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers) | Medium | Concurrency | Deadlock avoidance |
+Databricks has a unique **dedicated concurrency/multithreading round** (1 hour). OA is 4 problems in 70 minutes on CodeSignal.
+
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days) | Medium | Binary Search |
+| 2 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers / Stack |
+| 3 | [Max Stack](https://leetcode.com/problems/max-stack) | Hard | Stack / Linked List / Design |
+| 4 | [All O'one Data Structure](https://leetcode.com/problems/all-oone-data-structure) | Hard | Hash Table / Design |
+| 5 | [Word Break](https://leetcode.com/problems/word-break) | Medium | DP / Trie |
+| 6 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | Medium | BFS / Matrix |
+| 7 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | Medium | Tree / BFS / DFS |
+| 8 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | Stack / Recursion |
+| 9 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium | Heap / Math |
+| 10 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | Medium | Stack |
+| 11 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design / Queue |
+| 12 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | Design / Binary Search |
+| 13 | [Snapshot Array](https://leetcode.com/problems/snapshot-array) | Medium | Design / Binary Search |
+| 14 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium | Sliding Window |
+| 15 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | Medium | Graph / BFS / DP |
+| 16 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | Medium | Stack / Tree / Design |
+| 17 | [House Robber](https://leetcode.com/problems/house-robber) | Medium | Dynamic Programming |
+| 18 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections) | Medium | Two Pointers |
+| 19 | [Print in Order](https://leetcode.com/problems/print-in-order) | Easy | Concurrency |
+| 20 | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately) | Medium | Concurrency |
+| 21 | [Building H2O](https://leetcode.com/problems/building-h2o) | Medium | Concurrency |
+| 22 | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers) | Medium | Concurrency |
+| 23 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
+| 24 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard | Graph / Topological Sort |
+| 25 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard | Binary Search |
 
 </details>
 
