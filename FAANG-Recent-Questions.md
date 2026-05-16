@@ -59,13 +59,25 @@
   - [Binary Search and Algorithms](#databricks-binary-search--algorithms)
   - [System Design](#databricks-system-design)
   - [Concurrency](#databricks-concurrency)
+- [Stripe](#stripe)
+  - [Coding and Integration](#stripe-coding-and-integration)
+  - [Bug Squash and API Design](#stripe-bug-squash-and-api-design)
+- [NVIDIA](#nvidia)
+  - [Algorithms](#nvidia-algorithms)
+  - [GPU and Systems](#nvidia-gpu-and-systems)
+- [Uber](#uber)
+  - [Algorithms](#uber-algorithms)
+  - [System Design](#uber-system-design)
+- [ByteDance / TikTok](#bytedance--tiktok)
+  - [Algorithms](#bytedance-algorithms)
+  - [System Design](#bytedance-system-design)
 - [Topic-wise Questions](#topic-wise-questions)
 
 ---
 
 ## Meta (formerly Facebook)
 
-> **2025-2026 Trends**: De-emphasis of DP, rise of expression parsing/stack problems, streaming and sparse data, speed and clean code prioritized over brute force. ~26% Easy, 60% Medium, 14% Hard.
+> **2025-2026 Trends**: De-emphasis of DP, rise of expression parsing/stack problems, streaming and sparse data, speed and clean code prioritized over brute force. ~26% Easy, 60% Medium, 14% Hard. **New in 2026**: AI-Enabled Coding Round (replaces one onsite round) uses CoderPad with AI assistant (Claude, GPT, Gemini, Llama available). CodeSignal OA (90 min) with 4-stage progressive problems. Two problems in 35 minutes for traditional rounds -- speed is king.
 
 ### Meta Arrays and Strings
 
@@ -83,6 +95,11 @@
 | 10 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | Medium |
 | 11 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy |
 | 12 | [Maximum Swap](https://leetcode.com/problems/maximum-swap) | Medium |
+| 13 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation) | Easy |
+| 14 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately) | Easy |
+| 15 | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse) | Medium |
+| 16 | [Next Permutation](https://leetcode.com/problems/next-permutation) | Medium |
+| 17 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections) | Medium |
 
 ### Meta Linked Lists
 
@@ -108,6 +125,10 @@
 | 8 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | Medium |
 | 9 | [Making a Large Island](https://leetcode.com/problems/making-a-large-island) | Hard |
 | 10 | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst) | Easy |
+| 11 | [Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii) | Medium |
+| 12 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | Medium |
+| 13 | [Convert BST to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list) | Medium |
+| 14 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium |
 
 ### Meta Recursion and Backtracking
 
@@ -304,7 +325,7 @@
 
 ## Google
 
-> **2025-2026 Trends**: Graphs appear in 76% of onsite loops at L4+. Sliding window and binary search on answer are top-tier patterns. Trie and Union-Find questions rising. Medium-difficulty dominance (52% Medium). Follow-up questions are standard.
+> **2025-2026 Trends**: Graphs appear in 76% of onsite loops at L4+. Sliding window and binary search on answer are top-tier patterns. Trie and Union-Find questions rising. Medium-difficulty dominance (52% Medium). Follow-up questions are standard. **New in 2026**: Piloting "Code Comprehension" round where candidates analyze multi-file codebases with Gemini AI available. Google Hiring Assessment (GHA) now mandatory before recruiter contact. In-person interviews returning due to AI cheating concerns.
 
 ### Google Arrays and Strings
 
@@ -416,7 +437,7 @@
 
 ## LinkedIn
 
-> **2025-2026 Trends**: AI-enabled coding round using CoderPad + AI assistant. Production-oriented follow-ups (concurrency, multithreading). Strong emphasis on custom data structure design. BFS emphasis reflecting graph-based social network domain.
+> **2025-2026 Trends**: AI-enabled coding round using CoderPad + AI assistant (Claude/Opus available). Production-oriented follow-ups (concurrency, multithreading). Strong emphasis on custom data structure design. BFS emphasis reflecting graph-based social network domain. **New in 2026**: AI-Enabled round replaces one traditional coding round. The coding problem itself is standard, but follow-ups push into concurrency, multithreading, and productionization -- that's where candidates struggle. 5 onsite rounds total.
 
 ### LinkedIn Data Structure Design
 
@@ -456,7 +477,7 @@
 
 ## OpenAI
 
-> **2025-2026 Trends**: Production over puzzles. Problems drawn from a fixed bank of ~8 core challenges with progressive difficulty layers. Python strongly recommended. Coding bar is non-negotiable. Mission alignment evaluated.
+> **2025-2026 Trends**: Production over puzzles. Problems drawn from a fixed bank of ~8 core challenges with progressive difficulty layers. Python strongly recommended. Coding bar is non-negotiable. Mission alignment evaluated. **New in 2026**: 48-hour take-home project (most common: distributed webhook delivery system with retry logic). Technical screen uses progressive "gate" format: single problem gets harder across 4 stages, must pass at least 2 to advance. Average time to hire: 26 days for SWE.
 
 ### OpenAI Core Custom Problems
 
@@ -471,6 +492,10 @@ These are unique to OpenAI and not standard LeetCode problems.
 | 5 | Resumable Iterator | Hard | Iterator / State | Stateful iterator with `getState()`/`setState()`, nested structures, async |
 | 6 | Async Node Counting | Hard | Distributed / Trees | Count tree nodes using only async parent-child messaging |
 | 7 | Toy Language Interpreter | Hard | Parsing / Compilers | 75-min round: lexer, parser, evaluator for variables, arithmetic, control flow |
+| 8 | GPU Credit Allocation / Manager | Hard | Design / State | Add credits with expiration, auto-expire, deduct with history tracking |
+| 9 | Rate Limiter with Sliding Window | Hard | Design / Algorithms | Sliding window or token bucket implementation |
+| 10 | SQL Engine / Parser + Executor | Hard | Parsing / Design | Build parser + executor for basic SQL operations |
+| 11 | Versioned KV Store | Hard | Design / Binary Search | Put with auto-versioning, get by version with history |
 
 ### OpenAI LeetCode-Equivalent Problems
 
@@ -515,7 +540,7 @@ These are unique to OpenAI and not standard LeetCode problems.
 
 ## Anthropic
 
-> **2025-2026 Trends**: CodeSignal OA (60-90 min) then 4-6 hour onsite with 4-6 rounds. Python expected. AI tools strictly prohibited. Custom problems drawn from a bank of ~6 core challenges with progressive difficulty layers. Concurrency/async round is common. Strong AI safety and alignment focus.
+> **2025-2026 Trends**: CodeSignal OA (90 min, score 520+ to advance) then 4-6 hour onsite with 4-6 rounds. Python expected. AI tools strictly prohibited -- Anthropic uses LLMs to detect code engineered to pass tests without genuinely solving the problem. **New in 2026**: Values/Culture round (45 min) is universal and the #1 failure point -- NOT behavioral/STAR; probes ethical judgment and AI safety reasoning. "Measured doubt" about mission scores better than performed enthusiasm. New system design topics include inference batching and batch inferencing API for LLM queries.
 
 ### Anthropic Core Custom Coding Problems
 
@@ -529,6 +554,10 @@ These are Anthropic's own custom problems — not LeetCode. Each has multiple di
 | 4 | Stack Trace / Profiler | Hard | Parsing / Design | Convert sampling profiler data to chronological events |
 | 5 | Tokenization Engine | Hard | String / NLP | Code review, tokenize/detokenize with vocabulary coverage |
 | 6 | Distributed Mode/Median | Hard | Distributed Systems | Compute statistics across 10 nodes with bandwidth constraints |
+| 7 | Bank System / Bank Account | Hard | Design / Refactoring | Progressive: account creation -> merging -> cashback logic requiring redesign |
+| 8 | File System Implementation | Hard | Design | Layered stages of increasing complexity |
+| 9 | Package Manager | Hard | Graph / Design | Toy package manager with dependency resolution |
+| 10 | Duplicate File Finder | Hard | Hashing / File System | File dedup via hashing; related to LC 609 |
 
 ### Anthropic LeetCode Practice (Mapped to Focus Areas)
 
@@ -704,6 +733,166 @@ Domain-specific: interrupt-safe circular buffers in C, CAN bus protocol design, 
 | 5 | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded) | Medium |
 
 Custom concurrency problems also reported: thread-safe logger with disk flush, rate limiter with mutexes, producer-consumer with condition variables.
+
+---
+
+## Stripe
+
+> **2025-2026 Trends**: Stripe does NOT use traditional LeetCode-style interviews. Problems model real engineering work -- payment processing, debugging, API integration. Process spans 7-9 weeks. Unique rounds: Bug Squash (debug a GitHub repo with real issues), Integration (build with Stripe API), API Design (REST resource modeling, idempotency, versioning). Production code quality valued over algorithmic cleverness -- O(n^2) is fine if code is clean. Speed is NOT measured.
+
+### Stripe Coding and Integration
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy |
+| 2 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium |
+| 3 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium |
+| 4 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium |
+| 5 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium |
+| 6 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium |
+| 7 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium |
+| 8 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium |
+| 9 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium |
+| 10 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard |
+| 11 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard |
+
+### Stripe Bug Squash and API Design
+
+**Custom Problems (unique to Stripe)**
+
+| No. | Problem | Category | Description |
+| --- | ------- | -------- | ----------- |
+| 1 | Invoice Reconciliation | Data Processing | Parse CSV of transactions, filter by status, output totals per user |
+| 2 | Request Deduplication | Integration | Build idempotent request handler preventing duplicate charges |
+| 3 | Webhook Handler Debug | Bug Squash | Find and fix bugs in a failing webhook handler with unit tests |
+| 4 | API Response Parser | Bug Squash | Debug parser that silently drops fields |
+| 5 | Payment Retry Logic | Integration | Implement retry logic with exponential backoff |
+| 6 | Shipping Cost Calculator | Multi-part | Progressive complexity layers on cost calculation |
+
+**System Design**: Payment processing pipelines, fraud detection, idempotent distributed ledgers, multi-currency payment routing, webhook retry systems. Domain knowledge expected: PCI compliance, idempotency patterns, double-entry bookkeeping.
+
+---
+
+## NVIDIA
+
+> **2025-2026 Trends**: Most strategically central tech company in 2026 due to AI infrastructure dominance. Emphasizes performance awareness over generalist coding. After solving baseline, expect follow-ups: "How does this behave under memory pressure? What's the cache miss profile? How would you parallelize across 10,000 threads?" C++ essential for systems/GPU roles; Python acceptable for ML/infra. Difficulty: 8 Easy, 29 Medium, 9 Hard across 46 tracked problems.
+
+### NVIDIA Algorithms
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended) | Medium |
+| 2 | [Min Stack](https://leetcode.com/problems/min-stack) | Medium |
+| 3 | [Clone Graph](https://leetcode.com/problems/clone-graph) | Medium |
+| 4 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium |
+| 5 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | Medium |
+| 6 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard |
+| 7 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium |
+| 8 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium |
+| 9 | [Word Break](https://leetcode.com/problems/word-break) | Medium |
+| 10 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | Medium |
+| 11 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard |
+| 12 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators) | Hard |
+| 13 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii) | Hard |
+| 14 | [Bus Routes](https://leetcode.com/problems/bus-routes) | Hard |
+| 15 | [Making A Large Island](https://leetcode.com/problems/making-a-large-island) | Hard |
+
+### NVIDIA GPU and Systems
+
+**CUDA/GPU-Specific Problems**
+
+| No. | Problem | Category | Description |
+| --- | ------- | -------- | ----------- |
+| 1 | CUDA Memory Optimization | GPU Programming | Optimize matrix operations for GPU memory hierarchy |
+| 2 | CUDA Kernel Fusion | Performance | Fuse Transformer attention operations into efficient kernels |
+| 3 | Matrix Multiplication Optimization | Parallel Computing | Implement GEMM considering cache locality and thread scheduling |
+| 4 | Sorting Algorithm Parallelization | GPU Computing | Implement parallel sort analyzing stability and parallelizability |
+| 5 | Memory Coalescing Analysis | CUDA | Fix uncoalesced memory access patterns in warp execution |
+| 6 | Thread Synchronization | Concurrency | Implement barrier synchronization across thread blocks |
+| 7 | Multi-GPU Communication | Distributed | Optimize communication patterns in distributed training |
+
+**Key topics**: GPU memory architecture (SRAM vs HBM), CUDA thread hierarchy (threads/warps/blocks/grids), KV-cache optimization, LoRA fine-tuning, Mixture-of-Experts, beam search
+
+---
+
+## Uber
+
+> **2025-2026 Trends**: Interviews reflect product domain -- routing, dispatch, surge pricing map to graph traversal, streaming aggregation, sliding-window patterns. OA: 4 problems in 70-90 minutes on CodeSignal. Code readability explicitly evaluated. L5A (Senior): 5 rounds total with elimination Round 0 (LeetCode Medium). Difficulty: 7% Easy, 73% Medium, 20% Hard.
+
+### Uber Algorithms
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions) | Medium |
+| 2 | [Bus Routes](https://leetcode.com/problems/bus-routes) | Hard |
+| 3 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard |
+| 4 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii) | Hard |
+| 5 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium |
+| 6 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium |
+| 7 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium |
+| 8 | [Word Search](https://leetcode.com/problems/word-search) | Medium |
+| 9 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium |
+| 10 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium |
+| 11 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | Medium |
+| 12 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard |
+| 13 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium |
+| 14 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | Medium |
+| 15 | [Longest Subarray With Absolute Diff <= Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) | Medium |
+
+Custom problems: Expiry counter (TTL-based driver sessions), driver-rider matching engine, surge pricing calculator, adaptive bitrate selector.
+
+### Uber System Design
+
+| No. | Question | Key Focus |
+| --- | -------- | --------- |
+| 1 | Design a Ride-Hailing System | Distributed concurrency, real-time updates, consistency |
+| 2 | Design Real-Time Surge Pricing Engine | Millions of GPS pings/sec, supply vs demand, 30-second multiplier |
+| 3 | Design Location Tracking System | Millions of location updates/sec for drivers and riders |
+| 4 | Design Notification System at Scale | Push notifications, SMS, emails for ride updates |
+| 5 | Design ETA Prediction Service | ML-based arrival time estimation |
+
+---
+
+## ByteDance / TikTok
+
+> **2025-2026 Trends**: Among the most technically demanding interviews. Baseline is Medium, Hard is frequent. 2-3 problems per round (vs 1-2 at Google/Meta) -- speed matters. Interviewers progressively modify problems to increase difficulty in real-time. Compile-ready, bug-free code expected (not pseudocode). OA: 4 problems on CodeSignal, 70-min. Acceptance rate estimated at 1-2%. Max 2 applications allowed.
+
+### ByteDance Algorithms
+
+| No. | Question | Difficulty |
+| --- | -------- | ---------- |
+| 1 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) | Easy |
+| 2 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium |
+| 3 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard |
+| 4 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium |
+| 5 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) | Medium |
+| 6 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard |
+| 7 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium |
+| 8 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard |
+| 9 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard |
+| 10 | [3Sum](https://leetcode.com/problems/3sum) | Medium |
+| 11 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | Hard |
+| 12 | [N-Queens](https://leetcode.com/problems/n-queens) | Hard |
+| 13 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard |
+| 14 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium |
+| 15 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard |
+| 16 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard |
+| 17 | [Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements) | Hard |
+| 18 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium |
+| 19 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Medium |
+| 20 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium |
+
+Custom problems: Video chunk scheduler, hashtag trend detector (sliding window on streams), comment tree flattening, content moderation priority queue, video deduplication via hashing, live viewer count at billion scale.
+
+### ByteDance System Design
+
+| No. | Question | Key Focus |
+| --- | -------- | --------- |
+| 1 | Design TikTok "For You" Page | Two-phase recommendation: candidate generation + ranking |
+| 2 | Design Real-Time Live Streaming System | Billion-scale concurrent users |
+| 3 | Design Content Moderation Pipeline | ML-based automated moderation at scale |
+| 4 | Design Social Graph Service | Following/follower relationships, efficient traversal |
+| 5 | Design Ad Serving Platform | Real-time bidding and targeting |
 
 ---
 

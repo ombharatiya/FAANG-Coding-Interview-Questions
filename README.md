@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions.</p>
+  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 17+ companies.</p>
 
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
     <img src="https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=flat" alt="GitHub stars" />
@@ -59,7 +59,11 @@
 | 10. | [Anthropic](#anthropic) |
 | 11. | [Palantir](#palantir) |
 | 12. | [Databricks](#databricks) |
-| 13. | [Flipkart](#flipkart) |
+| 13. | [Stripe](#stripe) |
+| 14. | [NVIDIA](#nvidia) |
+| 15. | [Uber](#uber) |
+| 16. | [ByteDance / TikTok](#bytedance--tiktok) |
+| 17. | [Flipkart](#flipkart) |
 
 ## Quick Start Guide
 
@@ -121,7 +125,7 @@
 ## Google
 
 <details>
-<summary>View 25 Problems (2025-2026 Most Frequent)</summary>
+<summary>View 35 Problems (2025-2026 Most Frequent)</summary>
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -150,13 +154,23 @@
 | 23 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard | Sliding Window |
 | 24 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | Trie |
 | 25 | [Accounts Merge](https://leetcode.com/problems/accounts-merge) | Medium | Union-Find |
+| 26 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard | Monotonic Deque |
+| 27 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem) | Hard | Heap / Divide and Conquer |
+| 28 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Hard | Monotonic Stack |
+| 29 | [Word Search II](https://leetcode.com/problems/word-search-ii) | Hard | Trie / Backtracking |
+| 30 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | Medium | Graph / BFS |
+| 31 | [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network) | Hard | Graph / Tarjan's |
+| 32 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow) | Medium | Graph / Multi-source BFS |
+| 33 | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | Medium | Graph / Dijkstra |
+| 34 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | Monotonic Stack |
+| 35 | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid) | Medium | BFS / Binary Search |
 
 </details>
 
 ## Meta (Facebook)
 
 <details>
-<summary>View 25 Problems (2025-2026 Most Frequent)</summary>
+<summary>View 35 Problems (2025-2026 Most Frequent)</summary>
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -185,13 +199,23 @@
 | 23 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | Medium | Linked List / Hash Table |
 | 24 | [Making a Large Island](https://leetcode.com/problems/making-a-large-island) | Hard | Graph / DFS / Union-Find |
 | 25 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators) | Hard | Backtracking / Math |
+| 26 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation) | Easy | String / Parsing |
+| 27 | [Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii) | Medium | Tree / Hash Table |
+| 28 | [Convert BST to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list) | Medium | Tree / Linked List |
+| 29 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium | Heap / Math |
+| 30 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections) | Medium | Two Pointers / Intervals |
+| 31 | [Simplify Path](https://leetcode.com/problems/simplify-path) | Medium | Stack / String |
+| 32 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Medium | Design / Hash Table |
+| 33 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard | Monotonic Deque |
+| 34 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | DP / Recursion |
+| 35 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | Medium | Tree / BFS |
 
 </details>
 
 ## Amazon
 
 <details>
-<summary>View 25 Problems (2025-2026 Most Frequent)</summary>
+<summary>View 33 Problems (2025-2026 Most Frequent)</summary>
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -220,6 +244,14 @@
 | 23 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | Stack / Strings |
 | 24 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas) | Medium | Binary Search |
 | 25 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Hard | Monotonic Stack |
+| 26 | [Car Pooling](https://leetcode.com/problems/car-pooling) | Medium | Array / Prefix Sum |
+| 27 | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii) | Hard | Heap / Sorting |
+| 28 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium | Heap / Math |
+| 29 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | Stack / String |
+| 30 | [Word Search](https://leetcode.com/problems/word-search) | Medium | Backtracking / Matrix |
+| 31 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
+| 32 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design / Queue |
+| 33 | [Min Stack](https://leetcode.com/problems/min-stack) | Medium | Stack / Design |
 
 </details>
 
@@ -491,6 +523,139 @@ Databricks has a unique **dedicated concurrency/multithreading round** (1 hour).
 
 </details>
 
+## Stripe
+
+<details>
+<summary>View 15 Problems + Unique Interview Format (2025-2026)</summary>
+
+Stripe does NOT use traditional LeetCode-style interviews. Problems model real engineering work -- payment processing, debugging, API integration. Code quality valued over algorithmic cleverness. Unique rounds: **Bug Squash** (debug a GitHub repo), **Integration** (build with Stripe API), **API Design** (REST resource modeling).
+
+**LeetCode-Mapped Practice Problems**
+
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | Hash Map (transaction matching) |
+| 2 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design (caching patterns) |
+| 3 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | Intervals (batch scheduling) |
+| 4 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design (rate limiting) |
+| 5 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | Heap (merchant ranking) |
+| 6 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | Prefix Sum (revenue calc) |
+| 7 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | Design / Binary Search |
+| 8 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium | Graph / Cycle Detection |
+| 9 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard | Deque (event log analysis) |
+| 10 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Design (JSON parsing) |
+| 11 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium | DP (fee calculation) |
+| 12 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | Hashing / Strings |
+| 13 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Medium | Arrays / Prefix |
+| 14 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium | Sliding Window |
+| 15 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS |
+
+**Custom Problems**: Invoice reconciliation (CSV parsing), request deduplication (idempotency), webhook handler debugging, payment retry logic with exponential backoff, shipping cost calculator with progressive complexity
+
+</details>
+
+## NVIDIA
+
+<details>
+<summary>View 20 Problems (2025-2026 -- GPU/Performance Focus)</summary>
+
+NVIDIA interviews emphasize performance awareness (cache hierarchies, memory bandwidth, parallelization). After solving the baseline, expect: "How does this behave under memory pressure? How would you parallelize across 10,000 threads?" C++ essential for systems/GPU roles.
+
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended) | Medium | Greedy / Heap |
+| 2 | [Min Stack](https://leetcode.com/problems/min-stack) | Medium | Stack / Design |
+| 3 | [Clone Graph](https://leetcode.com/problems/clone-graph) | Medium | Graph / DFS |
+| 4 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium | Heap / Math |
+| 5 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | Medium | Binary Search / Prefix Sum |
+| 6 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers / Stack |
+| 7 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS / BFS |
+| 8 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium | Array / Matrix |
+| 9 | [Word Break](https://leetcode.com/problems/word-break) | Medium | Dynamic Programming |
+| 10 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | Medium | BFS / Graph |
+| 11 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | Design / Hash Table |
+| 12 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard | DFS / DP / Topological Sort |
+| 13 | [Permutation in String](https://leetcode.com/problems/permutation-in-string) | Medium | Sliding Window |
+| 14 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators) | Hard | Backtracking / Math |
+| 15 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | Medium | Tree / Stack |
+| 16 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii) | Hard | BFS / DFS / Backtracking |
+| 17 | [Bus Routes](https://leetcode.com/problems/bus-routes) | Hard | BFS / Graph |
+| 18 | [Making A Large Island](https://leetcode.com/problems/making-a-large-island) | Hard | DFS / Union Find |
+| 19 | [Line Reflection](https://leetcode.com/problems/line-reflection) | Medium | Hash Table / Math |
+| 20 | [Missing Ranges](https://leetcode.com/problems/missing-ranges) | Easy | Array / String |
+
+**CUDA/GPU-Specific**: Matrix multiplication optimization (GEMM), CUDA kernel fusion, memory coalescing analysis, thread synchronization across blocks, multi-GPU communication patterns
+
+</details>
+
+## Uber
+
+<details>
+<summary>View 20 Problems (2025-2026 -- Domain-Driven)</summary>
+
+Uber interviews reflect the product domain -- routing, dispatch, surge pricing map to graph traversal, streaming aggregation, and sliding-window patterns. Code readability is explicitly evaluated.
+
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions) | Medium | Graph / BFS |
+| 2 | [Bus Routes](https://leetcode.com/problems/bus-routes) | Hard | Graph / BFS |
+| 3 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard | Topological Sort |
+| 4 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii) | Hard | Union Find |
+| 5 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Design / Sliding Window |
+| 6 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS |
+| 7 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium | Matrix / Array |
+| 8 | [Word Search](https://leetcode.com/problems/word-search) | Medium | Backtracking / DFS |
+| 9 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design / HashMap + Linked List |
+| 10 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | Heap / Bucket Sort |
+| 11 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium | Graph / Weighted |
+| 12 | [Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree) | Medium | Divide and Conquer |
+| 13 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | Medium | Prefix Sum / Binary Search |
+| 14 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard | Two Heaps / Design |
+| 15 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | Sorting / Greedy |
+| 16 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | Medium | Heap / Intervals |
+| 17 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium | Graph / Cycle Detection |
+| 18 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
+| 19 | [Longest Subarray With Absolute Diff <= Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) | Medium | Sliding Window / Monotonic Deque |
+| 20 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array) | Easy | Two Pointers |
+
+**Custom Problems**: Expiry counter (TTL-based sessions), driver-rider matching engine, surge pricing calculator (real-time supply/demand), adaptive bitrate selector
+
+</details>
+
+## ByteDance / TikTok
+
+<details>
+<summary>View 20 Problems (2025-2026 -- High Difficulty)</summary>
+
+ByteDance interviews are among the most technically demanding in the industry. Baseline is Medium, Hard is frequent. Candidates solve 2-3 problems per round (vs 1-2 at Google/Meta). Interviewers progressively modify problems to increase difficulty in real-time. Compile-ready, bug-free code expected.
+
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) | Easy | Stack / Queue / Design |
+| 2 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | Monotonic Stack |
+| 3 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | Linked List / Heap |
+| 4 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design / Hash + Linked List |
+| 5 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) | Medium | Sliding Window |
+| 6 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard | Deque / Sliding Window |
+| 7 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | Graph / DFS / BFS |
+| 8 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | Binary Search |
+| 9 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | Tree / DFS |
+| 10 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers / DP |
+| 11 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort |
+| 12 | [3Sum](https://leetcode.com/problems/3sum) | Medium | Two Pointers / Array |
+| 13 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | Hard | Stack / DP |
+| 14 | [N-Queens](https://leetcode.com/problems/n-queens) | Hard | Backtracking |
+| 15 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Tree / Design |
+| 16 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Medium | Heap / Quickselect |
+| 17 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium | Dynamic Programming |
+| 18 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | DP / String |
+| 19 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard | DFS / DP / Topological Sort |
+| 20 | [Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements) | Hard | Heap / Greedy |
+
+**Custom Problems**: Video chunk scheduler, hashtag trend detector (sliding window on streams), comment tree flattening, content moderation priority queue, video deduplication via hashing
+
+</details>
+
 ## Flipkart
 
 <details>
@@ -506,7 +671,7 @@ Databricks has a unique **dedicated concurrency/multithreading round** (1 hour).
 
 ## About This Repository
 
-This repository covers 500+ coding problems across 13+ companies, organized by company and topic. Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
+This repository covers 600+ coding problems across 17+ companies, organized by company and topic. Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
 
 **[Complete System Design Interview Guide](SYSTEM_DESIGN_INTERVIEW.md)** - 25 system design problems with complexity ratings and company tags.
 
