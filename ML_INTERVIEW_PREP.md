@@ -410,6 +410,24 @@ Below are actual ML interview questions recently asked at top tech companies, or
 14. **How would you implement and evaluate a multi-agent system using LLMs for complex reasoning tasks?** (Microsoft, 2025)
 15. **Compare and contrast different techniques for efficient inference in LLMs (e.g., quantization, KV caching, speculative decoding).** (OpenAI, 2025)
 
+### LLM and AI Engineering Questions (2026 Updates)
+
+1. **How does DPO (Direct Preference Optimization) simplify RLHF? When would you choose DPO over PPO?** (Anthropic, OpenAI, 2026)
+2. **What is KV cache and how does it help in LLM inference? How would you optimize KV cache reuse?** (OpenAI, Google, 2026)
+3. **When do you route to a small distilled model vs. a large LLM? Design a model tiering/routing system.** (Google, Meta, 2026)
+4. **What is prompt compression and how does it reduce cost?** (OpenAI, 2026)
+5. **Explain multi-layer caching for GenAI: retrieval cache, prompt cache, response cache.** (Anthropic, Google, 2026)
+6. **Naive RAG fails at retrieval ~40% of the time. Explain Adaptive RAG, Corrective RAG (CRAG), Self-RAG, and Cache-Augmented Generation (CAG).** (All AI companies, 2026)
+7. **Explain semantic chunking vs fixed-size chunking for RAG pipelines. How do you detect topic boundaries?** (OpenAI, 2026)
+8. **How do you protect against prompt injection and jailbreaking in production LLM systems?** (Anthropic, OpenAI, 2026)
+9. **Your app gets 1M queries/day -- how do you optimize LLM cost? Cover token reduction, model tiering, prompt compression, and caching.** (All, 2026)
+10. **How do you handle PII in prompts and logs? Describe HIPAA-specific scenarios for healthcare GenAI.** (Google, Microsoft, 2026)
+11. **"Is there an actual eval framework, or is it vibes-based?" Build golden datasets, automated eval pipelines, and distinguish subjective quality from measurable metrics.** (OpenAI, 2026)
+12. **Implement LoRA and QLoRA from scratch. Explain when to use each.** (NVIDIA, Meta, 2026)
+13. **Design an autonomous agent architecture: orchestrator, tool gateway, memory systems, policy engine, state management, observability.** (Anthropic, OpenAI, Google, 2026)
+14. **What is speculative decoding and how does it improve inference throughput?** (Google, Anthropic, 2026)
+15. **Implement beam search, top-k, and top-p decoding algorithms.** (OpenAI, NVIDIA, 2026)
+
 ### MLOps Questions (2025 Updates)
 
 1. **How would you monitor an ML model in production? What metrics would you track?** (Google, 2023)
@@ -427,6 +445,16 @@ Below are actual ML interview questions recently asked at top tech companies, or
 13. **How would you implement an efficient continuous training pipeline for a model that needs to be updated daily?** (Amazon, 2025)
 14. **Explain your strategy for implementing model governance in an organization with multiple ML teams.** (Microsoft, 2025)
 15. **How would you design an ML infrastructure that can support both experimentation and production needs efficiently?** (OpenAI, 2025)
+
+### New Interview Formats (2026)
+
+Major companies are transforming their ML interview process in 2026:
+
+1. **AI-Paired Coding Rounds**: Google, Meta, and LinkedIn now include rounds where AI tools (Copilot, Claude, Gemini) are available. Candidates are scored on AI fluency, prompt engineering, output validation, and debugging AI-generated code.
+2. **Reasoning Labs**: Ambiguous ML challenges with no single correct answer. Evaluates thinking clarity, uncertainty handling, and ethical awareness.
+3. **AI Reasoning Challenge**: Candidates analyze AI-generated outputs (explanations, logs, summaries) and identify flaws, suggest improvements, and design verification experiments.
+4. **Ethics and Safety Rounds**: Now standalone at many companies. Sample: "detecting gender bias in LLMs" or "balancing accuracy with safety in dialogue models."
+5. **Dedicated MLOps Block**: A 45-minute MLOps interview testing data drift monitoring, pipeline debugging, and production reliability is now standard.
 
 ### Advanced ML & AI Topics (2025 Updates)
 
