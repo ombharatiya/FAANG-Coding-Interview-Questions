@@ -339,9 +339,26 @@
 ---
 
 <div align="center">
-  
-**Happy Coding! 🚀**
 
-*Remember: Consistency beats intensity. Practice a few problems daily rather than cramming everything at once.*
+### 🔔 You Found the Shortcut. Don't Lose It.
+
+New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+
+The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+
+⚡ **One click. Every update. Zero effort.**
+
+<a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/subscription">
+  <img src="https://img.shields.io/badge/🔔 Watch This Repo-Get Every Update-blue?style=for-the-badge" alt="Watch Repo" />
+</a>&nbsp;
+<a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
+  <img src="https://img.shields.io/badge/⭐ Star-Show Support-yellow?style=for-the-badge" alt="Star Repo" />
+</a>
+
+**Follow [@ombharatiya](https://github.com/ombharatiya)** for exclusive tips, paper breakdowns, and career moves that never make it into the repo:
+
+[![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
+[![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
 
 </div>
