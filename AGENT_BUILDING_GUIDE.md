@@ -817,10 +817,37 @@ def process_user_query(user_id, query):
 
 ---
 
+<div align="center">
+
+### 🔔 You Found the Shortcut. Don't Lose It.
+
+New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+
+The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+
+⚡ **One click. Every update. Zero effort.**
+
+<a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/subscription">
+  <img src="https://img.shields.io/badge/🔔 Watch This Repo-Get Every Update-blue?style=for-the-badge" alt="Watch Repo" />
+</a>&nbsp;
+<a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
+  <img src="https://img.shields.io/badge/⭐ Star-Show Support-yellow?style=for-the-badge" alt="Star Repo" />
+</a>
+
+**Follow [@ombharatiya](https://github.com/ombharatiya)** for exclusive tips, paper breakdowns, and career moves that never make it into the repo:
+
+[![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
+[![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+</div>
+
+---
+
 ## Contribute
 
 This guide is maintained by the community. If you have suggestions, corrections, or additions, please submit a pull request or open an issue.
 
 ## License
 
-This guide is released under the MIT License. See the LICENSE file for details. 
+This guide is released under the MIT License. See the LICENSE file for details.

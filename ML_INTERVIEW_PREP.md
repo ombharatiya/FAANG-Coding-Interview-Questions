@@ -552,14 +552,25 @@ Major companies are transforming their ML interview process in 2026:
 
 <div align="center">
 
-### Connect With Me
+### 🔔 You Found the Shortcut. Don't Lose It.
 
-If you found this resource helpful, please consider following me:
+New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
 
-- **GitHub**: [@ombharatiya](https://github.com/ombharatiya)
-- **Twitter**: [@ombharatiya](https://twitter.com/ombharatiya)
-- **LinkedIn**: [ombharatiya](https://linkedin.com/in/ombharatiya)
+The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
 
-I regularly share ML/AI resources, interview tips, and career advice for tech professionals. Your support helps keep these resources updated!
+⚡ **One click. Every update. Zero effort.**
 
-</div> 
+<a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/subscription">
+  <img src="https://img.shields.io/badge/🔔 Watch This Repo-Get Every Update-blue?style=for-the-badge" alt="Watch Repo" />
+</a>&nbsp;
+<a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions">
+  <img src="https://img.shields.io/badge/⭐ Star-Show Support-yellow?style=for-the-badge" alt="Star Repo" />
+</a>
+
+**Follow [@ombharatiya](https://github.com/ombharatiya)** for exclusive tips, paper breakdowns, and career moves that never make it into the repo:
+
+[![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
+[![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+</div>
