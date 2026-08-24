@@ -3,6 +3,8 @@
 
 > Click :star: if you like the project. Pull Request are highly appreciated. 
 
+> **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
+
 ---
 
 ## Array
@@ -88,7 +90,7 @@
 - [ ] [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 - [ ] [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [ ] [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
-- [ ] [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
+- [ ] [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
 - [ ] [Word Search II](https://leetcode.com/problems/word-search-ii/)
 
 ---
@@ -141,7 +143,7 @@
 
 - [A to Z Learning Resources for Students by Deepak](https://github.com/ombharatiya/A-to-Z-Resources-for-Students)
 
-- [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
+- [Competitive Programmer's Handbook](https://cses.fi/book/book.pdf)
 
 - [Low Level Design Primer](https://github.com/prasadgujar/low-level-design-primer/blob/master/solutions.md)
 
@@ -151,9 +153,9 @@
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
-The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
 ⚡ **One click. Every update. Zero effort.**
 

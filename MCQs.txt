@@ -1,3 +1,12 @@
+Computer Science MCQ Questions for Technical Interviews
+Data Structures, Computer Networks, DBMS, Operating Systems, System Analysis and Design.
+Part of the FAANG Coding Interview Questions repository:
+https://github.com/ombharatiya/FAANG-Coding-Interview-Questions
+
+Note: this is a legacy question set, most useful for campus placement and written rounds
+rather than current FAANG loops. For those see FAANG-Recent-Questions.md and
+AI-Companies-Interview-Questions.md in the repository.
+
 MCQ Questions:
 
 Please Go And Upvote this Guy's post on leetcode as an appreciation. 
@@ -73,7 +82,7 @@ B) Monolithic kernel
 C) Micro kernel
 D) Macro kernel
 
-............... is a large operating system core provides a wide range of services.
+............... keeps only essential services such as address space management, thread management and inter-process communication in the core, running other services in user space.
 A) Multilithic kernel
 B) Monolithic kernel
 C) Micro kernel
@@ -159,7 +168,7 @@ C) Short-term scheduling
 A) demand paging
 B) Segmentation method
 B) Monolithic kernel
-D) Macro kernel
+C) Micro kernel
 A) File management
 D) i-c, ii-a, iii-b
 C) Circular waits
@@ -215,7 +224,7 @@ FDDI stands for
 A) Fiber Distributed Data Interface
 B) Fiber Data Distributed Interface
 C) Fiber Dual Distributed Interface
-D) Fiber Distributed Data Interface
+D) Fiber Digital Data Interface
 
 Which of the following is an application layer service?
 A) Network virtual terminal

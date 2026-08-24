@@ -1,5 +1,7 @@
 # Guide to Building AI Agents
 
+> **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
+
 A comprehensive guide to building effective AI agents.
 
 ## Table of Contents
@@ -798,7 +800,7 @@ def process_user_query(user_id, query):
 | Resource | Link | Description |
 |----------|------|-------------|
 | LangChain Documentation | [LangChain](https://docs.langchain.com/) | Comprehensive agent development framework |
-| CrewAI | [CrewAI](https://github.com/crewai/crewai) | Multi-agent collaboration framework |
+| CrewAI | [CrewAI](https://github.com/crewAIInc/crewAI) | Multi-agent collaboration framework |
 | AutoGPT | [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Autonomous agent framework |
 | LlamaIndex | [LlamaIndex](https://www.llamaindex.ai/) | Data framework for LLM applications |
 | Microsoft Semantic Kernel | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | Orchestration framework for AI agents |
@@ -821,9 +823,9 @@ def process_user_query(user_id, query):
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
-The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
 ⚡ **One click. Every update. Zero effort.**
 

@@ -2,6 +2,8 @@
 
 > **NeetCode 150** is a curated list of 150 essential LeetCode problems compiled by a Google engineer. This collection represents the most important algorithmic patterns and concepts frequently tested in FAANG and top tech company interviews. Each problem has been selected to maximize your interview preparation efficiency.
 
+> **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md)
+
 <div align="center">
   
 **🎯 Perfect for FAANG Interview Preparation | 🔥 150 Handpicked Problems | ✅ Pattern-Based Learning**
@@ -64,7 +66,7 @@
 | 6 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | Prefix/Suffix Product | Meta, Apple |
 | 7 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | Hash Set, Matrix | Apple, Amazon |
 | 8 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Medium | String Manipulation | Google, Meta |
-| 9 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | Union Find, Hash Set | Google, Meta |
+| 9 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | Union Find, Hash Set | Google, Meta |
 
 ### Two Pointers (5 Problems)
 
@@ -152,7 +154,7 @@
 | No. | Problem | Difficulty | Pattern | Company Tags |
 |-----|---------|------------|---------|--------------|
 | 61 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | Medium | Trie Design | All FAANG |
-| 62 | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-word-data-structure-design/) | Medium | Trie, Backtracking | Google, Meta |
+| 62 | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Medium | Trie, Backtracking | Google, Meta |
 | 63 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | Hard | Trie, Backtracking | All FAANG |
 
 ### Heap / Priority Queue (7 Problems)
@@ -234,12 +236,12 @@
 | 111 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium | Grid DP | All FAANG |
 | 112 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Medium | String DP | All FAANG |
 | 113 | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | State Machine DP | Google, Amazon |
-| 114 | [Coin Change 2](https://leetcode.com/problems/coin-change-2/) | Medium | Unbounded Knapsack | Amazon, Google |
+| 114 | [Coin Change II](https://leetcode.com/problems/coin-change-ii/) | Medium | Unbounded Knapsack | Amazon, Google |
 | 115 | [Target Sum](https://leetcode.com/problems/target-sum/) | Medium | Subset Sum DP | Google, Meta |
 | 116 | [Interleaving String](https://leetcode.com/problems/interleaving-string/) | Medium | String DP | Google, Amazon |
 | 117 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | Hard | DFS + Memoization | Google, Amazon |
 | 118 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard | String DP | Google, Amazon |
-| 119 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | Hard | String DP | Google, Meta |
+| 119 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | Medium | String DP | Google, Meta |
 | 120 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | Interval DP | Google, Amazon |
 | 121 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard | String DP | All FAANG |
 
@@ -342,9 +344,9 @@
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
-The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
 ⚡ **One click. Every update. Zero effort.**
 

@@ -1,5 +1,7 @@
 # FAANG System Design Interview Guide
 
+> **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
+
 ## 25 Must-Do System Design Problems for Tech Interviews
 
 A curated collection of system design problems frequently asked in interviews at top tech companies.
@@ -13,21 +15,21 @@ This table presents 25 essential system design problems that are frequently aske
 | 1 | Design a URL Shortening Service (like Bit.ly) | Medium | Google, Amazon, Microsoft, Uber | SWE, SDE, Backend | [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/pastebin/README.md), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/tiny-url-design-tinyurl) |
 | 2 | Design Twitter | High | Twitter, Meta, Google, Microsoft | SWE, SDE, Full-stack | [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/twitter/README.md), [High Scalability](http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html) |
 | 3 | Design a Rate Limiter | Medium | Stripe, Cloudflare, Google, Amazon | SDE, SRE, Backend | [Stripe Engineering Blog](https://stripe.com/blog/rate-limiters), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/API-Rate-Limiter) |
-| 4 | Design Netflix or YouTube (Video Streaming Service) | High | Netflix, YouTube, Amazon, Meta | SWE, Media, Backend | [Netflix Tech Blog](https://netflixtechblog.com/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/youtube/README.md) |
-| 5 | Design an Online Chat System (like WhatsApp) | Medium | Meta, Signal, Snap, Microsoft | SWE, Backend, Mobile | [WhatsApp Architecture](https://highscalability.com/blog/2022/1/25/whatsapp-architecture.html), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/messenger-design) |
+| 4 | Design Netflix or YouTube (Video Streaming Service) | High | Netflix, YouTube, Amazon, Meta | SWE, Media, Backend | [Netflix Tech Blog](https://netflixtechblog.com/) |
+| 5 | Design an Online Chat System (like WhatsApp) | Medium | Meta, Signal, Snap, Microsoft | SWE, Backend, Mobile | [WhatsApp Architecture](https://highscalability.com/the-whatsapp-architecture-facebook-bought-for-19-billion/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/messenger-design) |
 | 6 | Design Uber or Lyft | High | Uber, Lyft, DoorDash, Instacart | SWE, Backend, Mobile | [Uber Engineering Blog](https://eng.uber.com/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/uber-backend) |
-| 7 | Design a Web Crawler | Medium | Google, Microsoft, Amazon, ByteDance | SWE, Search, Data | [Google Research](https://research.google/pubs/pub36701/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/web_crawler/README.md) |
-| 8 | Design Dropbox / Google Drive | High | Dropbox, Google, Microsoft, Box | SWE, Storage, Cloud | [Dropbox Tech Blog](https://dropbox.tech/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/dropbox/README.md) |
+| 7 | Design a Web Crawler | Medium | Google, Microsoft, Amazon, ByteDance | SWE, Search, Data | [Google Research](https://research.google/pubs/web-crawling/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/web_crawler/README.md) |
+| 8 | Design Dropbox / Google Drive | High | Dropbox, Google, Microsoft, Box | SWE, Storage, Cloud | [Dropbox Tech Blog](https://dropbox.tech/) |
 | 9 | Design a Distributed Key-Value Store | High | Amazon, Google, Redis Labs, MongoDB | SWE, Database, Cloud | [DynamoDB Paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf), [Google Spanner](https://research.google/pubs/pub39966/) |
-| 10 | Design Instagram | Medium | Meta, Snap, ByteDance, Pinterest | SWE, Full-stack, Mobile | [Instagram Engineering](https://instagram-engineering.com/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/instagram/README.md) |
+| 10 | Design Instagram | Medium | Meta, Snap, ByteDance, Pinterest | SWE, Full-stack, Mobile | [Instagram Engineering](https://instagram-engineering.com/) |
 | 11 | Design a Payment System | High | Stripe, PayPal, Square, Rippling | SWE, Financial, Security | [Stripe Engineering Blog](https://stripe.com/blog/engineering), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/payment-processing-system-design) |
-| 12 | Design a Search Autocomplete System | Medium | Google, Microsoft, Amazon, LinkedIn | SWE, Search, UX | [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/autocomplete/README.md), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/typeahead-suggestion) |
+| 12 | Design a Search Autocomplete System | Medium | Google, Microsoft, Amazon, LinkedIn | SWE, Search, UX | [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/typeahead-suggestion) |
 | 13 | Design a Recommendation System | High | Netflix, Amazon, Spotify, TikTok | SWE, ML, Data | [Netflix Recommendation](https://netflixtechblog.com/system-architectures-for-personalization-and-recommendation-e081aa94b5d8), [Amazon ML Blog](https://aws.amazon.com/blogs/machine-learning/) |
-| 14 | Design an API Rate Limiter | Medium | AWS, Google Cloud, Cloudflare, Akamai | SWE, Cloud, Security | [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/API-Rate-Limiter) |
+| 14 | Design an Object Storage Service (like Amazon S3) | High | Amazon, Google, Microsoft, Cloudflare | SWE, Storage, Cloud | [S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html), [Dynamo Paper](https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html) |
 | 15 | Design a Notification Service | Medium | Meta, Slack, Discord, Salesforce | SWE, Mobile, Cloud | [Slack Engineering Blog](https://slack.engineering/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/notification-service-design) |
 | 16 | Design Airbnb or Booking.com | High | Airbnb, Booking, Expedia, Tripadvisor | SWE, Full-stack, Search | [Airbnb Engineering Blog](https://medium.com/airbnb-engineering), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
 | 17 | Design a Content Delivery Network (CDN) | High | Cloudflare, Akamai, Fastly, AWS | SWE, Infrastructure, Network | [Cloudflare Blog](https://blog.cloudflare.com/), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
-| 18 | Design a Distributed Cache | Medium | Redis, Memcached, AWS, Google | SWE, Infrastructure, Cloud | [Redis Architecture](https://redis.com/redis-enterprise/technology/redis-architecture/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/key-value-store) |
+| 18 | Design a Distributed Cache | Medium | Redis, Memcached, AWS, Google | SWE, Infrastructure, Cloud | [Redis Architecture](https://redis.io/docs/latest/operate/oss_and_stack/reference/cluster-spec/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/key-value-store) |
 | 19 | Design a Task Scheduler | Medium | Airflow, AWS, Google, Microsoft | SWE, Cloud, Data | [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/index.html), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
 | 20 | Design a Distributed Message Queue | High | Kafka, RabbitMQ, AWS, Google | SWE, Cloud, Infrastructure | [Kafka Architecture](https://kafka.apache.org/documentation/#design), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
 | 21 | Design a Distributed Logging System | Medium | Splunk, Elastic, Datadog, New Relic | SWE, DevOps, SRE | [Elastic Blog](https://www.elastic.co/blog/), [Splunk Architecture](https://docs.splunk.com/Documentation/Splunk/latest/Deploy/Distributedoverview) |
@@ -105,9 +107,11 @@ Several key trends are shaping system design interviews in 2025-2026:
    - Eventual consistency with immediate feedback
    - Multi-modal interaction (text, voice, visual)
 
-## Advanced System Design Concepts for 2025
+<a name="advanced-system-design-concepts-for-2025"></a>
 
-To excel in 2025 system design interviews, candidates should be familiar with these advanced concepts:
+## Advanced System Design Concepts for 2026
+
+To excel in 2026 system design interviews, candidates should be familiar with these advanced concepts:
 
 ### 1. Serverless and Function-as-a-Service Evolution
 
@@ -154,7 +158,9 @@ Event-driven architecture has become the backbone of reactive, scalable systems:
 - **Stream Processing**: Real-time analytics and processing of event streams
 - **Event Schema Evolution**: Managing changes to event structures over time
 
-## Updated Interview Framework for 2025
+<a name="updated-interview-framework-for-2025"></a>
+
+## Updated Interview Framework for 2026
 
 The traditional system design interview framework has evolved to better assess candidates' ability to design modern systems:
 
@@ -195,32 +201,35 @@ The traditional system design interview framework has evolved to better assess c
 - **New**: Ethical implications of design choices
 - **New**: Future-proofing considerations
 
-## Resources for 2025 System Design Preparation
+<a name="resources-for-2025-system-design-preparation"></a>
 
-Here are the latest resources to prepare for system design interviews in 2025:
+## Resources for 2026 System Design Preparation
+
+Here are the latest resources to prepare for system design interviews in 2026:
 
 1. **Books**
-   - "System Design for AI Engineers" (New for 2025)
-   - "Distributed Systems in the Age of AI" (Updated for 2025)
-   - "Edge Computing: Architectures, Applications and Technologies" (2024)
-   - "Designing Data-Intensive Applications" (Still relevant with 2025 updates)
+   - [Designing Data-Intensive Applications](https://dataintensive.net/) by Martin Kleppmann. Still the single most recommended book for these interviews
+   - System Design Interview, Volumes 1 and 2, by Alex Xu. Closest to the format interviewers actually use
+   - Database Internals by Alex Petrov. Useful when the loop goes deep on storage engines and replication
 
 2. **Engineering Blogs**
-   - OpenAI System Design Blog
-   - Microsoft AI Architecture Patterns
-   - Google Cloud Architecture Center
-   - AWS Serverless Land
-   - Uber Engineering (Edge Computing section)
+   - [Google Cloud Architecture Center](https://cloud.google.com/architecture)
+   - [AWS Architecture Blog](https://aws.amazon.com/architecture/) and [Serverless Land](https://serverlessland.com/)
+   - [Meta Engineering](https://engineering.fb.com/)
+   - [Netflix Tech Blog](https://netflixtechblog.com/)
+   - [Uber Engineering](https://eng.uber.com/)
 
 3. **Courses and Platforms**
-   - "AI System Design Interviews" on Educative
-   - "Modern System Design for Software Engineers" (Updated for 2025)
-   - "EdgeComputing.io" - Specialized learning platform
-   - "AIInfrastructure.dev" - New practice platform
+   - [Grokking Modern System Design Interview](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers) on Educative
+   - [Hello Interview System Design](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction). Free written guides organised by problem
+   - [ByteByteGo](https://bytebytego.com/)
+   - [System Design Primer](https://github.com/donnemartin/system-design-primer). Free and open source
 
-## How to Stand Out in 2025 System Design Interviews
+<a name="how-to-stand-out-in-2025-system-design-interviews"></a>
 
-To truly excel in system design interviews in 2025, demonstrate these differentiating qualities:
+## How to Stand Out in 2026 System Design Interviews
+
+To truly excel in system design interviews in 2026, demonstrate these differentiating qualities:
 
 1. **Balance Theoretical and Practical Knowledge**
    - Explain theoretical concepts but ground them in practical implementation details
@@ -260,11 +269,15 @@ I regularly share tech interview resources, system design concepts, and career a
 
 ---
 
-# Trending Coding Patterns for 2025
+<a name="trending-coding-patterns-for-2025"></a>
+
+## Trending Coding Patterns for 2026
 
 Beyond system design, coding interviews remain a crucial part of the technical interview process at top tech companies. Here are the most important coding patterns and questions trending in 2025 interviews:
 
-## High-ROI Coding Patterns for 2025
+<a name="high-roi-coding-patterns-for-2025"></a>
+
+### High-ROI Coding Patterns for 2026
 
 Focusing on these patterns will give you the highest return on investment for your interview preparation:
 
@@ -278,7 +291,7 @@ Focusing on these patterns will give you the highest return on investment for yo
 - Palindrome verification
 - Removing duplicates
 
-**Example 2025 Question**:
+**Example Question**:
 ```
 Design an algorithm to find all unique quadruplets in an array that sum to a target, with O(n³) time complexity and optimized space usage.
 ```
@@ -292,7 +305,7 @@ Design an algorithm to find all unique quadruplets in an array that sum to a tar
 - Minimum window substring
 - Longest substring without repeating characters
 
-**Example 2025 Question**:
+**Example Question**:
 ```
 Given a string and a pattern, find all start indices of pattern's anagrams in the string with optimal time and space complexity.
 ```
@@ -307,7 +320,7 @@ Given a string and a pattern, find all start indices of pattern's anagrams in th
 - Number of islands
 - Word ladder
 
-**Example 2025 Question**:
+**Example Question**:
 ```
 Design an algorithm to find the shortest path between two nodes in a weighted graph where weights represent time, but some edges can only be traversed during specific time windows.
 ```
@@ -321,7 +334,7 @@ Design an algorithm to find the shortest path between two nodes in a weighted gr
 - Median of two sorted arrays
 - Kth smallest element in a sorted matrix
 
-**Example 2025 Question**:
+**Example Question**:
 ```
 Design an algorithm to find the kth smallest element in a row-wise and column-wise sorted 2D array with optimal time complexity.
 ```
@@ -336,7 +349,7 @@ Design an algorithm to find the kth smallest element in a row-wise and column-wi
 - Unique paths
 - Knapsack problem variants
 
-**Example 2025 Question**:
+**Example Question**:
 ```
 Implement a space-optimized solution for the minimum cost to cut a rod into pieces of specific lengths, where each cut has a different cost.
 ```
@@ -350,7 +363,7 @@ Implement a space-optimized solution for the minimum cost to cut a rod into piec
 - Strongly connected components
 - Shortest path algorithms (Dijkstra's, Bellman-Ford)
 
-**Example 2025 Question**:
+**Example Question**:
 ```
 Design an algorithm to find the most efficient way to connect multiple servers where connection costs vary based on data transfer rates and physical distance.
 ```
@@ -364,12 +377,14 @@ Design an algorithm to find the most efficient way to connect multiple servers w
 - Meeting rooms
 - Non-overlapping intervals
 
-**Example 2025 Question**:
+**Example Question**:
 ```
 Implement an algorithm that can schedule optimal maintenance windows for a system with multiple components, each requiring different maintenance intervals.
 ```
 
-## Latest Coding Questions at Top Companies (2025)
+<a name="latest-coding-questions-at-top-companies-2025"></a>
+
+### Latest Coding Questions at Top Companies (2025-2026)
 
 | Company | Question | Difficulty | Pattern |
 |---------|----------|------------|---------|
@@ -382,7 +397,9 @@ Implement an algorithm that can schedule optimal maintenance windows for a syste
 | Netflix | Design a content recommendation system that balances user preferences with content diversity | Hard | Graph + Prioritization |
 | Uber | Optimize driver-to-rider matching in a dynamic environment with changing traffic conditions | Hard | Graph + Greedy |
 
-## Preparation Strategy for 2025
+<a name="preparation-strategy-for-2025"></a>
+
+### Preparation Strategy for 2026
 
 1. **Master the Fundamentals**: Ensure you have a solid understanding of data structures, algorithms, and complexity analysis.
 
@@ -398,7 +415,9 @@ Implement an algorithm that can schedule optimal maintenance windows for a syste
 
 7. **Consistent Practice**: Aim for consistent daily practice rather than cramming.
 
-## Advanced Topics to Master in 2025
+<a name="advanced-topics-to-master-in-2025"></a>
+
+### Advanced Topics to Master in 2026
 
 - **Quantum Algorithm Basics**: Understanding quantum computing principles is becoming relevant for specific roles.
 - **AI/ML Algorithms**: Familiarity with fundamental ML algorithms and data structures.
@@ -414,9 +433,9 @@ By focusing on these patterns and topics, you'll be well-prepared for coding int
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
-The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
 ⚡ **One click. Every update. Zero effort.**
 

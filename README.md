@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 41 companies: FAANG, frontier AI labs, and AI-first startups.</p>
+  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 44 companies: FAANG, frontier AI labs, and AI-first startups.</p>
 
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
     <img src="https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=flat" alt="GitHub stars" />
@@ -46,7 +46,7 @@
 
 The interview format shifted more this past year than in the previous five. The headline: **AI-assisted rounds went mainstream**, and where AI is allowed the rubric moved to *verification*: test before you trust the output, and be able to explain it.
 
-- **Meta** rolled out an AI-enabled coding round (3-panel CoderPad; for E6+ it *is* the coding round). **Google** is piloting an AI-assisted code-comprehension round with Gemini, while simultaneously bringing back an in-person round to curb cheating. **LinkedIn** made its AI-enabled round standard. **DoorDash** publicly rebuilt its interviews around AI.
+- **Meta** rolled out an AI-enabled coding round (3-panel CoderPad), now reaching SWE and EM roles up through E7/M2. **Google** is piloting an AI-assisted code-comprehension round with Gemini, while simultaneously bringing back an in-person round to curb cheating. **LinkedIn** made its AI-enabled round standard. **DoorDash** publicly rebuilt its interviews around AI.
 - **OpenAI** added an agentic coding round in beta, the only *live* round where AI is allowed (the take-home also permits it for Applied AI roles). **Anthropic** runs a split policy (AI permitted on the take-home, banned in live rounds) and has redesigned that take-home three times because Claude kept beating it. **Sierra** dropped algorithm interviews entirely.
 - **ByteDance** and **Palantir** explicitly ban AI use. **Amazon** and **Apple** report no AI round at all.
 - **Work trials are the AI-startup norm**: Cursor runs paid 8-9 hour onsite projects; OpenAI's take-home is a paid (~$1,000) work trial.
@@ -80,6 +80,9 @@ Full breakdown in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#the-si
 | 18. | [DoorDash](#doordash) |
 | 19. | [Tesla](#tesla) |
 | 20. | [Flipkart](#flipkart) |
+| 21. | [Anduril](./FAANG-Recent-Questions.md#anduril) |
+| 22. | [Figma](./FAANG-Recent-Questions.md#figma) |
+| 23. | [Ramp](./FAANG-Recent-Questions.md#ramp) |
 
 **AI Labs & AI Companies**: [full guide](./AI-Companies-Interview-Questions.md)
 
@@ -233,7 +236,7 @@ Full breakdown in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#the-si
 <details>
 <summary>View 45 Problems (2025-2026 Most Frequent)</summary>
 
-**2026 changes**: The **AI-enabled coding round** is rolling out to all SWE roles, 60 min in a 3-panel CoderPad (file explorer, editor, AI chat; GPT-5, Claude Sonnet, Gemini, Llama 4 available; AI reads files but cannot edit). Three phases: fix a bug -> build a 120+ line feature -> optimize for larger datasets. Scored on problem solving, code quality, **verification**, and communication. For E4-E5 it randomly replaces one coding round; for E6+ it *is* the coding round. Behavioral weight increased, it can single-handedly downlevel E5 to E4. Candidates increasingly get *variants* of tagged problems.
+**2026 changes**: The **AI-enabled coding round** is rolling out to all SWE roles, 60 min in a 3-panel CoderPad (file explorer, editor, AI chat; GPT-5, Claude Sonnet, Gemini, Llama 4 available; AI reads files but cannot edit). Three phases: fix a bug -> build a 120+ line feature -> optimize for larger datasets. Scored on problem solving, code quality, **verification**, and communication. For E4-E5 it randomly replaces one of the two coding rounds; at E6 it also replaces one of two, so a traditional CoderPad round normally remains. Behavioral weight increased, it can single-handedly downlevel E5 to E4. Candidates increasingly get *variants* of tagged problems.
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -990,7 +993,7 @@ Greedy and string manipulation are heavily tested (Reorganize String is most-ask
 
 ## About This Repository
 
-This repository covers **1,400+ problem listings across 41 companies** (359 unique LeetCode problems, plus 100+ company-specific custom problems that never appear on LeetCode), organized by company and topic, spanning FAANG/MAANG+, frontier AI labs (OpenAI, Anthropic, DeepMind, xAI, Mistral), and AI-first companies (Perplexity, Scale AI, Cursor, Cohere, Waymo, Sierra, Glean). Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
+This repository covers **1,470+ problem listings across 44 companies** (365 unique LeetCode problems, plus 100+ company-specific custom problems that never appear on LeetCode), organized by company and topic, spanning FAANG/MAANG+, frontier AI labs (OpenAI, Anthropic, DeepMind, xAI, Mistral), and AI-first companies (Perplexity, Scale AI, Cursor, Cohere, Waymo, Sierra, Glean). Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
 
 Every LeetCode link is validated against LeetCode's live problem list.
 
@@ -1010,7 +1013,7 @@ Contributions are welcome. Please feel free to submit a pull request with new qu
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week**: before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
 The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 

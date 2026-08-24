@@ -2,6 +2,8 @@
 
 > Interview processes, coding questions, ML questions, and system design prompts at the top AI labs and AI-first companies, compiled from 1,500+ candidate reports, engineering blogs, and interview guides (Reddit, Blind, Glassdoor, 1point3acres, LeetCode Discuss, interviewing.io, Exponent, and company sources). For OpenAI and Anthropic deep-dives, see [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#openai).
 
+> **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
+
 ## Table of Contents
 
 **Frontier Labs**
@@ -38,7 +40,7 @@
 
 > **Process**: Recruiter screen -> hiring manager screen -> **technical quiz round** (~2 hours: four ~30-min sections on CS fundamentals, mathematics, statistics, and ML, rapid-fire and definition-heavy; veterans fail on forgotten formal definitions like eigenvalues, rank, SVD) -> 2 coding rounds on CoderPad (code is expected to *run*, unlike core Google) -> ML/system design -> paper discussion round (present and defend a paper, sometimes given 2-3 days prior) -> behavioral -> hiring committee. 6-10 weeks total. AI tools prohibited in technical rounds (2026 policy).
 
-### Coding Problems
+### Google DeepMind Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -63,7 +65,7 @@
 | 6 | Regression, SVM/kernel methods, Bayesian networks | Machine Learning |
 | 7 | Implement custom losses, attention mechanisms, training loops from scratch without aids | ML Coding |
 
-### System Design
+### Google DeepMind System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -78,7 +80,7 @@
 
 > **Process**: Engineer screen (often no recruiter; "explain your most technical project in 30 seconds") -> **proctored CodeSignal OA** (~60-70 min, camera + mic + screen recording; one problem with five escalating complexity levels) -> 2-3 live coding rounds (practical/production-flavored: class design, iterators, KV stores, caches; one 45-min format = 20 min working solution + 15 min extending to concurrency at "millions of queries") -> system design -> brief behavioral. Fast (2-3 weeks) but scheduling reported as chaotic. Candidates report failing on coding bar, not ML. Python and TypeScript most common.
 
-### Coding Problems
+### xAI Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -91,7 +93,7 @@
 | 7 | [Course Schedule](https://leetcode.com/problems/course-schedule) (cycle detection) | Medium | Graph |
 | 8 | Efficient beam search implementation | Hard | ML Algorithms (custom) |
 
-### ML Questions
+### xAI ML Questions
 
 | No. | Topic | Category |
 | --- | ----- | -------- |
@@ -100,7 +102,7 @@
 | 3 | Memory-efficient training of billion-parameter models; CUDA kernel acceleration | Systems |
 | 4 | Efficient attention for 100K-token contexts | Architecture |
 
-### System Design
+### xAI System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -115,7 +117,7 @@
 
 > **Process**: Recruiter screen -> technical screen (60 min, one medium-hard problem in Python/Rust; C++/CUDA for some roles) -> take-home for select/research roles (4-8h; design a small LLM/agent experiment, write-up judged with academic-paper expectations) -> **LLM knowledge quiz** (45-75 min structured deep-dive) -> system design (AI-infrastructure flavored) -> behavioral/values. Research roles add a research presentation with 20+ min of hard questioning. Ground "why Mistral" in the open-weight mission; read the Mistral 7B/Mixtral/Codestral papers.
 
-### Coding Problems
+### Mistral AI Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -130,7 +132,7 @@
 | 9 | Stream-process large datasets with bounded memory | Medium | Streaming |
 | 10 | Classic graph/DP/priority-queue problems with ML-applied twists | Medium-Hard | Algorithms |
 
-### ML Questions
+### Mistral AI ML Questions
 
 | No. | Topic | Category |
 | --- | ----- | -------- |
@@ -144,7 +146,7 @@
 | 8 | Data mixing, curriculum, LR schedules; scaling laws | Training |
 | 9 | "How would you build an eval suite for a Codestral-class model?" | Evaluation |
 
-### System Design
+### Mistral AI System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -178,7 +180,7 @@ See [Meta in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#meta-formerl
 
 > **Process**: The AGI SF Lab phone screen covers coding + system design + backend tasks + Leadership Principles. Onsite for ML roles: coding, ML application/design, behavioral with heavy LP emphasis, bar raiser in the loop. The Nova team follows the standard Amazon AGI / Applied Scientist process. ML coding style compared by candidates to OpenAI's.
 
-### Reported Problems
+### Amazon AGI Reported Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -203,7 +205,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Recruiter screen (45 min) -> technical phone screen (~45 min coding) -> virtual onsite 4-5 rounds (coding, system design, infrastructure, hiring-manager deep dive) -> final round with a **founder/senior leader**. Very fast: ~11-23 days end-to-end; resume-to-first-interview within three business days. OA on HackerRank/CodeSignal (75-90 min, 2-3 questions). Python strongly preferred (codebase is Python-first). Evaluated on production-ready code, edge cases, velocity, RAG/search-domain reasoning.
 
-### Coding Problems
+### Perplexity AI Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -225,7 +227,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 16 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard | Heap / Streaming |
 | 17 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard | Sliding Window |
 
-### ML/AI Questions
+### Perplexity AI ML/AI Questions
 
 | No. | Topic | Category |
 | --- | ----- | -------- |
@@ -235,7 +237,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 4 | "How do you know Model A beats Model B for search?", calibration, factuality, A/B design | Evaluation |
 | 5 | Cost/latency optimization of LLM serving (token budgets, caching, concurrency) | Inference |
 
-### System Design
+### Perplexity AI System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -250,7 +252,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Recruiter screen -> HackerRank OA / technical screen (~60 min, 2 mediums) -> hiring-manager screen -> virtual onsite 4-5 rounds: coding, **backend practical**, **debugging round** (unfamiliar multi-file codebase, find/fix 2-3 logical bugs in 60 min), system design or ML, and "Credo" behavioral. Explicitly "not standard LeetCode", implementation-heavy, production realism, speed and working code over algorithmic cleverness.
 
-### Coding Problems
+### Scale AI Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -268,7 +270,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 12 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array) | Easy | Two Pointers |
 | 13 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) (most frequently surfaced topic) | Medium | Intervals |
 
-### ML/AI Questions
+### Scale AI ML/AI Questions
 
 | No. | Topic | Category |
 | --- | ----- | -------- |
@@ -277,7 +279,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 3 | Adversarial attacks; evaluation and deployment failure modes; pipeline debugging | Robustness |
 | 4 | Human-in-the-loop labeling quality: automated + human evaluation frameworks | Data Quality |
 
-### System Design
+### Scale AI System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -292,7 +294,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Recruiter screen -> technical screen (60 min live coding, **Python or Go**) -> ML round or system design (team-dependent) -> behavioral -> team match. ~4-6 weeks. Style: production-quality infrastructure code over LeetCode tricks, "no segment trees, advanced DP, or competitive programming." Tests-first, edge cases, explicit concurrency/locking. MLE track adds a ~3-hour assessment spanning language modelling, math for ML, and coding, plus numpy ML coding and a research presentation.
 
-### Coding Problems
+### Cohere Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -304,7 +306,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 6 | Create a dataset for sentence completion using BERT | Medium | ML Coding (custom) |
 | 7 | ML coding with numpy (implement model components) | Medium-Hard | ML Coding (custom) |
 
-### ML/AI Questions
+### Cohere ML/AI Questions
 
 | No. | Topic | Category |
 | --- | ----- | -------- |
@@ -315,7 +317,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 5 | "Fine-tune Command for a regulated industry where hallucinations cost the customer money" | Applied |
 | 6 | Attention mathematics, write the equation; encoder-only vs decoder-only vs encoder-decoder | Architecture |
 
-### System Design
+### Cohere System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -328,7 +330,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Application review (cover letter explicitly weighted, passion for open source) -> recruiter screen -> 1-2 conversational technical interviews (~60 min) -> **take-home project** for junior/intern roles (build a HF Spaces demo, dataset card project, or fix a bug in their OSS tooling) with follow-up presentation; senior roles get architecture discussions or a "job talk." Open-source track record (PRs to HF repos) counts heavily. De-emphasizes rote algorithm memorization. Note: interview data volume is low. Treat specifics as low-sample.
 
-### Coding Problems
+### Hugging Face Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -338,7 +340,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 4 | Take-home: build a Hugging Face Spaces demo / dataset card project | Medium | Applied ML Project (custom) |
 | 5 | Fine-tune a BERT model end-to-end; build an inference pipeline | Medium | Applied ML (custom) |
 
-### ML/AI Questions
+### Hugging Face ML/AI Questions
 
 | No. | Topic | Category |
 | --- | ----- | -------- |
@@ -352,7 +354,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Recruiter/manager screen (covers "why Cursor" and tolerance for heavy workload) -> 1-3 technical phone screens (60 min, one medium-hard problem, sometimes against part of Cursor's actual codebase) -> **paid onsite project: 8-9 hours** (one or two 8-hour days for senior roles; real codebase access, a Slack channel, build a feature autonomously, ending with a presentation, this round decides the offer) -> culture-fit discussion (often over meals). Some senior/staff roles get a 4-8h take-home. AI tools: reports conflict. Some say unrestricted AI in all rounds, others say prohibited in the first coding round; all agree pasting raw model output without judgment is a fast rejection. Languages: TypeScript (editor), Rust (perf-critical), Python (ML).
 
-### Coding Problems
+### Cursor Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -365,7 +367,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 7 | Build a context-retrieval system for LLM prompts | Medium-Hard | Applied AI (custom) |
 | 8 | Text-buffer primitives with efficient edit operations (rope-style structures) | Hard | Data Structures (custom) |
 
-### System Design
+### Cursor System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -380,7 +382,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Recruiter screen -> technical phone screen (60 min, one medium-hard problem in Python/C++/CUDA) -> take-home for senior/research roles (4-8h; CUDA kernel implementation for inference roles) -> onsite 4-5 rounds: two coding (algorithms + applied ML-systems), system design, one or two ML/research rounds, behavioral -> VP round. ~3 weeks. Real CUDA fluency expected for inference-engine roles (difficulty compared to NVIDIA core GPU teams).
 
-### Coding Problems
+### Together AI Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -391,7 +393,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 5 | Streaming token generation with client-disconnect propagation | Medium | Async Systems (custom) |
 | 6 | Two LeetCode Mediums in the final round (graph / DP / priority-queue with ML twists) | Medium | DSA |
 
-### ML/Research Topics
+### Together AI ML/Research Topics
 
 | No. | Topic | Category |
 | --- | ----- | -------- |
@@ -401,7 +403,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 4 | GPU memory hierarchy (HBM/shared), occupancy, Tensor Cores; tensor parallelism | GPU |
 | 5 | Mixtral MoE routing; Llama RMSNorm; RoPE | Architecture |
 
-### System Design
+### Together AI System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -416,7 +418,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Recruiter call -> 1-hour phone with live coding (compiler roles) -> technical round(s) with staff engineers -> 1-hour "personality"/leadership interview with a VP. ~32 days average. **NDA before the first interview**: which is why specific questions rarely leak (treat all data as low-confidence). Compiler new-grad candidates report problems "harder than FAANG." Stack: Haskell prototypes, C++/Python tooling; domain centers on the Tensor Streaming Processor (LPU): spatial compiler passes, deterministic scheduling, mapping NN graphs to hardware. LLVM/MLIR experience preferred.
 
-### Reported Topics
+### Groq Reported Topics
 
 | No. | Topic | Difficulty | Category |
 | --- | ----- | ---------- | -------- |
@@ -430,7 +432,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: OA, **two LeetCode Mediums in 45 minutes** on HackerRank (very time-pressured, short behavioral at the end) -> phone screen -> final round with two more LC Mediums. Alternate reported shape: 4 rounds (2 coding + 2 behavioral), ~1 month. Uses Microsoft Teams + HackerRank. Performance-engineer candidates get parallel programming and matrix multiplication questions on top of coding. Emphasis: Arrays + Strings.
 
-### Coding Problems
+### Cerebras Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -460,7 +462,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Recruiter screen -> **async take-home coding screen: CoderPad, 90 minutes, 2-3 problems (2 Medium + 1 Medium-Hard), auto-graded, no interviewer, Python strongly preferred** -> behavioral round testing "founder mindset" (they favor ex-founders) -> practical coding round (60 min, realistic product scenarios with function stubs + sample data) -> **product decomposition round** (45-60 min, signature round: design an end-to-end solution including UI, backend architecture, and database schema). Forward Deployed Engineer roles use a 1-hour CodeSignal assessment instead. 3-5 weeks.
 
-### Coding Problems
+### ElevenLabs Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -470,7 +472,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 4 | Audio file management / video processing / dubbing pipeline task (practical round) | Medium-Hard | Applied Backend (custom) |
 | 5 | Rate-limited API client; streaming audio processing; caching layer (practical round) | Medium-Hard | Systems Coding (custom) |
 
-### Product Decomposition Round
+### ElevenLabs Product Decomposition Round
 
 Decompose a customer-facing product problem into components; define UI + backend + DB architecture; discuss trade-offs. No code written. Behavioral samples: "Tell me about a project where you were the sole decision-maker", "What's the fastest idea-to-production timeline you've achieved?"
 
@@ -480,7 +482,7 @@ Decompose a customer-facing product problem into components; define UI + backend
 
 > **Process**: Recruiter screen -> technical phone screen (45-60 min, one medium-hard or two smaller problems; edge cases + concurrency probing) -> virtual onsite 4-5 rounds: two coding, system design (experienced hires), behavioral; some loops add a domain/"data fluency" round -> hiring committee. ~4-6 weeks. Modern C++ (C++17/20) for onboard/robotics roles. Interviewers test move semantics, memory management, threading primitives; Python for data/ML-eval roles. **Correctness weighted over speed** (safety-critical culture). Behavioral centers on safety mindset.
 
-### Coding Problems
+### Waymo Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -509,7 +511,7 @@ Decompose a customer-facing product problem into components; define UI + backend
 | 23 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) (framed as sensor smoothing) | Hard | Heaps |
 | 24 | Implement a custom memory allocator (C++ roles) | Hard | Low-Level C++ (custom) |
 
-### System Design
+### Waymo System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -526,7 +528,7 @@ Decompose a customer-facing product problem into components; define UI + backend
 
 > **Process**: Four rounds. LeetCode-style coding, system design, ML coding, culture fit. 3-4 weeks (~2 with referral). Tone reported as relaxed and collaborative, interviewers give hints. Mix of algorithmic challenges (strings, recursion, data structures), system design for real-time consumer platforms, AI/ML integration, some front-end problems, plus product-sense questions on engaging user experiences.
 
-### Reported Problems & Topics
+### Character.AI Reported Problems & Topics
 
 | No. | Problem / Topic | Difficulty | Category |
 | --- | --------------- | ---------- | -------- |
@@ -542,7 +544,7 @@ Decompose a customer-facing product problem into components; define UI + backend
 
 > **Process**: Sierra **publicly removed coding/algorithms interviews** ("The AI-native interview," sierra.ai engineering blog). Phone screen is a system-design screen focused on production-readiness. The AI-native onsite has three phases: **Plan** (drive ideation of a product with interviewers) -> **Build** (2 hours solo, any AI tools/frameworks allowed; scope pivots allowed) -> **Review** (demo + defend product decisions, data models, abstractions, and how AI was used). Also piloting a debugging round using coding agents on an existing codebase. Agent SWE loop: CoderPad practical screen -> debugging round (multi-file agent codebase, find ~3 bugs by running tests) -> agent-building take-home (build an agent with a provided API key) + 60-min presentation -> hiring-manager behavioral.
 
-### Reported Problems
+### Sierra AI Reported Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -558,7 +560,7 @@ Decompose a customer-facing product problem into components; define UI + backend
 
 > **Process**: Recruiter screen + LeetCode-style coding round (medium/hard, escalating difficulty) -> onsite: 1 coding round + **signature 2-hour on-the-spot build assignment** (build a functional mini-application that runs) + system design + behavioral. Some candidates report up to 6 rounds. Emphasis on practical engineering speed, "build working software quickly." 2-4 weeks.
 
-### Coding Problems
+### Glean Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -571,7 +573,7 @@ Decompose a customer-facing product problem into components; define UI + backend
 | 7 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) with O(1) space follow-up | Easy-Hard | Stack |
 | 8 | Event stream processing | Medium | Practical (custom) |
 
-### System Design
+### Glean System Design
 
 Enterprise search systems: indexing pipelines, ranking algorithms, document retrieval at scale, **permissions-aware search**; improving search relevance while balancing performance and accuracy.
 
@@ -581,7 +583,7 @@ Enterprise search systems: indexing pipelines, ranking algorithms, document retr
 
 > **Process**: Recruiter screen -> 60-min coding screen (Python or TypeScript) -> virtual onsite: 2 coding rounds, ML system design or product system design, craft deep-dive, behavioral. Research candidates add a paper-discussion round. ~4-5 weeks (company aims for screen-to-offer in ~10 days). The coding rounds are medium-hard DSA (arrays, strings, graphs, DP). Craft deep-dive emphasizes ownership, aesthetic judgment, and empathy for filmmakers/advertisers.
 
-### System Design
+### Runway System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -595,7 +597,7 @@ Enterprise search systems: indexing pipelines, ranking algorithms, document retr
 
 > **Process**: Recruiter/HM screen -> 60-min technical screen (widely called the hardest stage) -> final panel of 3-5 interviews (technical, domain expertise, system design, behavioral). 2-4 weeks. Coding questions look standard but carry data-processing twists; big-data handling is always in scope. Backend/platform roles: distributed systems, indexing, storage trade-offs, concurrency, fault tolerance. AI/ML (Cortex) roles add LLM-platform content: Cortex functions, Cortex Search, Snowpark, feature stores.
 
-### Coding Problems
+### Snowflake Coding Problems
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -604,7 +606,7 @@ Enterprise search systems: indexing pipelines, ranking algorithms, document retr
 | 3 | Browser-tab behavior simulator (similar to [Design Browser History](https://leetcode.com/problems/design-browser-history)) | Medium | Design / Simulation |
 | 4 | Duplicated character check in string | Easy | Strings |
 
-### System Design
+### Snowflake System Design
 
 | No. | Question | Key Focus |
 | --- | -------- | --------- |
@@ -636,7 +638,7 @@ Cross-company shifts documented across 2025-2026 (Karat, interviewing.io, Fabric
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week**: before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
 The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
