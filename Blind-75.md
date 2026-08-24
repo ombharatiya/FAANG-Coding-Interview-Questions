@@ -2,6 +2,8 @@
 
 > **Blind 75** is the most famous curated list of LeetCode problems, originally shared on the Blind platform by a software engineer. This collection of 75 carefully selected problems covers all the essential patterns needed to ace coding interviews at top tech companies. It's the gold standard for efficient interview preparation.
 
+> **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [NeetCode 150](./NeetCode-150.md)
+
 <div align="center">
   
 **🏆 The Original FAANG Interview List | ⚡ 75 Essential Problems | 🎯 Maximum Impact**
@@ -170,7 +172,7 @@ The original author curated this list based on:
 | 69 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | Inorder | All FAANG | BST property |
 | 70 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | BST Property | All FAANG | BST traversal |
 | 71 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | Medium | Trie Design | All FAANG | Data structure |
-| 72 | [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Medium | Trie + DFS | Google, Meta | Wildcard search |
+| 72 | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Medium | Trie + DFS | Google, Meta | Wildcard search |
 | 73 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | Hard | Trie + Backtrack | All FAANG | Multiple word search |
 
 ### Heap (3 Problems)
@@ -343,9 +345,9 @@ Consider exploring Grind 75 after mastering the original Blind 75!
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
-The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
 ⚡ **One click. Every update. Zero effort.**
 

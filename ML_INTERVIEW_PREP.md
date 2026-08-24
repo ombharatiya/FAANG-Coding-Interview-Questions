@@ -1,27 +1,34 @@
 # Complete Machine Learning Interview Preparation Guide
 
+> **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
+
 A comprehensive collection of machine learning interview questions with detailed explanations.
 
 ## Table of Contents
 
 - [Essential Machine Learning Theory for Interviews](#essential-machine-learning-theory-for-interviews)
 - [Deep Learning Concepts from Basic to Advanced](#deep-learning-concepts-from-basic-to-advanced)
+- [LLM and Generative AI Interview Questions](#llm-and-generative-ai-interview-questions)
+- [RAG, Agents and Context Engineering](#rag-agents-and-context-engineering)
+- [LLM Evaluation and Guardrails](#llm-evaluation-and-guardrails)
+- [LLM Inference, Serving and Cost Optimization](#llm-inference-serving-and-cost-optimization)
+- [Distributed Training and Scaling](#distributed-training-and-scaling)
 - [Natural Language Processing Interview Questions](#natural-language-processing-interview-questions)
 - [Computer Vision Interview Questions](#computer-vision-interview-questions)
 - [Reinforcement Learning for ML Interviews](#reinforcement-learning-for-ml-interviews)
 - [MLOps and Model Deployment Interview Topics](#mlops-and-model-deployment-interview-topics)
 - [ML System Design Questions and Strategies](#ml-system-design-questions-and-strategies)
 - [Statistics & Mathematics for ML Interviews](#statistics--mathematics-for-ml-interviews)
-- [FAANG and Top Tech Companies' ML Interview Process](#top-companies-ml-interview-process)
-- [Learning Resources for ML Interview Preparation](#additional-resources)
+- [FAANG and Top Tech Companies' ML Interview Process](#faang-and-top-tech-companies-ml-interview-process)
+- [Learning Resources for ML Interview Preparation](#learning-resources-for-ml-interview-preparation)
 
 ## Essential Machine Learning Theory for Interviews
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
-| What's the difference between supervised, unsupervised, and reinforcement learning? | [Answer](https://www.analyticsvidhya.com/blog/2021/02/machine-learning-vs-deep-learning-vs-reinforcement-learning/) | Easy |
+| What's the difference between supervised, unsupervised, and reinforcement learning? | [Answer](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml) | Easy |
 | Explain the bias-variance tradeoff. | [Answer](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) | Medium |
-| What is overfitting and how do you combat it? | [Answer](https://elitedatascience.com/overfitting-in-machine-learning) | Easy |
+| What is overfitting and how do you combat it? | [Answer](https://aws.amazon.com/what-is/overfitting/) | Easy |
 | Compare L1 and L2 regularization. | [Answer](https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-ridge-lasso-regression-python/) | Medium |
 | Explain precision, recall, F1-score, and ROC-AUC. | [Answer](https://neptune.ai/blog/f1-score-accuracy-roc-auc-pr-auc) | Medium |
 | What is cross-validation and why is it important? | [Answer](https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f) | Easy |
@@ -40,22 +47,97 @@ A comprehensive collection of machine learning interview questions with detailed
 | Explain the vanishing/exploding gradient problem. | [Answer](https://towardsdatascience.com/the-vanishing-exploding-gradient-problem-in-deep-neural-networks-191358470c11) | Hard |
 | What is dropout and why is it used? | [Answer](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5) | Medium |
 | What are optimizers? Compare SGD, Adam, RMSprop, etc. | [Answer](https://towardsdatascience.com/optimizers-for-training-neural-network-59450d71caf6) | Medium |
-| Explain batch normalization. | [Answer](https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c) | Hard |
+| Explain batch normalization. | [Answer](https://d2l.ai/chapter_convolutional-modern/batch-norm.html) | Hard |
 | What is transfer learning and how is it useful? | [Answer](https://machinelearningmastery.com/transfer-learning-for-deep-learning/) | Medium |
 | Explain the architecture of CNNs. | [Answer](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53) | Medium |
 | What are LSTMs and GRUs? How do they solve the vanishing gradient problem? | [Answer](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) | Hard |
+
+## LLM and Generative AI Interview Questions
+
+Most differentiating weight in 2026 AI/ML loops sits here rather than in classical ML. Classical ML is now treated as table stakes.
+
+| Question | Answer Link | Difficulty |
+|----------|-------------|------------|
+| Walk through the Transformer architecture end to end. | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | Medium |
+| Explain self-attention, and why it is scaled by the square root of the key dimension. | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Medium |
+| What is the difference between encoder-only, decoder-only and encoder-decoder models? | [Hugging Face LLM guide](https://huggingface.co/docs/transformers/main/en/llm_tutorial) | Medium |
+| How do rotary position embeddings work, and why did they replace absolute embeddings? | [RoFormer / RoPE](https://arxiv.org/abs/2104.09864) | Hard |
+| Explain multi-head, multi-query and grouped-query attention, and the tradeoff each makes. | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | Hard |
+| What is a Mixture of Experts model, and why route to only a couple of experts per token? | [Mixtral of Experts](https://arxiv.org/abs/2401.04088) | Hard |
+| Explain the compute-optimal scaling laws and what they changed about model training. | [Chinchilla](https://arxiv.org/abs/2203.15556) | Hard |
+| Compare full fine-tuning, LoRA and QLoRA. When would you pick each? | [LoRA](https://arxiv.org/abs/2106.09685), [QLoRA](https://arxiv.org/abs/2305.14314) | Medium |
+| Explain RLHF end to end: reward model, policy optimisation, and where it breaks. | [InstructGPT](https://arxiv.org/abs/2203.02155) | Hard |
+| Compare DPO with PPO-based RLHF. Why has DPO become common? | [Direct Preference Optimization](https://arxiv.org/abs/2305.18290) | Hard |
+| What is Constitutional AI and how does it reduce dependence on human labels? | [Constitutional AI](https://arxiv.org/abs/2212.08073) | Hard |
+| Why does chain-of-thought prompting improve reasoning, and when does it not? | [Chain-of-Thought Prompting](https://arxiv.org/abs/2201.11903) | Medium |
+| What causes hallucination, and which mitigations actually work in production? | [RAG](https://arxiv.org/abs/2005.11401) | Hard |
+| Explain catastrophic forgetting during fine-tuning and how to limit it. | [LoRA](https://arxiv.org/abs/2106.09685) | Hard |
+
+## RAG, Agents and Context Engineering
+
+| Question | Answer Link | Difficulty |
+|----------|-------------|------------|
+| Design a RAG pipeline end to end, from ingestion through to a cited answer. | [RAG](https://arxiv.org/abs/2005.11401) | Medium |
+| Compare dense, sparse (BM25) and hybrid retrieval. When does BM25 still win? | [RAG](https://arxiv.org/abs/2005.11401) | Medium |
+| What chunking strategy would you choose, and how does chunk size affect recall? | [RAG](https://arxiv.org/abs/2005.11401) | Medium |
+| Why add a re-ranker after retrieval, and what does it cost you? | [RAG](https://arxiv.org/abs/2005.11401) | Medium |
+| When is fine-tuning the right answer instead of RAG? | [LoRA](https://arxiv.org/abs/2106.09685) | Medium |
+| Explain the ReAct loop and where agents typically fail. | [ReAct](https://arxiv.org/abs/2210.03629) | Hard |
+| How do models learn to call tools, and how do you keep tool schemas maintainable? | [Toolformer](https://arxiv.org/abs/2302.04761) | Hard |
+| What is the Model Context Protocol and what problem does it solve? | [MCP](https://modelcontextprotocol.io/) | Medium |
+| When should a workflow be a single agent, and when a multi-agent system? | [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) | Hard |
+| Design memory for an agent: working, episodic and semantic. | [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) | Hard |
+| How do you classify and gate risky agent actions such as irreversible writes? | [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) | Hard |
+| What is prompt injection, and how do you defend an agent that browses the web? | [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) | Hard |
+
+## LLM Evaluation and Guardrails
+
+| Question | Answer Link | Difficulty |
+|----------|-------------|------------|
+| How do you evaluate an LLM feature that has no single correct answer? | [OpenAI Evals guide](https://platform.openai.com/docs/guides/evals) | Hard |
+| Build an eval suite for a customer who has never measured quality. | [OpenAI Evals guide](https://platform.openai.com/docs/guides/evals) | Hard |
+| What are the failure modes of LLM-as-a-judge, and how do you correct for them? | [OpenAI Evals guide](https://platform.openai.com/docs/guides/evals) | Hard |
+| How do you measure retrieval quality separately from generation quality? | [RAG](https://arxiv.org/abs/2005.11401) | Medium |
+| Explain benchmark contamination and how you would detect it. | [MMLU](https://arxiv.org/abs/2009.03300) | Hard |
+| How would you run an A/B test to show model A beats model B for your users? | [OpenAI Evals guide](https://platform.openai.com/docs/guides/evals) | Medium |
+| Design a red-teaming process for a model you are about to ship. | [Constitutional AI](https://arxiv.org/abs/2212.08073) | Hard |
+
+## LLM Inference, Serving and Cost Optimization
+
+| Question | Answer Link | Difficulty |
+|----------|-------------|------------|
+| What is the KV cache, why does it dominate inference memory, and how do you manage it? | [vLLM and PagedAttention](https://arxiv.org/abs/2309.06180) | Hard |
+| Explain PagedAttention and the problem it solves. | [vLLM and PagedAttention](https://arxiv.org/abs/2309.06180) | Hard |
+| How does FlashAttention speed up attention without changing the maths? | [FlashAttention](https://arxiv.org/abs/2205.14135) | Hard |
+| Explain speculative decoding and when it stops paying off. | [Speculative Decoding](https://arxiv.org/abs/2211.17192) | Hard |
+| Compare continuous batching with static batching for a serving system. | [vLLM docs](https://docs.vllm.ai/en/latest/) | Hard |
+| Compare int8, int4, GPTQ and AWQ quantization, and the quality you give up. | [GPTQ](https://arxiv.org/abs/2210.17323) | Hard |
+| You must cut serving cost by half without hurting quality. What do you try, in order? | [vLLM docs](https://docs.vllm.ai/en/latest/) | Hard |
+| Explain the tradeoff between time to first token and total throughput. | [vLLM docs](https://docs.vllm.ai/en/latest/) | Medium |
+
+## Distributed Training and Scaling
+
+| Question | Answer Link | Difficulty |
+|----------|-------------|------------|
+| Compare data, tensor, pipeline and sequence parallelism. | [ZeRO](https://arxiv.org/abs/1910.02054) | Hard |
+| Explain ZeRO sharding stages 1 to 3 and what each one saves. | [ZeRO](https://arxiv.org/abs/1910.02054) | Hard |
+| How would you shard a 200B-parameter model across thousands of accelerators? | [ZeRO](https://arxiv.org/abs/1910.02054) | Hard |
+| What are pipeline bubbles and how do you reduce them? | [ZeRO](https://arxiv.org/abs/1910.02054) | Hard |
+| How do you handle a node failure eight hours into a training run? | [ZeRO](https://arxiv.org/abs/1910.02054) | Hard |
+| Your loss spikes at step 40k. How do you debug it? | [Chinchilla](https://arxiv.org/abs/2203.15556) | Hard |
+| Explain mixed-precision training and why bf16 is usually preferred over fp16. | [ZeRO](https://arxiv.org/abs/1910.02054) | Medium |
 
 ## Natural Language Processing Interview Questions
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
-| What is word embedding? Explain Word2Vec, GloVe. | [Answer](https://towardsdatascience.com/introduction-to-word-embeddings-4cf857b12edc) | Medium |
+| What is word embedding? Explain Word2Vec, GloVe. | [Answer](https://d2l.ai/chapter_natural-language-processing-pretraining/index.html) | Medium |
 | Explain the Transformer architecture. | [Answer](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html) | Hard |
 | How does BERT work? | [Answer](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270) | Hard |
 | What is attention mechanism in NLP? | [Answer](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html) | Hard |
 | How would you handle text preprocessing for NLP tasks? | [Answer](https://towardsdatascience.com/nlp-text-preprocessing-a-practical-guide-and-template-d80874676e79) | Easy |
 | Explain how GPT models work. | [Answer](https://jalammar.github.io/illustrated-gpt2/) | Hard |
-| What is beam search in sequence generation? | [Answer](https://towardsdatascience.com/beam-search-decoding-in-python-9b1d2343d46c) | Medium |
+| What is beam search in sequence generation? | [Answer](https://d2l.ai/chapter_recurrent-modern/beam-search.html) | Medium |
 | How do you evaluate NLP models? | [Answer](https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213) | Medium |
 | Explain ROUGE, BLEU, and METEOR metrics. | [Answer](https://medium.com/explorations-in-language-and-learning/metrics-for-nlg-evaluation-c89b6a781054) | Medium |
 | What are subword tokenization methods? Compare BPE, WordPiece, and SentencePiece. | [Answer](https://huggingface.co/docs/transformers/tokenizer_summary) | Medium |
@@ -70,9 +152,9 @@ A comprehensive collection of machine learning interview questions with detailed
 | What is transfer learning in computer vision? | [Answer](https://machinelearningmastery.com/how-to-use-transfer-learning-when-developing-convolutional-neural-network-models/) | Medium |
 | Explain image segmentation. | [Answer](https://nanonets.com/blog/semantic-image-segmentation-2020/) | Medium |
 | How does a GAN work? | [Answer](https://jonathan-hui.medium.com/gan-whats-generative-adversarial-networks-and-its-application-f39ed278ef09) | Hard |
-| What is data augmentation and why is it important in CV? | [Answer](https://towardsdatascience.com/data-augmentation-for-deep-learning-4fe21d1a4eb9) | Easy |
+| What is data augmentation and why is it important in CV? | [Answer](https://d2l.ai/chapter_computer-vision/image-augmentation.html) | Easy |
 | Explain ResNet and the concept of skip connections. | [Answer](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035) | Medium |
-| How do you handle class imbalance in image classification? | [Answer](https://towardsdatascience.com/handling-imbalanced-datasets-in-deep-learning-f48407a0e758) | Medium |
+| How do you handle class imbalance in image classification? | [Answer](https://developers.google.com/machine-learning/crash-course/overfitting/imbalanced-datasets) | Medium |
 | What is the difference between semantic segmentation, instance segmentation, and panoptic segmentation? | [Answer](https://www.v7labs.com/blog/panoptic-segmentation-guide) | Medium |
 
 ## Reinforcement Learning for ML Interviews
@@ -84,10 +166,10 @@ A comprehensive collection of machine learning interview questions with detailed
 | What is the difference between policy-based and value-based RL? | [Answer](https://stats.stackexchange.com/questions/512440/what-is-the-difference-between-value-based-and-policy-based-reinforcement-learni) | Medium |
 | Explain Q-learning. | [Answer](https://towardsdatascience.com/simple-reinforcement-learning-q-learning-fcddc4b6fe56) | Medium |
 | What is Deep Q Network (DQN)? | [Answer](https://medium.com/@jonathan_hui/rl-dqn-deep-q-network-e207751f7ae4) | Hard |
-| Explain Policy Gradient methods. | [Answer](https://towardsdatascience.com/policy-gradient-methods-104c783251e0) | Hard |
+| Explain Policy Gradient methods. | [Answer](https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html) | Hard |
 | What is Actor-Critic architecture? | [Answer](https://medium.com/deeplearningmadeeasy/advantage-actor-critic-a2c-algorithm-840d3551a0d9) | Hard |
-| What are the challenges in reinforcement learning? | [Answer](https://www.deeplearning.ai/the-batch/reinforcement-learning-industrial-and-creative-applications/) | Medium |
-| Explain the difference between on-policy and off-policy learning. | [Answer](https://towardsdatascience.com/on-policy-vs-off-policy-in-reinforcement-learning-bba950d9f0d0) | Medium |
+| What are the challenges in reinforcement learning? | [Answer](https://arxiv.org/abs/1904.12901) | Medium |
+| Explain the difference between on-policy and off-policy learning. | [Answer](https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html) | Medium |
 | What is Proximal Policy Optimization (PPO)? | [Answer](https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-77f014ec3f12) | Hard |
 
 ## MLOps and Model Deployment Interview Topics
@@ -95,15 +177,15 @@ A comprehensive collection of machine learning interview questions with detailed
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
 | What is MLOps? | [Answer](https://neptune.ai/blog/mlops) | Easy |
-| How would you deploy a machine learning model to production? | [Answer](https://www.kdnuggets.com/2019/06/approaches-deploy-machine-learning-production.html) | Medium |
+| How would you deploy a machine learning model to production? | [Answer](https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) | Medium |
 | Explain the concept of model serving. | [Answer](https://www.datacamp.com/community/blog/machine-learning-model-serving) | Medium |
 | What are the considerations for monitoring ML models in production? | [Answer](https://christophergs.github.io/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/) | Medium |
-| How do you handle model drift/decay? | [Answer](https://towardsdatascience.com/machine-learning-model-drift-9cc10fa1e9a4) | Medium |
+| How do you handle model drift/decay? | [Answer](https://www.evidentlyai.com/ml-in-production/concept-drift) | Medium |
 | What is a feature store and why is it important? | [Answer](https://www.tecton.ai/blog/what-is-a-feature-store/) | Medium |
 | How would you version control ML models? | [Answer](https://neptune.ai/blog/ml-model-versioning) | Medium |
-| What is containerization and how is it useful for ML deployment? | [Answer](https://www.oreilly.com/content/containerized-machine-learning/) | Medium |
+| What is containerization and how is it useful for ML deployment? | [Answer](https://www.tensorflow.org/tfx/serving/docker) | Medium |
 | Explain CI/CD in the context of ML systems. | [Answer](https://neptune.ai/blog/ci-cd-for-machine-learning-mlops) | Medium |
-| What are the ethical considerations in deploying ML models? | [Answer](https://towardsdatascience.com/ethics-in-machine-learning-9fa5b1aadc12) | Medium |
+| What are the ethical considerations in deploying ML models? | [Answer](https://developers.google.com/machine-learning/crash-course/fairness) | Medium |
 
 ## ML System Design Questions and Strategies
 
@@ -111,28 +193,28 @@ A comprehensive collection of machine learning interview questions with detailed
 |----------|-------------|------------|
 | How would you design a recommendation system? | [Answer](https://medium.com/towards-artificial-intelligence/how-to-design-the-best-recommendation-system-machine-learning-design-interview-questions-df7fc2746b90) | Hard |
 | Design a large-scale image classification service. | [Answer](https://www.pluralsight.com/guides/design-a-machine-learning-system) | Hard |
-| How would you build a fraud detection system? | [Answer](https://towardsdatascience.com/fraud-detection-with-machine-learning-using-python-331cf3051108) | Hard |
+| How would you build a fraud detection system? | [Answer](https://stripe.dev/blog/how-we-built-it-stripe-radar) | Hard |
 | Design a chatbot system. | [Answer](https://www.ibm.com/cloud/architecture/architectures/aiChatbotArch/reference-architecture) | Hard |
-| How would you design a search ranking system? | [Answer](https://towardsdatascience.com/how-search-engines-rank-websites-search-engine-basics-bbb2b658a4e1) | Hard |
+| How would you design a search ranking system? | [Answer](https://arxiv.org/abs/1810.09591) | Hard |
 | Design an anomaly detection system. | [Answer](https://towardsdatascience.com/machine-learning-for-anomaly-detection-and-condition-monitoring-d4614e7de770) | Hard |
-| How would you build a content moderation system? | [Answer](https://aws.amazon.com/solutions/implementations/content-analysis/) | Hard |
-| Design a system for real-time bidding in online advertising. | [Answer](https://towardsdatascience.com/real-time-bidding-in-digital-advertising-algorithms-and-strategies-ecbfba47811b) | Hard |
+| How would you build a content moderation system? | [Answer](https://docs.aws.amazon.com/rekognition/latest/dg/moderation.html) | Hard |
+| Design a system for real-time bidding in online advertising. | [Answer](https://arxiv.org/abs/1610.03013) | Hard |
 | How would you design a machine translation system? | [Answer](https://machinelearningmastery.com/introduction-neural-machine-translation/) | Hard |
-| Design a system for dynamic pricing. | [Answer](https://towardsdatascience.com/dynamic-pricing-using-machine-learning-is-the-future-of-retail-85698c12b8a) | Hard |
+| Design a system for dynamic pricing. | [Answer](https://en.wikipedia.org/wiki/Dynamic_pricing) | Hard |
 
 ## Statistics & Mathematics for ML Interviews
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
-| Explain the Central Limit Theorem. | [Answer](https://www.analyticsvidhya.com/blog/2019/05/statistics-101-central-limit-theorem/) | Medium |
-| What is the difference between Type I and Type II errors? | [Answer](https://towardsdatascience.com/type-i-and-type-ii-errors-in-a-b-testing-b13bfa196aad) | Easy |
-| Explain Bayes' theorem and give an example. | [Answer](https://towardsdatascience.com/bayes-theorem-the-holy-grail-of-data-science-55d93315defb) | Medium |
+| Explain the Central Limit Theorem. | [Answer](https://en.wikipedia.org/wiki/Central_limit_theorem) | Medium |
+| What is the difference between Type I and Type II errors? | [Answer](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) | Easy |
+| Explain Bayes' theorem and give an example. | [Answer](https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/) | Medium |
 | What is the difference between correlation and causation? | [Answer](https://medium.com/towards-artificial-intelligence/correlation-vs-causation-6d7d39278ed8) | Easy |
 | What is an eigenvalue and eigenvector? | [Answer](https://medium.com/fintechexplained/what-are-eigenvalues-and-eigenvectors-a-must-know-concept-for-machine-learning-80d0fd330e47) | Hard |
-| Explain hypothesis testing and p-values. | [Answer](https://towardsdatascience.com/hypothesis-testing-a-complete-guide-for-data-scientists-and-machine-learning-practitioners-86c435219eb3) | Medium |
+| Explain hypothesis testing and p-values. | [Answer](https://en.wikipedia.org/wiki/P-value) | Medium |
 | What is the curse of dimensionality? | [Answer](https://towardsdatascience.com/the-curse-of-dimensionality-50dc6e49aa1e) | Medium |
-| Explain the difference between MLE and MAP estimation. | [Answer](https://wiseodd.github.io/techblog/2017/01/01/mle-vs-map/) | Hard |
-| What is the difference between a PDF and CDF? | [Answer](https://www.statology.org/pdf-vs-cdf/) | Medium |
+| Explain the difference between MLE and MAP estimation. | [Answer](https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation) | Hard |
+| What is the difference between a PDF and CDF? | [Answer](https://en.wikipedia.org/wiki/Cumulative_distribution_function) | Medium |
 | Explain the concepts of gradient descent, stochastic gradient descent, and mini-batch gradient descent. | [Answer](https://towardsdatascience.com/gradient-descent-algorithm-and-its-variants-10f652806a3) | Medium |
 
 ## FAANG and Top Tech Companies' ML Interview Process
@@ -140,10 +222,6 @@ A comprehensive collection of machine learning interview questions with detailed
 The ML interview process at top tech companies typically spans 1.5-2.5 months and consists of multiple stages designed to thoroughly evaluate candidates' technical skills, problem-solving abilities, and cultural fit. Here's a detailed breakdown of what to expect at each company:
 
 ### Google ML Interview Process
-
-<div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*Vqx3z6iFam6zz6I6l_tf_A.png" alt="Google ML Interview Process" width="700"/>
-</div>
 
 **Process Overview:**
 1. **Resume Screening**: Initial filter based on background and experience
@@ -159,7 +237,7 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 **Key Focus Areas:**
 - Deep understanding of ML fundamentals and algorithms
 - Strong coding skills (Python preferred)
-- Experience with TensorFlow and ML infrastructure
+- Experience with PyTorch or JAX and with TPU/GPU training infrastructure. TensorFlow now appears mostly in legacy serving and on-device stacks
 - Ability to design end-to-end ML systems
 - Problem-solving in ambiguous scenarios
 
@@ -171,10 +249,6 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 - Googleyness and leadership qualities
 
 ### Meta (formerly Facebook) ML Interview Process
-
-<div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*qUf9ixQ4VT03vYEFrQziQA.png" alt="Meta ML Interview Process" width="700"/>
-</div>
 
 **Process Overview:**
 1. **Resume Screening**
@@ -200,13 +274,9 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 - ML system design skills
 - Understanding of ML metrics and evaluation
 - Communication and collaboration style
-- Alignment with Meta's values (Move Fast, Be Bold, Focus on Impact, Be Open)
+- Alignment with Meta's six values: Move Fast, Focus on Long-Term Impact, Build Awesome Things, Live in the Future, Be Direct and Respect Your Colleagues, and Meta, Metamates, Me
 
 ### Amazon ML Interview Process
-
-<div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*_JY-4Aex98wRLQPL2Y8yWw.png" alt="Amazon ML Interview Process" width="700"/>
-</div>
 
 **Process Overview:**
 1. **Resume Screening**
@@ -236,10 +306,6 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 
 ### Microsoft ML Interview Process
 
-<div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1200/1*ZQh9A9n1iOIFHRUEXJP1sw.png" alt="Microsoft ML Interview Process" width="700"/>
-</div>
-
 **Process Overview:**
 1. **Resume Screening**
 2. **Initial Technical Screen (45-60 minutes)**:
@@ -267,10 +333,6 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 - Growth mindset and learning attitude
 
 ### OpenAI ML Interview Process
-
-<div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*V8yKb97VQ0jzG8RIBw_OuQ.jpg" alt="OpenAI ML Interview Process" width="700"/>
-</div>
 
 **Process Overview:**
 1. **Application Review**: Rigorous screening focusing on research background
@@ -303,10 +365,6 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 
 ### Apple ML Interview Process
 
-<div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*jEu-Lvjxn_6TuF2uKUfIXQ.jpeg" alt="Apple ML Interview Process" width="700"/>
-</div>
-
 **Process Overview:**
 1. **Resume Screening**
 2. **Initial Technical Phone Screen**:
@@ -334,11 +392,15 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 - Alignment with Apple's values and culture
 - Communication and collaboration abilities
 
-## Recent ML Interview Questions (2023-2025)
+<a name="recent-ml-interview-questions-2023-2025"></a>
+
+## Recent ML Interview Questions (2024-2026)
 
 Below are actual ML interview questions recently asked at top tech companies, organized by interview round type:
 
-### ML Fundamentals & Theory Questions (2025 Updates)
+<a name="ml-fundamentals--theory-questions-2025-updates"></a>
+
+### ML Fundamentals & Theory Questions (2025-2026)
 
 1. **Explain the bias-variance tradeoff and how it relates to model complexity.** (Google, 2023)
 2. **Walk through the mathematics of backpropagation for a simple neural network.** (Meta, 2024)
@@ -356,7 +418,9 @@ Below are actual ML interview questions recently asked at top tech companies, or
 14. **Describe the tradeoffs between model size and inference speed. How do you optimize this balance?** (Microsoft, 2025)
 15. **How do you identify and handle outliers in your training data, and how might they impact different ML algorithms?** (Amazon, 2025)
 
-### ML System Design Questions (2025 Updates)
+<a name="ml-system-design-questions-2025-updates"></a>
+
+### ML System Design Questions (2025-2026)
 
 1. **Design a recommendation system for YouTube videos.** (Google, 2023)
 2. **Design an ML system to detect fake accounts on Instagram.** (Meta, 2024)
@@ -374,7 +438,9 @@ Below are actual ML interview questions recently asked at top tech companies, or
 14. **Design an AI assistant that can help debug software issues by analyzing logs and code.** (Google, 2025)
 15. **Design a system to identify potentially harmful content in generative AI outputs.** (OpenAI, 2025)
 
-### ML Coding Questions (2025 Updates)
+<a name="ml-coding-questions-2025-updates"></a>
+
+### ML Coding Questions (2025-2026)
 
 1. **Implement a decision tree from scratch.** (Google, 2023)
 2. **Write code to implement stochastic gradient descent for linear regression.** (Microsoft, 2024)
@@ -392,7 +458,9 @@ Below are actual ML interview questions recently asked at top tech companies, or
 14. **Implement a custom attention mechanism for a specific NLP task.** (Microsoft, 2025)
 15. **Build a simple but efficient pipeline for handling time series forecasting with missing values.** (Amazon, 2025)
 
-### LLM-Specific Interview Questions (2025 Updates)
+<a name="llm-specific-interview-questions-2025-updates"></a>
+
+### LLM-Specific Interview Questions (2025-2026)
 
 1. **Explain the key innovations in the transformer architecture compared to RNNs.** (OpenAI, 2023)
 2. **How would you evaluate a large language model? What metrics would you use beyond perplexity?** (Google, 2024)
@@ -428,7 +496,9 @@ Below are actual ML interview questions recently asked at top tech companies, or
 14. **What is speculative decoding and how does it improve inference throughput?** (Google, Anthropic, 2026)
 15. **Implement beam search, top-k, and top-p decoding algorithms.** (OpenAI, NVIDIA, 2026)
 
-### MLOps Questions (2025 Updates)
+<a name="mlops-questions-2025-updates"></a>
+
+### MLOps Questions (2025-2026)
 
 1. **How would you monitor an ML model in production? What metrics would you track?** (Google, 2023)
 2. **Explain your approach to handling data drift and model decay.** (Amazon, 2024)
@@ -450,13 +520,25 @@ Below are actual ML interview questions recently asked at top tech companies, or
 
 Major companies are transforming their ML interview process in 2026:
 
-1. **AI-Paired Coding Rounds**: Google, Meta, and LinkedIn now include rounds where AI tools (Copilot, Claude, Gemini) are available. Candidates are scored on AI fluency, prompt engineering, output validation, and debugging AI-generated code.
+1. **AI-Paired Coding Rounds, where allowed**: policy varies by company, level and team, so confirm with your recruiter before every loop. Where AI is allowed you are scored on ownership, prompting, verification of the output and debugging what the model wrote, not on typing speed.
+
+| Company | AI in coding rounds |
+|---------|---------------------|
+| Meta | One 60-min CoderPad round with models embedded, now reaching SWE and EM roles up through E7/M2 |
+| Google | Pilot. Gemini supplied in-round on selected teams, and AI fluency is scored |
+| LinkedIn | One coding round replaced by an AI-enabled round, scored 1-4 where 3 passes |
+| DoorDash | A 60-min AI-assisted working session in your own IDE |
+| Amazon | Prohibited. Detected use of unauthorised GenAI is disqualifying |
+| Google DeepMind, ByteDance, Palantir | Prohibited in technical rounds |
+| AI-native startups such as Cursor and Sierra | Allowed and expected |
 2. **Reasoning Labs**: Ambiguous ML challenges with no single correct answer. Evaluates thinking clarity, uncertainty handling, and ethical awareness.
 3. **AI Reasoning Challenge**: Candidates analyze AI-generated outputs (explanations, logs, summaries) and identify flaws, suggest improvements, and design verification experiments.
 4. **Ethics and Safety Rounds**: Now standalone at many companies. Sample: "detecting gender bias in LLMs" or "balancing accuracy with safety in dialogue models."
 5. **Dedicated MLOps Block**: A 45-minute MLOps interview testing data drift monitoring, pipeline debugging, and production reliability is now standard.
 
-### Advanced ML & AI Topics (2025 Updates)
+<a name="advanced-ml--ai-topics-2025-updates"></a>
+
+### Advanced ML & AI Topics (2025-2026)
 
 1. **Explain the differences between contrastive learning, self-supervised learning, and supervised learning.** (Google, 2025)
 2. **How do diffusion models work? Describe the forward and reverse processes.** (OpenAI, 2025)
@@ -469,7 +551,9 @@ Major companies are transforming their ML interview process in 2026:
 9. **Explain how neural architecture search works and its practical applications in model design.** (Google, 2025)
 10. **How do you approach the problem of building AI systems that can generalize to unseen domains?** (OpenAI, 2025)
 
-### Behavioral Questions for ML Roles (2025 Updates)
+<a name="behavioral-questions-for-ml-roles-2025-updates"></a>
+
+### Behavioral Questions for ML Roles (2025-2026)
 
 1. **Tell me about a time when you had to balance model accuracy with deployment constraints.** (Google, 2023)
 2. **Describe a situation where you had to explain complex ML concepts to non-technical stakeholders.** (Meta, 2024)
@@ -520,7 +604,7 @@ Major companies are transforming their ML interview process in 2026:
 - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
 - [Deep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville](https://www.deeplearningbook.org/)
 - [Pattern Recognition and Machine Learning by Christopher Bishop](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/)
-- [Machine Learning Yearning by Andrew Ng](https://www.deeplearning.ai/machine-learning-yearning/)
+- [Machine Learning Yearning by Andrew Ng](https://info.deeplearning.ai/machine-learning-yearning-book)
 - [The Hundred-Page Machine Learning Book by Andriy Burkov](http://themlbook.com/)
 
 ### Top Online Courses for ML Interviews
@@ -554,9 +638,9 @@ Major companies are transforming their ML interview process in 2026:
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
-The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
 ⚡ **One click. Every update. Zero effort.**
 

@@ -1,8 +1,10 @@
 # LLM Papers Cheatsheet -- The Definitive Reading List
 
+> **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
+
 <div align="center">
 
-  <p><strong>80+ essential research papers for understanding Large Language Models, organized by subdomain with importance signals.</strong><br/>From foundational Transformers to cutting-edge agents, evals, and inference optimization.</p>
+  <p><strong>69 essential research papers for understanding Large Language Models, organized by subdomain with importance signals.</strong><br/>From foundational Transformers to cutting-edge agents, evals, and inference optimization.</p>
 
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
     <img src="https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=flat" alt="GitHub stars" />
@@ -217,7 +219,7 @@ Scaling model capacity without scaling compute.
 
 | Paper | Authors | Year | Signal | Key Contribution |
 |-------|---------|------|--------|-----------------|
-| [Switch Transformers: Scaling to Trillion Parameter Models](https://arxiv.org/abs/2101.03961) | Fedus et al. | 2022 | **Highly Influential** | Simplified MoE routing. 7x pre-training speedup with same compute budget |
+| [Switch Transformers: Scaling to Trillion Parameter Models](https://arxiv.org/abs/2101.03961) | Fedus et al. | 2021 | **Highly Influential** | Simplified MoE routing. 7x pre-training speedup with same compute budget |
 | [Mixtral of Experts](https://arxiv.org/abs/2401.04088) | Mistral AI | 2024 | **Cutting Edge** | 8x7B experts (47B total, 13B active). Outperforms Llama 2 70B, matches GPT-3.5 |
 
 ## 13. Multimodal Models
@@ -296,7 +298,7 @@ Extending LLMs to the audio domain.
 
 - [Hugging Face Model Hub](https://huggingface.co/models) -- Repository of thousands of pre-trained models
 - [Papers With Code](https://paperswithcode.com/task/language-modelling) -- LLM papers with implementation code
-- [Chatbot Arena Leaderboard](https://chat.lmsys.org/?leaderboard) -- Live Elo rankings from human evaluations
+- [Chatbot Arena Leaderboard](https://arena.ai/leaderboard/text) -- Live Elo rankings from human evaluations
 - [Stanford CS324: Large Language Models](https://stanford-cs324.github.io/winter2022/) -- University course materials
 - [State of AI Report](https://www.stateof.ai/) -- Annual report on AI progress
 - [Anthropic Research](https://www.anthropic.com/research) -- Safety and alignment research
@@ -308,9 +310,9 @@ Extending LLMs to the audio domain.
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week** — before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
-The engineers who land FAANG offers aren't the ones who *find* a resource — they're the ones who **never lose it**.
+The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
 ⚡ **One click. Every update. Zero effort.**
 

@@ -4,6 +4,8 @@
 >
 > **Looking for AI labs?** DeepMind, xAI, Mistral, Perplexity, Scale AI, Cohere, Cursor, Waymo, Sierra, Glean and more live in the companion [AI Labs & AI Companies guide](./AI-Companies-Interview-Questions.md).
 
+> **More from this repo**: [All guides](./README.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
+
 ## The Single Biggest Change in 2026: AI-Assisted Rounds
 
 The format shifted more in the last year than in the previous five. What changed, and where:
@@ -103,6 +105,19 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 - [DoorDash](#doordash)
   - [Algorithms](#doordash-algorithms)
   - [AI-Assisted and Custom Rounds](#doordash-ai-assisted-and-custom-rounds)
+- [Anduril](#anduril)
+  - [Custom Problems](#anduril-custom-problems)
+  - [LeetCode Practice](#anduril-leetcode-practice-mapped-to-reported-topics)
+  - [System Design](#anduril-system-design)
+- [Figma](#figma)
+  - [Coding Problems](#figma-coding-problems)
+  - [LeetCode Practice](#figma-leetcode-practice-mapped-to-reported-topics)
+  - [System Design](#figma-system-design)
+  - [Frontend Deep Dive](#figma-frontend-deep-dive-frontend-roles)
+- [Ramp](#ramp)
+  - [Coding Problems](#ramp-coding-problems)
+  - [LeetCode Practice](#ramp-leetcode-practice-mapped-to-reported-topics)
+  - [System Design](#ramp-system-design)
 - [AI Labs & AI Companies](./AI-Companies-Interview-Questions.md), separate guide: DeepMind, xAI, Mistral, Perplexity, Scale AI, Cohere, Cursor, Waymo, and 10+ more
 - [Topic-wise Questions](#topic-wise-questions)
 
@@ -110,7 +125,7 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 
 ## Meta (formerly Facebook)
 
-> **2025-2026 Trends**: De-emphasis of DP, rise of expression parsing/stack problems, streaming and sparse data, speed and clean code prioritized over brute force. ~26% Easy, 60% Medium, 14% Hard. **New in 2026**: AI-Enabled Coding Round rolling out to all SWE roles, 60 min in a 3-panel CoderPad (file explorer, editor, AI chat; GPT-5, Claude Sonnet, Gemini, Llama 4 available; AI reads files but cannot edit). Three phases: (1) fix a non-algorithmic bug, (2) build a 120+ line feature with AI expected, (3) optimize for larger datasets. Scored on problem solving, code quality, **verification of AI output**, and communication, for E4-E5 it randomly replaces one coding round; for E6+ it IS the coding round. Candidates report the in-interview AI is weaker than in practice mode. Behavioral round weight increased, it can single-handedly downlevel E5 to E4. Candidates increasingly get *variants* of tagged problems rather than the originals. Two problems in 35 minutes for traditional rounds -- speed is king.
+> **2025-2026 Trends**: De-emphasis of DP, rise of expression parsing/stack problems, streaming and sparse data, speed and clean code prioritized over brute force. ~26% Easy, 60% Medium, 14% Hard. **New in 2026**: AI-Enabled Coding Round rolling out to all SWE roles, 60 min in a 3-panel CoderPad (file explorer, editor, AI chat; GPT-5, Claude Sonnet, Gemini, Llama 4 available; AI reads files but cannot edit). Three phases: (1) fix a non-algorithmic bug, (2) build a 120+ line feature with AI expected, (3) optimize for larger datasets. Scored on problem solving, code quality, **verification of AI output**, and communication, for E4-E5 it randomly replaces one of the two coding rounds; at E6 it also replaces one of two, so a traditional CoderPad round normally remains. Rollout now covers SWE and EM roles up through E7/M2. Candidates report the in-interview AI is weaker than in practice mode. Behavioral round weight increased, it can single-handedly downlevel E5 to E4. Candidates increasingly get *variants* of tagged problems rather than the originals. Two problems in 35 minutes for traditional rounds -- speed is king.
 
 ### Meta Arrays and Strings
 
@@ -519,7 +534,7 @@ Netflix's custom set skews heavily toward caches and watch-history/domain re-ski
 
 ## Google
 
-> **2025-2026 Trends**: Graphs appear in 76% of onsite loops at L4+. Sliding window and binary search on answer are top-tier patterns. Trie and Union-Find questions rising. Roughly 19% of reported problems are Hard. Follow-up questions are standard. **New in 2026**: AI-assisted "Code Comprehension" round piloting. Candidates read, debug, and optimize an existing codebase with **Gemini available** in a CoderPad-style environment (file explorer + editor + AI chat); interviewers explicitly score "AI fluency": prompt engineering, output validation, and debugging of AI output. Pilot targets junior/mid-level roles on select US teams; full transition expected within 12-18 months (context: Pichai's April 2026 statement that 75% of new Google code is AI-generated). **In-person round reinstated** for technical hires to combat AI-assisted cheating. Google Hiring Assessment (GHA) mandatory before the phone screen. The Googleyness & Leadership round is now part-technical. A design conversation about a real system you built, defended under scrutiny. Reports emphasize deliberately ambiguous problem framing (you must derive the problem structure) and strict production-ready-code grading at L4. No system design round below L5.
+> **2025-2026 Trends**: Graphs appear in 76% of onsite loops at L4+. Sliding window and binary search on answer are top-tier patterns. Trie and Union-Find questions rising. Roughly 19% of reported problems are Hard. Follow-up questions are standard. **New in 2026**: AI-assisted "Code Comprehension" round piloting. Candidates read, debug, and optimize an existing codebase with **Gemini available** in a CoderPad-style environment (file explorer + editor + AI chat); interviewers explicitly score "AI fluency": prompt engineering, output validation, and debugging of AI output. Pilot targets junior/mid-level roles on select US teams; full transition expected within 12-18 months (context: Pichai's April 2026 statement that 75% of new Google code is AI-generated). **In-person round reinstated** for technical hires to combat AI-assisted cheating. Google Hiring Assessment (GHA) mandatory before the phone screen. The Googleyness & Leadership round is now part-technical. A design conversation about a real system you built, defended under scrutiny. **Third change, early-career only**: one traditional technical round is replaced by an open-ended engineering problem session, closer to a discussion of approach than a single correct answer. Reports emphasize deliberately ambiguous problem framing (you must derive the problem structure) and strict production-ready-code grading at L4. No system design round below L5.
 
 ### Google Arrays and Strings
 
@@ -616,6 +631,7 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 8 | Guess-the-word sequence validation | Coding | Decide if guessed sequences produce a valid ordering (topological sort / cycle detection) |
 | 9 | Coin collection on a board | 2026 OA | Grid DP / simulation |
 | 10 | Text editor / book-keeping system | Phone screen | Implementation + language-fundamentals problem |
+| 11 | Lines needed to write a string at a given width | L3 new grad, 2026 | "Given a string and an integer width, return how many lines you can write the string in." Phrasing is vague on purpose: wrapping rules, word breaks and whitespace are all unstated, and asking beats coding |
 
 ### Google System Design
 
@@ -824,6 +840,8 @@ These are unique to OpenAI and not standard LeetCode problems.
 | 16 | Refactor nested code preserving tests | Medium | Refactoring | Restructure deeply nested code; all tests must keep passing |
 | 17 | One-NN + feedforward NN from scratch | Medium | ML Coding | Implement 1-nearest-neighbor, then a basic feedforward net with activation layers |
 | 18 | KL divergence / probability coding | Hard | Math / Stats Coding | KL divergence for continuous distributions; expected-iterations probability; cross-entropy minimization |
+| 19 | Detect Duplicate Tool Calls | Hard | Agentic Round | Reported prompt for the beta agentic round: work over an existing agent codebase to identify and suppress repeated tool invocations within a run |
+| 20 | Sandbox Agent Code Execution | Hard | Agentic Round | Reported prompt for the beta agentic round: add sandboxed execution of agent-generated code to an existing codebase, scoped too large to hand-write |
 
 **Progressive layers reported in 2026**: *Resumable Iterator* now runs up to 6 parts (lists -> multi-file with empty files -> async/coroutines -> 2D -> 3D iterators). *CD Directory Navigation* adds `~` home-dir handling and symlink resolution with cycle detection. *GPU Credit Allocation* uses half-open intervals `[start, expiration)`, consumes soonest-expiring first (heap/queue), and must answer balance queries at an arbitrary timestamp.
 
@@ -918,6 +936,7 @@ These are Anthropic's own custom problems. Not LeetCode. Each has multiple diffi
 | 14 | Worker Mode Tracker | Medium | Distributed | Collect shard data from workers; track globally frequent values (distributed mode/median variant) |
 | 15 | Profiler Trace Denoising | Hard | Algorithms | Filter short-lived calls from sampling profiler data; emit events only after N consecutive appearances |
 | 16 | Parallel Word Segmentation | Hard | Concurrency | Parallelize segmentation over large datasets; task distribution, result merging, shared-memory safety |
+| 17 | ML Notebook Bug Fixing (new, reported March 2026) | Hard | ML Debugging | Jupyter notebook of ML training/inference code with several planted bugs; find and fix them. Reported bugs: softmax taken over the wrong dimension (`dim=1` where `dim=-1` is needed) and a model moved to GPU while mask tensors stay on CPU |
 
 **Progressive layers reported in 2026**: *Bank Ledger* now adds delayed cashback and spending-analytics levels. *LRU Cache* goes beyond the bugfix to demand durability, survive a process restart and restore usage order from disk. *Web Crawler* runs up to 7 follow-up levels: single-threaded BFS with `htmlParser.getUrls(url)` -> threads/processes/async -> a GIL discussion -> multi-machine scaling. *Greedy Tokenizer* uses longest-match tokenization against a vocabulary with unknown-token merging, and also appears as a code-review exercise.
 
@@ -1439,7 +1458,7 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 
 ## Airbnb
 
-> **2025-2026 Trends**: **No pseudocode, code must actually run and pass test cases** in the 45-60 min CoderPad screen (or HackerRank/CodeSignal OA). This remains Airbnb's most distinctive coding-round rule. **Hardest difficulty skew among peers**: ~33% of reported problems are Hard, with heavy DP and simulation emphasis. Problems arrive dressed as product features, interval merging framed as overlapping reservation windows, tree path sums with depth constraints. **Core values and cross-functional rounds are true gates**, not chats: dedicated rounds on Belonging / "Be a Host", then hiring-committee review. No evidence Airbnb permits AI tools in interviews.
+> **2025-2026 Trends**: **No pseudocode, code must actually run and pass test cases** in the 45-60 min CoderPad screen (or HackerRank/CodeSignal OA). This remains Airbnb's most distinctive coding-round rule. **Hardest difficulty skew among peers**: ~33% of reported problems are Hard, with heavy DP and simulation emphasis. Problems arrive dressed as product features, interval merging framed as overlapping reservation windows, tree path sums with depth constraints. **Core values and cross-functional rounds are true gates**, not chats: dedicated rounds on Belonging / "Be a Host", then hiring-committee review. **Senior loops swap a coding round for a code review round**: at G9 and above the second coding interview was replaced by a dedicated code review, so the onsite is coding, code review, system design, technical deep dive, behavioral. You are graded on catching subtle correctness and security defects and on the feedback you give, not on style nits. No evidence Airbnb permits AI tools in interviews.
 
 ### Airbnb Algorithms
 
@@ -1524,6 +1543,134 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 4 | Design an order status notification system; item review & rating system | Fan-out, storage |
 | 5 | Ingest donations and serve rolling 3-day totals | Streaming aggregation |
 | 6 | Payment consistency | Idempotency keys, reconciliation/audit trails, webhook handling, async decoupling to prevent double charges |
+
+---
+
+## Anduril
+
+> **2025-2026 Trends**: Ambiguity is the test. The 60-min HackerRank technical phone screen opens with a deliberately vague prompt, and one candidate reports the interviewer admitting it was confusing on purpose. You solve a simplified version, then constraints shift under you: uneven array sizes, empty slots, inputs that make the problem unsolvable. Each phase builds on your previous code, so refactoring is graded. Loop: recruiter screen (30 min) -> technical phone screen (60 min, HackerRank) -> onsite of four 60-min rounds (2 coding, 1 object-oriented design, 1 behavioral with a senior leader). Typically 3-4 weeks end to end, though new-grad pipelines have run months. C++ and Rust are the primary languages, Python secondary; C++ is expected for embedded and robotics roles. **AI use in interviews is strictly prohibited.** The standard follow-up is a constraint flip: "what if this is called 10 million times per second", or "what if memory is severely limited". Many roles require US citizenship and the ability to obtain Secret or Top Secret clearance, which Anduril sponsors. The behavioral round is a line-by-line resume review (return offers, performance ratings, manager feedback) plus a mission-alignment probe, and "tell me about a moral or ethical dilemma you faced at work" is reported repeatedly.
+
+### Anduril Custom Problems
+
+| No. | Problem | Round | Description |
+| --- | ------- | ----- | ----------- |
+| 1 | Football team photo arrangement | Phone screen (HackerRank) | Two teams, shorter players in front, taller behind; constraints added live: unequal team sizes, empty spaces, arrangements that cannot exist |
+| 2 | Which group goes in front | Phone screen | Two arrays representing groups; decide ordering from element values, then handle differing sizes and validity |
+| 3 | Shortest distance between two points | Onsite coding | Starts in 2D, extends to 3D, then adds obstacles and becomes a pathfinding problem |
+| 4 | Doubly linked list from scratch | Onsite coding | insert, delete, search; graded on refactoring and edge cases, not speed |
+| 5 | Minimum time steps across a building | Coding | Rectangular grid, northwest corner to southeast corner (BFS) |
+| 6 | Dijkstra shortest path from a known source | Coding | Weighted graph, written out rather than called from a library |
+| 7 | Robot task management with priority tracking | Coding | Heap-backed scheduling over a stream of tasks |
+| 8 | Graph cycle detection | Coding (mission software) | Dependency or route graph |
+| 9 | Radar tower model for a moving ship | Object-oriented design | Class modeling, coverage and state updates |
+| 10 | Drone field management | System design | Signal transmission, instruction issuing, degradation when a node drops |
+
+### Anduril LeetCode Practice (Mapped to Reported Topics)
+
+| No. | Question | Difficulty | Category |
+| --- | -------- | ---------- | -------- |
+| 1 | [Maximum Number of Visible Points](https://leetcode.com/problems/maximum-number-of-visible-points) | Hard | Geometry / Sliding Window |
+| 2 | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | Medium | Dijkstra |
+| 3 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | Medium | BFS on grid |
+| 4 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium | Graph / Cycle Detection |
+| 5 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium | Heap / Geometry |
+| 6 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard | Heap / Streaming |
+| 7 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Medium | Strings |
+
+### Anduril System Design
+
+| No. | Question | Key Focus |
+| --- | -------- | --------- |
+| 1 | Multi-sensor fusion pipeline | Latency budgets, out-of-order sensor readings, fixed memory |
+| 2 | Command-and-control layer coordinating a fleet of vehicles | Failure modes, bandwidth limits, graceful degradation |
+| 3 | Design TinyURL | Classic, still in rotation |
+| 4 | Design Tetris | State modeling under a real-time loop |
+
+---
+
+## Figma
+
+> **2025-2026 Trends**: Every problem is reskinned as a Figma feature. Coding rounds are LeetCode-medium in shape but dressed as layers, canvases, selection state, or undo/redo, and candidates report the phone screen sometimes arrives as a TypeScript class design rather than an algorithm. Loop: recruiter (30 min) -> hiring manager (45 min) -> technical phone screen (60 min, CoderPad) -> onsite of roughly four hours: coding, **two system design rounds conducted inside Figma itself**, behavioral, and a project deep dive. Staff candidates add an executive screen. Some pipelines insert a 3-5 hour take-home with a written code-review component. 3-4 weeks end to end. Interviews are language-agnostic, with TypeScript preferred for frontend roles and Python or Rust also accepted. One of the two design rounds is a **Figma Components round**: you get the public components guide in advance and design features on top of it. The frontend deep dive is unusually deep on browser internals, and collaborative-editing theory (CRDT versus operational transform) is a recurring gate. No AI policy has been published.
+
+### Figma Coding Problems
+
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | Implement a Figma doc with layers, properties, class definitions and update methods | Medium | OOP Design (signature problem) |
+| 2 | Design a document layer supporting applying edits plus undo/redo | Medium-Hard | State Machine / Design |
+| 3 | Print objects on a 2D canvas in sequential order, left to right then top to bottom | Medium | Sorting / Geometry |
+| 4 | Data structure tied to a practical editor operation: range tree for selection, interval map for formatting, trie for autocomplete | Medium-Hard | Design |
+| 5 | Parse or transform a structured stream: command log, event sequence, expression tree | Medium | Parsing |
+| 6 | [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal) | Easy | Strings (warmup) |
+| 7 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | Linked List |
+| 8 | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling) | Medium | Greedy |
+
+### Figma LeetCode Practice (Mapped to Reported Topics)
+
+| No. | Question | Difficulty | Category |
+| --- | -------- | ---------- | -------- |
+| 1 | [Design a Text Editor](https://leetcode.com/problems/design-a-text-editor) | Hard | Cursor / undo-redo family |
+| 2 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | Medium | Nested layer trees |
+| 3 | [Range Module](https://leetcode.com/problems/range-module) | Hard | Interval map for formatting |
+| 4 | [My Calendar III](https://leetcode.com/problems/my-calendar-iii) | Hard | Overlapping ranges |
+| 5 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem) | Hard | 2D geometry sweep |
+
+### Figma System Design
+
+| No. | Question | Key Focus |
+| --- | -------- | --------- |
+| 1 | Design the backend for live cursors | Presence protocol, WebSocket fan-out, scaling connections |
+| 2 | Design conflict resolution for simultaneous text edits | CRDT versus OT; RGA for text, LSEQ for lists |
+| 3 | Figma Components round: design a feature on top of the components model | Guide supplied in advance; component instances, overrides, inheritance |
+| 4 | Design a poll feature inside a Figma file | Concurrent users, storage, scaling |
+| 5 | Document sharding, offline sync, delta encoding | Persistence for large documents |
+
+### Figma Frontend Deep Dive (Frontend Roles)
+
+| No. | Topic | Why it comes up |
+| --- | ----- | --------------- |
+| 1 | Browser rendering pipeline: layout, paint, composite, reflow triggers | Canvas performance |
+| 2 | Canvas versus DOM versus WebGL tradeoffs | Figma renders on WebGL |
+| 3 | Bundle splitting and code-loading strategy | Editor startup time |
+| 4 | Memory profiling and leak detection | Long-lived editor sessions |
+| 5 | IME composition, pointer events, gesture recognition | You cannot treat every keystroke as a finished character |
+
+---
+
+## Ramp
+
+> **2025-2026 Trends**: The application itself is a filter. Ramp gates applicants behind a **capture-the-flag puzzle**: decode a base64 string, inspect DOM elements for a hidden URL, chain API calls, parse a file tree, and only then do you reach the real application link. It tests resourcefulness, not algorithms. Loop: CTF gate -> recruiter (25-30 min) -> CodeSignal OA (90 min, **four progressive levels** on one theme) -> optional recorded async behavioral (15-20 min) -> technical phone screen (60 min live coding) -> virtual onsite of roughly four hours: practical coding, a product-focused coding round, system design, and a values conversation with the hiring manager. Some pipelines substitute an automated take-home with a 3-day deadline. Almost nothing is LeetCode-shaped: expect to implement a small system quickly with clean OOP, then defend it against concurrency and edge-case follow-ups. Ramp is among the most aggressive engineering hirers of 2026, and the loop leans on implementation speed and API manipulation rather than memorized patterns.
+
+### Ramp Coding Problems
+
+| No. | Problem | Difficulty | Category |
+| --- | ------- | ---------- | -------- |
+| 1 | Banking System API, four progressive levels | Hard | CodeSignal OA signature: accounts, transfers, then time-window queries, then history |
+| 2 | In-memory file system with mkdir and ls | Hard | Design |
+| 3 | API rate limiter with a sliding-window request tracker | Medium | Design / Sliding Window |
+| 4 | Hotel reservation system | Medium-Hard | Design (phone screen) |
+| 5 | Web crawler, then concurrency follow-ups | Medium-Hard | Concurrency |
+| 6 | Storage system with OOP design | Medium | Design (take-home) |
+
+### Ramp LeetCode Practice (Mapped to Reported Topics)
+
+| No. | Question | Difficulty | Category |
+| --- | -------- | ---------- | -------- |
+| 1 | [Simple Bank System](https://leetcode.com/problems/simple-bank-system) | Medium | Design |
+| 2 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | Hard | Design (premium) |
+| 3 | [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter) | Easy | Design (premium) |
+| 4 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium | Sliding Window (premium) |
+| 5 | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded) | Medium | Concurrency (premium) |
+| 6 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design |
+| 7 | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom) | Hard | Intervals / reservations |
+
+### Ramp System Design
+
+| No. | Question | Key Focus |
+| --- | -------- | --------- |
+| 1 | Corporate card transaction pipeline | Authorization, settlement, ledger correctness |
+| 2 | Payment processing system | Idempotency, reconciliation, double-charge prevention |
+| 3 | Notification service | Fan-out, delivery guarantees |
 
 ---
 
@@ -1635,7 +1782,7 @@ These recur across OpenAI, Anthropic, Mistral, DeepMind, xAI, Perplexity, and NV
 
 ### 🔔 You Found the Shortcut. Don't Lose It.
 
-New questions, papers, and strategies drop here **every single week**: before they surface anywhere else.
+New questions, papers, and strategies drop here **every single week**, before they surface anywhere else.
 
 The engineers who land FAANG offers aren't the ones who *find* a resource. They're the ones who **never lose it**.
 
