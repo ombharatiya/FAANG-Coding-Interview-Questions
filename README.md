@@ -1009,7 +1009,7 @@ Greedy and string manipulation are heavily tested (Reorganize String is most-ask
 
 ## About This Repository
 
-This repository covers **1,510+ problem listings across 44 companies** (376 unique LeetCode problems, plus 100+ company-specific custom problems that never appear on LeetCode), organized by company and topic, spanning FAANG/MAANG+, frontier AI labs (OpenAI, Anthropic, DeepMind, xAI, Mistral), and AI-first companies (Perplexity, Scale AI, Cursor, Cohere, Waymo, Sierra, Glean). Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
+This repository covers **1,530+ problem listings across 44 companies** (381 unique LeetCode problems, plus 100+ company-specific custom problems that never appear on LeetCode), organized by company and topic, spanning FAANG/MAANG+, frontier AI labs (OpenAI, Anthropic, DeepMind, xAI, Mistral), and AI-first companies (Perplexity, Scale AI, Cursor, Cohere, Waymo, Sierra, Glean). Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
 
 Every LeetCode link is validated against LeetCode's live problem list.
 
