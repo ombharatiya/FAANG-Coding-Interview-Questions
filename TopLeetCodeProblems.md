@@ -1,9 +1,11 @@
 # Top 75 LeetCode Questions to Crack The Coding Interviews
 
 
-> Click :star: if you like the project. Pull Request are highly appreciated. 
+> Click :star: if you like the project. Pull Requests are highly appreciated. 
 
 > **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
+
+> **Verified October 2026**: all 75 LeetCode links below resolve to live problems. Difficulty split by LeetCode's current labels: 19 Easy, 49 Medium, 7 Hard. The six problems marked "(Leetcode Premium)" are the only ones that need a paid account. The problem set is the original Blind 75 and is unchanged.
 
 ---
 
@@ -102,7 +104,7 @@
 - [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 - [ ] [Word Break Problem](https://leetcode.com/problems/word-break/)
-- [ ] [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)
+- [ ] [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)
 - [ ] [House Robber](https://leetcode.com/problems/house-robber/)
 - [ ] [House Robber II](https://leetcode.com/problems/house-robber-ii/)
 - [ ] [Decode Ways](https://leetcode.com/problems/decode-ways/)

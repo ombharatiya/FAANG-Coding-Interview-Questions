@@ -4,6 +4,8 @@
 
 > **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
 
+> **Last verified**: October 2026. Several companies below changed owners, CEOs or org structure during 2026 (xAI, Amazon AGI, Groq, Scale AI, Character.AI, Thinking Machines Lab, Cohere). Each affected section carries a dated corporate note, because the loop you get depends on which org the role now reports to.
+
 ## Table of Contents
 
 **Frontier Labs**
@@ -38,7 +40,7 @@
 
 ## Google DeepMind
 
-> **Process**: Recruiter screen -> hiring manager screen -> **technical quiz round** (~2 hours: four ~30-min sections on CS fundamentals, mathematics, statistics, and ML, rapid-fire and definition-heavy; veterans fail on forgotten formal definitions like eigenvalues, rank, SVD) -> 2 coding rounds on CoderPad (code is expected to *run*, unlike core Google) -> ML/system design -> paper discussion round (present and defend a paper, sometimes given 2-3 days prior) -> behavioral -> hiring committee. 6-10 weeks total. AI tools prohibited in technical rounds (2026 policy).
+> **Process**: Recruiter screen -> hiring manager screen -> **technical quiz round** (~2 hours: four ~30-min sections on CS fundamentals, mathematics, statistics, and ML, rapid-fire and definition-heavy; veterans fail on forgotten formal definitions like eigenvalues, rank, SVD) -> 2 coding rounds on CoderPad (code is expected to *run*, unlike core Google) -> ML/system design -> paper discussion round (present and defend a paper, sometimes given 2-3 days prior) -> behavioral -> hiring committee. 6-10 weeks total. AI tools prohibited in technical rounds (2026 policy; limited exceptions for some applied roles with recruiter approval). Research Scientist loops reported in mid-2026 run 5-7 rounds of about 60 min each: paper discussion, research problem framing, ML coding, math and theory, distributed-training systems design, evaluation infrastructure, plus a 45-min behavioral.
 
 ### Google DeepMind Coding Problems
 
@@ -78,7 +80,9 @@
 
 ## xAI
 
-> **Process**: Engineer screen (often no recruiter; "explain your most technical project in 30 seconds") -> **proctored CodeSignal OA** (~60-70 min, camera + mic + screen recording; one problem with five escalating complexity levels) -> 2-3 live coding rounds (practical/production-flavored: class design, iterators, KV stores, caches; one 45-min format = 20 min working solution + 15 min extending to concurrency at "millions of queries") -> system design -> brief behavioral. Fast (2-3 weeks) but scheduling reported as chaotic. Candidates report failing on coding bar, not ML. Python and TypeScript most common.
+> **Process**: Engineer screen (often no recruiter; "explain your most technical project in 30 seconds") -> **proctored CodeSignal OA** (~60-70 min, camera + mic + screen recording; one problem with five escalating complexity levels) -> 2-3 live coding rounds (practical/production-flavored: class design, iterators, KV stores, caches; one 45-min format = 20 min working solution + 15 min extending to concurrency at "millions of queries") -> system design -> brief behavioral. Fast (2-3 weeks) but scheduling reported as chaotic. Candidates report failing on coding bar, not ML. Python and TypeScript most common. AI-tool policy (single source, techinterview.org, June 2026): coding rounds are generally AI-permissive, but interviewers verify you can explain and extend the code unaided.
+>
+> **Corporate note (2026)**: SpaceX acquired xAI (announced Feb 3, 2026) and renamed the unit SpaceXAI on July 6, 2026, after SpaceX's June 2026 IPO. Grok and X now sit under the SpaceXAI name, so postings and offer letters may carry the SpaceX brand. On May 21, 2026 Musk posted a direct route for the AI unit: email ai_eng@spacex.com with about three bullet points demonstrating exceptional ability, no AI experience required; he says he reads every email that passes a sanity check. Treat it as a side door, not a replacement for the loop above.
 
 ### xAI Coding Problems
 
@@ -115,7 +119,7 @@
 
 ## Mistral AI
 
-> **Process**: Recruiter screen -> technical screen (60 min, one medium-hard problem in Python/Rust; C++/CUDA for some roles) -> take-home for select/research roles (4-8h; design a small LLM/agent experiment, write-up judged with academic-paper expectations) -> **LLM knowledge quiz** (45-75 min structured deep-dive) -> system design (AI-infrastructure flavored) -> behavioral/values. Research roles add a research presentation with 20+ min of hard questioning. Ground "why Mistral" in the open-weight mission; read the Mistral 7B/Mixtral/Codestral papers.
+> **Process**: Recruiter screen -> technical screen (60 min, one medium-hard problem in Python/Rust; C++/CUDA for some roles) -> take-home for select/research roles (4-8h; design a small LLM/agent experiment, write-up judged with academic-paper expectations) -> **LLM knowledge quiz** (45-75 min structured deep-dive) -> system design (AI-infrastructure flavored) -> behavioral/values. Research roles add a research presentation with 20+ min of hard questioning. Ground "why Mistral" in the open-weight mission; read the Mistral 7B/Mixtral/Codestral papers plus the newer release notes: Mistral Large 3 (Dec 2025, sparse MoE, 675B total / 41B active, 256K context), Ministral 3 and Devstral 2 (Dec 2025), Mistral Small 4 (Mar 2026, merges the Magistral reasoning, Pixtral vision and Devstral coding lines) and Mistral Medium 3.5 (Apr 2026).
 
 ### Mistral AI Coding Problems
 
@@ -160,7 +164,7 @@
 
 ## Meta Superintelligence Labs
 
-> **Process**: MSL research hiring is a distinct track, initial ~50-person team recruited by mining most-cited paper authors, with Zuckerberg personally interviewing; candidates tested on ability to identify and quantify gaps in current AI models. Engineering roles follow the standard Meta loop **plus the AI-enabled coding round** (piloted Oct 2025, default for backend roles in 2026, levels E5-E7/M2): 60 min in a 3-panel CoderPad (file explorer, editor, AI chat, GPT-5, Claude Sonnet, Gemini, Llama 4 available; AI reads files but cannot edit). Three phases: (1) find/fix a non-algorithmic bug, (2) build a 120+ line feature with AI expected, (3) optimize for larger datasets. Rubric: Problem Solving, Code Quality, **Verification** (test before trusting AI output), Communication. Candidates report the in-interview AI is "nerfed" vs practice environments.
+> **Process**: MSL research hiring is a distinct track, initial ~50-person team recruited by mining most-cited paper authors, with Zuckerberg personally interviewing; candidates tested on ability to identify and quantify gaps in current AI models. Engineering roles follow the standard Meta loop **plus the AI-enabled coding round** (piloted Oct 2025, rolled out across back-end and ops-focused roles through 2026; E6 and below get one traditional coding round plus one AI-enabled round, E7 and above get a single coding round that is AI-enabled): 60 min in a 3-panel CoderPad (file explorer, editor, AI chat with GPT-4o mini, GPT-5, Claude Sonnet 4/4.5, Claude Haiku 4.5, Gemini 2.5 Pro and Llama 4 Maverick, switchable mid-session; AI reads files but cannot edit). Three phases: (1) find/fix a non-algorithmic bug, (2) build a 120+ line feature with AI expected, (3) optimize for larger datasets. Rubric: Problem Solving, Code Quality, **Verification** (test before trusting AI output), Communication. Candidates report the in-interview AI is "nerfed" vs practice environments.
 
 ### AI-Enabled Round Problems (~9 in rotation)
 
@@ -178,7 +182,9 @@ See [Meta in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#meta-formerl
 
 ## Amazon AGI
 
-> **Process**: The AGI SF Lab phone screen covers coding + system design + backend tasks + Leadership Principles. Onsite for ML roles: coding, ML application/design, behavioral with heavy LP emphasis, bar raiser in the loop. The Nova team follows the standard Amazon AGI / Applied Scientist process. ML coding style compared by candidates to OpenAI's.
+> **Process**: Reported loop (2025 reports): phone screen covering coding + system design + backend tasks + Leadership Principles. Onsite for ML roles: coding, ML application/design, behavioral with heavy LP emphasis, bar raiser in the loop. The Nova team follows the standard Amazon AGI / Applied Scientist process. ML coding style compared by candidates to OpenAI's.
+>
+> **Corporate note (2026)**: Rohit Prasad left at the end of 2025 and the AGI org was folded into a new organization under Peter DeSantis that combines frontier models, custom silicon (Trainium, Graviton, Nitro) and quantum; Pieter Abbeel leads frontier-model research. David Luan (ex-Adept) left the AGI Lab in Feb 2026, and in July 2026 Amazon confirmed it is closing the San Francisco AGI Lab site while cutting roles across the AGI org (AGI Data Services, AGI Information). Nova 2 Lite, Nova 2 Sonic, Nova Forge and Nova Act stay active. Expect roles to be posted under AGI, AWS or the DeSantis org rather than "AGI SF Lab".
 
 ### Amazon AGI Reported Problems
 
@@ -195,9 +201,9 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 ## Safe Superintelligence & Thinking Machines Lab
 
-> **Safe Superintelligence (SSI)**: No public interview-question data exists, consistent with extreme secrecy. Credibly reported: in-person candidates must place phones in a Faraday cage before entering SSI offices; ~20-50 employees split between Palo Alto and Tel Aviv; hiring is network-driven; staff discouraged from listing SSI on LinkedIn. No OA platform, loop structure, or question bank has leaked.
+> **Safe Superintelligence (SSI)**: No public interview-question data exists, consistent with extreme secrecy. Credibly reported: in-person candidates must place phones in a Faraday cage before entering SSI offices; about 50 employees (July 2025) split between Palo Alto and Tel Aviv; hiring is network-driven; staff discouraged from listing SSI on LinkedIn. No OA platform, loop structure, or question bank has leaked. Corporate facts: co-founder Daniel Gross left for Meta Superintelligence Labs in July 2025 and Ilya Sutskever became CEO; on July 27, 2026 Nvidia announced a $5B investment with priority access to its Vera Rubin platform, taking SSI to about $7B raised at a $32B post-money valuation.
 >
-> **Thinking Machines Lab**: Young lab (founded Feb 2025), hires heavily through networks around the **Tinker** fine-tuning platform (Research Engineer/SWE, $350K-$500K per postings). Reported loop (thin, single-source): recruiter screen -> hiring manager -> research/coding interview -> cross-functional panel. No verified question bank yet. Note: Glassdoor's "Thinking Machines" entry is a Manila data-science consultancy, different company.
+> **Thinking Machines Lab**: Founded Feb 2025; $2B seed at a $12B valuation (July 2025). Hires heavily through networks around the **Tinker** fine-tuning API (launched Oct 1, 2025, general availability Dec 2025) and the Inkling model (July 2026); postings list Research Engineer/SWE at $350K-$500K. Reported loop (thin, single-source): recruiter screen -> hiring manager -> research/coding interview -> cross-functional panel. No verified question bank yet. Leadership churn to factor in: four of six co-founders have left (Andrew Tulloch to Meta, late 2025; CTO Barret Zoph dismissed Jan 2026 and Luke Metz, both to OpenAI; Lilian Weng left July 29, 2026 and rejoined OpenAI). Soumith Chintala is CTO, John Schulman remains Chief Scientist. As of Sept 2026 the lab was in talks for a $5-6B round at a $40B+ pre-money valuation (Accel, Nvidia). Note: Glassdoor's "Thinking Machines" entry is a Manila data-science consultancy, different company.
 
 ---
 
@@ -251,6 +257,8 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 ## Scale AI
 
 > **Process**: Recruiter screen -> HackerRank OA / technical screen (~60 min, 2 mediums) -> hiring-manager screen -> virtual onsite 4-5 rounds: coding, **backend practical**, **debugging round** (unfamiliar multi-file codebase, find/fix 2-3 logical bugs in 60 min), system design or ML, and "Credo" behavioral. Explicitly "not standard LeetCode", implementation-heavy, production realism, speed and working code over algorithmic cleverness.
+>
+> **Corporate note (2026)**: Meta bought a 49% stake in June 2025 and Alexandr Wang left to run Meta Superintelligence Labs; Scale cut about 14% of staff in July 2025. Jason Droege ran the company as interim CEO until Francis deSouza (ex-Google Cloud COO, ex-Illumina CEO) took over on Aug 10, 2026. Growth is now in applied and forward-deployed work plus public-sector contracts, so 2026 system-design and hiring-manager rounds orbit "help an enterprise or agency stand up its own AI": eval harnesses for fine-tuned models, throughput and backpressure, idempotency, and measuring label quality without ground truth.
 
 ### Scale AI Coding Problems
 
@@ -269,6 +277,9 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 | 11 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Medium | Arrays |
 | 12 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array) | Easy | Two Pointers |
 | 13 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) (most frequently surfaced topic) | Medium | Intervals |
+| 14 | Given a stream of labeling events, return the k most frequent labels in the last hour | Medium | Heap / Sliding Window (custom, 2026) |
+| 15 | Merge overlapping annotation spans and report total coverage | Medium | Intervals / Sweep (custom, 2026) |
+| 16 | Parse a nested config and validate it against a schema (null and type handling) | Medium | Recursion / Parsing (custom, 2026) |
 
 ### Scale AI ML/AI Questions
 
@@ -293,6 +304,8 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 ## Cohere
 
 > **Process**: Recruiter screen -> technical screen (60 min live coding, **Python or Go**) -> ML round or system design (team-dependent) -> behavioral -> team match. ~4-6 weeks. Style: production-quality infrastructure code over LeetCode tricks, "no segment trees, advanced DP, or competitive programming." Tests-first, edge cases, explicit concurrency/locking. MLE track adds a ~3-hour assessment spanning language modelling, math for ML, and coding, plus numpy ML coding and a research presentation.
+>
+> **Corporate note (2026)**: Cohere agreed to merge with Germany's Aleph Alpha on April 24, 2026, with Schwarz Group leading a roughly $600M Series E; the combined company is valued at about $20B and the close is expected later in 2026 pending approvals. Cohere reported $240M ARR for 2025. Sovereign-cloud and on-premise deployment (the combined entity is expected to run on Schwarz Digits' STACKIT) is now core to the pitch, so prepare it alongside the RAG and Command material.
 
 ### Cohere Coding Problems
 
@@ -352,7 +365,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 ## Cursor (Anysphere)
 
-> **Process**: Recruiter/manager screen (covers "why Cursor" and tolerance for heavy workload) -> 1-3 technical phone screens (60 min, one medium-hard problem, sometimes against part of Cursor's actual codebase) -> **paid onsite project: 8-9 hours** (one or two 8-hour days for senior roles; real codebase access, a Slack channel, build a feature autonomously, ending with a presentation, this round decides the offer) -> culture-fit discussion (often over meals). Some senior/staff roles get a 4-8h take-home. AI tools: reports conflict. Some say unrestricted AI in all rounds, others say prohibited in the first coding round; all agree pasting raw model output without judgment is a fast rejection. Languages: TypeScript (editor), Rust (perf-critical), Python (ML).
+> **Process**: Recruiter/manager screen (covers "why Cursor" and tolerance for heavy workload) -> 1-3 technical phone screens (60 min, one medium-hard problem, sometimes against part of Cursor's actual codebase) -> **paid onsite project: 8-9 hours** (CEO Michael Truell told Business Insider in Nov 2025 that every engineering and design hire does a two-day onsite trial with a desk, a laptop and a frozen copy of the codebase; real codebase access, a Slack channel, build a feature autonomously, meals with the team, ending with a presentation, this round decides the offer) -> culture-fit discussion (often over meals). Some senior/staff roles get a 4-8h take-home. AI tools: reports conflict. Some say unrestricted AI in all rounds, others say prohibited in the first coding round; all agree pasting raw model output without judgment is a fast rejection. Languages: TypeScript (editor), Rust (perf-critical), Python (ML).
 
 ### Cursor Coding Problems
 
@@ -417,6 +430,8 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 ## Groq
 
 > **Process**: Recruiter call -> 1-hour phone with live coding (compiler roles) -> technical round(s) with staff engineers -> 1-hour "personality"/leadership interview with a VP. ~32 days average. **NDA before the first interview**: which is why specific questions rarely leak (treat all data as low-confidence). Compiler new-grad candidates report problems "harder than FAANG." Stack: Haskell prototypes, C++/Python tooling; domain centers on the Tensor Streaming Processor (LPU): spatial compiler passes, deterministic scheduling, mapping NN graphs to hardware. LLVM/MLIR experience preferred.
+>
+> **Corporate note (2026)**: In Dec 2025 Nvidia paid about $20B for a non-exclusive license to Groq's inference technology and hired founder Jonathan Ross, president Sunny Madra and senior hardware staff. Groq continues as an independent company: CFO Simon Edwards briefly served as CEO, Adam Winter was interim CEO as of May 2026, and that month the company raised $650M from existing investors (Disruptive and Infinitum backstopping) to rebuild as an inference neocloud around GroqCloud and a next-generation LPU. The compiler-heavy interview reports above predate the deal, and most of the hardware leadership has moved to Nvidia; check which Groq you are interviewing with.
 
 ### Groq Reported Topics
 
@@ -430,7 +445,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 ## Cerebras
 
-> **Process**: OA, **two LeetCode Mediums in 45 minutes** on HackerRank (very time-pressured, short behavioral at the end) -> phone screen -> final round with two more LC Mediums. Alternate reported shape: 4 rounds (2 coding + 2 behavioral), ~1 month. Uses Microsoft Teams + HackerRank. Performance-engineer candidates get parallel programming and matrix multiplication questions on top of coding. Emphasis: Arrays + Strings.
+> **Process**: OA, **two LeetCode Mediums in 45 minutes** on HackerRank (very time-pressured, short behavioral at the end) -> phone screen -> final round with two more LC Mediums. Alternate reported shape: 4 rounds (2 coding + 2 behavioral), ~1 month. Uses Microsoft Teams + HackerRank. Performance-engineer candidates get parallel programming and matrix multiplication questions on top of coding. Emphasis: Arrays + Strings. 2026 reports keep the same shape: 15-30 min recruiter screen -> 45-60 min exploratory technical with live coding -> four 45-min deep dives (coding, systems knowledge, hiring manager) on Teams + HackerRank. Corporate note: Cerebras listed on Nasdaq as CBRS on May 14, 2026, raising $5.55B at $185 a share, the largest US tech IPO since Snowflake.
 
 ### Cerebras Coding Problems
 
@@ -527,6 +542,8 @@ Decompose a customer-facing product problem into components; define UI + backend
 ## Character.AI
 
 > **Process**: Four rounds. LeetCode-style coding, system design, ML coding, culture fit. 3-4 weeks (~2 with referral). Tone reported as relaxed and collaborative, interviewers give hints. Mix of algorithmic challenges (strings, recursion, data structures), system design for real-time consumer platforms, AI/ML integration, some front-end problems, plus product-sense questions on engaging user experiences.
+>
+> **Corporate note (2026)**: Character.AI stopped training its own foundation models after the 2024 Google licensing deal and builds on open-weight models (Llama, Qwen, DeepSeek). CEO Karandeep Anand (in the role since June 2025) leaves to become Disney's first CTO effective Oct 2, 2026, and Disney said "a number of Character.AI's technical team" will join him. Factor the leadership transition into any Q4 2026 loop.
 
 ### Character.AI Reported Problems & Topics
 
@@ -542,7 +559,7 @@ Decompose a customer-facing product problem into components; define UI + backend
 
 ## Sierra AI
 
-> **Process**: Sierra **publicly removed coding/algorithms interviews** ("The AI-native interview," sierra.ai engineering blog). Phone screen is a system-design screen focused on production-readiness. The AI-native onsite has three phases: **Plan** (drive ideation of a product with interviewers) -> **Build** (2 hours solo, any AI tools/frameworks allowed; scope pivots allowed) -> **Review** (demo + defend product decisions, data models, abstractions, and how AI was used). Also piloting a debugging round using coding agents on an existing codebase. Agent SWE loop: CoderPad practical screen -> debugging round (multi-file agent codebase, find ~3 bugs by running tests) -> agent-building take-home (build an agent with a provided API key) + 60-min presentation -> hiring-manager behavioral.
+> **Process**: Sierra **publicly removed coding/algorithms interviews** ("The AI-native interview," sierra.ai engineering blog). Phone screen is a system-design screen focused on production-readiness. The AI-native onsite has three phases: **Plan** (drive ideation of a product with interviewers) -> **Build** (2 hours solo, any AI tools/frameworks allowed; scope pivots allowed) -> **Review** (demo + defend product decisions, data models, abstractions, and how AI was used). Blog post dated April 22, 2026: https://sierra.ai/blog/the-ai-native-interview. Also piloting a debugging round in which you review a colleague's PR in an existing codebase, pull the code down, inspect the output and improve it with coding agents. Agent SWE loop: CoderPad practical screen -> debugging round (multi-file agent codebase, find ~3 bugs by running tests) -> agent-building take-home (build an agent with a provided API key) + 60-min presentation -> hiring-manager behavioral.
 
 ### Sierra AI Reported Problems
 
@@ -622,15 +639,16 @@ Enterprise search systems: indexing pipelines, ranking algorithms, document retr
 
 Cross-company shifts documented across 2025-2026 (Karat, interviewing.io, Fabric, CodeSignal, company engineering blogs):
 
-1. **AI-assisted interview rounds went mainstream at big tech.** Meta piloted an AI-enabled coding round in Oct 2025 (60-min CoderPad with GPT-5/Claude/Gemini/Llama built in) rolling out across roles in 2026; Google is piloting an AI-assisted "code comprehension" round with Gemini; LinkedIn replaced one coding round with an AI-enabled round; some Microsoft teams allow GitHub Copilot. Evaluation shifts to judgment, verification of AI output, and communication. Not prompt tricks.
-2. **AI cheating exploded and reshaped formats.** CodeSignal reports cheating/fraud attempts rose from 16% to 35% of assessments (2024->2025); Fabric reports 48% of technical candidates triggered cheating markers. Invisible overlay tools (Interview Coder, Leetcode Wizard, Cluely) are undetectable via screen share.
+1. **AI-assisted interview rounds went mainstream at big tech.** Meta piloted an AI-enabled coding round in Oct 2025 (60-min CoderPad with GPT-5/Claude/Gemini/Llama built in) and rolled it across back-end and ops roles in 2026 (E6 and below: one traditional plus one AI round; E7+: AI round only); Google announced in May 2026 a pilot of an AI-assisted "code comprehension" round (read, debug and optimize an existing codebase with Gemini, graded on prompt quality, output validation and debugging) for junior to mid-level roles on select US teams in the second half of 2026; LinkedIn replaced one coding round with an AI-enabled round; some Microsoft teams allow GitHub Copilot. Evaluation shifts to judgment, verification of AI output, and communication. Not prompt tricks.
+2. **AI cheating exploded and reshaped formats.** CodeSignal's Feb 2026 report puts cheating/fraud attempts on proctored assessments at 35% in 2025, up from 16% in 2024, with entry-level assessments at 40% (from 15%). Fabric's Jan 2026 analysis of 19,368 AI interviews (July 2025 to Jan 2026) flagged 38.5% of all candidates, 48% in technical roles against 12% in sales, with rates tripling between July and Sept 2025; junior candidates (0-5 years) cheated at about twice the senior rate. Invisible overlay tools (Interview Coder, Leetcode Wizard, Cluely, Final Round AI) are undetectable via screen share and account for 45% of detected cases; voice-mode LLMs account for another 34%.
 3. **In-person interviews returned.** Google reinstated at least one in-person round for technical hires in 2026; multiple major employers quietly re-added mandatory onsite finals in Q1 2026.
 4. **Take-homes grew a live-defense round.** 71% of engineering leaders say AI made technical assessment harder (Karat); companies now attach a "walk me through your code and your decisions" session, or replace multi-hour take-homes with 60-90-min live pairing.
 5. **Work trials are the AI-startup norm.** Cursor: paid multi-day onsite projects on a real codebase; OpenAI: paid (~$1,000) 48-hour take-home work trials; Cognition/Kilo/Crosby: multi-day trials and bootcamps; Sierra: Plan -> Build (2h with AI) -> Review onsites.
 6. **"AI fluency" is an explicit signal.** Companies open interviews with questions like "How many tokens are you consuming every week?"; several have candidates build with AI in-session.
 7. **Interviewers retooled questions.** In an interviewing.io survey of 67 FAANG/startup interviewers, 58% changed the algorithmic questions they ask; debug-focused rounds (find bugs in supplied code) and real-time "why this data structure?" probes are the common anti-AI patterns.
-8. **Anthropic redesigned its performance take-home three times** because Claude kept beating it. The current version is a Zachtronics-style constrained-instruction-set puzzle where building your own tooling is part of the test, and AI tools are explicitly permitted.
+8. **Anthropic redesigned its performance take-home three times** because Claude kept beating it. The current version is a Zachtronics-style constrained-instruction-set puzzle where building your own tooling is part of the test, and AI tools are explicitly permitted. Timeline (The Decoder, Jan 2026): Claude 3.7 Sonnet out-scored more than half of candidates, Claude Opus 4 forced the cut from 4 to 2 hours in May 2025, and Claude Opus 4.5 matched the best humans in 2 hours. Anthropic published the retired original at https://github.com/anthropics/original_performance_takehome; the README says a solution under 1,487 cycles (Opus 4.5's 11.5-hour result) qualifies for recruiting consideration via performance-recruiting@anthropic.com.
 9. **Structural shifts:** system design now appears for mid-level (not just senior) roles; behavioral rounds are more structured and evidence-based; big tech keeps standardized AI-off algorithm loops while AI-native startups converge on practical AI-allowed building. Candidates must prep for both formats.
+10. **Corporate churn moved the goalposts in 2026.** xAI became SpaceXAI (Feb 2026 acquisition, July 2026 rename); Amazon closed its San Francisco AGI Lab site (July 2026); Groq licensed its technology to Nvidia and lost its founder (Dec 2025); Scale AI installed a new CEO (Aug 2026); Character.AI's CEO left for Disney (Oct 2026); Thinking Machines Lab lost four of six co-founders; Cohere agreed to merge with Aleph Alpha (Apr 2026). Before a company-specific prep plan, confirm which org and manager the role now reports to; several of the process notes above describe loops that predate these changes.
 
 ---
 

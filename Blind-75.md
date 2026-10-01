@@ -1,6 +1,6 @@
 # Blind 75 - The Ultimate LeetCode Interview Preparation List
 
-> **Blind 75** is the most famous curated list of LeetCode problems, originally shared on the Blind platform by a software engineer. This collection of 75 carefully selected problems covers all the essential patterns needed to ace coding interviews at top tech companies. It's the gold standard for efficient interview preparation.
+> **Blind 75** is the most famous curated list of LeetCode problems, originally shared on the Blind platform on December 30, 2018 by Yangshun Tay, then an engineer at Facebook. This collection of 75 carefully selected problems covers all the essential patterns needed to ace coding interviews at top tech companies. It's the gold standard for efficient interview preparation.
 
 > **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [NeetCode 150](./NeetCode-150.md)
 
@@ -40,18 +40,21 @@ The original author curated this list based on:
 
 ## Problem Distribution
 
-| Category | Count | Difficulty Split | Success Rate |
+| Category | Count | Difficulty Split | LeetCode Premium |
 |----------|-------|------------------|-------------|
-| **Array** | 10 | 3 Easy, 6 Medium, 1 Hard | 95% |
-| **Binary** | 5 | 4 Easy, 1 Medium | 98% |
-| **Dynamic Programming** | 9 | 1 Easy, 7 Medium, 1 Hard | 75% |
-| **Graph** | 8 | 6 Medium, 2 Hard | 70% |
-| **Interval** | 5 | 1 Easy, 3 Medium, 1 Hard | 85% |
-| **Linked List** | 6 | 2 Easy, 4 Medium | 90% |
-| **Matrix** | 4 | 3 Medium, 1 Hard | 80% |
-| **String** | 10 | 2 Easy, 7 Medium, 1 Hard | 82% |
-| **Tree** | 13 | 3 Easy, 8 Medium, 2 Hard | 78% |
-| **Heap** | 3 | 1 Easy, 1 Medium, 1 Hard | 85% |
+| **Array** | 10 | 3 Easy, 7 Medium | 0 |
+| **Binary** | 5 | 4 Easy, 1 Medium | 0 |
+| **Dynamic Programming** | 11 | 1 Easy, 10 Medium | 0 |
+| **Graph** | 8 | 7 Medium, 1 Hard | 3 |
+| **Interval** | 5 | 1 Easy, 4 Medium | 2 |
+| **Linked List** | 6 | 3 Easy, 2 Medium, 1 Hard | 0 |
+| **Matrix** | 4 | 4 Medium | 0 |
+| **String** | 10 | 3 Easy, 6 Medium, 1 Hard | 1 |
+| **Tree** | 14 | 4 Easy, 7 Medium, 3 Hard | 0 |
+| **Heap** | 3 | 1 Medium, 2 Hard | 0 |
+| **Total** | 75 unique | 19 Easy, 49 Medium, 7 Hard | 6 |
+
+Counts and difficulty labels were checked against LeetCode on October 1, 2026. The tables below have 76 rows because Merge k Sorted Lists is listed under both Linked List and Heap.
 
 ---
 
@@ -308,10 +311,10 @@ Use this checklist to track your progress:
 
 ## 🔗 Resources
 
-- **[Original Blind Post](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)**: The original discussion
+- **[Original Blind Post](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)**: The original post, dated December 30, 2018
 - **[NeetCode Videos](https://neetcode.io/practice?tab=blind75)**: Free video solutions
 - **[Tech Interview Handbook](https://www.techinterviewhandbook.org/best-practice-questions/)**: Updated approach
-- **[Grind 75](https://www.techinterviewhandbook.org/grind75)**: The evolved version with 169 problems
+- **[Grind 75](https://www.techinterviewhandbook.org/grind75/)**: The evolved version with 169 problems
 
 ---
 
