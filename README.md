@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 44 companies: FAANG, frontier AI labs, and AI-first startups.</p>
+  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 44 companies: FAANG, frontier AI labs, and AI-first startups. Last updated October 2026.</p>
 
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
     <img src="https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=flat" alt="GitHub stars" />
@@ -41,6 +41,9 @@
 
 **Programming Resources**
 - [Python Resources](./PythonResources.md)
+
+**1:1 Help**
+- [Mock Interviews and Mentorship](#mock-interviews-and-mentorship)
 
 ## What Changed in 2026
 
@@ -121,6 +124,8 @@ Full breakdown in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#the-si
 - Focus on [Recent FAANG/MAANG Questions](./FAANG-Recent-Questions.md)
 - Start [System Design](./SYSTEM_DESIGN_INTERVIEW.md) preparation
 
+**Not sure which track you are on?** A single [mock interview](#mock-interviews-and-mentorship) tells you faster than another week of reading.
+
 **Advanced Track** (Targeting specific roles)
 - Review company-specific sections below
 - Practice [ML Interview Questions](./ML_INTERVIEW_PREP.md) for ML roles
@@ -131,6 +136,15 @@ Full breakdown in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#the-si
 - Practice implementing attention, tokenizers, and sampling **from scratch**: no libraries
 - Prepare for debugging rounds (broken Transformers, planted bugs) and progressive multi-level problems
 - Expect concurrency follow-ups on ordinary problems, and values/mission rounds that are real gates
+
+## Mock Interviews and Mentorship
+
+Reading questions gets you to the door. Doing them under time pressure, with someone watching, gets you through it. If you want a mock interview, a prep plan built around one company's loop, or a second opinion on where you stand, you can book time with the maintainer of this repo:
+
+- [Engine Bogie](https://enginebogie.com/u/om): book a mock interview
+- [Topmate](https://topmate.io/ombharatiya): book a 1:1 mentorship or consultancy session
+
+Sessions cover FAANG, AI lab and startup loops, including the AI-assisted rounds described in this guide.
 
 ## FAANG Must Do Problems
 
@@ -1031,6 +1045,8 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>
 

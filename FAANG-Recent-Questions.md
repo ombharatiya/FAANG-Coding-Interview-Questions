@@ -1,6 +1,6 @@
 # FAANG / MAANG+ Most Recently Asked Coding Interview Questions
 
-> A comprehensive list of the most recently asked coding interview questions at top tech companies (2025-2026). Questions are organized by company and topic to help you prepare effectively.
+> A comprehensive list of the most recently asked coding interview questions at top tech companies (2025-2026). Questions are organized by company and topic to help you prepare effectively. Last updated October 2026.
 >
 > **Looking for AI labs?** DeepMind, xAI, Mistral, Perplexity, Scale AI, Cohere, Cursor, Waymo, Sierra, Glean and more live in the companion [AI Labs & AI Companies guide](./AI-Companies-Interview-Questions.md).
 
@@ -374,7 +374,7 @@ Amazon rotates a large bank of themed OA problems. Reported in 2026:
 
 ## Apple
 
-> **2025-2026 Trends**: Practical/applied problems over pure algo puzzles, real Apple workload framing (file dedup, iOS task simulation, API throttling). Stricter expectations on edge cases and memory behavior. Design-oriented coding (LRU Cache is most frequently reported). **Still radically team-dependent. No unified loop**: some teams ask standard LC mediums, embedded/hardware teams ask C/C++ memory/optimization, services teams ask API design or debug-broken-code, some skip LeetCode entirely for architecture or take-homes. **New in 2026**: design-style coding questions are disproportionately common (Time Based KV Store, Design Hit Counter, BST iterators); loops for experienced hires are getting longer, 8-9 rounds over several weeks reported; ICT4 candidates report up to 3 phone screens before onsite. **No AI-assisted rounds reported** as of mid-2026. All experiences describe human-only interviews graded on correctness, memory behavior, and boundary handling rather than Hards.
+> **2025-2026 Trends**: Practical/applied problems over pure algo puzzles, real Apple workload framing (file dedup, iOS task simulation, API throttling). Stricter expectations on edge cases and memory behavior. Design-oriented coding (LRU Cache is most frequently reported). **Still radically team-dependent. No unified loop**: some teams ask standard LC mediums, embedded/hardware teams ask C/C++ memory/optimization, services teams ask API design or debug-broken-code, some skip LeetCode entirely for architecture or take-homes. **New in 2026**: design-style coding questions are disproportionately common (Time Based KV Store, Design Hit Counter, BST iterators); loops for experienced hires are getting longer, 8-9 rounds over several weeks reported; ICT4 candidates report up to 3 phone screens before onsite. **No AI-assisted rounds reported** as of October 2026. All experiences describe human-only interviews graded on correctness, memory behavior, and boundary handling rather than Hards.
 
 ### Apple Arrays and Strings
 
@@ -1326,7 +1326,7 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 
 ## Uber
 
-> **2025-2026 Trends**: Interviews reflect product domain -- routing, dispatch, surge pricing map to graph traversal, streaming aggregation, sliding-window patterns. OA: 4 problems in 70-90 minutes on CodeSignal (easy/medium arrays + harder graph/DP), followed by a 4-6 round onsite. Code readability explicitly evaluated. L5A (Senior): 5 rounds total with elimination Round 0 (LeetCode Medium). Difficulty: 7% Easy, 73% Medium, 20% Hard. **New in 2026**: **machine-coding / LLD rounds are the differentiator at senior levels**: coding is the primary gate while system-design quality decides leveling (L5a/L5b/Senior/Staff). Original non-LeetCode problems appear in "Hack2Hire" assessments. Questions cluster into four families: graphs/BFS-DFS, sliding window/two pointers, heaps/streaming, and cache/design, with domain-flavored twists (quadtrees for geo points, rate limiters, autocomplete) rather than pure textbook problems. Frequent themes: Uber Eats cart pricing, geo heatmaps, surge, restaurant recommendation. No evidence Uber allows AI tools in interviews as of mid-2026.
+> **2025-2026 Trends**: Interviews reflect product domain -- routing, dispatch, surge pricing map to graph traversal, streaming aggregation, sliding-window patterns. OA: 4 problems in 70-90 minutes on CodeSignal (easy/medium arrays + harder graph/DP), followed by a 4-6 round onsite. Code readability explicitly evaluated. L5A (Senior): 5 rounds total with elimination Round 0 (LeetCode Medium). Difficulty: 7% Easy, 73% Medium, 20% Hard. **New in 2026**: **machine-coding / LLD rounds are the differentiator at senior levels**: coding is the primary gate while system-design quality decides leveling (L5a/L5b/Senior/Staff). Original non-LeetCode problems appear in "Hack2Hire" assessments. Questions cluster into four families: graphs/BFS-DFS, sliding window/two pointers, heaps/streaming, and cache/design, with domain-flavored twists (quadtrees for geo points, rate limiters, autocomplete) rather than pure textbook problems. Frequent themes: Uber Eats cart pricing, geo heatmaps, surge, restaurant recommendation. No evidence Uber allows AI tools in interviews as of October 2026.
 
 ### Uber Algorithms
 
@@ -1800,5 +1800,7 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>

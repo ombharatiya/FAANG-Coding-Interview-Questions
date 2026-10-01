@@ -1,6 +1,6 @@
 # AI Labs & AI Companies. Interview Questions (2025-2026)
 
-> Interview processes, coding questions, ML questions, and system design prompts at the top AI labs and AI-first companies, compiled from 1,500+ candidate reports, engineering blogs, and interview guides (Reddit, Blind, Glassdoor, 1point3acres, LeetCode Discuss, interviewing.io, Exponent, and company sources). For OpenAI and Anthropic deep-dives, see [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#openai).
+> Interview processes, coding questions, ML questions, and system design prompts at the top AI labs and AI-first companies, compiled from 1,500+ candidate reports, engineering blogs, and interview guides (Reddit, Blind, Glassdoor, 1point3acres, LeetCode Discuss, interviewing.io, Exponent, and company sources). For OpenAI and Anthropic deep-dives, see [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#openai). Last updated October 2026.
 
 > **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
 
@@ -656,5 +656,7 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>
