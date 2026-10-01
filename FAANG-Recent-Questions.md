@@ -247,11 +247,21 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 | 6 | Merge 3 Sorted Arrays | Arrays | Merge-k variant restricted to 3 arrays; follow-ups on duplicates |
 | 7 | Minimum element per binary-tree level | Trees / BFS | Reported in late-2025 infra screens with matrix distance calculation |
 
+### Meta System Design (2026 reports)
+
+| No. | Question | Key Focus |
+| --- | -------- | --------- |
+| 1 | Design "People You May Know" friend recommendations | Candidate generation from graph proximity, batch vs online freshness, ranking labels and signals, filters for existing friends, pending requests, blocks and privacy, high-degree and brand-new users (onsite, Sep 2026) |
+| 2 | Design 24-hour ephemeral Stories | Direct-to-storage upload and CDN delivery, the tray of followed accounts with unwatched stories on every app open, hard 24-hour expiry vs background cleanup, per-viewer watched state (onsite, Sep 2026) |
+| 3 | Design a reliable notification system | Storage choices, recipient fanout, behavior under high traffic, idempotent delivery (Senior+, Aug 2026) |
+| 4 | Scale a cache or rate limiter across machines | Pick one, define its single-node behavior, then shard, replicate and handle hot keys (Aug 2026) |
+| 5 | Design ride requests, driver matching and trip state | Request to match to pickup to completion, recording the trip outcome, consistency of state transitions (Sep 2026) |
+
 ---
 
 ## Amazon
 
-> **2025-2026 Trends**: Practical, real-world framing. Heap-based reasoning emphasized. OA structure: Q1 is Array/String/Sliding Window, Q2 is Graph/Trees/DP/Heap. ~19% Easy, 60% Medium, 21% Hard. **New in 2026**: HackerRank OA = 2 coding problems (~70 min) + Work Simulation (~20 min) + Work Style Assessment (~10-20 min); the SDE II OA adds a 20-minute System Design scenario section. ~75-80% of OA problems are Medium, wrapped in Amazon-themed framing (servers, warehouses, parcels). Onsite is ~50/50 coding vs Leadership Principles in every round, plus Bar Raiser. Rising: weighted-shortest-path/Dijkstra problems; system design now probes deployment topology and on-call readiness. **AI-assisted OA section reported since mid-2026**: some SDE I, intern, and SDE II candidates (July 2026 reports from India and the US) get a repository-debugging task alongside the DSA questions: fix several bugs in an existing application with an embedded assistant and pass visible plus hidden tests that encode validation, idempotency, authorization, and state-transition requirements. The format is not universal and differs by country; live coding rounds remain AI-free. Amazon also rotates custom OA problem sets aggressively, so pattern prep beats memorization. Under-prepared LPs to watch: "Have Backbone, Disagree & Commit", "Are Right A Lot", "Frugality".
+> **2025-2026 Trends**: Practical, real-world framing. Heap-based reasoning emphasized. OA structure: Q1 is Array/String/Sliding Window, Q2 is Graph/Trees/DP/Heap. ~19% Easy, 60% Medium, 21% Hard. **New in 2026**: HackerRank OA = 2 coding problems (~70 min) + Work Simulation (~20 min) + Work Style Assessment (~10-20 min); the SDE II OA adds a 20-minute System Design scenario section. ~75-80% of OA problems are Medium, wrapped in Amazon-themed framing (servers, warehouses, parcels). Onsite is ~50/50 coding vs Leadership Principles in every round, plus Bar Raiser. Rising: weighted-shortest-path/Dijkstra problems; system design now probes deployment topology and on-call readiness. **AI-assisted OA section reported since mid-2026**: some SDE I, intern, and SDE II candidates (July 2026 reports from India and the US) get a repository-debugging task alongside the DSA questions: fix several bugs in an existing application with an embedded assistant and pass visible plus hidden tests that encode validation, idempotency, authorization, and state-transition requirements. The format is not universal and differs by country; live coding rounds remain AI-free. Amazon also rotates custom OA problem sets aggressively, so pattern prep beats memorization. Under-prepared LPs to watch: "Have Backbone, Disagree & Commit", "Are Right A Lot", "Frugality". **Late-September 2026 OA report (Software Engineer, AI roles)**: the OA paired an AI-assisted Spring Boot bug-fix task (a movie search that must satisfy five rules, tests first, no endpoint contract changes) with two Hard algorithm problems (maximize bitwise AND under an increment budget; minimum-conflict string interleaving). New-grad screens in August 2026 included a full-stack debugging task (repair a Django POST endpoint and its React contract) and a question asking you to walk through a concrete AI-assisted engineering workflow: what you delegated, what context you protected, how you verified the output.
 
 ### Amazon Arrays and Strings
 
@@ -299,6 +309,7 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 | 10 | [Word Search II](https://leetcode.com/problems/word-search-ii) | Hard |
 | 11 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard |
 | 12 | [Word Search](https://leetcode.com/problems/word-search) | Medium |
+| 13 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium |
 
 ### Amazon Heaps and Priority Queues
 
@@ -314,6 +325,7 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 | 8 | [Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks) | Medium |
 | 9 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem) | Hard |
 | 10 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | Hard |
+| 11 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream) | Easy |
 
 ### Amazon Dynamic Programming
 
@@ -362,6 +374,13 @@ Amazon rotates a large bank of themed OA problems. Reported in 2026:
 | 13 | Longest Match | Hard | Strings / DP |
 | 14 | Min Subsegments | Hard | Greedy / partitioning |
 | 15 | AI-assisted repository debugging: fix several planted bugs in an existing service with an embedded assistant; hidden tests cover validation, idempotency, and state transitions | Medium | Debugging (AI-assisted OA section, July 2026 reports) |
+| 16 | Fix a buggy Spring Boot movie search against five rules: partial match, field selection, case-insensitive, popularity order with tie-breakers, published-only | Hard | AI-assisted debugging (SWE AI OA, Sep 2026): write tests per rule first, trace controller to repository, fix without changing the endpoint contract |
+| 17 | Maximize bitwise AND of k elements after spending an increment budget | Hard | Greedy bit by bit from the top with shared-budget accounting (OA, Sep 2026) |
+| 18 | Minimum priority conflicts when interleaving two lowercase strings | Hard | Interleave preserving each string's order; a conflict is a lower-priority letter before a higher one; DP over (i, j) (OA, Sep 2026) |
+| 19 | Minimize grid inconvenience by adding one delivery center | Medium | Multi-source BFS for Chebyshev distance, then binary search on the answer with a bounding-box feasibility check (OA, Sep 2026) |
+| 20 | Repair a Django POST endpoint and its React contract | Medium | Full-stack debugging (new grad, Aug 2026): validate required fields, resolve the user from the X-User-Id header, persist, return 201 in the shape React expects |
+| 21 | Merge sorted event streams through an iterator | Medium | Heap-backed k-way merge exposed as next() and hasNext() without materializing all events (Sep 2026) |
+| 22 | Message rate limiter over a timestamp stream | Medium | Decide per message whether it may print inside the window; Logger Rate Limiter re-skin (new grad, Aug 2026) |
 
 ### Amazon System Design
 
@@ -379,7 +398,7 @@ Amazon rotates a large bank of themed OA problems. Reported in 2026:
 
 ## Apple
 
-> **2025-2026 Trends**: Practical/applied problems over pure algo puzzles, real Apple workload framing (file dedup, iOS task simulation, API throttling). Stricter expectations on edge cases and memory behavior. Design-oriented coding (LRU Cache is most frequently reported). **Still radically team-dependent. No unified loop**: some teams ask standard LC mediums, embedded/hardware teams ask C/C++ memory/optimization, services teams ask API design or debug-broken-code, some skip LeetCode entirely for architecture or take-homes. **New in 2026**: design-style coding questions are disproportionately common (Time Based KV Store, Design Hit Counter, BST iterators); loops for experienced hires are getting longer, 8-9 rounds over several weeks reported; ICT4 candidates report up to 3 phone screens before onsite. **No AI-assisted rounds reported** as of October 2026. All experiences describe human-only interviews graded on correctness, memory behavior, and boundary handling rather than Hards.
+> **2025-2026 Trends**: Practical/applied problems over pure algo puzzles, real Apple workload framing (file dedup, iOS task simulation, API throttling). Stricter expectations on edge cases and memory behavior. Design-oriented coding (LRU Cache is most frequently reported). **Still radically team-dependent. No unified loop**: some teams ask standard LC mediums, embedded/hardware teams ask C/C++ memory/optimization, services teams ask API design or debug-broken-code, some skip LeetCode entirely for architecture or take-homes. **New in 2026**: design-style coding questions are disproportionately common (Time Based KV Store, Design Hit Counter, BST iterators); loops for experienced hires are getting longer, 8-9 rounds over several weeks reported; ICT4 candidates report up to 3 phone screens before onsite. **No AI-assisted rounds reported** as of October 2026. All experiences describe human-only interviews graded on correctness, memory behavior, and boundary handling rather than Hards. **September 2026 reports**: a Senior SWE candidate interviewing with Core Services and Apple Ads confirmed there was no AI-assisted round; an Austin IS&T ICT3 loop ran four rounds across one week (coding, technical, behavioral with the manager, system design), and IS&T and Ads teams can require Java on CoderPad. Technical screens lean on concurrency: a TTL token manager with a thread-safety follow-up (framed around an LLM application) and a first-successful-result-under-a-global-timeout problem were both reported in September 2026.
 
 ### Apple Arrays and Strings
 
@@ -449,6 +468,9 @@ Amazon rotates a large bank of themed OA problems. Reported in 2026:
 | 6 | Minimum Cells to Bridge a Magic Grid | Graph / BFS | Islands/bridging grid hard |
 | 7 | Library Management System | OOP Design | Actual class structure expected |
 | 8 | AI agents for test coverage: design discussion on hallucination handling, oversight, and failure monitoring | AI Round (IC3) | Ran as a whiteboard design conversation in at least one 2026 loop; no live prompting required |
+| 9 | Time-to-live token manager with renewal | Concurrency / Design (tech screen, Sep 2026) | generate, renew (only while unexpired) and count_unexpired, expiry wins ties at the same timestamp; part 2 makes it thread-safe under heavy concurrent reads and writes. Interviewer framed it around an LLM application |
+| 10 | First successful result from parallel API calls under a global timeout | Concurrency (tech screen, Sep 2026) | Start all slow, failure-prone calls at once, return the first success, one deadline across all waits, tell "all failed" from "timed out", cancel in-flight work; follow-ups on hedged requests and capping concurrency at k |
+| 11 | Merge two strings by longest suffix-prefix overlap | Strings (OA, Sep 2026) | Try both orders, keep the larger overlap, prefer the original order on ties, linear time (prefix function) |
 
 ### Apple System Design
 
@@ -463,7 +485,7 @@ Amazon rotates a large bank of themed OA problems. Reported in 2026:
 
 ## Netflix
 
-> **2025-2026 Trends**: Streaming/recommendation-themed problem wrappers. Graph-heavy focus (topological sort, shortest path, CDN routing). System design is the pass/fail determinant. Concurrency and rate limiting emphasized. Code must compile and run with unit tests. **Biggest 2026 change: formal engineering levels.** Netflix moved away from the single "Senior Engineer" rung to an explicit multi-band ladder (roughly E1/L4-E7). The same coding answer is now scored against the target level, so an answer that passes at E4 can fail at E6 for being "too tactical." Loops are decentralized and team-owned: hiring manager is involved from the first screen; 4-6 rounds; tech screen is 45 min on CodeSignal or 60 min on CoderPad depending on team; 1-2 directors often sit in onsites. Coding style favors practical mediums over puzzles, streaming aggregation, rate limiting, caching/TTL behavior, parsing, concurrency, frequently re-skinned with Netflix domain (shows, playlists, watch history). The culture/Keeper Test round remains mandatory in every loop.
+> **2025-2026 Trends**: Streaming/recommendation-themed problem wrappers. Graph-heavy focus (topological sort, shortest path, CDN routing). System design is the pass/fail determinant. Concurrency and rate limiting emphasized. Code must compile and run with unit tests. **Biggest 2026 change: formal engineering levels.** Netflix moved away from the single "Senior Engineer" rung to an explicit multi-band ladder (roughly E1/L4-E7). The same coding answer is now scored against the target level, so an answer that passes at E4 can fail at E6 for being "too tactical." Loops are decentralized and team-owned: hiring manager is involved from the first screen; 4-6 rounds; tech screen is 45 min on CodeSignal or 60 min on CoderPad depending on team; 1-2 directors often sit in onsites. Coding style favors practical mediums over puzzles, streaming aggregation, rate limiting, caching/TTL behavior, parsing, concurrency, frequently re-skinned with Netflix domain (shows, playlists, watch history). The culture/Keeper Test round remains mandatory in every loop. **September 2026 technical screens** stayed on-theme: a movie playlist that serves the highest-scoring unserved title with live score updates and a thread-safety follow-up, a custom record parser whose grammar is left deliberately underspecified, and a key-value cache with per-entry time limits.
 
 ### Netflix System Design Coding
 
@@ -524,6 +546,9 @@ Netflix's custom set skews heavily toward caches and watch-history/domain re-ski
 | 11 | Rate limiter for microservices, with graceful degradation when the limiter itself fails | Medium-Hard | Concurrency |
 | 12 | Real-Time "Currently Watching" Tracker | Medium | LLD |
 | 13 | Binary Array Partition, split binary array into 3 equal-value parts | Medium | Arrays |
+| 14 | Movie playlist with live score updates and no repeats per loop; get() returns the highest-scoring unserved title, then a thread-safety follow-up | Medium | Design / Concurrency |
+| 15 | Parse a custom record: four fixed fields, then a $[...]& free-form section with mapped keys, nested lists and duplicate keys; grammar left deliberately underspecified | Medium | Parsing |
+| 16 | In-memory key-value cache with a per-entry time limit on every write | Easy | Design / Caching |
 
 ### Netflix System Design
 
@@ -540,7 +565,7 @@ Netflix's custom set skews heavily toward caches and watch-history/domain re-ski
 
 ## Google
 
-> **2025-2026 Trends**: Graphs appear in 76% of onsite loops at L4+. Sliding window and binary search on answer are top-tier patterns. Trie and Union-Find questions rising. Roughly 19% of reported problems are Hard. Follow-up questions are standard. **New in 2026**: AI-assisted "Code Comprehension" round piloting. Candidates read, debug, and optimize an existing codebase with **Gemini available** in a CoderPad-style environment (file explorer + editor + AI chat); interviewers explicitly score "AI fluency": prompt engineering, output validation, and debugging of AI output. Pilot started in H2 2026 for junior/mid-level roles on select US teams, with expansion to other teams and regions planned if it succeeds (context: Pichai's April 22, 2026 blog post that 75% of new Google code is AI-generated, up from 50% in fall 2025). **In-person round reinstated** for technical hires to combat AI-assisted cheating. Google Hiring Assessment (GHA) mandatory before the phone screen. The Googleyness & Leadership round is now part-technical. A design conversation about a real system you built, defended under scrutiny. **Third change, early-career only**: one traditional technical round is replaced by an open-ended engineering problem session, closer to a discussion of approach than a single correct answer. Reports emphasize deliberately ambiguous problem framing (you must derive the problem structure) and strict production-ready-code grading at L4. No system design round below L5.
+> **2025-2026 Trends**: Graphs appear in 76% of onsite loops at L4+. Sliding window and binary search on answer are top-tier patterns. Trie and Union-Find questions rising. Roughly 19% of reported problems are Hard. Follow-up questions are standard. **New in 2026**: AI-assisted "Code Comprehension" round piloting. Candidates read, debug, and optimize an existing codebase with **Gemini available** in a CoderPad-style environment (file explorer + editor + AI chat); interviewers explicitly score "AI fluency": prompt engineering, output validation, and debugging of AI output. Pilot started in H2 2026 for junior/mid-level roles on select US teams, with expansion to other teams and regions planned if it succeeds (context: Pichai's April 22, 2026 blog post that 75% of new Google code is AI-generated, up from 50% in fall 2025). **In-person round reinstated** for technical hires to combat AI-assisted cheating. Google Hiring Assessment (GHA) mandatory before the phone screen. The Googleyness & Leadership round is now part-technical. A design conversation about a real system you built, defended under scrutiny. **Third change, early-career only**: one traditional technical round is replaced by an open-ended engineering problem session, closer to a discussion of approach than a single correct answer. Reports emphasize deliberately ambiguous problem framing (you must derive the problem structure) and strict production-ready-code grading at L4. No system design round below L5. **Reported July-September 2026**: the code comprehension round is reaching L5 loops, not only junior and mid-level ones; an August 2026 L5 candidate describes it as unfamiliar, Gemini-generated code where you explain what it does, find the bug, and explain how you would refactor it. Late-September L4 reports describe a hybrid loop: two virtual rounds, recruiter feedback within a day, then two in-person rounds (one was a medium-hard stack problem). A September technical screen opened with about ten minutes of resume deep-dive (Kafka, Redis, a Go API gateway) before the coding problem.
 
 ### Google Arrays and Strings
 
@@ -566,6 +591,8 @@ Netflix's custom set skews heavily toward caches and watch-history/domain re-ski
 | 18 | [Decode String](https://leetcode.com/problems/decode-string) | Medium |
 | 19 | [H-Index](https://leetcode.com/problems/h-index) | Medium |
 | 20 | [Amount of New Area Painted Each Day](https://leetcode.com/problems/amount-of-new-area-painted-each-day) | Hard |
+| 21 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard |
+| 22 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium |
 
 ### Google Trees and Graphs
 
@@ -589,6 +616,7 @@ Netflix's custom set skews heavily toward caches and watch-history/domain re-ski
 | 16 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) | Medium |
 | 17 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow) | Medium |
 | 18 | [Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary) | Medium |
+| 19 | [Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value) | Medium |
 
 ### Google Dynamic Programming
 
@@ -638,6 +666,17 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 9 | Coin collection on a board | 2026 OA | Grid DP / simulation |
 | 10 | Text editor / book-keeping system | Phone screen | Implementation + language-fundamentals problem |
 | 11 | Lines needed to write a string at a given width | L3 new grad, 2026 | "Given a string and an integer width, return how many lines you can write the string in." Phrasing is vague on purpose: wrapping rules, word breaks and whitespace are all unstated, and asking beats coding |
+| 12 | URL router with placeholder patterns | Onsite, Sep 2026 | processHandler registers patterns such as /users/{userId}/photo/{photoId}; getHandler takes a concrete path and returns the matching pattern. Trie with literal and placeholder children, precedence when both match, follow-ups on wildcards, HTTP methods and concurrent registration |
+| 13 | Timed-out RPC calls from paired log records | Onsite, Sep 2026 | Start and end records arrive in time order with a timeout; return calls whose duration exceeds it, measure open calls against the last timestamp, sort by start time then call id |
+| 14 | Dependency-safe deletion order | Onsite, Aug 2026 | parents[] gives a forest, plus extra [a before b] constraints; return the lexicographically smallest child-before-parent order, or an empty list on a cycle (topological sort with a min-heap) |
+| 15 | Trimmed sliding-window means | Technical screen, Sep 2026 | For each window of fixed size drop the k largest values by multiplicity and return the mean of the rest as a reduced fraction; two balanced heaps or an ordered multiset |
+| 16 | Group courses into earliest possible rounds | L4 onsite, Sep 2026 | Round 1 has no prerequisites, a course goes in round r+1 where r is its latest prerequisite's round; nested lists sorted within rounds, empty on a cycle (Parallel Courses variant) |
+| 17 | Deduplicate and order batch and streaming logs | Phone screen, Jul 2026 | Deterministic dedup under first-seen and latest-seen policies; late events, stale versions, state expiry, up to 200k operations |
+| 18 | Connected clusters of 2D points | Technical screen, Jul 2026 | Points within a radius are linked, transitively; duplicate coordinates, exact integer distance comparison, overflow safety; Union-Find |
+| 19 | Prefix-matching simple paths in a labeled graph | Senior onsite, Aug 2026 | Count simple paths whose labels spell every nonempty prefix of a query word; paths start anywhere and never revisit a vertex; DFS with pruning |
+| 20 | Players with fixed rankings | Coding, Aug 2026 | N players and directed match results; return the players whose rank is fully determined by transitive wins and losses; transitive closure or bitsets, plus the correctness argument |
+| 21 | Rectangle increments on a grid | Coding, Jul 2026 | Apply many inclusive rectangle +1 updates to an n x n grid and return final counts per cell; 2D difference array then prefix sums |
+| 22 | Three path tasks on a weighted binary grid | Senior onsite, Jul 2026 | Top-to-bottom reachability, deterministic enumeration of simple paths, then minimum-cost weighted path on a blocked grid (BFS, backtracking, Dijkstra) |
 
 ### Google System Design
 
@@ -649,12 +688,14 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 4 | Security monitoring framework for cloud infrastructure | Detection, scale |
 | 5 | Design Google Drive / Maps / YouTube / Search | Classics still rotating (crawl/index/serve) |
 | 6 | AI/ML system design | Increasingly woven into L5+ loops |
+| 7 | Polite distributed web crawler for ~10B pages with periodic recrawl | Host-aware frontier, robots.txt, dedup, politeness limits (Senior, Aug 2026) |
+| 8 | Music recommendation system with an LLM agent in the loop | Candidate generation, ranking, feedback loops, cold start, diversity, offline and online evaluation (Aug 2026) |
 
 ---
 
 ## Microsoft
 
-> **2025-2026 Trends**: Depth over speed. Higher proportion of backtracking and linked list problems (~29% linked lists). Design-heavy follow-ups standard. **New in 2026**: Process is stable but compressed. Codility/HackerRank-style OA (2 mediums) then 4 virtual onsite rounds usually on a single day; SDE2 loops = 2-3 DSA rounds + LLD + HLD + hiring-manager round. The **"As Appropriate" (AA) round** is formalized, run by Principal EMs, routing candidates into gap-probe / behavioral deep-dive / sell-Microsoft modes; ~85% of candidates reaching AA get offers, but it retains veto power. Behavioral "growth mindset" scoring is now level-banded (L60-62 vs L63-64 vs L65+). **AI-assisted coding rounds are org-specific, not universal**: mostly CoreAI/Copilot-adjacent teams, where you get a dev environment with GitHub Copilot and are evaluated on whether you validate suggestions, keep code readable, and debug incomplete AI output. Ask your recruiter whether your loop includes it. Post-2025 layoffs: junior SDE openings compressed; AI Engineer (Foundry), M365 Copilot Developer, and Azure Architect tracks expanded, adding ML fundamentals, RAG/grounding, multi-agent orchestration, and responsible-AI scenarios.
+> **2025-2026 Trends**: Depth over speed. Higher proportion of backtracking and linked list problems (~29% linked lists). Design-heavy follow-ups standard. **New in 2026**: Process is stable but compressed. Codility/HackerRank-style OA (2 mediums) then 4 virtual onsite rounds usually on a single day; SDE2 loops = 2-3 DSA rounds + LLD + HLD + hiring-manager round. The **"As Appropriate" (AA) round** is formalized, run by Principal EMs, routing candidates into gap-probe / behavioral deep-dive / sell-Microsoft modes; ~85% of candidates reaching AA get offers, but it retains veto power. Behavioral "growth mindset" scoring is now level-banded (L60-62 vs L63-64 vs L65+). **AI-assisted coding rounds are org-specific, not universal**: mostly CoreAI/Copilot-adjacent teams, where you get a dev environment with GitHub Copilot and are evaluated on whether you validate suggestions, keep code readable, and debug incomplete AI output. Ask your recruiter whether your loop includes it. Post-2025 layoffs: junior SDE openings compressed; AI Engineer (Foundry), M365 Copilot Developer, and Azure Architect tracks expanded, adding ML fundamentals, RAG/grounding, multi-agent orchestration, and responsible-AI scenarios. **July-September 2026 reports**: in AI-assisted rounds candidates chose among GitHub Copilot, Claude, Claude Code and ChatGPT inside a HackerRank-linked session and were told not to paste the whole question into the assistant; a repository-based variant runs in a local IDE with Git and tests, and candidates lost time to cloning and AI-account setup. Senior screens can be short and concurrency-heavy (about 25 minutes to hand-code a bounded per-key ordered executor). Ads senior loops in September 2026 were three rounds: system design, one DSA problem, behavioral plus project deep dive. Teams working on AI trust ask a behavioral question on your view of AI tooling.
 
 ### Microsoft Arrays and Strings
 
@@ -717,6 +758,7 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 6 | [Interleaving String](https://leetcode.com/problems/interleaving-string) | Medium |
 | 7 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Medium |
 | 8 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) (asked as "Top K Frequent Error Codes") | Medium |
+| 9 | [House Robber IV](https://leetcode.com/problems/house-robber-iv) | Medium |
 
 ### Microsoft Custom Problems (2025-2026)
 
@@ -733,6 +775,11 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 9 | Minimum Moves on a Grid with k-Cell Jumps | BFS | BFS with jump moves |
 | 10 | Shortest path in weighted grid with constraints | Graph | Dijkstra/BFS hybrid |
 | 11 | LRU Cache as a HackerRank-style product story | Design | Standard SDE2 Round-1 opener with optimization + edge-case follow-ups |
+| 12 | Bounded per-key ordered task executor | Concurrency | Senior tech screen, Aug 2026: at most 4 tasks run globally, per-key FIFO with no overlap, atomic admission, cancellation, deadline-bounded shutdown; about 25 minutes to hand-code |
+| 13 | Lab machine fleet monitor | System Design | Onsite, Sep 2026: machines poll for payloads; dashboard shows downloading, running, completed, crashed or hung; hang detection vs silent failure, authorized remote reboot, reruns, two-minute inventory refresh |
+| 14 | High-concurrency incident ticket correlation platform | System Design | Onsite, Aug 2026: interval-based status history, asynchronous idempotent correlation, indexing, freshness markers, reprocessing, audit trail |
+| 15 | Sizes of 4-connected regions in a binary image, in scan order | Grid / BFS | Sep 2026: component sizes ordered by first-seen cell (Max Area of Island variant) |
+| 16 | Greedy and top-k beam-search decoding with sentence probability | ML Coding / Heaps | Tech screen, Sep 2026: greedy decoder, then beam search keeping the top-k partial sequences, then explain and correct length bias |
 
 ### Microsoft System Design
 
@@ -746,7 +793,7 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 
 ## LinkedIn
 
-> **2025-2026 Trends**: The **AI-enabled coding interview is now part of the standard SWE loop**: one of the two coding rounds is replaced by an AI-assisted round on CoderPad with an AI chat panel (choice of models, typically Claude/Opus tiers). The AI **cannot edit code directly**: you paste and verify. Graded on a **4-point scale where 3 passes**, relative to other candidates; interviewers score whether you direct and verify the AI (prompt -> review -> run -> confirm), not whether you can avoid it. **Follow-ups are the real bar**: after working code, questioning pivots to concurrency/thread safety (most common), scaling behavior, malformed input, and production readiness. That's where candidates struggle. Loop: screening (often LC medium + SQL for some roles) -> onsite of 2 coding (1 AI-enabled) + system design + "craftsmanship" (code quality/engineering practices) + hiring manager. Staff loops: 3 DSA (up to LC Hard) + 2 system design + managerial. LinkedIn's classic tagged set still dominates, now wrapped with AI-era production follow-ups.
+> **2025-2026 Trends**: The **AI-enabled coding interview is now part of the standard SWE loop**: one of the two coding rounds is replaced by an AI-assisted round on CoderPad with an AI chat panel (choice of models, typically Claude/Opus tiers). The AI **cannot edit code directly**: you paste and verify. Graded on a **4-point scale where 3 passes**, relative to other candidates; interviewers score whether you direct and verify the AI (prompt -> review -> run -> confirm), not whether you can avoid it. **Follow-ups are the real bar**: after working code, questioning pivots to concurrency/thread safety (most common), scaling behavior, malformed input, and production readiness. That's where candidates struggle. Loop: screening (often LC medium + SQL for some roles) -> onsite of 2 coding (1 AI-enabled) + system design + "craftsmanship" (code quality/engineering practices) + hiring manager. Staff loops: 3 DSA (up to LC Hard) + 2 system design + managerial. LinkedIn's classic tagged set still dominates, now wrapped with AI-era production follow-ups. **Reported Aug to Sep 2026**: an **elimination round** (two quick tree problems such as Maximum Depth of Binary Tree and Zigzag Level Order Traversal) now precedes the IC2 onsite; the onsite is system design + coding + AI coding + project deep dive ("Technical Communication") + hiring manager; and the AI round is a graded ladder of four escalating tasks on one problem (standard LRU, add TTL, extend again, make it thread-safe) where finishing two of four is common. Candidates report choosing Claude Opus from the CoderPad model menu.
 
 ### LinkedIn Data Structure Design
 
@@ -768,12 +815,15 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 
 | No. | Question | Difficulty |
 | --- | -------- | ---------- |
-| 1 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) | Medium |
+| 1 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) (Aug 2026 follow-up: how would you handle it if the input were a graph) | Medium |
 | 2 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | Medium |
 | 3 | [Lowest Common Ancestor of a BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | Medium |
 | 4 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard |
 | 5 | [Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle) | Medium |
 | 6 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | Medium |
+| 7 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) (IC2 elimination round, Sep 2026) | Easy |
+| 8 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) (IC2 elimination round, Sep 2026) | Medium |
+| 9 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) (IC2 onsite DSA round, Sep 2026) | Hard |
 
 ### LinkedIn Arrays and DP
 
@@ -794,6 +844,7 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 13 | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square) | Easy |
 | 14 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array) | Easy |
 | 15 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy |
+| 16 | [Largest Number](https://leetcode.com/problems/largest-number) (60-min phone screen, Aug 2026, paired with Shortest Word Distance II) | Medium |
 
 ### LinkedIn Custom Problems
 
@@ -805,7 +856,11 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 4 | Compute point-to-segment minimum distance | Geometry | Math-flavored coding |
 | 5 | Count trips from vehicle logs | Parsing / Aggregation | Log processing |
 | 6 | Find index with positive suffix sums | Arrays | Prefix/suffix reasoning |
-| 7 | Merge two n-ary trees by key rules | Trees | Recursive merge |
+| 7 | Merge two n-ary trees by key rules | Trees | Recursive merge; still the Sep 2026 phone-screen opener, ask up front whether the root keys match |
+| 8 | LRU Cache with counters: predict and compute the cache hit/miss ratio under different workloads | AI-Enabled Round | IC2 onsite, Sep 2026 |
+| 9 | LRU Cache ladder: standard LRU, then add TTL, then a third extension, then make it thread-safe | AI-Enabled Round | Four graded tasks on one problem in CoderPad with model choice (candidate picked Claude Opus); finishing 2 of 4 is typical, Aug 2026 |
+| 10 | Inverse-depth weighted sum of a nested integer list (Nested List Weight Sum II) with a one-pass DFS follow-up | Trees / Recursion | Phone screen, Sep 2026, second problem after the n-ary tree merge |
+| 11 | "Minimum Length Substring" | Strings / Sliding Window | IC2 onsite DSA round, Sep 2026 |
 
 ### LinkedIn System Design
 
@@ -815,6 +870,8 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 2 | Flexible in-memory cache with customizable capacity + pluggable eviction (LRU/priority) | Extensible design |
 | 3 | LinkedIn-scale internal notification system | Microservices + Kafka async |
 | 4 | Feed ranking, messaging, job-recommendation systems | Recurring domain themes |
+| 5 | Design Google Calendar | Architecture, scalability, design rationale (IC2 onsite, Sep 2026) |
+| 6 | Collect user activity events and answer queries over the last minute, hour and day | Time-windowed aggregation (onsite, Aug 2026) |
 
 ---
 
@@ -1000,7 +1057,7 @@ Anthropic's design rounds treat the safety/moderation layer as a first-class req
 
 ## Palantir
 
-> **2025-2026 Trends**: Unique 4-round format (you get 3 of 4: Decomposition, System Design, Re-engineering/Debugging, Coding). Each round includes 20 min behavioral. Loop: screen -> 60-min CodePair -> 3x60-min onsite -> hiring manager. **The OA is a 3-part practical HackerRank (~90 min): one coding + one SQL + one REST API/pagination task**: not pure DSA. Graph/BFS/DFS and hash map problems dominate, wrapped in narrative prompts that require extracting requirements before coding. **AI use is strictly prohibited in interviews**: a notable divergence from the industry's 2026 drift toward AI-assisted rounds. **New in 2026**: decomposition prompts have gone AI/LLM-flavored (LLM claim summarization for an insurer, a shipment-rerouting agent, retailer demand forecasting) alongside the classics. Design rounds treat correctness and fault tolerance as first-class constraints, data integrity, access control, auditability, failure modes. **Meritocracy Fellowship** (launched 2025) is an alternative pipeline for high-school grads (SAT >= 1460 / ACT >= 33, $5,400/mo, 4 months); the first cohort took 22 fellows from 500+ applicants, "more than a handful" converted to full-time offers in December 2025, and the second cohort runs August to December 2026. Fellows who excel interview for full-time roles without a degree.
+> **2025-2026 Trends**: Unique 4-round format (you get 3 of 4: Decomposition, System Design, Re-engineering/Debugging, Coding). Each round includes 20 min behavioral. Loop: screen -> 60-min CodePair -> 3x60-min onsite -> hiring manager. **The OA is a 3-part practical HackerRank (~90 min): one coding + one SQL + one REST API/pagination task**: not pure DSA. Graph/BFS/DFS and hash map problems dominate, wrapped in narrative prompts that require extracting requirements before coding. **AI use is strictly prohibited in interviews**: a notable divergence from the industry's 2026 drift toward AI-assisted rounds. **New in 2026**: decomposition prompts have gone AI/LLM-flavored (LLM claim summarization for an insurer, a shipment-rerouting agent, retailer demand forecasting) alongside the classics. Design rounds treat correctness and fault tolerance as first-class constraints, data integrity, access control, auditability, failure modes. **Meritocracy Fellowship** (launched 2025) is an alternative pipeline for high-school grads (SAT >= 1460 / ACT >= 33, $5,400/mo, 4 months); the first cohort took 22 fellows from 500+ applicants, "more than a handful" converted to full-time offers in December 2025, and the second cohort runs August to December 2026. Fellows who excel interview for full-time roles without a degree. **Reported Jul to Aug 2026**: the FDE technical screen can itself pair a short LeetCode-style exercise with a long-file debugging task (multiple bugs), the FDE loop runs one decomposition round before the onsite and a second inside it alongside coding and the Learning interview, and candidates report about five weeks between the hiring-manager round and a decision. The intern OA has moved to a 3-part business-logic build (grocery coupon system) where rounding and stacking order decide the hidden tests.
 
 ### Palantir Coding Problems
 
@@ -1034,6 +1091,7 @@ Anthropic's design rounds treat the safety/moderation layer as a first-class req
 | 1 | Shape classes | Coding (OOP) | Circle/rectangle/square area with ceiling of result |
 | 2 | Client session duration | SQL | 3-table join (CITIES/CLIENTS/SESSIONS), sum durations per city |
 | 3 | Finest Food Outlets | REST API | Fetch restaurant data from a paginated endpoint, aggregate JSON |
+| 4 | Grocery coupon system (3 parts, FDE intern OA, Aug 2026) | Coding (multi-part) | Part 1: percentage coupons on items priced in integer cents, round each item discount to the nearest cent with round(); Part 2: item and category discounts stack multiplicatively, item first, 80% cap per item; Part 3: choose discounts under a 20-point budget (item = 2 points, category = 5) to maximize savings and output the selection |
 
 ### Palantir System Design
 
@@ -1064,7 +1122,7 @@ Palantir system design ties directly to their product domain:
 
 ## Tesla
 
-> **2025-2026 Trends**: Greedy + string manipulation heavily tested (Reorganize String is most-asked). Prefix sum / subarray problems common. For embedded/firmware roles, expect C/C++ and real-time constraints. OA is ~85-90 min, 3 problems on Codility. **New in 2026**: take-homes have been **replaced by a ~60-min practical CoderPad screen** for many teams, and Tesla is shifting back toward in-person onsites for stronger live signal. **Googling and documentation are allowed during coding rounds; LLM/Copilot use is at interviewer discretion**: evaluators explicitly watch whether you critically review code rather than paste blindly. Questions are team-tied rather than generic LeetCode: Autopilot/firmware/energy loops add domain exercises (sensor data parsing, state machines, scheduling). Autopilot loops of up to 7 rounds reported. Difficulty across ~47 tracked problems: 8 Easy / 33 Medium / 6 Hard, with arrays+sorting the highest volume.
+> **2025-2026 Trends**: Greedy + string manipulation heavily tested (Reorganize String is most-asked). Prefix sum / subarray problems common. For embedded/firmware roles, expect C/C++ and real-time constraints. OA is ~85-90 min, 3 problems on Codility. **New in 2026**: take-homes have been **replaced by a ~60-min practical CoderPad screen** for many teams, and Tesla is shifting back toward in-person onsites for stronger live signal. **Googling and documentation are allowed during coding rounds; LLM/Copilot use is at interviewer discretion**: evaluators explicitly watch whether you critically review code rather than paste blindly. Questions are team-tied rather than generic LeetCode: Autopilot/firmware/energy loops add domain exercises (sensor data parsing, state machines, scheduling). Autopilot loops of up to 7 rounds reported. Difficulty across ~47 tracked problems: 8 Easy / 33 Medium / 6 Hard, with arrays+sorting the highest volume. August to September 2026 reports skew toward backend design prompts (Supercharger backend, CDN, order fulfillment, blob storage for build artifacts, video sharing) plus a hiring-manager infrastructure walk-through: trace a change from monorepo commit to over-the-air vehicle update. Some final-round candidates are asked to submit an "Evidence of Excellence" write-up, a one-to-two page summary of their most significant technical achievement.
 
 ### Tesla Algorithms
 
@@ -1095,6 +1153,12 @@ Palantir system design ties directly to their product domain:
 | 23 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium |
 | 24 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard |
 | 25 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard |
+| 26 | [Decode Ways](https://leetcode.com/problems/decode-ways) | Medium |
+| 27 | [Shortest Bridge](https://leetcode.com/problems/shortest-bridge) | Medium |
+| 28 | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list) | Medium |
+| 29 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign) | Medium |
+| 30 | Implement reduce, then derive map and filter from it | Easy |
+| 31 | Collect characters along a grid path, then extend DFS to branching paths | Medium |
 
 ### Tesla System Design
 
@@ -1107,6 +1171,12 @@ Palantir system design ties directly to their product domain:
 | 5 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | Medium |
 | 6 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | Medium |
 | 7 | Design a Rate Limiter (LLD implementation round) | Medium |
+| 8 | Design a Supercharger backend: billing, stall telemetry, nearest available charger | Hard |
+| 9 | Design a non-mutating JSON merge API with pluggable overwrite or append behavior | Medium |
+| 10 | Design an order fulfillment system (inventory, payment, warehouse orchestration) | Medium |
+| 11 | Design a content delivery network | Medium |
+| 12 | Design distributed blob storage for build artifacts | Hard |
+| 13 | Design a video sharing platform (resumable uploads, idempotent transcoding, adaptive playback) | Hard |
 
 Tesla-specific system design: telemetry pipeline for vehicle data, real-time monitoring for energy systems, shortest path between Tesla chargers. Architecture rounds (1-2, weighted more for staff) are tied to the team's actual work rather than a canonical public list. Interviewers start from "what are we trying to do?" and grade requirements-gathering. Domain variants: React/frontend implementation design, backend fundamentals, and embedded/hardware-aware design with HW-SW tradeoffs.
 
@@ -1131,7 +1201,7 @@ Domain-specific: interrupt-safe circular buffers in C, CAN bus protocol design, 
 
 ## Databricks
 
-> **2025-2026 Trends**: OA is 4 problems in 70 minutes on CodeSignal (2 easy, 2 medium), webcam-proctored, single browser, scored on a scale "resembling a credit score, up to 850" (~30% pass rate). Onsite is **fully virtual in 2026** and standardized: 2 algorithm rounds + a **dedicated 60-min concurrency/multithreading round** (unique among tech companies, "most companies wave at the topic; Databricks makes it an entire hour") + system design + behavioral; senior/staff sometimes get a second system design round. **Small question pool, deep follow-up variations**: candidates report the same core problems (SnapshotSet, Lazy Array, House Robber variants, Tic-Tac-Toe) recycled with escalating twists, including "now distribute this with Spark" follow-ups. ML and platform engineering interviews are increasingly intertwined post-acquisitions, feature-store and Spark-internals prompts now appear in generalist SWE loops. ~25% of candidates pivot teams post-onsite.
+> **2025-2026 Trends**: OA is 4 problems in 70 minutes on CodeSignal (2 easy, 2 medium), webcam-proctored, single browser, scored on a scale "resembling a credit score, up to 850" (~30% pass rate). Onsite is **fully virtual in 2026** and standardized: 2 algorithm rounds + a **dedicated 60-min concurrency/multithreading round** (unique among tech companies, "most companies wave at the topic; Databricks makes it an entire hour") + system design + behavioral; senior/staff sometimes get a second system design round. **Small question pool, deep follow-up variations**: candidates report the same core problems (SnapshotSet, Lazy Array, House Robber variants, Tic-Tac-Toe) recycled with escalating twists, including "now distribute this with Spark" follow-ups. ML and platform engineering interviews are increasingly intertwined post-acquisitions, feature-store and Spark-internals prompts now appear in generalist SWE loops. ~25% of candidates pivot teams post-onsite. **Reported Jun to Sep 2026**: the KV store with hit-counter or load statistics is now the most common phone screen; senior loops run phone screen plus five onsite rounds (two coding, System Programming, hiring manager, architecture); design rounds increasingly stop at API and schema level (chat system, bookseller) rather than scaling; and Databricks asks for references the day after the onsite, with one candidate who cleared the full loop rejected a week after reference checks.
 
 ### Databricks Algorithms and Design
 
@@ -1173,6 +1243,11 @@ Domain-specific: interrupt-safe circular buffers in C, CAN bus protocol design, 
 | 7 | Lamps on a number line, interval coverage counting | Medium | Intervals (OA) |
 | 8 | Fibonacci Tree path finding. O(log n) connecting-path solution | Hard | Trees |
 | 9 | IP firewall ALLOW/DENY rules | Medium | Bit manipulation (phone screen) |
+| 10 | KV store with load stats: put/get plus averageGet/averagePut, extended to stats over the past 1 hour, 1 day and 1 week | Medium-Hard | Design (senior phone screen, Jul 2026) |
+| 11 | KV store with get_load(): QPS for get and put over a 5-minute window using system time; the edge case is dividing by min(server uptime, 300), not a fixed 300; follow-ups: 300-day windows (hierarchical buckets), sparse vs bursty traffic | Medium | Design (phone screen, Jun 2026; one candidate was rejected on that edge case) |
+| 12 | Encrypted file tree: given DirectoryNode/FileNode with is_encrypted flags, count encrypted vs unencrypted files, then pick file-level vs directory-level encryption calls to minimize total cost | Medium-Hard | Trees / Greedy (onsite, Jul 2026) |
+| 13 | Referral credit tracker: credits per account, query accounts above a threshold; follow-up: indirect referral chains (variant of the Revenue System problem) | Medium-Hard | Design (onsite, Sep 2026) |
+| 14 | Generic Tic-Tac-Toe on an N x M board with K in a row to win, checked after every move; Sep 2026 follow-up: automated play | Medium | Design (onsite, Jul and Sep 2026) |
 
 ### Databricks Concurrency (Dedicated Round)
 
@@ -1184,7 +1259,7 @@ Domain-specific: interrupt-safe circular buffers in C, CAN bus protocol design, 
 | 4 | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers) | Medium |
 | 5 | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded) | Medium |
 
-Custom concurrency problems also reported: **multi-threaded logger** efficiently draining a message queue (classic prompt), thread-safe logger with disk flush, **rate limiter (token bucket)** with burst probing ("client sends 10x their limit in the first 100ms of the window"), producer-consumer with condition variables.
+Custom concurrency problems also reported: **multi-threaded logger** efficiently draining a message queue (classic prompt), thread-safe logger with disk flush, **rate limiter (token bucket)** with burst probing ("client sends 10x their limit in the first 100ms of the window"), producer-consumer with condition variables. A **concurrent file logger** (many threads writing to one file: locking, buffering, concurrent writes, then performance follow-ups) was the whole System Programming round in a July 2026 senior loop; the round still appears as "System Programming" on the schedule.
 
 ### Databricks System Design
 
@@ -1197,12 +1272,15 @@ Custom concurrency problems also reported: **multi-threaded logger** efficiently
 | 5 | Multi-tenant feature store at 50K QPS with sub-50ms p99 | ML platform round |
 | 6 | Add delete + trash functionality to a database | New grad onsite |
 | 7 | Spark internals as design: "what happens when you join two billion-row DataFrames"; Delta Lake transaction log vs Iceberg/Hudi | Domain depth |
+| 8 | Design a chat system: interfaces, API and DB schema, basic message flows, little scaling discussion | Reported in Jul and Sep 2026 onsites |
+| 9 | Design an online bookseller: browse/search, inventory, ordering, payment, order management | Architecture round, Jul 2026 senior loop |
+| 10 | Design a music playlist service | Phone-screen system design on the full-stack track, Jul 2026 |
 
 ---
 
 ## Stripe
 
-> **2025-2026 Trends**: Stripe does NOT use traditional LeetCode-style interviews. Problems model real engineering work -- payment processing, debugging, API integration. Process spans 7-9 weeks. Unique rounds: Bug Squash (debug a GitHub repo with real issues), Integration (build with Stripe API), API Design (REST resource modeling, idempotency, versioning). Production code quality valued over algorithmic cleverness -- O(n^2) is fine if code is clean. Speed is NOT measured. **New in 2026**: the new-grad OA changed to a **single 60-minute multi-part question on HackerRank**: "measuring true coding ability with one question", with state-machine modeling and case-intensive hidden tests (some tracks still see 2 questions / 90 min). **Integration round rules clarified: web/docs search is allowed, but AI coding assistants are NOT permitted**; the round gives you a private GitHub repo + a real API, and you expose endpoints and handle paginated JSON. Bug Squash is unchanged as the signature round but now focuses sharply on financial-logic bugs: race conditions, missing idempotency checks, non-atomic check-then-act, and unvalidated refund logic, roughly 5-7 bugs in ~200 lines.
+> **2025-2026 Trends**: Stripe does NOT use traditional LeetCode-style interviews. Problems model real engineering work -- payment processing, debugging, API integration. Process spans 7-9 weeks. Unique rounds: Bug Squash (debug a GitHub repo with real issues), Integration (build with Stripe API), API Design (REST resource modeling, idempotency, versioning). Production code quality valued over algorithmic cleverness -- O(n^2) is fine if code is clean. Speed is NOT measured. **New in 2026**: the new-grad OA changed to a **single 60-minute multi-part question on HackerRank**: "measuring true coding ability with one question", with state-machine modeling and case-intensive hidden tests (some tracks still see 2 questions / 90 min). **Integration round rules clarified: web/docs search is allowed, but AI coding assistants are NOT permitted**; the round gives you a private GitHub repo + a real API, and you expose endpoints and handle paginated JSON. Bug Squash is unchanged as the signature round but now focuses sharply on financial-logic bugs: race conditions, missing idempotency checks, non-atomic check-then-act, and unvalidated refund logic, roughly 5-7 bugs in ~200 lines. **New since July 2026: Stripe runs a separate AI-assisted coding round** while the Integration round stays AI-free. Senior candidates report two AI-assisted phone screens where the model writes the code and you are scored on reviewing it and directing algorithm and class design; the onsite adds an "AI programming exercise" (the transaction risk rule parser) where you drive Claude Opus or a Codex-style agent, talk through every step, and write your own tests. One interviewer ended the round early once satisfied the model could carry the requirements. A Sep 2026 senior onsite was bug hunt + AI pairing + no-AI integration (BikeMap) + behavioral, with no system design and no LeetCode. Bug Squash now ships an IDE setup email: install the plugins beforehand, because one candidate lost 15 minutes to a VS Code debugger that would not start. The OA remains one multi-part problem in 60 minutes; the two problems in heavy rotation are the deployment window scheduler and data center routing.
 
 ### Stripe Coding and Integration
 
@@ -1235,7 +1313,7 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | --- | ------- | -------- | ----------- |
 | 1 | **Accept-Language header parser** | Parsing | Parse q-values, sort by quality; the long-standing Stripe screen, still reported in 2026 |
 | 2 | **Currency conversion string parsing** | Parsing / Graph | `"USD:CAD:DHL:5,USD:GBP:FEDX:10"`; part 2: multi-hop conversion; part 3: best rate over all paths |
-| 3 | Invoice Reconciliation | Data Processing | Parse CSV of transactions, filter by status, output totals per user; match payments to invoices on memo lines |
+| 3 | Invoice Reconciliation | Data Processing | Parse CSV of transactions, filter by status, output totals per user; match payments to invoices on memo lines. Sep 2026 three-part version: match by invoice ID in the payment memo; then exact-amount match with earliest due date first; then a forgiveness range, with priority rules when both exact and range matches exist; finishing part 2 was not enough |
 | 4 | Request Deduplication | Integration | Build an idempotent request handler preventing duplicate charges |
 | 5 | Webhook Handler Debug | Bug Squash | Find and fix bugs in a failing webhook handler with unit tests |
 | 6 | API Response Parser | Bug Squash | Debug a parser that silently drops fields |
@@ -1247,14 +1325,21 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 12 | CSV parse + validate (4 parts) | Onsite | Headers, row values, cross-column deps, circular dependency detection via graph |
 | 13 | Atlas company name check | OA | Validation + blacklist |
 | 14 | Integration round task | Integration | Private repo + docs: expose names/emails via a CLI endpoint, consume a paginated API, pick optimal endpoints from the API surface |
+| 15 | Data center routing (3-part OA) | OA | REGISTER region lat lon capacity (defaults healthy) and SET_HEALTHZ region state with range validation, OK or ERROR; ROUTE lat lon using the given Haversine formula with integer rounding; then route to the nearest healthy region, alphabetical tiebreak, output "NONE 0" when none is healthy. Aug and Sep 2026, described as "almost entirely a math problem" |
+| 16 | Deployment window scheduler (2-part OA) | OA | Part 1: merge allowed and freeze windows over a recurring 10,080-minute week into deployable slots; Part 2: given utc_now, lead_time_minutes, min_continuous_minutes and k, map per-rule timezone offsets onto the UTC week (handle week-boundary wraparound, split long intervals greedily) and return the first k windows. The most-reported Stripe OA from May to Sep 2026; most candidates do not finish part 2 |
+| 17 | KYC business validation (4 parts) | Phone screen | Skip rows with no business name and require every other column; enforce a 5-32 character limit on one field and keyword checks on the description; mark verified only if at least half the name's words appear in a nickname field, ignoring suffixes like LLC and Inc; print verified/not verified per line in input order. Aug 2026 |
+| 18 | Task tree renderer | Phone screen | Parse root records (timestamp, task_id, task_name) and subtask records (parent_id) into a parent-child map and print the tree with box-drawing connectors: a branch glyph for a non-final sibling, a corner glyph for the final one. Sep 2026 |
+| 19 | requests 307 redirect bug | Bug Squash | Make the Python requests library resend a POST body after a 307: plain string, seekable BytesIO at offset 0, and a partially read stream with the cursor at 5. Root cause: the body stream is read to the end on the first send and never rewound. Sep 2026 |
+| 20 | BikeMap GeoJSON renderer | Integration (no AI) | Parse GeoJSON ride coordinates and print the first ten; POST a JSON body to the open-source staticmap API and save the PNG; then draw start and end markers with alternating-color path segments in ten-point groups. Replaces the paginated-API task in Aug and Sep 2026 loops |
+| 21 | Transaction risk rule parser | AI-Assisted Coding | Rule strings ("merchant name can't equal X") applied in order to transaction records with accept/block outcomes; part 2 adds Boolean fields and AND/OR (watch merchant names that contain "and" or "or"); part 3 adds parentheses and compound conditions. You write the tests yourself. Sep 2026 |
 
-**System Design**: Stripe's webhook delivery system (reliability while minimizing duplicate delivery, idempotency, retries, exactly-once reasoning); distributed API rate limiter handling burst traffic; payment system with idempotency and exactly-once semantics; fraud-detection pipeline (Radar-like); multi-currency payment routing; design an HTTP server. Domain knowledge expected: PCI compliance, idempotency patterns, double-entry bookkeeping.
+**System Design**: Stripe's webhook delivery system (reliability while minimizing duplicate delivery, idempotency, retries, exactly-once reasoning); distributed API rate limiter handling burst traffic; payment system with idempotency and exactly-once semantics; fraud-detection pipeline (Radar-like); multi-currency payment routing; design an HTTP server. Domain knowledge expected: PCI compliance, idempotency patterns, double-entry bookkeeping. An Aug 2026 senior loop asked for a metrics monitoring system simplified to counters; a Sep 2026 senior onsite had no system design round at all.
 
 ---
 
 ## NVIDIA
 
-> **2025-2026 Trends**: Most strategically central tech company in 2026 due to AI infrastructure dominance. Emphasizes performance awareness over generalist coding. After solving baseline, expect follow-ups: "How does this behave under memory pressure? What's the cache miss profile? How would you parallelize across 10,000 threads?" C++ essential for systems/GPU roles; Python acceptable for ML/infra. Difficulty: 8 Easy, 29 Medium, 9 Hard across 46 tracked problems. **New in 2026**: loops are team-scoped with genuine-medium coding and a **"build from scratch" preference: interviewers prefer you avoid built-in library functions**. Recruiter screen -> 1-2 phone screens -> 4-6 interview virtual onsite over 6-8 weeks. Candidates report bespoke variants over tagged problems ("brushing up on NVIDIA classification problems on LeetCode wasn't particularly helpful"). Classic problems now get systems extensions. LRU Cache follow-ups ask you to make it thread-safe with a read-write lock (and why RW lock vs mutex), or relate it to GPU memory caching semantics. **AI-infra system design is the new senior bar**: batch inference APIs on GPU clusters, tensor+pipeline parallelism across H100s, and naming TensorRT-LLM/vLLM tradeoffs. New grad rounds increasingly mix one PyTorch problem + one LC medium.
+> **2025-2026 Trends**: Most strategically central tech company in 2026 due to AI infrastructure dominance. Emphasizes performance awareness over generalist coding. After solving baseline, expect follow-ups: "How does this behave under memory pressure? What's the cache miss profile? How would you parallelize across 10,000 threads?" C++ essential for systems/GPU roles; Python acceptable for ML/infra. Difficulty: 8 Easy, 29 Medium, 9 Hard across 46 tracked problems. **New in 2026**: loops are team-scoped with genuine-medium coding and a **"build from scratch" preference: interviewers prefer you avoid built-in library functions**. Recruiter screen -> 1-2 phone screens -> 4-6 interview virtual onsite over 6-8 weeks. Candidates report bespoke variants over tagged problems ("brushing up on NVIDIA classification problems on LeetCode wasn't particularly helpful"). Classic problems now get systems extensions. LRU Cache follow-ups ask you to make it thread-safe with a read-write lock (and why RW lock vs mutex), or relate it to GPU memory caching semantics. **AI-infra system design is the new senior bar**: batch inference APIs on GPU clusters, tensor+pipeline parallelism across H100s, and naming TensorRT-LLM/vLLM tradeoffs. New grad rounds increasingly mix one PyTorch problem + one LC medium. **Reported Apr to Sep 2026**: senior loops include a **code review round** (read a Python script, find the bugs) both inside the coding phone screen and as its own onsite round, plus a low-level design round (sync LDAP user data to Slack and email) and a 30-minute hiring-manager design chat. July 2026 reports describe OA problems framed as "realistic day-to-day tasks" rather than tagged LeetCode, a 45-minute resume walk-through before any coding, brain teasers in some loops, and processes of about two months with long gaps; some international teams still run a take-home exam followed by a full C/C++ interview day.
 
 ### NVIDIA Algorithms
 
@@ -1301,6 +1386,11 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 5 | Tree planting constraint satisfaction | Graph / Constraints | Constraint problem |
 | 6 | Thread-safe LRU with read-write lock | Concurrency | Why RW lock vs mutex; GPU-cache semantics follow-up |
 | 7 | PyTorch coding problem + LC medium in one round | ML / DSA | New grad format |
+| 8 | Python code review: read a provided script and identify the bugs and problems | Code Review | Dedicated round in both the coding phone screen and the senior onsite (Apr 2026) |
+| 9 | Sync user data from a directory (LDAP) to third-party apps such as Slack and email | Low-Level Design | Senior onsite LLD round, described as simple (Apr 2026) |
+| 10 | Design a file scanner | Design | Senior phone-screen design round (Apr 2026) |
+| 11 | Firmware protocol design with computer-networking concepts | Embedded / Systems | Embedded team technical round after an easy-to-medium LeetCode OA plus C++ data-structure questions (Jul 2026) |
+| 12 | 10-coin split riddle | Brain teaser | Asked after a 45-minute resume walk-through and a practical DSA question (Jul 2026); brain teasers also reported in a Sep 2026 new-grad loop |
 
 ### NVIDIA GPU and Systems
 
@@ -1332,7 +1422,7 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 
 ## Uber
 
-> **2025-2026 Trends**: Interviews reflect product domain -- routing, dispatch, surge pricing map to graph traversal, streaming aggregation, sliding-window patterns. OA: 4 problems in 70-90 minutes on CodeSignal (easy/medium arrays + harder graph/DP), followed by a 4-6 round onsite. Code readability explicitly evaluated. L5A (Senior): 5 rounds total with elimination Round 0 (LeetCode Medium). Difficulty: 7% Easy, 73% Medium, 20% Hard. **New in 2026**: **machine-coding / LLD rounds are the differentiator at senior levels**: coding is the primary gate while system-design quality decides leveling (L5a/L5b/Senior/Staff). Original non-LeetCode problems appear in "Hack2Hire" assessments. Questions cluster into four families: graphs/BFS-DFS, sliding window/two pointers, heaps/streaming, and cache/design, with domain-flavored twists (quadtrees for geo points, rate limiters, autocomplete) rather than pure textbook problems. Frequent themes: Uber Eats cart pricing, geo heatmaps, surge, restaurant recommendation. No evidence Uber allows AI tools in interviews as of October 2026.
+> **2025-2026 Trends**: Interviews reflect product domain -- routing, dispatch, surge pricing map to graph traversal, streaming aggregation, sliding-window patterns. OA: 4 problems in 70-90 minutes on CodeSignal (easy/medium arrays + harder graph/DP), followed by a 4-6 round onsite. Code readability explicitly evaluated. L5A (Senior): 5 rounds total with elimination Round 0 (LeetCode Medium). Difficulty: 7% Easy, 73% Medium, 20% Hard. **New in 2026**: **machine-coding / LLD rounds are the differentiator at senior levels**: coding is the primary gate while system-design quality decides leveling (L5a/L5b/Senior/Staff). Original non-LeetCode problems appear in "Hack2Hire" assessments. Questions cluster into four families: graphs/BFS-DFS, sliding window/two pointers, heaps/streaming, and cache/design, with domain-flavored twists (quadtrees for geo points, rate limiters, autocomplete) rather than pure textbook problems. Frequent themes: Uber Eats cart pricing, geo heatmaps, surge, restaurant recommendation. No evidence Uber allows AI tools in interviews as of October 2026. **Reported Jun to Sep 2026**: the mid-level onsite is often four 45-minute rounds (two coding, system design, and a hiring manager who also asks a coding question), and every coding problem comes with three escalating follow-ups (return the assignment not the count, allow preemption, stream the input, replace the origin with a rider, make the points move, use road distance). Senior loops add a **Bar Raiser** round on architecture depth, technical influence and ownership. Intern and graduate OAs now arrive as **three HackerRank problems** (reports of 105 minutes in North America and 65 minutes in India) instead of the four-problem CodeSignal set, and candidates with strong OA scores still receive interview-capacity waitlist emails.
 
 ### Uber Algorithms
 
@@ -1351,13 +1441,16 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 11 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | Medium |
 | 12 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard |
 | 13 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium |
-| 14 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | Medium |
+| 14 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) (Aug 2026 follow-ups: return each meeting's room, allow a meeting to move rooms mid-way, intervals arrive as a stream you cannot pre-sort) | Medium |
 | 15 | [Longest Subarray With Absolute Diff <= Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) | Medium |
 | 16 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium |
 | 17 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium |
 | 18 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) (O(1)-space Morris-traversal follow-up at L5+) | Medium |
 | 19 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard |
 | 20 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system) (as "Implement Store Autocomplete", Uber Eats framing) | Hard |
+| 21 | [First Unique Number](https://leetcode.com/problems/first-unique-number) (phone screen, Jun 2026; Aug 2026 variant "earliest ID seen exactly once" with IDs up to about one million and a constant-time query follow-up: pop repeated IDs from the queue front, amortized) | Medium |
+| 22 | [My Calendar I](https://leetcode.com/problems/my-calendar-i) (onsite DSA round, Jun 2026) | Medium |
+| 23 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) (Aug 2026 onsite; follow-ups: arbitrary rider location, tens of millions of moving points, road-network distance instead of straight-line; quickselect asked after the size-K heap) | Medium |
 
 ### Uber Custom Problems (Machine Coding)
 
@@ -1375,6 +1468,12 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 10 | Find Earliest Full Connectivity Timestamp | Medium | Union-Find |
 | 11 | Cache Eviction + Seat Assignment (two-part) | Medium-Hard | Design |
 | 12 | Adaptive bitrate selector | Medium | Streaming |
+| 13 | Build a directory tree from file paths and return a file's full path; directory names repeat, full paths do not; follow-ups: very long paths (build from node names), then no recursion (maintain the stack yourself) | Medium | Trees (phone screen, Sep 2026) |
+| 14 | Valid sequence of adjacent swaps that arranges a matrix into alternating-direction sorted rows; follow-up: reduce the number of operations; you write the tests under a tight limit | Medium-Hard | Simulation (senior phone screen, Sep 2026) |
+| 15 | Repeated shortest-path queries in a grid constrained to strictly increasing values | Hard | Graph (senior onsite, Sep 2026) |
+| 16 | Robot path with charging cells: minimize (charging cells used, max battery required, total moves) lexicographically; Dijkstra over (row, col, battery) states | Hard | Graph / Dijkstra (senior phone screen, Aug 2026) |
+| 17 | Cheapest round trip: outbound prices A[i], return prices B[j] with j > i; follow-up: departure and return at least 3 days apart (suffix minimum, O(n)) | Medium | Arrays (hiring-manager round, Aug 2026) |
+| 18 | Intern OA trio: min delivery cost between cities (abs charge difference, or cost 1 to a unique nearest city); last truck to leave a 1-D lane after velocity-swapping collisions; k-th employee reached when data broadcasts down an org tree in ascending child order | Medium | OA (Jul 2026) |
 
 ### Uber System Design
 
@@ -1388,12 +1487,15 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 6 | Design a simplified global food-delivery marketplace | Merchant registration + restaurant management; Uber Eats cart pricing |
 | 7 | Design a backend for a daily puzzle platform | Reported 2026 prompt |
 | 8 | Model-drift monitoring for pricing; real-time analytics dashboard for city ops | ML / analytics |
+| 9 | Nearby-driver proximity service: uniform grid vs QuadTree vs Geohash/S2, boundary handling, write pressure from 4-second location updates, debouncing jittery results | Aug 2026 onsite |
+| 10 | Design a chat application similar to ChatGPT: start a new chat, continue past conversations | HLD round, SDE II backend, Jun 2026 |
+| 11 | Storage for large structured datasets: caching, queues, failure handling, load balancing | Senior onsite, Sep 2026 |
 
 ---
 
 ## ByteDance / TikTok
 
-> **2025-2026 Trends**: Among the most technically demanding interviews. Baseline is Medium, Hard is frequent. 2-3 problems per round (vs 1-2 at Google/Meta) -- speed matters. Interviewers write their own problems and progressively mutate them mid-round. Compile-ready, bug-free code expected (not pseudocode). Acceptance rate estimated at 1-2%. Max 2 applications allowed. **New in 2026**: the OA was overhauled, switched from HackerRank to **CodeSignal**, multiple-choice questions removed entirely, now **4 pure coding problems in 70-90 min** (down from ~120 in 2025), with strict proctoring (camera on, screen share, no leaving the window). **AI tools are explicitly banned** in coding assessments and technical interviews, violations mean immediate disqualification. Questions are increasingly scenario-wrapped (file systems, server infrastructure, data pipelines) instead of abstract puzzles, with live coding blended into system-design thinking. New OA emphasis on combinatorics. The hiring-manager round can include an LC-Hard DP under a strict clock, one candidate reported "two LeetCode hard DP questions in one hour." Fresh-grad rounds still include CS trivia (OS, networking, DB).
+> **2025-2026 Trends**: Among the most technically demanding interviews. Baseline is Medium, Hard is frequent. 2-3 problems per round (vs 1-2 at Google/Meta) -- speed matters. Interviewers write their own problems and progressively mutate them mid-round. Compile-ready, bug-free code expected (not pseudocode). Acceptance rate estimated at 1-2%. Max 2 applications allowed. **New in 2026**: the OA was overhauled, switched from HackerRank to **CodeSignal**, multiple-choice questions removed entirely, now **4 pure coding problems in 70-90 min** (down from ~120 in 2025), with strict proctoring (camera on, screen share, no leaving the window). **AI tools are explicitly banned** in coding assessments and technical interviews, violations mean immediate disqualification. Questions are increasingly scenario-wrapped (file systems, server infrastructure, data pipelines) instead of abstract puzzles, with live coding blended into system-design thinking. New OA emphasis on combinatorics. The hiring-manager round can include an LC-Hard DP under a strict clock, one candidate reported "two LeetCode hard DP questions in one hour." Fresh-grad rounds still include CS trivia (OS, networking, DB). August to September 2026 reports show infrastructure fundamentals mixed into technical rounds: REST versus WebSocket versus server-sent events for an agent runtime that streams progress, Kafka retained-log versus work-queue delivery semantics, virtual memory beyond physical RAM, and whether a MySQL to MongoDB migration is justified.
 
 ### ByteDance Algorithms
 
@@ -1432,6 +1534,14 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 31 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii) | Medium |
 | 32 | [The Maze](https://leetcode.com/problems/the-maze) | Medium |
 | 33 | [Decode Ways II](https://leetcode.com/problems/decode-ways-ii) | Hard |
+| 34 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium |
+| 35 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters) | Medium |
+| 36 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium |
+| 37 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard |
+| 38 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium |
+| 39 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree) | Easy |
+| 40 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard |
+| 41 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe) | Medium |
 
 ### ByteDance Custom Problems
 
@@ -1449,6 +1559,8 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 10 | Content moderation priority queue | Heap | Moderation domain |
 | 11 | Video deduplication via hashing | Hashing | Content dedup |
 | 12 | Live viewer count at billion scale | Distributed | Counting at scale |
+| 13 | Removable timestamp-ordered task scheduler | Heap / Design | Insert, remove, and bounded pop by timestamp with deterministic tie-breaking (Aug 2026) |
+| 14 | Lexicographically smallest course order | Graph | Topological sort over prerequisite pairs, break ties with a min-heap (Sep 2026) |
 
 ### ByteDance System Design
 
@@ -1459,12 +1571,17 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 3 | Design Content Moderation Pipeline | ML-based automated moderation at scale |
 | 4 | Design Social Graph Service | Following/follower relationships, efficient traversal |
 | 5 | Design Ad Serving Platform | Real-time bidding and targeting |
+| 6 | Design near-real-time top-ten songs by country | Windowed ranking over high-volume listen events (Aug 2026) |
+| 7 | Design an asynchronous video moderation pipeline | ML risk scores feeding a rules engine, async review queue (Sep 2026) |
+| 8 | Prevent a cache stampede on a hot key | Request coalescing, locks, early refresh, jittered TTLs (Aug 2026) |
+| 9 | Design a payment system, time-boxed HLD | Checkout, charge, confirmation; idempotency and failure handling (Sep 2026) |
+| 10 | Design a monitoring dashboard with explicit latency goals | Metrics pipeline, visibility, latency budgets (Sep 2026) |
 
 ---
 
 ## Airbnb
 
-> **2025-2026 Trends**: **No pseudocode, code must actually run and pass test cases** in the 45-60 min CoderPad screen (or HackerRank/CodeSignal OA). This remains Airbnb's most distinctive coding-round rule. **Hardest difficulty skew among peers**: ~33% of reported problems are Hard, with heavy DP and simulation emphasis. Problems arrive dressed as product features, interval merging framed as overlapping reservation windows, tree path sums with depth constraints. **Core values and cross-functional rounds are true gates**, not chats: dedicated rounds on Belonging / "Be a Host", then hiring-committee review. **Senior loops swap a coding round for a code review round**: at G9 and above the second coding interview was replaced by a dedicated code review, so the onsite is coding, code review, system design, technical deep dive, behavioral. You are graded on catching subtle correctness and security defects and on the feedback you give, not on style nits. No evidence Airbnb permits AI tools in interviews.
+> **2025-2026 Trends**: **No pseudocode, code must actually run and pass test cases** in the 45-60 min CoderPad screen (or HackerRank/CodeSignal OA). This remains Airbnb's most distinctive coding-round rule. **Hardest difficulty skew among peers**: ~33% of reported problems are Hard, with heavy DP and simulation emphasis. Problems arrive dressed as product features, interval merging framed as overlapping reservation windows, tree path sums with depth constraints. **Core values and cross-functional rounds are true gates**, not chats: dedicated rounds on Belonging / "Be a Host", then hiring-committee review. **Senior loops swap a coding round for a code review round**: at G9 and above the second coding interview was replaced by a dedicated code review, so the onsite is coding, code review, system design, technical deep dive, behavioral. You are graded on catching subtle correctness and security defects and on the feedback you give, not on style nits. No evidence Airbnb permits AI tools in interviews. July to September 2026 reports show the OA and some coding rounds in CodeSignal Industry Coding Framework shape: one scenario grown over four levels (time-aware banking with scheduled payments and account merges, capacity-aware file store with users, quotas and compression, task manager with priorities and expiring assignments, object store with TTL, workspace credit ledger with delayed cashback).
 
 ### Airbnb Algorithms
 
@@ -1489,6 +1606,15 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 17 | [Word Search II](https://leetcode.com/problems/word-search-ii) | Hard | Trie + Backtracking |
 | 18 | [Mini Parser](https://leetcode.com/problems/mini-parser) | Medium | Stack Parsing |
 | 19 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | DP |
+| 20 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | Medium | Iterator Design (variant: repeatable lookahead plus a once-per-item remove) |
+| 21 | Time-aware in-memory banking system, four levels | Hard | Design / OA (transfers, top spenders, scheduled payments, account merges) |
+| 22 | Capacity-aware in-memory file store | Medium-Hard | Design / OA (file operations, search, users, ownership, compression) |
+| 23 | In-memory task management system | Medium-Hard | Design / OA (priorities, name search, user quotas, expiring assignments) |
+| 24 | In-memory object manager with TTL | Medium | Design / OA |
+| 25 | Timestamped workspace credit ledger | Hard | Design / Simulation (deposits, transfers, delayed cashback, rankings, merges) |
+| 26 | Redact document phrases via a supplied mapping | Medium | String Replacement |
+| 27 | Allocate an order from the oldest inventory batches | Medium | Greedy / FIFO (no input mutation, reference-ID tie-break) |
+| 28 | Render wrapped paragraphs inside one text box | Medium | String Simulation (Text Justification family) |
 
 **Custom problems**: Boxes and Candies (custom optimization, paired with Alien Dictionary in a phone round); reservation-window merging (Merge Intervals reskinned as overlapping guest bookings); binary tree path sums with a depth constraint.
 
@@ -1501,12 +1627,13 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 3 | Design a notification service | Fan-out, delivery |
 | 4 | Design a recommendation engine | ML / ranking |
 | 5 | Design a payment processing flow | Consistency, idempotency |
+| 6 | Design a reliable scheduler for one-time payment jobs | Durable claiming, retries, cancellation races (Aug 2026) |
 
 ---
 
 ## DoorDash
 
-> **2025-2026 Trends**: DoorDash **publicly announced it is rebuilding its engineering interviews around AI**. The new format is a **60-min AI-assisted working session on your own machine/IDE**: Cursor, Claude Code, or Codex free tiers suffice, and all agent features are allowed. You're evaluated on pragmatic tradeoffs, turning ambiguity into a plan, minimal-repro validation, and narrating your reasoning. **The AI policy is transitional**: traditional algorithm rounds still ban AI use, while the new working-session round mandates it. 2026 loop: **CodeCraft** round (build a small business module from requirements, then extend as requirements are added), a dedicated **Debugging** round (find subtle bugs in an unfamiliar codebase, uninitialized maps, null pointers), System Design (60-75 min, logistics-centric), and Behavioral. Hiring has been decentralized since ~2025, so round mix varies by team.
+> **2025-2026 Trends**: DoorDash **publicly announced it is rebuilding its engineering interviews around AI**. The new format is a **60-min AI-assisted working session on your own machine/IDE**: Cursor, Claude Code, or Codex free tiers suffice, and all agent features are allowed. You're evaluated on pragmatic tradeoffs, turning ambiguity into a plan, minimal-repro validation, and narrating your reasoning. **The AI policy is transitional**: traditional algorithm rounds still ban AI use, while the new working-session round mandates it. 2026 loop: **CodeCraft** round (build a small business module from requirements, then extend as requirements are added), a dedicated **Debugging** round (find subtle bugs in an unfamiliar codebase, uninitialized maps, null pointers), System Design (60-75 min, logistics-centric), and Behavioral. Hiring has been decentralized since ~2025, so round mix varies by team. July to September 2026 reports: the CodeCraft exercise now doubles as the technical screen for some candidates, the onsite AI round is labeled "AI Code Craft" and in at least one loop ran inside a HackerRank-style environment rather than the candidate's own IDE, the debugging round is consistently a round-robin router bug followed by implementing consistent hashing, and behavioral rounds ask how you use AI tools day to day and how you choose a model for a task.
 
 ### DoorDash Algorithms
 
@@ -1529,6 +1656,7 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 15 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | Design |
 | 16 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium | Greedy / DP |
 | 17 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Easy | String |
+| 18 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Medium | Design (constant-time random courier selection) |
 
 ### DoorDash AI-Assisted and Custom Rounds
 
@@ -1538,6 +1666,11 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 2 | Dasher pay module with rule stacking | CodeCraft | Implement payment logic layering base pay, boosts, and tips per changing requirements |
 | 3 | Support-ticket workflow automation engine | AI Working Session | Build an engine automating the self-help menu for tickets like "my order arrived late" |
 | 4 | Unfamiliar multi-file codebase with planted bugs | Debugging | Fix bugs + discuss testing and production readiness |
+| 5 | Aggregator service over user, payment and address services | CodeCraft (technical screen) | Extend a provided template so one call fans out to three services and runs end to end (Aug 2026) |
+| 6 | Late-order refund DAG workflow engine as separate services | AI Working Session | Build a workflow engine for order-timeout refunds with real API calls between services; follow-ups add partial refunds and fix slow execution (Jul to Sep 2026) |
+| 7 | Round-robin order router, then consistent hashing | Debugging | Fix a broken round-robin selector, write invariants and deterministic tests, then implement consistent hashing (Jul to Sep 2026) |
+| 8 | Random worker allocator, last-element case | Debugging | Array-backed random pick with swap-remove; the planted bug is the removed element being last (Sep 2026) |
+| 9 | Dasher daily pay with double rate in peak windows | Coding | Interval merging with weighted rates from order events; follow-up on upstream API failures (backoff with jitter, circuit breaker) (Jun to Sep 2026) |
 
 ### DoorDash System Design
 
@@ -1549,12 +1682,16 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 4 | Design an order status notification system; item review & rating system | Fan-out, storage |
 | 5 | Ingest donations and serve rolling 3-day totals | Streaming aggregation |
 | 6 | Payment consistency | Idempotency keys, reconciliation/audit trails, webhook handling, async decoupling to prevent double charges |
+| 7 | Design a donation service with reliable payment and payout tracking | Collect funds, pay out to charities, handle failures (Sep 2026) |
+| 8 | Make a courier pay workflow resilient to downstream failures | Retries, backoff with jitter, circuit breaker, dead-letter queue (Aug 2026) |
+| 9 | Design an alert notification service for downstream consumers | Producer events delivered independently to each matching consumer (Aug 2026) |
+| 10 | Design food reviews with votes and reviewer rewards | Race-safe single upvote per user, reward issuance, review and vote separation (Jul to Sep 2026, most repeated prompt) |
 
 ---
 
 ## Anduril
 
-> **2025-2026 Trends**: Ambiguity is the test. The 60-min HackerRank technical phone screen opens with a deliberately vague prompt, and one candidate reports the interviewer admitting it was confusing on purpose. You solve a simplified version, then constraints shift under you: uneven array sizes, empty slots, inputs that make the problem unsolvable. Each phase builds on your previous code, so refactoring is graded. Loop: recruiter screen (30 min) -> technical phone screen (60 min, HackerRank) -> onsite of four 60-min rounds (2 coding, 1 object-oriented design, 1 behavioral with a senior leader). Typically 3-4 weeks end to end, though new-grad pipelines have run months. C++ and Rust are the primary languages, Python secondary; C++ is expected for embedded and robotics roles. **AI use in interviews is strictly prohibited.** The standard follow-up is a constraint flip: "what if this is called 10 million times per second", or "what if memory is severely limited". Many roles require US citizenship and the ability to obtain Secret or Top Secret clearance, which Anduril sponsors. The behavioral round is a line-by-line resume review (return offers, performance ratings, manager feedback) plus a mission-alignment probe, and "tell me about a moral or ethical dilemma you faced at work" is reported repeatedly.
+> **2025-2026 Trends**: Ambiguity is the test. The 60-min HackerRank technical phone screen opens with a deliberately vague prompt, and one candidate reports the interviewer admitting it was confusing on purpose. You solve a simplified version, then constraints shift under you: uneven array sizes, empty slots, inputs that make the problem unsolvable. Each phase builds on your previous code, so refactoring is graded. Loop: recruiter screen (30 min) -> technical phone screen (60 min, HackerRank) -> onsite of four 60-min rounds (2 coding, 1 object-oriented design, 1 behavioral with a senior leader). Typically 3-4 weeks end to end, though new-grad pipelines have run months. C++ and Rust are the primary languages, Python secondary; C++ is expected for embedded and robotics roles. **AI use in interviews is strictly prohibited.** The standard follow-up is a constraint flip: "what if this is called 10 million times per second", or "what if memory is severely limited". Many roles require US citizenship and the ability to obtain Secret or Top Secret clearance, which Anduril sponsors. The behavioral round is a line-by-line resume review (return offers, performance ratings, manager feedback) plus a mission-alignment probe, and "tell me about a moral or ethical dilemma you faced at work" is reported repeatedly. July 2026 reports add two variants: some pipelines send the HackerRank as an asynchronous take-home instead of a live 60-min screen (one candidate heard nothing back after submitting), and at least one final onsite included presenting a past project to the team. July and August 2026 coding prompts leaned on memory-management themes: heap-graph reachability, a suffix search index, and expression evaluation.
 
 ### Anduril Custom Problems
 
@@ -1570,6 +1707,11 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 8 | Graph cycle detection | Coding (mission software) | Dependency or route graph |
 | 9 | Radar tower model for a moving ship | Object-oriented design | Class modeling, coverage and state updates |
 | 10 | Drone field management | System design | Signal transmission, instruction issuing, degradation when a node drops |
+| 11 | Heap-graph reachability | Coding | Given stack roots and heap objects with references, return the objects unreachable from the stack; handle cycles and dangling addresses (Jul 2026) |
+| 12 | Dynamic exact-suffix search index | Coding | Reversed trie supporting interleaved add and lookup operations (Aug 2026) |
+| 13 | Variadic addition or subtraction expression evaluator | Coding | Nested add and sub calls of any arity; subtraction is left-associative (Aug 2026) |
+| 14 | Hash map collisions and operation complexity | Fundamentals | Separate chaining versus open addressing, expected versus worst case (Aug 2026) |
+| 15 | Diagnose a memory leak in a JavaScript web app | Fundamentals (frontend) | Compare heap snapshots in browser devtools, find retained detached nodes (Aug 2026) |
 
 ### Anduril LeetCode Practice (Mapped to Reported Topics)
 
@@ -1582,6 +1724,8 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 5 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | Medium | Heap / Geometry |
 | 6 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard | Heap / Streaming |
 | 7 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Medium | Strings |
+| 8 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | Trie (reverse strings for the suffix index) |
+| 9 | [Basic Calculator](https://leetcode.com/problems/basic-calculator) | Hard | Expression evaluation |
 
 ### Anduril System Design
 
@@ -1610,6 +1754,8 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 6 | [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal) | Easy | Strings (warmup) |
 | 7 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | Linked List |
 | 8 | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling) | Medium | Greedy |
+| 9 | Convert leveled rich-text tokens into nested lists | Medium | Parsing / Stack (ordered tokens with depth levels become a nested-list structure) |
+| 10 | Validate a balanced INDENT and DEDENT token stream at every prefix | Easy-Medium | Stack ([Valid Parentheses](https://leetcode.com/problems/valid-parentheses) family) |
 
 ### Figma LeetCode Practice (Mapped to Reported Topics)
 
@@ -1630,6 +1776,9 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 3 | Figma Components round: design a feature on top of the components model | Guide supplied in advance; component instances, overrides, inheritance |
 | 4 | Design a poll feature inside a Figma file | Concurrent users, storage, scaling |
 | 5 | Document sharding, offline sync, delta encoding | Persistence for large documents |
+| 6 | Design permission-aware retrieval for design files | Short text queries, structured filters, permission checks at query time (Jul 2026) |
+| 7 | Design trending collaborative files | Rank from billions of daily events, windowed counts with decay (Jul 2026) |
+| 8 | Design comments for a collaborative whiteboard | Durable comments anchored to objects on a real-time canvas (Jul 2026) |
 
 ### Figma Frontend Deep Dive (Frontend Roles)
 
@@ -1645,7 +1794,7 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 
 ## Ramp
 
-> **2025-2026 Trends**: The application itself is a filter. Ramp gates applicants behind a **capture-the-flag puzzle**: decode a base64 string, inspect DOM elements for a hidden URL, chain API calls, parse a file tree, and only then do you reach the real application link. It tests resourcefulness, not algorithms. Loop: CTF gate -> recruiter (25-30 min) -> CodeSignal OA (90 min, **four progressive levels** on one theme) -> optional recorded async behavioral (15-20 min) -> technical phone screen (60 min live coding) -> virtual onsite of roughly four hours: practical coding, a product-focused coding round, system design, and a values conversation with the hiring manager. Some pipelines substitute an automated take-home with a 3-day deadline. Almost nothing is LeetCode-shaped: expect to implement a small system quickly with clean OOP, then defend it against concurrency and edge-case follow-ups. Ramp is among the most aggressive engineering hirers of 2026, and the loop leans on implementation speed and API manipulation rather than memorized patterns.
+> **2025-2026 Trends**: The application itself is a filter. Ramp gates applicants behind a **capture-the-flag puzzle**: decode a base64 string, inspect DOM elements for a hidden URL, chain API calls, parse a file tree, and only then do you reach the real application link. It tests resourcefulness, not algorithms. Loop: CTF gate -> recruiter (25-30 min) -> CodeSignal OA (90 min, **four progressive levels** on one theme) -> optional recorded async behavioral (15-20 min) -> technical phone screen (60 min live coding) -> virtual onsite of roughly four hours: practical coding, a product-focused coding round, system design, and a values conversation with the hiring manager. Some pipelines substitute an automated take-home with a 3-day deadline. Almost nothing is LeetCode-shaped: expect to implement a small system quickly with clean OOP, then defend it against concurrency and edge-case follow-ups. Ramp is among the most aggressive engineering hirers of 2026, and the loop leans on implementation speed and API manipulation rather than memorized patterns. Some 2026 loops add an AI-assisted round: implement a feature in an unfamiliar repository with an AI coding assistant, then defend the change (reported January and May 2026). A September 29, 2026 CodeSignal report describes the four-level OA built around a prefix tree rather than the banking scenario; the July 2026 techinterview.org guide describes level 3 adding TTL expiry and level 4 adding backups, rollback, or account merging.
 
 ### Ramp Coding Problems
 
@@ -1657,6 +1806,12 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 4 | Hotel reservation system | Medium-Hard | Design (phone screen) |
 | 5 | Web crawler, then concurrency follow-ups | Medium-Hard | Concurrency |
 | 6 | Storage system with OOP design | Medium | Design (take-home) |
+| 7 | Prefix tree grown over four progressive levels | Medium-Hard | CodeSignal OA (reported Sep 29, 2026) |
+| 8 | Spreadsheet cells with dependencies and string concatenation | Medium | Design (recalculation order, cycle handling) |
+| 9 | Resilient chain of clue-driven HTTP requests | Hard | API manipulation (follow clues in responses, retries) |
+| 10 | Find a user's airport at a given time from flight records | Medium | Intervals / Sorting |
+| 11 | Single-screen tic-tac-toe with state management | Medium | Frontend (React) |
+| 12 | Wordle-style game in React | Medium | Frontend (React) |
 
 ### Ramp LeetCode Practice (Mapped to Reported Topics)
 
@@ -1669,6 +1824,8 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 5 | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded) | Medium | Concurrency (premium) |
 | 6 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design |
 | 7 | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom) | Hard | Intervals / reservations |
+| 8 | [Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula) | Hard | Spreadsheet dependencies (premium) |
+| 9 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | OA prefix tree, level 1 |
 
 ### Ramp System Design
 
@@ -1677,6 +1834,9 @@ Stripe avoids LeetCode; these are the closest **analogues** to reported Stripe p
 | 1 | Corporate card transaction pipeline | Authorization, settlement, ledger correctness |
 | 2 | Payment processing system | Idempotency, reconciliation, double-charge prevention |
 | 3 | Notification service | Fan-out, delivery guarantees |
+| 4 | Low-latency hotel room availability under concurrent booking | Correctness under contention, read latency (Jul 2026) |
+| 5 | Payment-count dashboard that scales from one reader to high traffic | Aggregation, caching, separating reads from writes (Jul 2026) |
+| 6 | Tunable, explainable recurring-transaction detector | Noisy subscription data, precision and recall knobs (Jul 2026) |
 
 ---
 

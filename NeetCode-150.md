@@ -1,6 +1,6 @@
 # NeetCode 150 - Essential LeetCode Problems for FAANG Interviews
 
-> **NeetCode 150** is a curated list of 150 essential LeetCode problems compiled by a Google engineer. This collection represents the most important algorithmic patterns and concepts frequently tested in FAANG and top tech company interviews. Each problem has been selected to maximize your interview preparation efficiency.
+> **NeetCode 150** is a curated list of 150 essential LeetCode problems compiled by Navdeep Singh (NeetCode), a former Google engineer. This collection represents the most important algorithmic patterns and concepts frequently tested in FAANG and top tech company interviews. Each problem has been selected to maximize your interview preparation efficiency.
 
 > **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [AI labs](./AI-Companies-Interview-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md)
 
@@ -21,34 +21,43 @@
 
 ## Why NeetCode 150?
 
-- **✨ Curated by Industry Expert**: Selected by a Google engineer based on real interview experience
+- **✨ Curated by Industry Expert**: Selected by a former Google and Amazon engineer based on real interview experience
 - **🎯 Maximum Coverage**: Covers all major algorithmic patterns and data structures
-- **⚡ Efficient Preparation**: Focus on quality over quantity - 150 problems vs. 2000+ on LeetCode
+- **⚡ Efficient Preparation**: Focus on quality over quantity - 150 problems vs. 4,000+ on LeetCode (4,069 as of October 2026)
 - **📈 Proven Success**: Used by thousands to land offers at top tech companies
 - **🎥 Video Solutions**: Comprehensive video explanations available for every problem
+
+### October 2026 note: how NeetCode 150 fits 2026 prep
+
+- Still the right first pass. Checked October 2026: all 150 problems are live on LeetCode and every difficulty label below matches LeetCode's current rating.
+- Seven problems are LeetCode Premium: Encode and Decode Strings, Walls and Gates, Number of Connected Components in an Undirected Graph, Graph Valid Tree, Alien Dictionary, Meeting Rooms, Meeting Rooms II. [NeetCode.io](https://neetcode.io/practice?tab=neetcode150) hosts its own free version of each.
+- AI-assisted rounds exist but have not replaced pattern rounds. Meta announced in July 2025 that it is testing a coding interview in which the candidate works with an AI assistant. Prepare for it as an extra format (debug and extend an unfamiliar codebase, explain every change), not as a reason to skip the problems here.
+- Less than four weeks before a loop: do the Easy and Medium rows in your three weakest categories, then move to [Latest company questions](./FAANG-Recent-Questions.md). Finished all 150 with time to spare: NeetCode 250, on the same practice page, adds 100 more in the same category order.
 
 ## Problem Categories and Distribution
 
 | Category | Problems | Difficulty Distribution | Key Patterns |
 |----------|----------|-------------------------|--------------|
-| **Arrays & Hashing** | 9 | 2 Easy, 6 Medium, 1 Hard | Two Pointers, Hash Maps, Prefix Sums |
-| **Two Pointers** | 5 | 1 Easy, 4 Medium | Left-Right Pointers, Fast-Slow Pointers |
-| **Sliding Window** | 6 | 2 Easy, 3 Medium, 1 Hard | Fixed/Variable Window, String Problems |
-| **Stack** | 7 | 2 Easy, 4 Medium, 1 Hard | Monotonic Stack, Expression Parsing |
-| **Binary Search** | 7 | 2 Easy, 5 Medium | Search Space Reduction, Peak Finding |
-| **Linked List** | 11 | 2 Easy, 8 Medium, 1 Hard | Two Pointers, Reversal, Cycle Detection |
-| **Trees** | 15 | 3 Easy, 10 Medium, 2 Hard | DFS, BFS, Tree Construction |
+| **Arrays & Hashing** | 9 | 3 Easy, 6 Medium | Two Pointers, Hash Maps, Prefix Sums |
+| **Two Pointers** | 5 | 1 Easy, 3 Medium, 1 Hard | Left-Right Pointers, Fast-Slow Pointers |
+| **Sliding Window** | 6 | 1 Easy, 3 Medium, 2 Hard | Fixed/Variable Window, String Problems |
+| **Stack** | 7 | 1 Easy, 5 Medium, 1 Hard | Monotonic Stack, Expression Parsing |
+| **Binary Search** | 7 | 1 Easy, 5 Medium, 1 Hard | Search Space Reduction, Peak Finding |
+| **Linked List** | 11 | 3 Easy, 6 Medium, 2 Hard | Two Pointers, Reversal, Cycle Detection |
+| **Trees** | 15 | 6 Easy, 7 Medium, 2 Hard | DFS, BFS, Tree Construction |
 | **Tries** | 3 | 2 Medium, 1 Hard | Prefix Trees, Word Search |
-| **Heap/Priority Queue** | 7 | 1 Easy, 5 Medium, 1 Hard | K-Elements, Merge Operations |
-| **Backtracking** | 9 | 6 Medium, 3 Hard | Permutations, Combinations, Subsets |
-| **Graphs** | 13 | 3 Medium, 10 Hard | DFS, BFS, Union Find, Topological Sort |
-| **Advanced Graphs** | 6 | 6 Hard | Shortest Path, MST, Advanced Algorithms |
-| **1-D Dynamic Programming** | 12 | 1 Easy, 8 Medium, 3 Hard | State Transitions, Optimization |
-| **2-D Dynamic Programming** | 11 | 8 Medium, 3 Hard | Grid DP, String DP |
-| **Greedy** | 8 | 2 Easy, 4 Medium, 2 Hard | Local Optimal Choices |
-| **Intervals** | 5 | 1 Easy, 3 Medium, 1 Hard | Merging, Scheduling |
-| **Math & Geometry** | 8 | 3 Easy, 4 Medium, 1 Hard | Number Theory, Computational Geometry |
-| **Bit Manipulation** | 7 | 3 Easy, 4 Medium | Bitwise Operations, XOR Tricks |
+| **Heap/Priority Queue** | 7 | 2 Easy, 4 Medium, 1 Hard | K-Elements, Merge Operations |
+| **Backtracking** | 9 | 8 Medium, 1 Hard | Permutations, Combinations, Subsets |
+| **Graphs** | 13 | 12 Medium, 1 Hard | DFS, BFS, Union Find, Topological Sort |
+| **Advanced Graphs** | 6 | 3 Medium, 3 Hard | Shortest Path, MST, Advanced Algorithms |
+| **1-D Dynamic Programming** | 12 | 2 Easy, 10 Medium | State Transitions, Optimization |
+| **2-D Dynamic Programming** | 11 | 7 Medium, 4 Hard | Grid DP, String DP |
+| **Greedy** | 8 | 8 Medium | Local Optimal Choices |
+| **Intervals** | 6 | 1 Easy, 4 Medium, 1 Hard | Merging, Scheduling |
+| **Math & Geometry** | 8 | 2 Easy, 6 Medium | Number Theory, Computational Geometry |
+| **Bit Manipulation** | 7 | 5 Easy, 2 Medium | Bitwise Operations, XOR Tricks |
+
+Totals: 28 Easy, 101 Medium, 21 Hard (LeetCode difficulty ratings checked October 2026).
 
 ---
 
@@ -267,31 +276,32 @@
 | 132 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | Amazon, Google |
 | 133 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | Sorting | All FAANG |
 | 134 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | Medium | Heap, Greedy | All FAANG |
+| 135 | [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | Hard | Sorting, Min Heap | Rarely company-tagged |
 
 ### Math & Geometry (8 Problems)
 
 | No. | Problem | Difficulty | Pattern | Company Tags |
 |-----|---------|------------|---------|--------------|
-| 135 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | Matrix Manipulation | All FAANG |
-| 136 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Medium | Matrix Traversal | All FAANG |
-| 137 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | Matrix Modification | Amazon, Apple |
-| 138 | [Happy Number](https://leetcode.com/problems/happy-number/) | Easy | Number Theory | Google, Apple |
-| 139 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Array Manipulation | Google, Apple |
-| 140 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium | Fast Exponentiation | All FAANG |
-| 141 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | String Math | Google, Meta |
-| 142 | [Detect Squares](https://leetcode.com/problems/detect-squares/) | Medium | Geometry | Google, Amazon |
+| 136 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | Matrix Manipulation | All FAANG |
+| 137 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Medium | Matrix Traversal | All FAANG |
+| 138 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | Matrix Modification | Amazon, Apple |
+| 139 | [Happy Number](https://leetcode.com/problems/happy-number/) | Easy | Number Theory | Google, Apple |
+| 140 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Array Manipulation | Google, Apple |
+| 141 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium | Fast Exponentiation | All FAANG |
+| 142 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | String Math | Google, Meta |
+| 143 | [Detect Squares](https://leetcode.com/problems/detect-squares/) | Medium | Geometry | Google, Amazon |
 
 ### Bit Manipulation (7 Problems)
 
 | No. | Problem | Difficulty | Pattern | Company Tags |
 |-----|---------|------------|---------|--------------|
-| 143 | [Single Number](https://leetcode.com/problems/single-number/) | Easy | XOR | All FAANG |
-| 144 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Bit Counting | All FAANG |
-| 145 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | DP + Bits | All FAANG |
-| 146 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | Bit Reversal | Apple, Amazon |
-| 147 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | XOR/Math | All FAANG |
-| 148 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | Medium | Bit Arithmetic | Apple, Amazon |
-| 149 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Medium | Integer Manipulation | All FAANG |
+| 144 | [Single Number](https://leetcode.com/problems/single-number/) | Easy | XOR | All FAANG |
+| 145 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Bit Counting | All FAANG |
+| 146 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | DP + Bits | All FAANG |
+| 147 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | Bit Reversal | Apple, Amazon |
+| 148 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | XOR/Math | All FAANG |
+| 149 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | Medium | Bit Arithmetic | Apple, Amazon |
+| 150 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Medium | Integer Manipulation | All FAANG |
 
 ---
 
@@ -335,7 +345,7 @@
 
 - **[NeetCode YouTube Channel](https://www.youtube.com/@neetcode)**: Detailed video explanations
 - **[NeetCode.io Practice](https://neetcode.io/practice?tab=neetcode150)**: Interactive problem solving
-- **[LeetCode Study Plan](https://leetcode.com/problem-list/plakya4j/)**: Official NeetCode 150 list
+- **[LeetCode Problem List](https://leetcode.com/problem-list/plakya4j/)**: public NeetCode 150 list on LeetCode (150 questions, checked October 2026)
 - **[Pattern-Based Learning](https://neetcode.io/roadmap)**: Algorithm patterns roadmap
 
 ---
