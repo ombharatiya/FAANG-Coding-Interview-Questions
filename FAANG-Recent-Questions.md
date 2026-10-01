@@ -21,7 +21,9 @@ The format shifted more in the last year than in the previous five. What changed
 | **Sierra** | Removed algorithm interviews entirely. Plan -> Build (2h with any AI) -> Review. |
 | **Microsoft** | Team-dependent (CoreAI/Copilot teams may allow GitHub Copilot). Ask your recruiter. |
 | **Tesla** | Googling allowed; LLM use at interviewer discretion. |
-| **Amazon, Apple, ByteDance, Palantir, Uber, Airbnb** | No AI-assisted round reported; ByteDance and Palantir explicitly ban AI use. |
+| **Amazon** | AI-assisted repository debugging now appears in the SDE OA for some roles and regions (fix bugs in an existing app with an embedded assistant, visible and hidden tests). Live coding rounds still ban AI. |
+| **Apple** | AI-assisted coding round added to SWE full-time loops from late April 2026, tooling is the candidate's choice; reports describe it drifting into a design conversation about using AI agents for testing. |
+| **ByteDance, Palantir, Uber, Airbnb** | No AI-assisted round reported; ByteDance and Palantir explicitly ban AI use. |
 
 Where AI is allowed, the rubric moved to **verification**: test before you trust, and explain the output. Where it's banned, expect proctoring, in-person rounds, and debug-the-supplied-code formats instead.
 
@@ -157,6 +159,7 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 | 24 | [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable) | Medium |
 | 25 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard |
 | 26 | [Integer to English Words](https://leetcode.com/problems/integer-to-english-words) | Hard |
+| 27 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number) | Easy |
 
 ### Meta Linked Lists
 
@@ -190,6 +193,7 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 | 16 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | Medium |
 | 17 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium |
 | 18 | [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii) | Medium |
+| 19 | [Course Schedule](https://leetcode.com/problems/course-schedule) | Medium |
 
 ### Meta Recursion and Backtracking
 
@@ -247,7 +251,7 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 
 ## Amazon
 
-> **2025-2026 Trends**: Practical, real-world framing. Heap-based reasoning emphasized. OA structure: Q1 is Array/String/Sliding Window, Q2 is Graph/Trees/DP/Heap. ~19% Easy, 60% Medium, 21% Hard. **New in 2026**: HackerRank OA = 2 coding problems (~70 min) + Work Simulation (~20 min) + Work Style Assessment (~10-20 min); the SDE II OA adds a 20-minute System Design scenario section. ~75-80% of OA problems are Medium, wrapped in Amazon-themed framing (servers, warehouses, parcels). Onsite is ~50/50 coding vs Leadership Principles in every round, plus Bar Raiser. Rising: weighted-shortest-path/Dijkstra problems; system design now probes deployment topology and on-call readiness. **No AI-assisted round reported**: Amazon instead rotates custom OA problem sets aggressively, so pattern prep beats memorization. Under-prepared LPs to watch: "Have Backbone, Disagree & Commit", "Are Right A Lot", "Frugality".
+> **2025-2026 Trends**: Practical, real-world framing. Heap-based reasoning emphasized. OA structure: Q1 is Array/String/Sliding Window, Q2 is Graph/Trees/DP/Heap. ~19% Easy, 60% Medium, 21% Hard. **New in 2026**: HackerRank OA = 2 coding problems (~70 min) + Work Simulation (~20 min) + Work Style Assessment (~10-20 min); the SDE II OA adds a 20-minute System Design scenario section. ~75-80% of OA problems are Medium, wrapped in Amazon-themed framing (servers, warehouses, parcels). Onsite is ~50/50 coding vs Leadership Principles in every round, plus Bar Raiser. Rising: weighted-shortest-path/Dijkstra problems; system design now probes deployment topology and on-call readiness. **AI-assisted OA section reported since mid-2026**: some SDE I, intern, and SDE II candidates (July 2026 reports from India and the US) get a repository-debugging task alongside the DSA questions: fix several bugs in an existing application with an embedded assistant and pass visible plus hidden tests that encode validation, idempotency, authorization, and state-transition requirements. The format is not universal and differs by country; live coding rounds remain AI-free. Amazon also rotates custom OA problem sets aggressively, so pattern prep beats memorization. Under-prepared LPs to watch: "Have Backbone, Disagree & Commit", "Are Right A Lot", "Frugality".
 
 ### Amazon Arrays and Strings
 
@@ -357,6 +361,7 @@ Amazon rotates a large bank of themed OA problems. Reported in 2026:
 | 12 | Checksum Logic | Hard | Simulation |
 | 13 | Longest Match | Hard | Strings / DP |
 | 14 | Min Subsegments | Hard | Greedy / partitioning |
+| 15 | AI-assisted repository debugging: fix several planted bugs in an existing service with an embedded assistant; hidden tests cover validation, idempotency, and state transitions | Medium | Debugging (AI-assisted OA section, July 2026 reports) |
 
 ### Amazon System Design
 
@@ -443,6 +448,7 @@ Amazon rotates a large bank of themed OA problems. Reported in 2026:
 | 5 | Find Minimum Processing Rate | Binary Search | Koko-style binary search on answer (ML Engineer) |
 | 6 | Minimum Cells to Bridge a Magic Grid | Graph / BFS | Islands/bridging grid hard |
 | 7 | Library Management System | OOP Design | Actual class structure expected |
+| 8 | AI agents for test coverage: design discussion on hallucination handling, oversight, and failure monitoring | AI Round (IC3) | Ran as a whiteboard design conversation in at least one 2026 loop; no live prompting required |
 
 ### Apple System Design
 
@@ -534,7 +540,7 @@ Netflix's custom set skews heavily toward caches and watch-history/domain re-ski
 
 ## Google
 
-> **2025-2026 Trends**: Graphs appear in 76% of onsite loops at L4+. Sliding window and binary search on answer are top-tier patterns. Trie and Union-Find questions rising. Roughly 19% of reported problems are Hard. Follow-up questions are standard. **New in 2026**: AI-assisted "Code Comprehension" round piloting. Candidates read, debug, and optimize an existing codebase with **Gemini available** in a CoderPad-style environment (file explorer + editor + AI chat); interviewers explicitly score "AI fluency": prompt engineering, output validation, and debugging of AI output. Pilot targets junior/mid-level roles on select US teams; full transition expected within 12-18 months (context: Pichai's April 2026 statement that 75% of new Google code is AI-generated). **In-person round reinstated** for technical hires to combat AI-assisted cheating. Google Hiring Assessment (GHA) mandatory before the phone screen. The Googleyness & Leadership round is now part-technical. A design conversation about a real system you built, defended under scrutiny. **Third change, early-career only**: one traditional technical round is replaced by an open-ended engineering problem session, closer to a discussion of approach than a single correct answer. Reports emphasize deliberately ambiguous problem framing (you must derive the problem structure) and strict production-ready-code grading at L4. No system design round below L5.
+> **2025-2026 Trends**: Graphs appear in 76% of onsite loops at L4+. Sliding window and binary search on answer are top-tier patterns. Trie and Union-Find questions rising. Roughly 19% of reported problems are Hard. Follow-up questions are standard. **New in 2026**: AI-assisted "Code Comprehension" round piloting. Candidates read, debug, and optimize an existing codebase with **Gemini available** in a CoderPad-style environment (file explorer + editor + AI chat); interviewers explicitly score "AI fluency": prompt engineering, output validation, and debugging of AI output. Pilot started in H2 2026 for junior/mid-level roles on select US teams, with expansion to other teams and regions planned if it succeeds (context: Pichai's April 22, 2026 blog post that 75% of new Google code is AI-generated, up from 50% in fall 2025). **In-person round reinstated** for technical hires to combat AI-assisted cheating. Google Hiring Assessment (GHA) mandatory before the phone screen. The Googleyness & Leadership round is now part-technical. A design conversation about a real system you built, defended under scrutiny. **Third change, early-career only**: one traditional technical round is replaced by an open-ended engineering problem session, closer to a discussion of approach than a single correct answer. Reports emphasize deliberately ambiguous problem framing (you must derive the problem structure) and strict production-ready-code grading at L4. No system design round below L5.
 
 ### Google Arrays and Strings
 
@@ -936,7 +942,7 @@ These are Anthropic's own custom problems. Not LeetCode. Each has multiple diffi
 | 14 | Worker Mode Tracker | Medium | Distributed | Collect shard data from workers; track globally frequent values (distributed mode/median variant) |
 | 15 | Profiler Trace Denoising | Hard | Algorithms | Filter short-lived calls from sampling profiler data; emit events only after N consecutive appearances |
 | 16 | Parallel Word Segmentation | Hard | Concurrency | Parallelize segmentation over large datasets; task distribution, result merging, shared-memory safety |
-| 17 | ML Notebook Bug Fixing (new, reported March 2026) | Hard | ML Debugging | Jupyter notebook of ML training/inference code with several planted bugs; find and fix them. Reported bugs: softmax taken over the wrong dimension (`dim=1` where `dim=-1` is needed) and a model moved to GPU while mask tensors stay on CPU |
+| 17 | ML Notebook Bug Fixing (reported March 2026) | Hard | ML Debugging | Jupyter notebook of ML training/inference code with several planted bugs; find and fix them. Reported bugs: softmax taken over the wrong dimension (`dim=1` where `dim=-1` is needed) and a model moved to GPU while mask tensors stay on CPU |
 
 **Progressive layers reported in 2026**: *Bank Ledger* now adds delayed cashback and spending-analytics levels. *LRU Cache* goes beyond the bugfix to demand durability, survive a process restart and restore usage order from disk. *Web Crawler* runs up to 7 follow-up levels: single-threaded BFS with `htmlParser.getUrls(url)` -> threads/processes/async -> a GIL discussion -> multi-machine scaling. *Greedy Tokenizer* uses longest-match tokenization against a vocabulary with unknown-token merging, and also appears as a code-review exercise.
 
@@ -994,7 +1000,7 @@ Anthropic's design rounds treat the safety/moderation layer as a first-class req
 
 ## Palantir
 
-> **2025-2026 Trends**: Unique 4-round format (you get 3 of 4: Decomposition, System Design, Re-engineering/Debugging, Coding). Each round includes 20 min behavioral. Loop: screen -> 60-min CodePair -> 3x60-min onsite -> hiring manager. **The OA is a 3-part practical HackerRank (~90 min): one coding + one SQL + one REST API/pagination task**: not pure DSA. Graph/BFS/DFS and hash map problems dominate, wrapped in narrative prompts that require extracting requirements before coding. **AI use is strictly prohibited in interviews**: a notable divergence from the industry's 2026 drift toward AI-assisted rounds. **New in 2026**: decomposition prompts have gone AI/LLM-flavored (LLM claim summarization for an insurer, a shipment-rerouting agent, retailer demand forecasting) alongside the classics. Design rounds treat correctness and fault tolerance as first-class constraints, data integrity, access control, auditability, failure modes. **Meritocracy Fellowship** (launched 2025) is an alternative pipeline for high-school grads (SAT >= 1460 / ACT >= 33, $5,400/mo, 4 months); 22 were hired from 500+ applicants, and successful fellows interview for full-time roles without a degree.
+> **2025-2026 Trends**: Unique 4-round format (you get 3 of 4: Decomposition, System Design, Re-engineering/Debugging, Coding). Each round includes 20 min behavioral. Loop: screen -> 60-min CodePair -> 3x60-min onsite -> hiring manager. **The OA is a 3-part practical HackerRank (~90 min): one coding + one SQL + one REST API/pagination task**: not pure DSA. Graph/BFS/DFS and hash map problems dominate, wrapped in narrative prompts that require extracting requirements before coding. **AI use is strictly prohibited in interviews**: a notable divergence from the industry's 2026 drift toward AI-assisted rounds. **New in 2026**: decomposition prompts have gone AI/LLM-flavored (LLM claim summarization for an insurer, a shipment-rerouting agent, retailer demand forecasting) alongside the classics. Design rounds treat correctness and fault tolerance as first-class constraints, data integrity, access control, auditability, failure modes. **Meritocracy Fellowship** (launched 2025) is an alternative pipeline for high-school grads (SAT >= 1460 / ACT >= 33, $5,400/mo, 4 months); the first cohort took 22 fellows from 500+ applicants, "more than a handful" converted to full-time offers in December 2025, and the second cohort runs August to December 2026. Fellows who excel interview for full-time roles without a degree.
 
 ### Palantir Coding Problems
 

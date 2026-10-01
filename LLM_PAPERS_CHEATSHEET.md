@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  <p><strong>69 essential research papers for understanding Large Language Models, organized by subdomain with importance signals.</strong><br/>From foundational Transformers to cutting-edge agents, evals, and inference optimization.</p>
+  <p><strong>96 essential research papers for understanding Large Language Models, organized by subdomain with importance signals.</strong><br/>From foundational Transformers to cutting-edge agents, evals, and inference optimization.</p>
 
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
     <img src="https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=flat" alt="GitHub stars" />
@@ -115,6 +115,12 @@ Teaching models to be helpful, harmless, and honest.
 | [Direct Preference Optimization (DPO)](https://arxiv.org/abs/2305.18290) | Rafailov et al. | 2023 | **Essential** | Eliminates reward model -- optimizes policy directly from preferences via classification loss |
 | [Finetuned Language Models Are Zero-Shot Learners (FLAN)](https://arxiv.org/abs/2109.01652) | Wei et al. | 2021 | **Highly Influential** | Instruction tuning across 60+ tasks. Surpassed GPT-3 zero-shot on 20/25 tasks |
 | [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) | Taori et al. | 2023 | **Interview Favorite** | 52K self-instruct examples to fine-tune LLaMA-7B. Sparked open instruction-tuning movement |
+| [Alignment Faking in Large Language Models](https://arxiv.org/abs/2412.14093) | Greenblatt et al. (Anthropic, Redwood) | 2024 | **Cutting Edge** | Claude 3 Opus selectively complied with harmful requests when it believed it was in training, to avoid being retrained. First empirical demonstration of alignment faking |
+| [Emergent Misalignment: Narrow Finetuning Can Produce Broadly Misaligned LLMs](https://arxiv.org/abs/2502.17424) | Betley et al. | 2025 | **Cutting Edge** | Fine-tuning GPT-4o only on insecure code made it broadly misaligned on unrelated prompts. Narrow training data can shift a model's whole persona |
+| [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](https://arxiv.org/abs/2503.11926) | Baker et al. (OpenAI) | 2025 | **Cutting Edge** | A weaker LLM reading the chain of thought catches reward hacking better than output monitoring. Penalizing bad thoughts teaches the model to hide them |
+| [Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety](https://arxiv.org/abs/2507.11473) | Korbak et al. | 2025 | **Cutting Edge** | Cross-lab position paper (OpenAI, Anthropic, Google DeepMind and others): keep CoT legible and track monitorability as a first-class model property |
+| [Why Language Models Hallucinate](https://arxiv.org/abs/2509.04664) | Kalai et al. (OpenAI) | 2025 | **Interview Favorite** | Hallucination framed as a binary classification error. Benchmarks that score "I don't know" as zero reward guessing; fix the scoring, not just the model |
+| [Natural Emergent Misalignment from Reward Hacking in Production RL](https://arxiv.org/abs/2511.18397) | MacDiarmid et al. (Anthropic) | 2025 | **Cutting Edge** | Models that learn to reward-hack real coding environments generalize to alignment faking and sabotage. Inoculation prompting breaks the link |
 
 ## 4. Safety, Red-Teaming, and Guardrails
 
@@ -153,6 +159,14 @@ Making LLMs think before they answer.
 | [Self-Consistency Improves Chain of Thought Reasoning](https://arxiv.org/abs/2203.11171) | Wang et al. | 2022 | **Highly Influential** | Sample diverse reasoning paths + majority vote. +17.9% on GSM8K over greedy CoT |
 | [Tree of Thoughts: Deliberate Problem Solving](https://arxiv.org/abs/2305.10601) | Yao et al. | 2023 | **Interview Favorite** | Generalizes CoT with tree search -- lookahead, backtracking, and evaluation |
 | [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050) | Lightman et al. | 2023 | **Cutting Edge** | Process reward models: supervise each reasoning step, not just the final answer |
+| [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948) | DeepSeek-AI | 2025 | **Essential** | Pure RL with verifiable rewards (GRPO) on a base model produced emergent self-verification and long chains of thought. Open weights matched OpenAI o1 |
+| [Kimi k1.5: Scaling Reinforcement Learning with LLMs](https://arxiv.org/abs/2501.12599) | Kimi Team | 2025 | **Highly Influential** | Long-context RL (128K) without MCTS or value networks. Long2short distillation transfers long-CoT gains to short-CoT models |
+| [s1: Simple Test-Time Scaling](https://arxiv.org/abs/2501.19393) | Muennighoff et al. | 2025 | **Cutting Edge** | 1,000 curated examples plus "budget forcing" (append "Wait" to extend thinking) beat o1-preview on competition math by up to 27% |
+| [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476) | Yu et al. (ByteDance Seed) | 2025 | **Cutting Edge** | Four fixes to GRPO: clip-higher, dynamic sampling, token-level loss, overlong reward shaping. 50 on AIME 2024 with Qwen2.5-32B, full code and data released |
+| [Does RL Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](https://arxiv.org/abs/2504.13837) | Yue et al. | 2025 | **Cutting Edge** | At large pass@k the base model matches or beats its RL-trained version. RLVR sharpens sampling toward known paths rather than creating new reasoning |
+| [The Illusion of Thinking](https://arxiv.org/abs/2506.06941) | Shojaee et al. (Apple) | 2025 | **Interview Favorite** | Controlled puzzles (Tower of Hanoi, river crossing) show reasoning models collapse to zero accuracy past a complexity threshold and think less as problems get harder |
+| [Reasoning Models Don't Always Say What They Think](https://arxiv.org/abs/2505.05410) | Chen et al. (Anthropic) | 2025 | **Cutting Edge** | CoT faithfulness test: models used injected hints but mentioned them in under 20% of traces. Limits CoT as a safety monitor |
+| [The Art of Scaling Reinforcement Learning Compute for LLMs](https://arxiv.org/abs/2510.13786) | Khatri et al. (Meta) | 2025 | **Cutting Edge** | 400K GPU-hour study of RL recipes. Fits sigmoid compute-performance curves and proposes ScaleRL, a recipe that extrapolates to 100K GPU-hour runs |
 
 ## 7. Retrieval-Augmented Generation (RAG)
 
@@ -175,6 +189,13 @@ LLMs that take actions in the real world.
 | [Toolformer: LMs Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) | Schick et al. | 2023 | **Highly Influential** | Self-supervised tool-use learning. LM decides when to call calculator, search, etc. |
 | [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) | Park et al. | 2023 | **Cutting Edge** | 25 LLM agents with memory, reflection, and planning in a sandbox world |
 | [Voyager: Open-Ended Embodied Agent with LLMs](https://arxiv.org/abs/2305.16291) | Wang et al. | 2023 | **Cutting Edge** | GPT-4 Minecraft agent with auto-curriculum and skill library. 3.3x more items than prior SOTA |
+| [Measuring AI Ability to Complete Long Software Tasks](https://arxiv.org/abs/2503.14499) | Kwa et al. (METR) | 2025 | **Cutting Edge** | 50% task-completion time horizon as a capability metric. Horizon has doubled roughly every 7 months since 2019; frontier models were near 50 minutes in early 2025 |
+| [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) | Cemri et al. (Berkeley) | 2025 | **Interview Favorite** | Taxonomy of 14 failure modes from 1,600+ annotated traces, grouped into specification, inter-agent misalignment and verification failures |
+| [Search-R1: Training LLMs to Reason and Leverage Search Engines with RL](https://arxiv.org/abs/2503.09516) | Jin et al. | 2025 | **Cutting Edge** | Outcome-reward RL teaches the model when to issue search queries mid-reasoning. +41% (7B) and +20% (3B) over RAG baselines on QA |
+| [Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534) | Kimi Team | 2025 | **Cutting Edge** | 1T-parameter MoE (32B active) trained with MuonClip for stability plus a large synthetic tool-use data pipeline. Open weights, strong on SWE-bench Verified |
+| [AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery](https://arxiv.org/abs/2506.13131) | Novikov et al. (Google DeepMind) | 2025 | **Cutting Edge** | Evolutionary loop over LLM-written code with automated evaluators. Found a 48-multiplication 4x4 complex matrix algorithm, first improvement on Strassen's 1969 result |
+| [Recursive Language Models](https://arxiv.org/abs/2512.24601) | Zhang et al. (MIT) | 2025 | **Cutting Edge** | The prompt lives as a variable in a Python REPL; the model inspects, slices and recursively calls itself over it. Handles inputs 100x beyond the context window |
+| [AI Co-Mathematician: Accelerating Mathematicians with Agentic AI](https://arxiv.org/abs/2605.06651) | Zheng et al. (Google DeepMind) | 2026 | **Cutting Edge** | Agentic workbench for research math: literature search, computation, formal proving and theory building. State of the art on FrontierMath |
 
 ## 9. Fine-Tuning and Parameter-Efficient Methods
 
@@ -201,6 +222,11 @@ Making models fast and cheap enough to actually deploy.
 | [GPTQ: Accurate Post-Training Quantization](https://arxiv.org/abs/2210.17323) | Frantar et al. | 2022 | **Highly Influential** | One-shot weight quantization to 3-4 bits. Quantizes 175B model in ~4 GPU hours |
 | [AWQ: Activation-aware Weight Quantization](https://arxiv.org/abs/2306.00978) | Lin et al. | 2023 | **Interview Favorite** | Protects 1% salient channels via activation-aware scaling. Efficient 4-bit quantization |
 | [Medusa: Simple LLM Inference Acceleration](https://arxiv.org/abs/2401.10774) | Cai et al. | 2024 | **Cutting Edge** | Multiple decoding heads predict future tokens in parallel. Lossless acceleration |
+| [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](https://arxiv.org/abs/2502.11089) | Yuan et al. (DeepSeek) | 2025 | **Cutting Edge** | Trainable sparse attention combining compressed, selected and sliding-window tokens. Up to 11x faster decoding at 64K context with no quality loss. ACL 2025 Best Paper |
+| [EAGLE-3: Scaling up Inference Acceleration of LLMs via Training-Time Test](https://arxiv.org/abs/2503.01840) | Li et al. | 2025 | **Cutting Edge** | Draft head predicts tokens directly from fused multi-layer features. Up to 6.5x lossless speedup; supported in vLLM and SGLang |
+| [Large Language Diffusion Models (LLaDA)](https://arxiv.org/abs/2502.09992) | Nie et al. | 2025 | **Cutting Edge** | 8B masked diffusion LM trained from scratch rivals LLaMA 3 8B. Parallel denoising instead of left-to-right decoding; shows autoregression is not required at scale |
+| [Kimi Linear: An Expressive, Efficient Attention Architecture](https://arxiv.org/abs/2510.26692) | Kimi Team | 2025 | **Cutting Edge** | Hybrid of Kimi Delta Attention (gated DeltaNet variant) with full attention at a 3:1 ratio. 75% less KV cache and up to 6x decode throughput at 1M context |
+| [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](https://arxiv.org/abs/2512.02556) | DeepSeek-AI | 2025 | **Cutting Edge** | DeepSeek Sparse Attention (lightning indexer plus top-k token selection) cuts long-context cost to near-linear. Speciale variant reached gold-medal level at IMO and IOI 2025 |
 
 ## 11. Long Context and Positional Encoding
 
@@ -221,6 +247,7 @@ Scaling model capacity without scaling compute.
 |-------|---------|------|--------|-----------------|
 | [Switch Transformers: Scaling to Trillion Parameter Models](https://arxiv.org/abs/2101.03961) | Fedus et al. | 2021 | **Highly Influential** | Simplified MoE routing. 7x pre-training speedup with same compute budget |
 | [Mixtral of Experts](https://arxiv.org/abs/2401.04088) | Mistral AI | 2024 | **Cutting Edge** | 8x7B experts (47B total, 13B active). Outperforms Llama 2 70B, matches GPT-3.5 |
+| [Conditional Memory via Scalable Lookup (Engram)](https://arxiv.org/abs/2601.07372) | Cheng et al. (DeepSeek) | 2026 | **Cutting Edge** | Static n-gram hash lookup tables as a second sparsity axis beside MoE experts. Memory handles pattern recall so compute goes to reasoning and long context |
 
 ## 13. Multimodal Models
 
@@ -291,13 +318,16 @@ Extending LLMs to the audio domain.
 16. **Self-RAG** -- Advanced retrieval
 17. **Mamba** -- Alternatives to attention
 18. **Sleeper Agents** -- AI safety research
+19. **DeepSeek-R1 + s1** -- RL and test-time scaling for reasoning
+20. **Emergent Misalignment + CoT Monitorability** -- 2025 alignment and oversight research
+21. **Native Sparse Attention + EAGLE-3** -- Long context and speculative decoding in 2025
 
 ---
 
 ## Resources
 
 - [Hugging Face Model Hub](https://huggingface.co/models) -- Repository of thousands of pre-trained models
-- [Papers With Code](https://paperswithcode.com/task/language-modelling) -- LLM papers with implementation code
+- [Hugging Face Papers](https://huggingface.co/papers/trending) -- Daily trending papers with linked models and code. Papers With Code now redirects here
 - [Chatbot Arena Leaderboard](https://arena.ai/leaderboard/text) -- Live Elo rankings from human evaluations
 - [Stanford CS324: Large Language Models](https://stanford-cs324.github.io/winter2022/) -- University course materials
 - [State of AI Report](https://www.stateof.ai/) -- Annual report on AI progress
