@@ -55,7 +55,7 @@ The foundation of modern AI agents is a powerful language model that enables und
 
 | Model Type | Advantages | Disadvantages | Best For |
 |------------|------------|---------------|----------|
-| OpenAI GPT-6 family (gpt-6-astra, gpt-6.1-sol, gpt-6-luna) | Top-tier reasoning with selectable effort (low to max), large tool ecosystem | Closed weights, cost at high effort | Production agents on the OpenAI platform; gpt-6-luna for high-volume focused tasks |
+| OpenAI GPT-6 family (gpt-6-astra, gpt-6-sol, gpt-6-luna) | Top-tier reasoning with selectable effort (low to max), large tool ecosystem | Closed weights, cost at high effort | Production agents on the OpenAI platform; gpt-6-luna for high-volume focused tasks |
 | Anthropic Claude (Opus 5.5, Sonnet 5.5, Haiku 4.5; Fable 5.1 for the hardest reasoning) | 1M-token context on Opus, Sonnet and Fable, adaptive thinking, strong long-horizon agentic coding | Closed weights, Haiku capped at 200K context | Long-running coding and knowledge-work agents, context-heavy workloads |
 | Google Gemini 3.x (3.8 Flash stable, 3.1 Pro preview) | Fast Flash tier built for long-horizon software engineering, native multimodal, Live voice variants | Closed weights, Pro tier still in preview | Google Cloud deployments, voice and multimodal agents |
 | Mistral Large 3 / Medium 3.5 | Large 3 ships open weights under Apache 2.0; Medium 3.5 tuned for agentic and coding work | Medium is commercial-only; smaller ecosystem than the three above | European data residency, self-hosted frontier-class open weights |
@@ -458,7 +458,7 @@ Example implementation (LangChain):
 # LangChain 1.x: no chain class is needed, call the chat model directly.
 from langchain.chat_models import init_chat_model
 
-llm = init_chat_model("openai:gpt-6.1-sol", temperature=0)
+llm = init_chat_model("openai:gpt-6-sol", temperature=0)
 
 PLANNER_PROMPT = """You are a planning agent. Given a complex task, break it down into a sequence of steps.
 
@@ -527,7 +527,7 @@ Example implementation (CrewAI):
 # llm accepts a model-name string or a crewai.LLM object.
 from crewai import Crew, Agent, Task
 
-llm = "gpt-6.1-sol"
+llm = "gpt-6-sol"
 
 # Define specialized agents
 researcher = Agent(
@@ -707,7 +707,7 @@ def monitored_agent_run(query):
         start_time = time.time()
         
         # Track API call
-        api_calls.labels(model="gpt-6.1-sol", endpoint="responses").inc()
+        api_calls.labels(model="gpt-6-sol", endpoint="responses").inc()
         
         # Run agent
         response = run_agent(query)
