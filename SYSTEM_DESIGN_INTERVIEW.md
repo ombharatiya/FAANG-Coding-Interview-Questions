@@ -21,7 +21,7 @@ This table presents 25 essential system design problems that are frequently aske
 | 7 | Design a Web Crawler | Medium | Google, Microsoft, Amazon, ByteDance | SWE, Search, Data | [Google Research](https://research.google/pubs/web-crawling/), [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/web_crawler/README.md) |
 | 8 | Design Dropbox / Google Drive | High | Dropbox, Google, Microsoft, Box | SWE, Storage, Cloud | [Dropbox Tech Blog](https://dropbox.tech/) |
 | 9 | Design a Distributed Key-Value Store | High | Amazon, Google, Redis Labs, MongoDB | SWE, Database, Cloud | [DynamoDB Paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf), [Google Spanner](https://research.google/pubs/pub39966/) |
-| 10 | Design Instagram | Medium | Meta, Snap, ByteDance, Pinterest | SWE, Full-stack, Mobile | [Instagram Engineering](https://instagram-engineering.com/) |
+| 10 | Design Instagram | Medium | Meta, Snap, ByteDance, Pinterest | SWE, Full-stack, Mobile | [Meta Engineering: Instagram](https://engineering.fb.com/tag/instagram/), [Hello Interview](https://www.hellointerview.com/learn/system-design/problem-breakdowns/instagram) |
 | 11 | Design a Payment System | High | Stripe, PayPal, Square, Rippling | SWE, Financial, Security | [Stripe Engineering Blog](https://stripe.com/blog/engineering), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/payment-processing-system-design) |
 | 12 | Design a Search Autocomplete System | Medium | Google, Microsoft, Amazon, LinkedIn | SWE, Search, UX | [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/typeahead-suggestion) |
 | 13 | Design a Recommendation System | High | Netflix, Amazon, Spotify, TikTok | SWE, ML, Data | [Netflix Recommendation](https://netflixtechblog.com/system-architectures-for-personalization-and-recommendation-e081aa94b5d8), [Amazon ML Blog](https://aws.amazon.com/blogs/machine-learning/) |
@@ -29,14 +29,14 @@ This table presents 25 essential system design problems that are frequently aske
 | 15 | Design a Notification Service | Medium | Meta, Slack, Discord, Salesforce | SWE, Mobile, Cloud | [Slack Engineering Blog](https://slack.engineering/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/notification-service-design) |
 | 16 | Design Airbnb or Booking.com | High | Airbnb, Booking, Expedia, Tripadvisor | SWE, Full-stack, Search | [Airbnb Engineering Blog](https://medium.com/airbnb-engineering), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
 | 17 | Design a Content Delivery Network (CDN) | High | Cloudflare, Akamai, Fastly, AWS | SWE, Infrastructure, Network | [Cloudflare Blog](https://blog.cloudflare.com/), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
-| 18 | Design a Distributed Cache | Medium | Redis, Memcached, AWS, Google | SWE, Infrastructure, Cloud | [Redis Architecture](https://redis.io/docs/latest/operate/oss_and_stack/reference/cluster-spec/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/key-value-store) |
-| 19 | Design a Task Scheduler | Medium | Airflow, AWS, Google, Microsoft | SWE, Cloud, Data | [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/index.html), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
-| 20 | Design a Distributed Message Queue | High | Kafka, RabbitMQ, AWS, Google | SWE, Cloud, Infrastructure | [Kafka Architecture](https://kafka.apache.org/documentation/#design), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
+| 18 | Design a Distributed Cache | Medium | Meta, Amazon, Google, Redis | SWE, Infrastructure, Cloud | [Scaling Memcache at Facebook](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala), [Redis Cluster Spec](https://redis.io/docs/latest/operate/oss_and_stack/reference/cluster-spec/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/key-value-store) |
+| 19 | Design a Task Scheduler | Medium | Google, Amazon, OpenAI, Cursor | SWE, Cloud, Data | [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/index.html), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
+| 20 | Design a Distributed Message Queue | High | LinkedIn, Confluent, Amazon, Google | SWE, Cloud, Infrastructure | [Kafka Architecture](https://kafka.apache.org/documentation/#design), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
 | 21 | Design a Distributed Logging System | Medium | Splunk, Elastic, Datadog, New Relic | SWE, DevOps, SRE | [Elastic Blog](https://www.elastic.co/blog/), [Splunk Architecture](https://docs.splunk.com/Documentation/Splunk/latest/Deploy/Distributedoverview) |
-| 22 | Design Google Maps | High | Google, Apple, Uber, Tesla | SWE, Maps, Mobile | [Google Maps Platform Blog](https://cloud.google.com/blog/products/maps-platform), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
-| 23 | Design an AI Large Language Model (LLM) System | High | OpenAI, Google, Microsoft, Anthropic | SWE, ML, AI | [OpenAI System Card](https://openai.com/research/gpt-4-system-card), [LLM Architecture Papers](https://arxiv.org/abs/2303.18223) |
-| 24 | Design a Real-time Collaboration Editor (like Google Docs) | High | Google, Microsoft, Notion, Coda | SWE, Frontend, Real-time | [Google Research](https://research.google/pubs/pub44830/), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
-| 25 | Design a Stock Trading System | High | Robinhood, Intuit, Citadel, JPMorgan | SWE, Financial, Real-time | [Robinhood Engineering Blog](https://robinhood.engineering/), [System Design Interview Vol 1](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF) |
+| 22 | Design Google Maps | High | Google, Apple, Uber, Tesla | SWE, Maps, Mobile | [Google Maps Platform Blog](https://mapsplatform.google.com/resources/blog/), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
+| 23 | Design an AI Large Language Model (LLM) System | High | OpenAI, Google, Microsoft, Anthropic | SWE, ML, AI | [GPT-4 Technical Report](https://arxiv.org/abs/2303.08774), [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223) |
+| 24 | Design a Real-time Collaboration Editor (like Google Docs) | High | Google, Microsoft, Notion, Figma | SWE, Frontend, Real-time | [How Figma's Multiplayer Works](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/), [Hello Interview: Google Docs](https://www.hellointerview.com/learn/system-design/problem-breakdowns/google-docs), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
+| 25 | Design a Stock Trading System | High | Robinhood, Jane Street, Citadel, JPMorgan | SWE, Financial, Real-time | [Hello Interview: Robinhood](https://www.hellointerview.com/learn/system-design/problem-breakdowns/robinhood), [System Design Interview Vol 1](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF) |
 
 ## Latest System Design Questions for 2025-2026
 
@@ -53,7 +53,7 @@ The system design landscape is rapidly evolving with new technologies and archit
 | 7 | Design a Decentralized Social Network | High | Block, Consensys, Discord | Blockchain, Social | Content distribution, moderation, identity management, consensus mechanisms |
 | 8 | Design a Spatial Computing OS | Very High | Apple, Meta, Microsoft, Magic Leap | AR/VR, OS | 3D rendering, gesture recognition, spatial mapping, device limitations |
 | 9 | Design a Low-latency Global ML Inference System | High | OpenAI, Google, Anthropic, Meta | ML Infra, Cloud | Load balancing, model serving, region optimization, model quantization |
-| 10 | Design a Quantum Computing Interface | Very High | IBM, Google, Microsoft, Amazon | Quantum, Cloud | Quantum-classical integration, error correction, abstraction layers |
+| 10 | Design an LLM Inference Batching System (one GPU, up to 100 inputs per batch, synchronous callers) | High | Anthropic | ML Infra, Backend | Request intake and batching window, GPU routing, matching responses back to callers, backpressure, tail latency |
 
 ### AI-Native System Design Questions (New in 2026)
 
@@ -67,10 +67,23 @@ These questions reflect the shift toward AI-native architectures in 2026 intervi
 | 4 | Design an Image Generation Service (Midjourney/DALL-E) | High | OpenAI, Google, Meta | Queue management, GPU scheduling, content safety filtering at scale |
 | 5 | Design a Feature Store for ML Models | High | Netflix, Uber, Airbnb | Batch vs real-time features, training-serving skew, feature versioning |
 | 6 | Design Real-Time Fraud Detection System | High | Stripe, PayPal, Amazon | 50ms latency at 50K TPS, continuous model updates, feature engineering |
-| 7 | Design ML Model Monitoring in Production | Medium | All | Drift detection (data, concept, prediction), automated alerting, degradation response |
+| 7 | Design ML Model Monitoring in Production | Medium | Amazon, Google, Microsoft | Drift detection (data, concept, prediction), automated alerting, degradation response |
 | 8 | Design an Autonomous AI Travel Booking Agent | High | OpenAI, Anthropic, Google | Orchestrator + tool gateway, credential management, rollback, risk-classified actions |
 | 9 | Design a Hospital Voice Assistant | Very High | Google, Amazon, Apple | Multimodal (STT + LLM + TTS), HIPAA compliance, medical-context latency |
 | 10 | Design a Conversational Recommender System | High | Netflix, Amazon, TikTok | Dialogue state tracking + recommendation engines |
+
+### System Design Prompts Reported in H2 2026
+
+Prompts with a named company, interview stage and month from July to September 2026. Three of the six are durable asynchronous job systems (schedulers, worker pools, long-running queries): that pattern now shows up more often than classic consumer products at AI-native companies.
+
+| # | Problem | Company | Stage | When | Source |
+|---|---------|---------|-------|------|--------|
+| 1 | Design a Concurrent Image Processing Service: scale from one worker to many, with leasing and ownership, idempotent output, retries, cancellation and backpressure | Anthropic | Onsite | Jul 2026 | [PracHub](https://prachub.com/interview-questions/design-a-concurrent-image-processing-service) |
+| 2 | Design a CI/CD Job Scheduler: multi-tenant, dependency-aware jobs, fair resource placement, durable state, worker-loss recovery | Cursor | Technical screen | Aug 2026 | [PracHub](https://prachub.com/interview-questions/design-a-ci-cd-job-scheduler) |
+| 3 | Design a Durable Delayed Task Scheduler: accept a task with a future execution time and hand it to workers when due, surviving failures | Decagon | Technical screen | Aug 2026 | [PracHub](https://prachub.com/interview-questions/design-a-durable-delayed-task-scheduler) |
+| 4 | Design a Long-Running Query Service: durable async jobs, status and result polling, resource limits, clear retry, cancel and failure semantics | Perplexity | Onsite | Sep 2026 | [PracHub](https://prachub.com/interview-questions/design-a-long-running-query-service) |
+| 5 | Design a Visa-Style Card Payment Processing System: scope as the card network between banks or as a merchant-side payment service | Databricks | Onsite | Sep 2026 | [PracHub](https://prachub.com/interview-questions/design-a-visa-style-card-payment-processing-system) |
+| 6 | Design an Enterprise AI Research Agent: internal plus web retrieval, synthesis with citations, respects per-user permissions | Cohere | Onsite | Sep 2026 | [PracHub](https://prachub.com/interview-questions/design-an-enterprise-ai-research-agent-with-internal-and-web-retrieval-and-citations) |
 
 ### Emerging System Design Trends in 2025-2026
 
@@ -83,11 +96,11 @@ Several key trends are shaping system design interviews in 2025-2026:
    - Robust handling of AI hallucinations and errors
 
 2. **Multi-Agent and Agentic Architectures (Major 2026 Shift)**
-   - Now a distinct interview category at senior/staff levels (Gartner: 60%+ enterprise AI apps will include agentic components by 2026)
+   - Now a distinct interview category at senior/staff levels (Gartner forecast: 33% of enterprise software applications will include agentic AI by 2028, up from under 1% in 2024)
    - Key components: orchestrator (observe-think-act loop), tool gateway with OpenAPI schemas, memory systems (working/episodic/semantic/procedural), policy/guardrails engine
    - Action risk classification: read-only, reversible-write, irreversible-write, external-communication
    - Tool gateway architecture: standardized schemas, credential management via secrets managers, sandboxed execution, distributed tracing
-   - Model Context Protocol (MCP): Anthropic's open standard (Linux Foundation, co-founded with OpenAI and Block) for LLM-to-tool connections
+   - Model Context Protocol (MCP): open standard for LLM-to-tool connections, created by Anthropic and donated in December 2025 to the Agentic AI Foundation, a Linux Foundation directed fund co-founded by Anthropic, Block and OpenAI
 
 3. **Edge-Cloud Hybrid Systems**
    - Processing sensitive data at the edge
@@ -273,7 +286,7 @@ I regularly share tech interview resources, system design concepts, and career a
 
 ## Trending Coding Patterns for 2026
 
-Beyond system design, coding interviews remain a crucial part of the technical interview process at top tech companies. Here are the most important coding patterns and questions trending in 2025 interviews:
+Beyond system design, coding interviews remain a crucial part of the technical interview process at top tech companies. Here are the most important coding patterns and questions trending in 2026 interviews:
 
 <a name="high-roi-coding-patterns-for-2025"></a>
 
@@ -425,7 +438,7 @@ Implement an algorithm that can schedule optimal maintenance windows for a syste
 - **Blockchain Data Structures**: Understanding merkle trees, cryptographic hashes, and consensus algorithms.
 - **Edge Computing Optimizations**: Algorithms optimized for resource-constrained environments.
 
-By focusing on these patterns and topics, you'll be well-prepared for coding interviews at top tech companies in 2025.
+By focusing on these patterns and topics, you'll be well-prepared for coding interviews at top tech companies in 2026.
 
 ---
 
@@ -451,5 +464,7 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>

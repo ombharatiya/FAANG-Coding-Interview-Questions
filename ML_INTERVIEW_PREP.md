@@ -159,18 +159,27 @@ Most differentiating weight in 2026 AI/ML loops sits here rather than in classic
 
 ## Reinforcement Learning for ML Interviews
 
+Classical RL (Q-learning, DQN, actor-critic) still appears as a warm-up, but in 2026 AI-lab loops the RL questions that carry weight are about LLM post-training: reward models, PPO versus DPO versus GRPO, verifiable rewards and reward hacking. The rows at the bottom of this table cover that.
+
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
 | What is reinforcement learning? | [Answer](https://www.geeksforgeeks.org/what-is-reinforcement-learning/) | Easy |
 | Explain the exploration-exploitation tradeoff. | [Answer](https://medium.com/online-learning-with-reinforcement-learning/understanding-the-exploration-exploitation-trade-off-in-reinforcement-learning-629bf9170f) | Medium |
 | What is the difference between policy-based and value-based RL? | [Answer](https://stats.stackexchange.com/questions/512440/what-is-the-difference-between-value-based-and-policy-based-reinforcement-learni) | Medium |
-| Explain Q-learning. | [Answer](https://towardsdatascience.com/simple-reinforcement-learning-q-learning-fcddc4b6fe56) | Medium |
+| Explain Q-learning. | [Answer](https://huggingface.co/learn/deep-rl-course/unit2/introduction) | Medium |
 | What is Deep Q Network (DQN)? | [Answer](https://medium.com/@jonathan_hui/rl-dqn-deep-q-network-e207751f7ae4) | Hard |
 | Explain Policy Gradient methods. | [Answer](https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html) | Hard |
 | What is Actor-Critic architecture? | [Answer](https://medium.com/deeplearningmadeeasy/advantage-actor-critic-a2c-algorithm-840d3551a0d9) | Hard |
 | What are the challenges in reinforcement learning? | [Answer](https://arxiv.org/abs/1904.12901) | Medium |
 | Explain the difference between on-policy and off-policy learning. | [Answer](https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html) | Medium |
 | What is Proximal Policy Optimization (PPO)? | [Answer](https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-77f014ec3f12) | Hard |
+| How is a reward model trained from pairwise human preferences, and why does over-optimizing against it degrade the policy? | [Scaling Laws for Reward Model Overoptimization](https://arxiv.org/abs/2210.10760), [RLHF Book](https://rlhfbook.com/) | Hard |
+| Walk through PPO-based RLHF for a language model: rollouts, reward, KL penalty against the reference model, value head. Where does it break? | [Illustrating RLHF](https://huggingface.co/blog/rlhf) | Hard |
+| Explain GRPO. Why does it drop PPO's critic, and how is the group-relative advantage computed? | [DeepSeekMath (GRPO)](https://arxiv.org/abs/2402.03300) | Hard |
+| What is RL with verifiable rewards (RLVR), and when does a rule-based verifier beat a learned reward model? | [Tulu 3](https://arxiv.org/abs/2411.15124), [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | Hard |
+| Compare PPO, DPO and GRPO for post-training. What does each need in data, compute and memory? | [RLHF Book](https://rlhfbook.com/) | Hard |
+| What is reward hacking? Give a concrete example from LLM training and a mitigation. | [Reward Hacking in RL](https://lilianweng.github.io/posts/2024-11-28-reward-hacking/) | Medium |
+| Why do RLHF and GRPO keep a KL penalty to the reference policy, and what happens if you remove it? | [RLHF Book](https://rlhfbook.com/) | Medium |
 
 ## MLOps and Model Deployment Interview Topics
 
@@ -228,7 +237,7 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 2. **Technical Phone Screen (45-60 minutes)**:
    - Coding question (data structures & algorithms)
    - Basic ML concepts (10-15 minutes)
-3. **Virtual Onsite (Full Day)**:
+3. **Virtual Onsite (Full Day)**: since Pichai's August 2025 town hall, Google has been adding at least one in-person round back to many loops to curb AI-assisted cheating, so confirm the format with your recruiter
    - 2-3 Coding interviews (LeetCode medium/hard)
    - 1-2 ML Algorithm & Theory rounds
    - ML System Design round
@@ -246,7 +255,7 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 - Coding proficiency and clean implementation
 - System design approach and tradeoff considerations
 - Communication and collaboration skills
-- Googleyness and leadership qualities
+- Googleyness and leadership qualities. Pichai redefined Googleyness at a December 2024 all-hands as six traits: mission first, make helpful things, be bold and responsible, stay scrappy, hustle and have fun, team Google. Behavioral answers are scored against these
 
 ### Meta (formerly Facebook) ML Interview Process
 
@@ -259,7 +268,7 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
    - ML Fundamentals round (theory, algorithms, statistics)
    - Applied ML & Product Sense round (applying ML to Meta products)
    - ML System Design round (end-to-end system)
-   - Coding round (data structures & algorithms)
+   - Coding round (data structures & algorithms). Since October 2025 Meta has been swapping one coding round for a 60-minute AI-enabled CoderPad round on E5 to E7 SWE and M2 loops: a multi-file codebase with failing tests, an embedded model you pick (GPT-5, Claude, Gemini or Llama), scored on problem solving, code quality, verification and communication
    - Behavioral round (using Meta's core values framework)
 
 **Key Focus Areas:**
@@ -293,7 +302,7 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 **Key Focus Areas:**
 - ML theory and practical implementation
 - Coding proficiency in Python
-- Understanding of AWS ML services (SageMaker, etc.)
+- Understanding of AWS ML services (SageMaker, Bedrock)
 - System design for scalable ML solutions
 - Leadership principles alignment
 
@@ -301,7 +310,7 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 - Technical depth in ML algorithms
 - Coding skills and problem-solving approach
 - System design capabilities
-- Leadership principles (Customer Obsession, Ownership, Invent & Simplify, etc.)
+- Leadership principles, 16 in total (Customer Obsession, Ownership, Invent and Simplify, Dive Deep, Have Backbone; Disagree and Commit, etc.). GenAI tools are banned during Amazon interviews unless explicitly permitted, and detected use is disqualifying
 - Communication and stakeholder management
 
 ### Microsoft ML Interview Process
@@ -321,7 +330,7 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 **Key Focus Areas:**
 - Strong foundation in ML algorithms and mathematics
 - Coding proficiency (Python/C#)
-- Familiarity with Azure ML services
+- Familiarity with Azure ML services: Azure Machine Learning and Microsoft Foundry (formerly Azure AI Studio and Azure AI Foundry)
 - System design for ML applications
 - Problem-solving and collaborative approach
 
@@ -335,17 +344,21 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 ### OpenAI ML Interview Process
 
 **Process Overview:**
-1. **Application Review**: Rigorous screening focusing on research background
-2. **Initial Technical Screen**:
-   - ML fundamentals and research understanding
-   - Coding assessment (may be separate)
-3. **Virtual Onsite (Multiple Rounds)**:
-   - Deep Learning Theory round
-   - Research Understanding & Paper Discussion round
+1. **Application Review**: Rigorous screening focusing on research background (publications matter for research roles, shipped systems for engineering roles)
+2. **Recruiter and Hiring Manager Screens**: motivation, mission fit, and a walk through your past projects
+3. **Initial Technical Screen (60 minutes)**:
+   - One coding problem that gets harder in stages (the "gate" format); candidates report needing to clear at least two gates to advance
+   - ML fundamentals and research understanding for research tracks
+4. **Take-Home Work Trial (some tracks)**: a practical engineering project in a 48-hour window, graded on reliability, tests and code quality rather than feature count
+5. **Virtual Onsite (Multiple Rounds)**: 4 to 6 rounds, virtual or in person
+   - Deep Learning Theory / ML depth round
+   - Research Understanding & Paper Discussion round (research roles)
    - ML System Design or Research Design round
    - Coding interview (algorithmic and ML implementation)
-   - Ethics and Alignment round
-   - Team fit and collaboration round
+   - Technical project presentation
+   - Behavioral and values round: mission alignment, safety and ethical judgment are probed here rather than in a standalone ethics interview
+
+Typical end-to-end timeline is 5 to 8 weeks.
 
 **Key Focus Areas:**
 - Deep understanding of ML research literature
@@ -380,9 +393,9 @@ The ML interview process at top tech companies typically spans 1.5-2.5 months an
 
 **Key Focus Areas:**
 - Strong ML theory and implementation skills
-- Experience with Apple's ML frameworks (CoreML, CreateML)
+- Experience with Apple's ML stack: Core ML and Create ML for deployment, MLX for training and inference on Apple silicon, and the Foundation Models framework (WWDC 2025) for calling the on-device Apple Intelligence model
 - On-device ML optimization techniques
-- Privacy-preserving ML approaches
+- Privacy-preserving ML approaches: on-device inference first, Private Cloud Compute when a request needs server-side models
 - Problem-solving in resource-constrained environments
 
 **Evaluation Criteria:**
@@ -495,6 +508,8 @@ Below are actual ML interview questions recently asked at top tech companies, or
 13. **Design an autonomous agent architecture: orchestrator, tool gateway, memory systems, policy engine, state management, observability.** (Anthropic, OpenAI, Google, 2026)
 14. **What is speculative decoding and how does it improve inference throughput?** (Google, Anthropic, 2026)
 15. **Implement beam search, top-k, and top-p decoding algorithms.** (OpenAI, NVIDIA, 2026)
+16. **Explain GRPO and RL with verifiable rewards. Why did reasoning-model training move from learned reward models to rule-based verifiers for math and code, and where does that stop working?** (AI labs, 2026)
+17. **Walk through the RLHF pipeline and name where it usually fails: preference data quality, reward hacking, KL drift, over-refusal after safety training.** (AI labs, 2026)
 
 <a name="mlops-questions-2025-updates"></a>
 
@@ -628,7 +643,7 @@ Major companies are transforming their ML interview process in 2026:
 
 - [Kaggle](https://www.kaggle.com/)
 - [ML subreddit](https://www.reddit.com/r/MachineLearning/)
-- [Papers With Code](https://paperswithcode.com/)
+- [Hugging Face Papers](https://huggingface.co/papers/trending) (Papers With Code was shut down in July 2025 and its domain now redirects here)
 - [AI Alignment Forum](https://www.alignmentforum.org/)
 - [ML Collective](https://mlcollective.org/)
 
@@ -656,5 +671,7 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>

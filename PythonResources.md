@@ -13,6 +13,9 @@
 |2  | [Python Programming Beginners by Corey Schafer](https://youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7) |
 |3  | [Python for Beginners by Mosh](https://youtu.be/_uQrJ0TkZlc) |
 |4  | [Python for Beginners in Hindi by CodeWithHarry](https://www.youtube.com/watch?v=aqvDTCpNRek&list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME) |
+|5  | [Python for Coding Interviews: Everything You Need to Know by NeetCode](https://www.youtube.com/watch?v=0K_eZGS5NsU) : Stdlib tour aimed at LeetCode, not a beginner course |
+|6  | [Learn Python: Full Course for Beginners by freeCodeCamp](https://www.youtube.com/watch?v=rfscVS0vtbw) |
+|7  | [Python Full Course for Free by Bro Code](https://www.youtube.com/watch?v=ix9cRaBkVe0) |
 
 
 2. ### Best GitHub Learning Resources
@@ -24,6 +27,9 @@
 |4  | [WTF Python](https://github.com/satwikkansal/wtfpython): Explains some counter-intuitive snippets and lesser-known features in Python |
 |5  | [Python Basics](https://github.com/learning-zone/python-basics): Python fundamentals and interview questions. The old python-interview-questions repository was renamed to this |
 |6  | [Python reference](https://github.com/rasbt/python_reference): Useful functions, tutorials, and other Python-related things. Last updated 2022 |
+|7  | [The Algorithms: Python](https://github.com/TheAlgorithms/Python): Reference implementations of standard algorithms and data structures, actively maintained. Read one after you solve the problem, not before |
+|8  | [Interactive Coding Challenges](https://github.com/donnemartin/interactive-coding-challenges): 120+ Python interview challenges as Jupyter notebooks, with Anki flashcards. Last updated 2024 |
+|9  | [Python Patterns](https://github.com/faif/python-patterns): Design patterns in idiomatic Python, useful for low-level design rounds |
 
 
 
@@ -31,26 +37,32 @@
 | No. | Course |
 | --- | --------- |
 |1  | [Complete Python Bootcamp](https://www.udemy.com/course/complete-python-bootcamp/)|
-|2  | [Python and Django Full Stack Web Developer Bootcamp](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/) |
+|2  | [Python and Django Full Stack Web Developer Bootcamp](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/): Last updated 2019 |
 |3  | [REST APIs with Flask and Python](https://www.udemy.com/course/rest-api-flask-and-python/) |
 |4  | [Python A-Z™: Python For Data Science With Real Exercises!](https://www.udemy.com/course/python-coding/) |
 |5  | [Python for Finance: Investment Fundamentals & Data Analytics](https://www.udemy.com/course/python-for-finance-investment-fundamentals-data-analytics/) |
-|6  | [Machine Learning A-Z™: Hands-On Python & R In Data Science](https://www.udemy.com/course/machinelearning/) |
+|6  | [Machine Learning A-Z: ML, DL, AI with AWS, Python & R](https://www.udemy.com/course/machinelearning/) |
+|7  | [Python for Data Structures, Algorithms, and Interviews!](https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/): Jose Portilla. Last updated 2022 |
 
 4. ### Python for Coding Interviews
 
 Python is the most common choice in coding interviews because it keeps solutions short. These are the parts that come up most often.
+
+LeetCode runs Python 3.14 as of October 2026 and preinstalls `sortedcontainers`, so 3.10+ syntax such as `match` and `itertools.pairwise` is safe there. Check the runtime on other platforms before relying on newer features.
 
 | Need | Reach for | Note |
 | ---- | --------- | ---- |
 | Counting | `collections.Counter` | `most_common(k)` solves top-K questions directly |
 | Queue or deque | `collections.deque` | O(1) `popleft()`. A plain list is O(n) |
 | Heap | `heapq` | Min-heap only. Push `-x` for a max-heap |
-| Sorted insert | `bisect` | `bisect_left` and `insort` for ordered arrays |
+| Sorted insert | `bisect` | `bisect_left` finds the slot in O(log n). `insort` still shifts the list, so each insert is O(n) |
 | Default values | `collections.defaultdict` | Avoids `KeyError` in graph adjacency lists |
 | Grouping | `itertools.groupby` | Input must already be sorted by the key |
-| Cache | `functools.lru_cache` | One decorator turns recursion into memoised DP |
+| Cache | `functools.cache` or `functools.lru_cache` | One decorator turns recursion into memoised DP. `@cache` (3.9+) is `lru_cache(maxsize=None)` with less typing |
 | Big integers | built-in `int` | No overflow, unlike C++ or Java |
+| Adjacent pairs | `itertools.pairwise` | 3.10+. `pairwise([1, 2, 3])` yields `(1, 2), (2, 3)` |
+| LRU cache question | `collections.OrderedDict` | `move_to_end(key)` and `popitem(last=False)` make LeetCode 146 a few lines |
+| Sorted multiset | `sortedcontainers.SortedList` | Not stdlib, but LeetCode preinstalls it. O(log n) `add`, `remove` and `bisect_left` |
 
 **Idioms interviewers expect to see**
 
@@ -68,6 +80,7 @@ Python is the most common choice in coding interviews because it keeps solutions
 - Shallow copies: `grid = [[0] * n] * m` makes m references to one row. Use a comprehension.
 - Recursion depth: the default limit is 1000, so deep DFS needs an iterative version.
 - Sorting cost: `sorted()` is O(n log n), which can quietly break a required O(n) bound.
+- Membership tests on a list: `x in xs` is O(n) per check. Inside a loop that becomes O(n^2); convert to a set first.
 
 ---
 
@@ -93,6 +106,8 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>
 

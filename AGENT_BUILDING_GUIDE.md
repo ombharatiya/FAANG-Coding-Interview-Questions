@@ -4,6 +4,8 @@
 
 A comprehensive guide to building effective AI agents.
 
+Last reviewed October 2026. Code samples target LangChain 1.4 and LangGraph 1.2 (September 2026 releases) and the MCP specification dated 2026-07-28.
+
 ## Table of Contents
 
 - [What is an AI Agent?](#what-is-an-ai-agent)
@@ -21,7 +23,7 @@ A comprehensive guide to building effective AI agents.
 
 ## What is an AI Agent?
 
-An AI agent is an autonomous or semi-autonomous software system that perceives its environment, makes decisions, and takes actions to achieve specific goals. Modern AI agents typically leverage large language models (LLMs) as their core reasoning engine, combined with the ability to use tools, maintain memory, and follow complex reasoning processes.
+An AI agent is an autonomous or semi-autonomous software system that perceives its environment, makes decisions, and takes actions to achieve specific goals. Modern AI agents typically use large language models (LLMs) as their core reasoning engine, combined with the ability to use tools, maintain memory, and follow complex reasoning processes.
 
 ### Defining Characteristics of AI Agents:
 
@@ -41,8 +43,9 @@ An AI agent is an autonomous or semi-autonomous software system that perceives i
 | 2021 | Early tool augmentation through prompt engineering |
 | 2022 | Introduction of ReAct and similar frameworks for reasoning and action |
 | 2023 | Function-calling capabilities, multi-agent systems emerge |
-| 2024 | Advanced reasoning techniques (ToT, CoT), improved planning capabilities |
-| 2025 | Agent swarms, self-improvement, sophisticated multi-agent collaboration |
+| 2024 | Reasoning models with built-in chain of thought, first computer-use agents, Model Context Protocol (MCP) published in November |
+| 2025 | MCP adopted by Claude, ChatGPT, VS Code and Cursor; LangChain 1.0 on LangGraph; vendor agent SDKs (OpenAI Agents SDK, Google ADK, Claude Agent SDK, Microsoft Agent Framework); open-weight reasoning models (gpt-oss, Qwen3, DeepSeek) |
+| 2026 | 1M-token context windows standard on frontier models, effort and adaptive-thinking controls, MCP 2026-07-28 spec with Tasks, Apps and Skills extensions, hosted agent runtimes (Managed Agents, Foundry Hosted Agents, ADK 2.0) |
 
 ## Key Components of an AI Agent
 
@@ -52,11 +55,13 @@ The foundation of modern AI agents is a powerful language model that enables und
 
 | Model Type | Advantages | Disadvantages | Best For |
 |------------|------------|---------------|----------|
-| OpenAI GPT-4o | High reasoning, broad knowledge | Cost, closed-source | Production-grade agents with complex reasoning |
-| Anthropic Claude 3 | Strong reasoning, longer context | Cost, closed-source | Context-heavy agents, safety-critical applications |
-| Mistral Large | Good balance of capability/cost | Less powerful than top models | Cost-effective production agents |
-| Llama 3 | Open-source, customizable | Requires fine-tuning for best results | Self-hosted solutions, specialized domains |
-| Open-source models (Mixtral, Phi-3) | Free to run locally, customizable | Resource-intensive, less capable | Budget-constrained projects, specialized applications |
+| OpenAI GPT-6 family (gpt-6-astra, gpt-6-sol, gpt-6-luna) | Top-tier reasoning with selectable effort (low to max), large tool ecosystem | Closed weights, cost at high effort | Production agents on the OpenAI platform; gpt-6-luna for high-volume focused tasks |
+| Anthropic Claude (Opus 5.5, Sonnet 5.5, Haiku 4.5; Fable 5.1 for the hardest reasoning) | 1M-token context on Opus, Sonnet and Fable, adaptive thinking, strong long-horizon agentic coding | Closed weights, Haiku capped at 200K context | Long-running coding and knowledge-work agents, context-heavy workloads |
+| Google Gemini 3.x (3.8 Flash stable, 3.1 Pro preview) | Fast Flash tier built for long-horizon software engineering, native multimodal, Live voice variants | Closed weights, Pro tier still in preview | Google Cloud deployments, voice and multimodal agents |
+| Mistral Large 3 / Medium 3.5 | Large 3 ships open weights under Apache 2.0; Medium 3.5 tuned for agentic and coding work | Medium is commercial-only; smaller ecosystem than the three above | European data residency, self-hosted frontier-class open weights |
+| Llama 4 (Scout, Maverick) | Open weights, mixture-of-experts, up to 10M-token context on Scout | Llama community license (not OSI), no newer generation since April 2025 | Self-hosted agents, fine-tuned domain models |
+| DeepSeek V4 (V4-Pro, V4.1-Flash) and Qwen3 | Low API cost, Qwen3 open weights under Apache 2.0, strong reasoning for the price | Hosting region and data-handling review needed for many enterprises | Cost-sensitive agents, local or private deployments |
+| OpenAI gpt-oss (120B, 20B) | Apache 2.0 open weights from OpenAI, 5.1B active parameters on the 120B model | Behind the closed GPT-6 tier on hard reasoning | Local and air-gapped agents that still want OpenAI-style tool calling |
 
 ### 2. Memory Systems
 
@@ -98,6 +103,7 @@ The ability to use external tools dramatically expands an agent's capabilities.
 | Pattern | Description | Implementation |
 |---------|-------------|----------------|
 | Function Calling | Agent selects and calls structured functions | OpenAI function calling, Anthropic tools |
+| MCP (Model Context Protocol) | One open protocol for exposing tools, resources and prompts to any host | MCP servers over stdio or Streamable HTTP; spec 2026-07-28; supported by LangChain, OpenAI Agents SDK, Google ADK, Claude Agent SDK, Pydantic AI |
 | ReAct | Reasoning → Action → Observation cycle | Custom prompt engineering with structured output |
 | Structured Output | Agent generates structured commands | JSON/YAML schema enforcement |
 | Tool Retrieval | Dynamically selecting tools from a large library | Vector search on tool descriptions |
@@ -117,6 +123,55 @@ Reasoning enables agents to break down complex problems and follow logical thoug
 | Retrieval-Augmented Generation (RAG) | Enriching reasoning with retrieved information | Knowledge-intensive tasks |
 | Verification | Validating conclusions with additional checks | Critical or high-stakes decisions |
 | Decomposition | Breaking complex tasks into subtasks | Multi-step, complex problems |
+
+### 5. Model Context Protocol (MCP)
+
+MCP is an open standard for connecting an agent to external tools and data. It was published in November 2024 and is now stewarded as an LF Projects series under the Apache 2.0 license. It replaces per-framework tool adapters with one JSON-RPC 2.0 protocol: the host application runs one client per connection, and each server advertises what it offers.
+
+| Concept | Role |
+|---------|------|
+| Host | The LLM application (Claude, ChatGPT, VS Code, Cursor, your own agent) that opens connections |
+| Client | A connector inside the host, one per server |
+| Server | A process or service that exposes tools, resources and prompts |
+| Tools | Functions the model may call |
+| Resources | Data the model or user can read (files, rows, documents) |
+| Prompts | Templated workflows the user can trigger |
+| Elicitation | A server asks the user for more input through the client |
+| Transports | stdio for local servers, Streamable HTTP for remote servers |
+
+Current specification: 2026-07-28. Optional extensions, negotiated at initialization, include Tasks (long-running asynchronous work with durable handles), MCP Apps (inline UI such as charts and forms) and Skills over MCP (structured agent instructions). The spec requires hosts to obtain user consent before invoking a tool and says tool descriptions from untrusted servers must be treated as untrusted input.
+
+| Framework | MCP support |
+|-----------|-------------|
+| LangChain 1.4+ | `pip install "langchain[mcp]"`, `MCPAdapter` returns tools for `create_agent` |
+| OpenAI Agents SDK | MCP servers as tool sources alongside function and hosted tools |
+| Google ADK | MCP tools plus the A2A protocol for agent-to-agent calls |
+| Claude Agent SDK | MCP servers configured per session, same mechanism as Claude Code |
+| Pydantic AI | Built-in MCP capability |
+| Haystack | Pipelines and agents exposed as MCP servers through Hayhooks |
+
+Example (LangChain 1.4, Python 3.10+):
+
+```python
+# Requires: pip install "langchain[mcp]>=1.4.0" langchain-anthropic
+import asyncio
+from langchain.agents import create_agent
+from langchain.mcp import MCPAdapter
+
+
+async def main() -> str:
+    # Transport is inferred: an https URL uses Streamable HTTP, a script path uses stdio.
+    async with MCPAdapter("https://example.com/mcp") as adapter:
+        tools = await adapter.list_tools()
+        agent = create_agent("anthropic:claude-sonnet-5-5", tools)
+        result = await agent.ainvoke(
+            {"messages": [{"role": "user", "content": "List the open issues assigned to me."}]}
+        )
+        return result["messages"][-1].content
+
+
+print(asyncio.run(main()))
+```
 
 ## Agent Architectures
 
@@ -143,15 +198,19 @@ Reasoning enables agents to break down complex problems and follow logical thoug
 
 | Framework | Company | License | Key Features | Best For |
 |-----------|---------|---------|--------------|----------|
-| LangChain | LangChain | MIT | Comprehensive tooling, many integrations | Rapid prototyping, wide range of use cases |
-| AutoGPT | Significant Gravitas | MIT | Autonomous goal-pursuing agents | Self-directed task completion |
-| CrewAI | CrewAI | MIT | Multi-agent collaboration | Complex workflows requiring multiple experts |
-| LlamaIndex | LlamaIndex | MIT | Data connection, retrieval focus | Knowledge-intensive applications |
-| Microsoft Semantic Kernel | Microsoft | MIT | Structured planning, .NET/Python support | Enterprise integration, Microsoft ecosystem |
-| Haystack | deepset | Apache 2.0 | Modular pipelines, strong RAG | Search and retrieval applications |
-| Langroid | Langroid | MIT | Multi-agent communication framework | Collaborative agent applications |
-| Fixie | Fixie.ai | Commercial | Agent-as-a-service platform | Quick deployment without infrastructure |
-| Vercel AI SDK | Vercel | MIT | Frontend integration focused | Web applications with AI components |
+| LangChain / LangGraph (1.4 / 1.2) | LangChain | MIT | `create_agent` built on LangGraph, checkpointers for durable state, MCP via `langchain[mcp]`, widest integration catalog | General-purpose and stateful agents in Python or JS |
+| OpenAI Agents SDK | OpenAI | MIT | Agents, handoffs, guardrails, sessions, tracing, MCP; works with 100+ non-OpenAI models | Python or TypeScript agents that start on OpenAI models |
+| Google ADK 2.0 | Google | Apache 2.0 | Python, TypeScript, Go, Java and Kotlin; graph workflows; MCP and A2A; model-agnostic | Multi-agent systems, Gemini-first teams, Google Cloud deployment |
+| Claude Agent SDK | Anthropic | Commercial terms | Claude Code's loop as a library: file and shell tools, subagents, hooks, permissions, sessions, MCP | Coding and operations agents running on Claude |
+| Microsoft Agent Framework 1.0 | Microsoft | MIT | Successor to Semantic Kernel and AutoGen; Python, .NET and Go; sequential, concurrent, handoff and group workflows | Enterprise and Azure AI Foundry workloads |
+| CrewAI | CrewAI | MIT | Crews (role-based teams) and Flows (event-driven control); standalone, no LangChain dependency | Role-based multi-agent teams |
+| LlamaIndex | LlamaIndex | MIT | FunctionAgent, AgentWorkflow, deep retrieval and indexing stack | Knowledge-intensive, RAG-heavy agents |
+| Pydantic AI | Pydantic | MIT | Type-checked tools and outputs, provider swapped with a string, MCP | Python teams that want typed contracts around model calls |
+| Haystack 2.x | deepset | Apache 2.0 | Pipelines plus Agent component, Hayhooks serves agents as REST or MCP | Search and retrieval products |
+| smolagents | Hugging Face | Apache 2.0 | CodeAgent writes Python as its actions, about 1,000 lines of core code, any model via LiteLLM | Small, inspectable agents on open models |
+| Vercel AI SDK | Vercel | Apache 2.0 | TypeScript, ToolLoopAgent, streaming UI hooks, MCP tools | Web applications with agent features |
+
+Not recommended for new projects: AutoGen (maintenance mode, community-managed, points to Microsoft Agent Framework), Semantic Kernel (superseded by Microsoft Agent Framework, migration guide available), the classic AutoGPT agent (frozen under `classic/`; the current AutoGPT platform is a Polyform Shield licensed low-code product, not a library) and Fixie (shut down; the company became Ultravox, a voice platform).
 
 ## Building an AI Agent: Step-by-Step
 
@@ -197,8 +256,8 @@ touch .env
 Example `.env` file:
 ```
 OPENAI_API_KEY=sk-...
+ANTHROPIC_API_KEY=sk-ant-...   # only if you use anthropic:* model strings
 PINECONE_API_KEY=...
-PINECONE_ENVIRONMENT=...
 ```
 
 ### 4. Implement Core Components
@@ -318,10 +377,10 @@ if prompt := st.chat_input("What can I help you with?"):
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             response = run_agent(prompt)
-            st.markdown(response["output"])
+            st.markdown(response)
     
     # Add assistant response to chat history
-    st.session_state.messages.append({"role": "assistant", "content": response["output"]})
+    st.session_state.messages.append({"role": "assistant", "content": response})
 ```
 
 ### 6. Testing and Iteration
@@ -336,7 +395,7 @@ Test your agent continuously and refine based on feedback:
 
 ## Use Cases and Applications
 
-AI agents can be applied across various domains. Here are some of the most impactful applications in 2025:
+AI agents can be applied across various domains. Here are some of the most impactful applications as of late 2026:
 
 ### 1. Personal Productivity
 
@@ -396,19 +455,20 @@ Complex tasks require breaking down problems into manageable steps:
 Example implementation (LangChain):
 
 ```python
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
+# LangChain 1.x: no chain class is needed, call the chat model directly.
+from langchain.chat_models import init_chat_model
 
-planner_prompt = PromptTemplate.from_template("""
-You are a planning agent. Given a complex task, break it down into a sequence of steps.
+llm = init_chat_model("openai:gpt-6-sol", temperature=0)
+
+PLANNER_PROMPT = """You are a planning agent. Given a complex task, break it down into a sequence of steps.
 
 Task: {task}
 
 Steps (be specific and detailed):
-""")
+"""
 
-planner = LLMChain(llm=llm, prompt=planner_prompt)
-plan = planner.invoke({"task": "Research and write a 10-page report on renewable energy trends"})
+plan = llm.invoke(PLANNER_PROMPT.format(task="Research and write a 10-page report on renewable energy trends"))
+print(plan.content)
 ```
 
 ### 2. Reflection and Self-Improvement
@@ -427,7 +487,7 @@ Example implementation:
 ```python
 def generate_with_reflection(query):
     # First draft
-    initial_response = llm.invoke(f"Query: {query}\nResponse:")
+    initial_response = llm.invoke(f"Query: {query}\nResponse:").content
     
     # Self-critique
     critique = llm.invoke(f"""
@@ -435,7 +495,7 @@ def generate_with_reflection(query):
     Query: {query}
     Response: {initial_response}
     Critique:
-    """)
+    """).content
     
     # Improved response
     final_response = llm.invoke(f"""
@@ -443,7 +503,7 @@ def generate_with_reflection(query):
     Initial Response: {initial_response}
     Critique: {critique}
     Improved Response:
-    """)
+    """).content
     
     return final_response
 ```
@@ -463,7 +523,11 @@ Techniques for effective agent collaboration:
 Example implementation (CrewAI):
 
 ```python
+# CrewAI is a standalone framework (MIT, no LangChain dependency).
+# llm accepts a model-name string or a crewai.LLM object.
 from crewai import Crew, Agent, Task
+
+llm = "gpt-6-sol"
 
 # Define specialized agents
 researcher = Agent(
@@ -548,18 +612,23 @@ result = crew.kickoff()
 Example evaluation script:
 
 ```python
+import time
+
+
 def evaluate_agent(agent, test_cases):
     results = []
     
     for test_case in test_cases:
         # Run the agent
         start_time = time.time()
-        response = agent.run(test_case["input"])
+        result = agent.invoke({"messages": [{"role": "user", "content": test_case["input"]}]})
+        final_message = result["messages"][-1]
+        response = final_message.content
         execution_time = time.time() - start_time
         
         # Evaluate results
         success = test_case["validator"](response)
-        token_count = count_tokens(response)
+        token_count = (final_message.usage_metadata or {}).get("total_tokens", 0)
         
         results.append({
             "test_case": test_case["name"],
@@ -590,6 +659,7 @@ def evaluate_agent(agent, test_cases):
 |----------------|-------------|----------|
 | Cloud Providers | AWS, GCP, Azure | Production systems with scaling needs |
 | Specialized AI Platforms | OpenAI Platform, Anthropic Claude API | Quick deployment with managed infrastructure |
+| Hosted Agent Runtimes | Anthropic Managed Agents, Azure AI Foundry Hosted Agents | Vendor runs the agent loop and sandbox; you ship prompts, tools and MCP servers |
 | Self-hosted | Local servers, on-premise | Privacy-sensitive applications, offline usage |
 | Edge Deployment | Running on local devices | Low-latency applications, privacy-focused use cases |
 | Hybrid | Combination of cloud and edge | Applications needing both power and privacy |
@@ -619,6 +689,7 @@ Example monitoring setup:
 
 ```python
 import logging
+import time
 from prometheus_client import Counter, Histogram
 
 # Set up logging
@@ -636,10 +707,10 @@ def monitored_agent_run(query):
         start_time = time.time()
         
         # Track API call
-        api_calls.labels(model="gpt-4o", endpoint="completion").inc()
+        api_calls.labels(model="gpt-6-sol", endpoint="responses").inc()
         
         # Run agent
-        response = agent_executor.invoke({"input": query, "chat_history": []})
+        response = run_agent(query)
         
         # Record response time
         duration = time.time() - start_time
@@ -657,7 +728,7 @@ def monitored_agent_run(query):
         logger.error(f"Error processing query: {str(e)}")
         
         # Return error message
-        return {"output": "I encountered an error. Please try again later."}
+        return "I encountered an error. Please try again later."
 ```
 
 ## Security and Safety
@@ -667,6 +738,7 @@ def monitored_agent_run(query):
 | Risk | Description | Mitigation |
 |------|-------------|------------|
 | Prompt Injection | Manipulating agent behavior via crafted inputs | Input validation, prompt structure, jailbreak detection |
+| Tool Poisoning | A malicious MCP server or tool smuggles instructions through tool descriptions or results | Treat tool metadata and outputs as untrusted, pin an allowlist of servers, require user consent before risky tool calls |
 | Data Leakage | Exposing sensitive information | Data minimization, redaction, access controls |
 | Denial of Service | Overwhelming the system with requests | Rate limiting, resource quotas, anomaly detection |
 | Supply Chain Attacks | Compromising dependencies | Dependency scanning, trusted sources, secure updates |
@@ -734,7 +806,7 @@ def process_user_query(user_id, query):
     }
     
     # Process with minimal data
-    response = agent_executor.invoke({"input": query})
+    response = run_agent(query)
     
     return response
 ```
@@ -745,11 +817,11 @@ def process_user_query(user_id, query):
 
 | Capability | Description | Timeline |
 |------------|-------------|----------|
-| Self-Improvement | Agents that improve their own capabilities | Early implementations in 2025, mainstream by 2026 |
-| Meta-Learning | Agents that learn how to learn more effectively | Research systems in 2025, commercial by 2027 |
-| Multimodal Integration | Seamless handling of text, images, audio, video | Advanced implementations in 2025, standard by 2026 |
-| Collective Intelligence | Swarms of agents with emergent capabilities | Specialized applications in 2025, general use by 2027 |
-| Embodied Agents | Integration with robots and physical systems | Industry-specific in 2025, consumer applications by 2027 |
+| Self-Improvement | Agents that revise their own prompts, tools and skills from run outcomes | Skills and memory files are standard in 2026; closed-loop self-tuning is still research and limited production |
+| Meta-Learning | Agents that learn how to learn more effectively | Research systems in 2026; no commercial products yet |
+| Multimodal Integration | Text, image, audio and video in one agent loop | Image input is standard on every frontier model in 2026; live voice (Gemini Live, GPT-Realtime) is in production; video understanding is still preview-grade |
+| Collective Intelligence | Many agents coordinating over open protocols (MCP for tools, A2A for agent-to-agent) | Multi-agent orchestration frameworks shipped in 2025; cross-vendor agent networks are early in 2026 |
+| Embodied Agents | Integration with robots and physical systems | Industry pilots in 2026; consumer products not expected before 2028 |
 
 ### 2. Research Frontiers
 
@@ -765,11 +837,11 @@ def process_user_query(user_id, query):
 
 | Year | Predicted Developments |
 |------|------------------------|
-| 2025 | Agent marketplaces, specialized vertical agents becoming standard, multi-agent systems in enterprise |
-| 2026 | Native OS integration, agent APIs become standard, personalized agent assistants with strong user models |
+| 2025 (observed) | MCP adopted by Claude, ChatGPT, VS Code and Cursor; every major lab shipped an agent SDK; AutoGen and Semantic Kernel folded into Microsoft Agent Framework; coding agents became the first mass-market agent category |
+| 2026 (observed so far) | 1M-token context windows and effort controls on frontier models; MCP 2026-07-28 with Tasks, Apps and Skills extensions; hosted agent runtimes from Anthropic, Microsoft and Google; A2A for agent-to-agent calls |
 | 2027 | Household agent hubs, enhanced sensory integration, collaborative swarms solving complex problems |
 | 2028 | General-purpose agents managing business operations, agent-to-agent economies, strong personalization |
-| 2030 | Agent operating systems, seamless multimodal interaction, agents as primary computing interface |
+| 2030 | Agent operating systems, multimodal interaction by default, agents as the primary computing interface |
 
 ## Learning Resources
 
@@ -782,7 +854,7 @@ def process_user_query(user_id, query):
 | "Multi-Agent Systems: Theory and Applications" | MIT Press (2023) | Academic foundations |
 | "ReAct: Synergizing Reasoning and Acting in Language Models" | Yao et al. (2022) | Foundational agent technique |
 | "LLM Powered Autonomous Agents" | Lilian Weng (2023) | Survey of agent techniques |
-| "Language Models as Agent Models" | Kosoy et al. (2023) | Theoretical foundations |
+| "Language Models as Agent Models" | Jacob Andreas (2022) | Theoretical foundations |
 
 ### 2. Online Courses and Tutorials
 
@@ -799,12 +871,15 @@ def process_user_query(user_id, query):
 
 | Resource | Link | Description |
 |----------|------|-------------|
-| LangChain Documentation | [LangChain](https://docs.langchain.com/) | Comprehensive agent development framework |
+| LangChain Documentation | [LangChain](https://docs.langchain.com/) | create_agent, LangGraph, checkpointers, MCP adapter |
+| Model Context Protocol | [MCP](https://modelcontextprotocol.io/) | Specification, SDKs, server and client guides |
+| OpenAI Agents SDK | [openai-agents](https://openai.github.io/openai-agents-python/) | Agents, handoffs, guardrails, sessions |
+| Google ADK | [adk.dev](https://adk.dev/) | Multi-language agent framework with MCP and A2A |
+| Claude Agent SDK | [Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) | Claude Code's agent loop as a Python or TypeScript library |
+| Microsoft Agent Framework | [agent-framework](https://github.com/microsoft/agent-framework) | Successor to Semantic Kernel and AutoGen |
 | CrewAI | [CrewAI](https://github.com/crewAIInc/crewAI) | Multi-agent collaboration framework |
-| AutoGPT | [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Autonomous agent framework |
 | LlamaIndex | [LlamaIndex](https://www.llamaindex.ai/) | Data framework for LLM applications |
-| Microsoft Semantic Kernel | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | Orchestration framework for AI agents |
-| AgentVerse | [AgentVerse](https://github.com/OpenBMB/AgentVerse) | Research framework for multi-agent systems |
+| Pydantic AI | [Pydantic AI](https://pydantic.dev/docs/ai/overview/) | Type-safe agent framework for Python |
 
 ### 4. Communities and Forums
 
@@ -841,6 +916,8 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>
 

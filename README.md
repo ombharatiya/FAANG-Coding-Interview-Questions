@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 44 companies: FAANG, frontier AI labs, and AI-first startups.</p>
+  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 44 companies: FAANG, frontier AI labs, and AI-first startups. Last updated October 2026.</p>
 
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
     <img src="https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=flat" alt="GitHub stars" />
@@ -37,10 +37,14 @@
 **AI & Machine Learning**
 - [LLM Papers Cheatsheet - Essential Research Papers](./LLM_PAPERS_CHEATSHEET.md)
 - [Complete ML Interview Preparation Guide](./ML_INTERVIEW_PREP.md)
+- [LLM and Generative AI Interview Questions](./ML_INTERVIEW_PREP.md#llm-and-generative-ai-interview-questions)
 - [Guide to Building AI Agents](./AGENT_BUILDING_GUIDE.md)
 
 **Programming Resources**
 - [Python Resources](./PythonResources.md)
+
+**1:1 Help**
+- [Mock Interviews and Mentorship](#mock-interviews-and-mentorship)
 
 ## What Changed in 2026
 
@@ -48,7 +52,7 @@ The interview format shifted more this past year than in the previous five. The 
 
 - **Meta** rolled out an AI-enabled coding round (3-panel CoderPad), now reaching SWE and EM roles up through E7/M2. **Google** is piloting an AI-assisted code-comprehension round with Gemini, while simultaneously bringing back an in-person round to curb cheating. **LinkedIn** made its AI-enabled round standard. **DoorDash** publicly rebuilt its interviews around AI.
 - **OpenAI** added an agentic coding round in beta, the only *live* round where AI is allowed (the take-home also permits it for Applied AI roles). **Anthropic** runs a split policy (AI permitted on the take-home, banned in live rounds) and has redesigned that take-home three times because Claude kept beating it. **Sierra** dropped algorithm interviews entirely.
-- **ByteDance** and **Palantir** explicitly ban AI use. **Amazon** and **Apple** report no AI round at all.
+- **ByteDance** and **Palantir** explicitly ban AI use. **Apple** reports no AI round at all. **Amazon** is mixed: some 2026 OAs replace one coding question with a 60-minute AI-assisted repository-debugging task (VS Code-like environment, Spring Boot or MERN app, failing tests, built-in assistant), while other candidates in the same season still get two traditional questions.
 - **Work trials are the AI-startup norm**: Cursor runs paid 8-9 hour onsite projects; OpenAI's take-home is a paid (~$1,000) work trial.
 - **Netflix** introduced formal engineering levels (E1-E7). The same answer is now scored against your target level.
 
@@ -108,6 +112,7 @@ Full breakdown in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#the-si
 | 18. | [Glean](./AI-Companies-Interview-Questions.md#glean) | 2-hour on-the-spot build assignment |
 | 19. | [Runway](./AI-Companies-Interview-Questions.md#runway) | Craft deep-dive; GPU pipeline design |
 | 20. | [Snowflake](./AI-Companies-Interview-Questions.md#snowflake-aidata) | Data-processing twists; Cortex/AI platform design |
+| 21. | [Safe Superintelligence & Thinking Machines Lab](./AI-Companies-Interview-Questions.md#safe-superintelligence--thinking-machines-lab) | No verified question bank; network-driven hiring (what is known) |
 
 ## Quick Start Guide
 
@@ -121,6 +126,8 @@ Full breakdown in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#the-si
 - Focus on [Recent FAANG/MAANG Questions](./FAANG-Recent-Questions.md)
 - Start [System Design](./SYSTEM_DESIGN_INTERVIEW.md) preparation
 
+**Not sure which track you are on?** A single [mock interview](#mock-interviews-and-mentorship) tells you faster than another week of reading.
+
 **Advanced Track** (Targeting specific roles)
 - Review company-specific sections below
 - Practice [ML Interview Questions](./ML_INTERVIEW_PREP.md) for ML roles
@@ -131,6 +138,15 @@ Full breakdown in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#the-si
 - Practice implementing attention, tokenizers, and sampling **from scratch**: no libraries
 - Prepare for debugging rounds (broken Transformers, planted bugs) and progressive multi-level problems
 - Expect concurrency follow-ups on ordinary problems, and values/mission rounds that are real gates
+
+## Mock Interviews and Mentorship
+
+Reading questions gets you to the door. Doing them under time pressure, with someone watching, gets you through it. If you want a mock interview, a prep plan built around one company's loop, or a second opinion on where you stand, you can book time with the maintainer of this repo:
+
+- [Engine Bogie](https://enginebogie.com/u/om): book a mock interview
+- [Topmate](https://topmate.io/ombharatiya): book a 1:1 mentorship or consultancy session
+
+Sessions cover FAANG, AI lab and startup loops, including the AI-assisted rounds described in this guide.
 
 ## FAANG Must Do Problems
 
@@ -295,7 +311,7 @@ Full breakdown in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#the-si
 <details>
 <summary>View 45 Problems (2025-2026 Most Frequent)</summary>
 
-**2026 changes**: HackerRank OA = 2 coding problems (~70 min) + Work Simulation (~20 min) + Work Style Assessment; the SDE II OA adds a 20-min System Design scenario. ~75-80% of OA problems are Medium, wrapped in Amazon-themed framing (servers, warehouses, parcels). Onsite is ~50/50 coding vs Leadership Principles in every round, plus Bar Raiser. Rising: Dijkstra/weighted-shortest-path problems. **No AI-assisted round**: Amazon rotates custom OA sets aggressively instead, so pattern prep beats memorization.
+**2026 changes**: HackerRank OA = 2 coding problems (~70 min) + Work Simulation (~20 min) + Work Style Assessment; the SDE II OA adds a 20-min System Design scenario. ~75-80% of OA problems are Medium, wrapped in Amazon-themed framing (servers, warehouses, parcels). Onsite is ~50/50 coding vs Leadership Principles in every round, plus Bar Raiser. Rising: Dijkstra/weighted-shortest-path problems. **AI-assisted OA section, mixed reports**: since mid-2026 some OAs swap the second coding question for a ~60-min repository-debugging task in a VS Code-like environment (pick a backend stack such as Spring Boot or MERN, make failing tests pass, a built-in assistant is provided; external tools are not). Other candidates in the same cycle still get two traditional questions. Amazon also rotates custom OA sets aggressively, so pattern prep beats memorization.
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
@@ -547,20 +563,20 @@ OpenAI interviews focus on practical engineering over LeetCode puzzles. Problems
 
 | No. | Problem | Difficulty | Category | Context |
 | --- | ------- | ---------- | -------- | ------- |
-| 7 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design | Inference KV cache -- most frequently reported |
-| 8 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | Design / Binary Search | Model checkpoint storage |
-| 9 | [Snapshot Array](https://leetcode.com/problems/snapshot-array) | Medium | Design / Binary Search | Model state checkpointing |
-| 10 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard | Graph / Topological Sort | Tokenizer ordering |
-| 11 | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded) | Medium | Concurrency / BFS | Training data crawling |
-| 12 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | Hard | Design | Advanced caching |
-| 13 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | Stack / Strings | String processing |
-| 14 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard | BFS / Graphs | NLP transformations |
-| 15 | [Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator) | Medium | Design / Simulation | GPU memory management |
-| 16 | [Game of Life](https://leetcode.com/problems/game-of-life) | Medium | Simulation / Matrix | Extended to infinite board |
-| 17 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | Medium | Intervals / Heap | Interval scheduling |
-| 18 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Trees / Design | Data persistence |
-| 19 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | Heap / Hash | ML preprocessing |
-| 20 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort | Dependency resolution |
+| 1 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | Design | Inference KV cache -- most frequently reported |
+| 2 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | Medium | Design / Binary Search | Model checkpoint storage |
+| 3 | [Snapshot Array](https://leetcode.com/problems/snapshot-array) | Medium | Design / Binary Search | Model state checkpointing |
+| 4 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | Hard | Graph / Topological Sort | Tokenizer ordering |
+| 5 | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded) | Medium | Concurrency / BFS | Training data crawling |
+| 6 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | Hard | Design | Advanced caching |
+| 7 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | Stack / Strings | String processing |
+| 8 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard | BFS / Graphs | NLP transformations |
+| 9 | [Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator) | Medium | Design / Simulation | GPU memory management |
+| 10 | [Game of Life](https://leetcode.com/problems/game-of-life) | Medium | Simulation / Matrix | Extended to infinite board |
+| 11 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | Medium | Intervals / Heap | Interval scheduling |
+| 12 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | Trees / Design | Data persistence |
+| 13 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | Heap / Hash | ML preprocessing |
+| 14 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | Graph / Topological Sort | Dependency resolution |
 
 </details>
 
@@ -993,13 +1009,13 @@ Greedy and string manipulation are heavily tested (Reorganize String is most-ask
 
 ## About This Repository
 
-This repository covers **1,470+ problem listings across 44 companies** (365 unique LeetCode problems, plus 100+ company-specific custom problems that never appear on LeetCode), organized by company and topic, spanning FAANG/MAANG+, frontier AI labs (OpenAI, Anthropic, DeepMind, xAI, Mistral), and AI-first companies (Perplexity, Scale AI, Cursor, Cohere, Waymo, Sierra, Glean). Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
+This repository covers **1,530+ problem listings across 44 companies** (381 unique LeetCode problems, plus 100+ company-specific custom problems that never appear on LeetCode), organized by company and topic, spanning FAANG/MAANG+, frontier AI labs (OpenAI, Anthropic, DeepMind, xAI, Mistral), and AI-first companies (Perplexity, Scale AI, Cursor, Cohere, Waymo, Sierra, Glean). Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
 
 Every LeetCode link is validated against LeetCode's live problem list.
 
 **[Latest FAANG/MAANG+ Questions](FAANG-Recent-Questions.md)** - Company-by-company breakdown with 2026 process changes and custom (non-LeetCode) problem banks.
 
-**[AI Labs & AI Companies Guide](AI-Companies-Interview-Questions.md)** - 20 AI labs and AI-first companies: interview processes, custom problems, ML coding, and system design.
+**[AI Labs & AI Companies Guide](AI-Companies-Interview-Questions.md)** - 22 AI labs and AI-first companies: interview processes, custom problems, ML coding, and system design.
 
 **[Complete System Design Interview Guide](SYSTEM_DESIGN_INTERVIEW.md)** - 25 system design problems with complexity ratings and company tags.
 
@@ -1031,6 +1047,8 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![GitHub](https://img.shields.io/badge/GitHub-@ombharatiya-181717?style=flat-square&logo=github)](https://github.com/ombharatiya)
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
+
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>
 
