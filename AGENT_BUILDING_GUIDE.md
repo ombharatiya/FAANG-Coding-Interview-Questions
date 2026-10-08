@@ -917,7 +917,7 @@ The engineers who land FAANG offers aren't the ones who *find* a resource. They'
 [![Twitter](https://img.shields.io/badge/Twitter-@ombharatiya-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/ombharatiya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ombharatiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/ombharatiya)
 
-**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/om) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
+**Preparing for a loop right now?** Book a mock interview or a 1:1 mentorship session with the maintainer: [Engine Bogie](https://enginebogie.com/u/ombharatiya) for mock interviews, [Topmate](https://topmate.io/ombharatiya) for mentorship and consultancy.
 
 </div>
 
