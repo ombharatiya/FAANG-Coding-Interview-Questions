@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 44 companies: FAANG, frontier AI labs, and AI-first startups. Last updated October 2026.</p>
+  <p><strong>A curated collection of coding, system design, and ML interview questions from top tech companies.</strong><br/>Continuously updated with 2025-2026 interview questions across 44 companies: FAANG, frontier AI labs, and AI-first startups. Last updated November 2026.</p>
 
   <a href="https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/stargazers">
     <img src="https://img.shields.io/github/stars/ombharatiya/FAANG-Coding-Interview-Questions?style=flat" alt="GitHub stars" />
@@ -51,7 +51,7 @@
 The interview format shifted more this past year than in the previous five. The headline: **AI-assisted rounds went mainstream**, and where AI is allowed the rubric moved to *verification*: test before you trust the output, and be able to explain it.
 
 - **Meta** rolled out an AI-enabled coding round (3-panel CoderPad), now reaching SWE and EM roles up through E7/M2. **Google** is piloting an AI-assisted code-comprehension round with Gemini, while simultaneously bringing back an in-person round to curb cheating. **LinkedIn** made its AI-enabled round standard. **DoorDash** publicly rebuilt its interviews around AI.
-- **OpenAI** added an agentic coding round in beta, the only *live* round where AI is allowed (the take-home also permits it for Applied AI roles). **Anthropic** runs a split policy (AI permitted on the take-home, banned in live rounds) and has redesigned that take-home three times because Claude kept beating it. **Sierra** dropped algorithm interviews entirely.
+- **OpenAI** added an agentic coding round in beta, the only *live* round where AI is allowed (the take-home also permits it for Applied AI roles). **Anthropic** runs a split policy (AI permitted on the take-home, banned in most live rounds, though some 2026 onsites now include a pull-request review round with Claude Code allowed) and has redesigned that take-home three times because Claude kept beating it. **Sierra** dropped algorithm interviews entirely.
 - **ByteDance** and **Palantir** explicitly ban AI use. **Apple** reports no AI round at all. **Amazon** is mixed: some 2026 OAs replace one coding question with a 60-minute AI-assisted repository-debugging task (VS Code-like environment, Spring Boot or MERN app, failing tests, built-in assistant), while other candidates in the same season still get two traditional questions.
 - **Work trials are the AI-startup norm**: Cursor runs paid 8-9 hour onsite projects; OpenAI's take-home is a paid (~$1,000) work trial.
 - **Netflix** introduced formal engineering levels (E1-E7). The same answer is now scored against your target level.
@@ -587,7 +587,7 @@ OpenAI interviews focus on practical engineering over LeetCode puzzles. Problems
 
 Anthropic uses a CodeSignal OA followed by a 4-6 hour onsite with 4-6 rounds. Python expected. Problems are drawn from a bank of ~6 core custom challenges with progressive difficulty layers, and **recruiters tell you which prompt family you'll get days beforehand**.
 
-**Split AI policy**: AI tools are strictly prohibited in all live interviews (candidates have been dropped for using them), but **explicitly permitted on the performance take-home**. Google/Stack Overflow are allowed in live coding.
+**Split AI policy**: AI tools are prohibited in most live interviews (candidates have been dropped for using them), but **explicitly permitted on the performance take-home**. Since mid-2026 some onsites include a round where you review four pull requests with Claude Code available, then improve one. Google/Stack Overflow are allowed in live coding.
 
 **The performance take-home has been redesigned three times because Claude kept beating it** (Anthropic engineering blog + TechCrunch, Jan 2026): V1 (2024) was a 4-hour simulated-accelerator optimization; V2 (mid-2025) was cut to 2 hours after Claude Opus 4 outperformed most humans; V3 (late 2025) is a Zachtronics-puzzle-style constrained instruction set where you minimize instruction count with **no built-in debugging tools, building your own tooling is part of the test**. The original is open-sourced at [anthropics/original_performance_takehome](https://github.com/anthropics/original_performance_takehome).
 
@@ -997,11 +997,22 @@ Greedy and string manipulation are heavily tested (Reorganize String is most-ask
 ## Flipkart
 
 <details>
-<summary>View Problems</summary>
+<summary>View 6 Problems + Machine Coding Round (2026)</summary>
+
+Flipkart's loop is built around a **machine coding round**: about 90 minutes to build a fully working solution to a real-world problem on your own IDE with a shared screen, then a 30-45 minute demo and review in which the interviewer often asks for a new feature on the spot. A working simple design scores better than a half-finished elaborate one, so keep it extensible from the start (interfaces, a service layer, Strategy or Observer where they fit). The usual loop is an online assessment (90-120 min on HackerRank or HackerEarth), machine coding, a DSA round (two medium-to-hard problems in 60 min), LLD, HLD for SDE-2 and above, and a hiring manager round.
 
 | No. | Problem | Difficulty | Category |
 | --- | ------- | ---------- | -------- |
 | 1 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | Linked List / Math |
+| 2 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | Medium | BFS |
+| 3 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | Dynamic Programming |
+| 4 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers |
+| 5 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | Arrays / In-Place Hashing |
+| 6 | [Cherry Pickup](https://leetcode.com/problems/cherry-pickup) | Hard | Dynamic Programming |
+
+**Machine coding problems reported**: food ordering system, notification system, task scheduler that assigns tasks to free worker threads and queues the rest, Splitwise-style expense sharing with groups, a buy-now-pay-later system (SDE-2 online assessment, January 2026), e-commerce billing engine, conference room booking, URL shortener.
+
+**LLD**: airline ticket booking, customer care issue resolution system. **HLD**: job scheduler, flash-sale inventory for Big Billion Days.
 
 </details>
 
@@ -1009,7 +1020,7 @@ Greedy and string manipulation are heavily tested (Reorganize String is most-ask
 
 ## About This Repository
 
-This repository covers **1,530+ problem listings across 44 companies** (381 unique LeetCode problems, plus 100+ company-specific custom problems that never appear on LeetCode), organized by company and topic, spanning FAANG/MAANG+, frontier AI labs (OpenAI, Anthropic, DeepMind, xAI, Mistral), and AI-first companies (Perplexity, Scale AI, Cursor, Cohere, Waymo, Sierra, Glean). Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
+This repository covers **1,530+ problem listings across 44 companies** (384 unique LeetCode problems, plus 100+ company-specific custom problems that never appear on LeetCode), organized by company and topic, spanning FAANG/MAANG+, frontier AI labs (OpenAI, Anthropic, DeepMind, xAI, Mistral), and AI-first companies (Perplexity, Scale AI, Cursor, Cohere, Waymo, Sierra, Glean). Includes NeetCode 150, Blind 75, system design guides, and ML/AI interview resources.
 
 Every LeetCode link is validated against LeetCode's live problem list.
 

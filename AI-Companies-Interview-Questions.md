@@ -1,10 +1,10 @@
 # AI Labs & AI Companies. Interview Questions (2025-2026)
 
-> Interview processes, coding questions, ML questions, and system design prompts at the top AI labs and AI-first companies, compiled from 1,500+ candidate reports, engineering blogs, and interview guides (Reddit, Blind, Glassdoor, 1point3acres, LeetCode Discuss, interviewing.io, Exponent, and company sources). For OpenAI and Anthropic deep-dives, see [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#openai). Last updated October 2026.
+> Interview processes, coding questions, ML questions, and system design prompts at the top AI labs and AI-first companies, compiled from 1,500+ candidate reports, engineering blogs, and interview guides (Reddit, Blind, Glassdoor, 1point3acres, LeetCode Discuss, interviewing.io, Exponent, and company sources). For OpenAI and Anthropic deep-dives, see [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#openai). Last updated November 2026.
 
 > **More from this repo**: [All guides](./README.md) | [Latest company questions](./FAANG-Recent-Questions.md) | [System design](./SYSTEM_DESIGN_INTERVIEW.md) | [ML interviews](./ML_INTERVIEW_PREP.md) | [Blind 75](./Blind-75.md) | [NeetCode 150](./NeetCode-150.md)
 
-> **Last verified**: October 2026. Several companies below changed owners, CEOs or org structure during 2026 (xAI, Amazon AGI, Groq, Scale AI, Character.AI, Thinking Machines Lab, Cohere). Each affected section carries a dated corporate note, because the loop you get depends on which org the role now reports to.
+> **Last verified**: November 2026. Several companies below changed owners, CEOs or org structure during 2026 (xAI, Amazon AGI, Groq, Scale AI, Character.AI, Thinking Machines Lab, Cohere). Each affected section carries a dated corporate note, because the loop you get depends on which org the role now reports to.
 
 ## Table of Contents
 
@@ -331,7 +331,7 @@ See [Amazon in FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md#amazon) fo
 
 > **Process**: Recruiter screen -> technical screen (60 min live coding, **Python or Go**) -> ML round or system design (team-dependent) -> behavioral -> team match. ~4-6 weeks. Style: production-quality infrastructure code over LeetCode tricks, "no segment trees, advanced DP, or competitive programming." Tests-first, edge cases, explicit concurrency/locking. MLE track adds a ~3-hour assessment spanning language modelling, math for ML, and coding, plus numpy ML coding and a research presentation. **2026 loop change (Blind, Sept 2026, SWE and FDE loops including a Europe-based agentic team)**: no LeetCode rounds. Recruiter screen -> two HackerRank OAs that are not LeetCode style -> hiring manager -> system design -> **problem-solving round** (root-cause a failing system by forming hypotheses and eliminating causes, then propose remediation) -> **AI-enabled coding round** (CodeSignal, 45 min for FDE, an existing Python codebase with an AI assistant available; the SWE version was "implement an agent loop with tool-call parsing"). One candidate reported the interviewer reacted poorly to leaning on the AI, so validate generated code out loud.
 >
-> **Corporate note (2026)**: Cohere agreed to merge with Germany's Aleph Alpha on April 24, 2026, with Schwarz Group leading a roughly $600M Series E; the combined company is valued at about $20B and the close is expected later in 2026 pending approvals. Cohere reported $240M ARR for 2025. Sovereign-cloud and on-premise deployment (the combined entity is expected to run on Schwarz Digits' STACKIT) is now core to the pitch, so prepare it alongside the RAG and Command material.
+> **Corporate note (2026)**: Cohere announced a merger with Germany's Aleph Alpha on April 24, 2026 and signed the definitive agreement on September 16, 2026, with Schwarz Group investing about EUR 500M (roughly $600M). The combined company, valued at about $20B, would operate as Cohere with headquarters in Toronto and Berlin. As of November 2026 the deal was still awaiting regulatory approval. Cohere reported $240M ARR for 2025. Sovereign-cloud and on-premise deployment (the combined entity is expected to run on Schwarz Digits' STACKIT) is now core to the pitch, so prepare it alongside the RAG and Command material.
 
 ### Cohere Coding Problems
 
