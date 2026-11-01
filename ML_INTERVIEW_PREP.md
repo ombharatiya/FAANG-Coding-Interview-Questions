@@ -30,7 +30,7 @@ A comprehensive collection of machine learning interview questions with detailed
 | Explain the bias-variance tradeoff. | [Answer](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) | Medium |
 | What is overfitting and how do you combat it? | [Answer](https://aws.amazon.com/what-is/overfitting/) | Easy |
 | Compare L1 and L2 regularization. | [Answer](https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-ridge-lasso-regression-python/) | Medium |
-| Explain precision, recall, F1-score, and ROC-AUC. | [Answer](https://neptune.ai/blog/f1-score-accuracy-roc-auc-pr-auc) | Medium |
+| Explain precision, recall, F1-score, and ROC-AUC. | [Answer](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall) | Medium |
 | What is cross-validation and why is it important? | [Answer](https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f) | Easy |
 | Explain the difference between bagging and boosting. | [Answer](https://quantdare.com/what-is-the-difference-between-bagging-and-boosting/) | Medium |
 | How do decision trees work? Explain Random Forests and Gradient Boosting. | [Answer](https://towardsdatascience.com/decision-trees-and-random-forests-df0c3123f991) | Medium |
@@ -185,15 +185,15 @@ Classical RL (Q-learning, DQN, actor-critic) still appears as a warm-up, but in 
 
 | Question | Answer Link | Difficulty |
 |----------|-------------|------------|
-| What is MLOps? | [Answer](https://neptune.ai/blog/mlops) | Easy |
+| What is MLOps? | [Answer](https://ml-ops.org/content/mlops-principles) | Easy |
 | How would you deploy a machine learning model to production? | [Answer](https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) | Medium |
 | Explain the concept of model serving. | [Answer](https://www.datacamp.com/community/blog/machine-learning-model-serving) | Medium |
 | What are the considerations for monitoring ML models in production? | [Answer](https://christophergs.github.io/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/) | Medium |
 | How do you handle model drift/decay? | [Answer](https://www.evidentlyai.com/ml-in-production/concept-drift) | Medium |
 | What is a feature store and why is it important? | [Answer](https://www.tecton.ai/blog/what-is-a-feature-store/) | Medium |
-| How would you version control ML models? | [Answer](https://neptune.ai/blog/ml-model-versioning) | Medium |
+| How would you version control ML models? | [Answer](https://dvc.org/doc/use-cases/versioning-data-and-models) | Medium |
 | What is containerization and how is it useful for ML deployment? | [Answer](https://www.tensorflow.org/tfx/serving/docker) | Medium |
-| Explain CI/CD in the context of ML systems. | [Answer](https://neptune.ai/blog/ci-cd-for-machine-learning-mlops) | Medium |
+| Explain CI/CD in the context of ML systems. | [Answer](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) | Medium |
 | What are the ethical considerations in deploying ML models? | [Answer](https://developers.google.com/machine-learning/crash-course/fairness) | Medium |
 
 ## ML System Design Questions and Strategies

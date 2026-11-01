@@ -32,7 +32,7 @@ This table presents 25 essential system design problems that are frequently aske
 | 18 | Design a Distributed Cache | Medium | Meta, Amazon, Google, Redis | SWE, Infrastructure, Cloud | [Scaling Memcache at Facebook](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala), [Redis Cluster Spec](https://redis.io/docs/latest/operate/oss_and_stack/reference/cluster-spec/), [Grokking](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/key-value-store) |
 | 19 | Design a Task Scheduler | Medium | Google, Amazon, OpenAI, Cursor | SWE, Cloud, Data | [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/index.html), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
 | 20 | Design a Distributed Message Queue | High | LinkedIn, Confluent, Amazon, Google | SWE, Cloud, Infrastructure | [Kafka Architecture](https://kafka.apache.org/documentation/#design), [AWS Architecture](https://aws.amazon.com/blogs/architecture/) |
-| 21 | Design a Distributed Logging System | Medium | Splunk, Elastic, Datadog, New Relic | SWE, DevOps, SRE | [Elastic Blog](https://www.elastic.co/blog/), [Splunk Architecture](https://docs.splunk.com/Documentation/Splunk/latest/Deploy/Distributedoverview) |
+| 21 | Design a Distributed Logging System | Medium | Splunk, Elastic, Datadog, New Relic | SWE, DevOps, SRE | [Elastic Blog](https://www.elastic.co/blog/), [Splunk Architecture](https://help.splunk.com/en/splunk-enterprise/administer/distributed-deployment-manual/10.4/implement-a-distributed-deployment) |
 | 22 | Design Google Maps | High | Google, Apple, Uber, Tesla | SWE, Maps, Mobile | [Google Maps Platform Blog](https://mapsplatform.google.com/resources/blog/), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
 | 23 | Design an AI Large Language Model (LLM) System | High | OpenAI, Google, Microsoft, Anthropic | SWE, ML, AI | [GPT-4 Technical Report](https://arxiv.org/abs/2303.08774), [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223) |
 | 24 | Design a Real-time Collaboration Editor (like Google Docs) | High | Google, Microsoft, Notion, Figma | SWE, Frontend, Real-time | [How Figma's Multiplayer Works](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/), [Hello Interview: Google Docs](https://www.hellointerview.com/learn/system-design/problem-breakdowns/google-docs), [System Design Interview Vol 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119) |
@@ -49,9 +49,9 @@ The system design landscape is rapidly evolving with new technologies and archit
 | 3 | Design a Privacy-Preserving Analytics System | High | Apple, Meta, Google, Snap | Privacy, Data | Differential privacy, homomorphic encryption, federated analytics, compliance |
 | 4 | Design a Real-time AI-assisted Coding Platform | High | GitHub, Microsoft, Google, JetBrains | SWE, Developer Tools | LLM integration, IDE extensions, model latency, context management |
 | 5 | Design a Serverless Data Pipeline System | Medium | AWS, Google, Snowflake, Databricks | Data, Cloud | Event-driven processing, cost optimization, scaling, observability |
-| 6 | Design a Voice-First Operating System | Very High | Amazon, Google, Apple, Meta | OS, Voice AI | Natural language understanding, ambient computing, privacy, context awareness |
-| 7 | Design a Decentralized Social Network | High | Block, Consensys, Discord | Blockchain, Social | Content distribution, moderation, identity management, consensus mechanisms |
-| 8 | Design a Spatial Computing OS | Very High | Apple, Meta, Microsoft, Magic Leap | AR/VR, OS | 3D rendering, gesture recognition, spatial mapping, device limitations |
+| 6 | Design a Batch Inference API for a GPU Cluster | High | NVIDIA, Anthropic, OpenAI | ML Infra, Backend | Request queuing, batching under GPU memory limits, GPU-aware load balancing, partial-failure handling |
+| 7 | Design a Webhook Delivery System | High | Stripe, OpenAI | Backend, Platform | At-least-once delivery, retries with backoff and jitter, idempotency keys, dead-letter queue, per-endpoint rate limits |
+| 8 | Design an LLM Review Summarization Pipeline | High | Google | ML, Trust and Safety | Review ingestion, prompt-injection defence, data sanitization, PII handling, dashboard freshness (reported Oct 2026) |
 | 9 | Design a Low-latency Global ML Inference System | High | OpenAI, Google, Anthropic, Meta | ML Infra, Cloud | Load balancing, model serving, region optimization, model quantization |
 | 10 | Design an LLM Inference Batching System (one GPU, up to 100 inputs per batch, synchronous callers) | High | Anthropic | ML Infra, Backend | Request intake and batching window, GPU routing, matching responses back to callers, backpressure, tail latency |
 
@@ -401,14 +401,17 @@ Implement an algorithm that can schedule optimal maintenance windows for a syste
 
 | Company | Question | Difficulty | Pattern |
 |---------|----------|------------|---------|
-| Google | Design a time-based key-value store with versioning and queryable history | Hard | Hash Table + Binary Search |
-| Meta | Implement an algorithm to detect when a user's social feed should be refreshed based on friend activity patterns | Medium | Graph + Sliding Window |
-| Amazon | Design an inventory management system that optimizes for both space utilization and retrieval time | Hard | Heap + DP |
-| Microsoft | Implement a smart code autocomplete system that learns from user corrections | Hard | Trie + ML |
-| OpenAI | Design an algorithm to detect and rank the relevance of hallucinated content in an LLM output | Hard | NLP + DP |
-| Apple | Implement a privacy-preserving data structure for on-device analytics | Medium | Bloom Filter + Cryptography |
-| Netflix | Design a content recommendation system that balances user preferences with content diversity | Hard | Graph + Prioritization |
-| Uber | Optimize driver-to-rider matching in a dynamic environment with changing traffic conditions | Hard | Graph + Greedy |
+| Google | Timed train schedule reachability: can you get from station A to B given trains as (from, to, departure, arrival)? (onsite, Oct 2026) | Medium | Graph / Earliest-Arrival BFS |
+| Meta | Maze solver with path printing, built and then optimised in the AI-enabled round (2026) | Medium-Hard | BFS / AI-Assisted Coding |
+| Amazon | Fix planted bugs in an existing service with an embedded assistant, against visible and hidden tests (OA, 2026) | Medium | Debugging / AI-Assisted |
+| Microsoft | Build a CSV query engine that parses rows and supports filtered queries (Jan 2026) | Medium | Parsing / Design |
+| OpenAI | Fault-tolerant task queue where workers can crash or hang and no task may be lost, then retries, a dead-letter queue and dependencies (Oct 2026) | Hard | Concurrency / Design |
+| Anthropic | Review four pull requests with Claude Code available, then improve one (onsite, Aug 2026) | Hard | AI-Assisted Code Review |
+| Apple | Time-to-live token manager with generate, renew while unexpired, and count_unexpired (tech screen, Sep 2026) | Medium | Hash Map / Design |
+| Netflix | TTL cache with LRU eviction (Jul 2026) | Medium-Hard | Design / Caching |
+| Uber | Thread-safe token-bucket rate limiter (machine coding, Senior+, Jun 2026) | Hard | Concurrency |
+
+Full per-company lists, with many more 2026 reports, are in [FAANG-Recent-Questions.md](./FAANG-Recent-Questions.md).
 
 <a name="preparation-strategy-for-2025"></a>
 
@@ -432,11 +435,10 @@ Implement an algorithm that can schedule optimal maintenance windows for a syste
 
 ### Advanced Topics to Master in 2026
 
-- **Quantum Algorithm Basics**: Understanding quantum computing principles is becoming relevant for specific roles.
 - **AI/ML Algorithms**: Familiarity with fundamental ML algorithms and data structures.
 - **Distributed Systems Coding**: Problems involving distributed data structures and algorithms.
-- **Blockchain Data Structures**: Understanding merkle trees, cryptographic hashes, and consensus algorithms.
-- **Edge Computing Optimizations**: Algorithms optimized for resource-constrained environments.
+- **Concurrency follow-ups**: Thread safety, locks and race conditions now follow ordinary problems at LinkedIn, Databricks, Anthropic and xAI.
+- **Reading and debugging unfamiliar code**: Debugging and AI-assisted rounds at Meta, Amazon, Stripe and DoorDash hand you an existing codebase rather than a blank editor.
 
 By focusing on these patterns and topics, you'll be well-prepared for coding interviews at top tech companies in 2026.
 

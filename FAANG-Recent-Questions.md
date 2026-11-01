@@ -1,6 +1,6 @@
 # FAANG / MAANG+ Most Recently Asked Coding Interview Questions
 
-> A comprehensive list of the most recently asked coding interview questions at top tech companies (2025-2026). Questions are organized by company and topic to help you prepare effectively. Last updated October 2026.
+> A comprehensive list of the most recently asked coding interview questions at top tech companies (2025-2026). Questions are organized by company and topic to help you prepare effectively. Last updated November 2026.
 >
 > **Looking for AI labs?** DeepMind, xAI, Mistral, Perplexity, Scale AI, Cohere, Cursor, Waymo, Sierra, Glean and more live in the companion [AI Labs & AI Companies guide](./AI-Companies-Interview-Questions.md).
 
@@ -17,7 +17,7 @@ The format shifted more in the last year than in the previous five. What changed
 | **LinkedIn** | AI-enabled round is now standard: one of two coding rounds, scored 1-4, where 3 passes. |
 | **DoorDash** | Publicly rebuilding interviews around AI: a 60-min AI-assisted working session in your own IDE. |
 | **OpenAI** | Agentic coding round in beta (drive an AI agent on a real codebase). The *only* round where AI is allowed. |
-| **Anthropic** | Split policy: AI permitted on the performance take-home, strictly prohibited in live interviews. |
+| **Anthropic** | Prohibited in most live interviews, permitted on the performance take-home. Since mid-2026 some onsites include a round reviewing four pull requests with Claude Code allowed, and in October 2026 one engineering manager said he has dropped traditional coding interviews for his team. |
 | **Sierra** | Removed algorithm interviews entirely. Plan -> Build (2h with any AI) -> Review. |
 | **Microsoft** | Team-dependent (CoreAI/Copilot teams may allow GitHub Copilot). Ask your recruiter. |
 | **Tesla** | Googling allowed; LLM use at interviewer discretion. |
@@ -132,7 +132,7 @@ Where AI is allowed, the rubric moved to **verification**: test before you trust
 
 ## Meta (formerly Facebook)
 
-> **2025-2026 Trends**: De-emphasis of DP, rise of expression parsing/stack problems, streaming and sparse data, speed and clean code prioritized over brute force. ~26% Easy, 60% Medium, 14% Hard. **New in 2026**: AI-Enabled Coding Round rolling out to all SWE roles, 60 min in a 3-panel CoderPad (file explorer, editor, AI chat; GPT-5, Claude Sonnet, Gemini, Llama 4 available; AI reads files but cannot edit). Three phases: (1) fix a non-algorithmic bug, (2) build a 120+ line feature with AI expected, (3) optimize for larger datasets. Scored on problem solving, code quality, **verification of AI output**, and communication, for E4-E5 it randomly replaces one of the two coding rounds; at E6 it also replaces one of two, so a traditional CoderPad round normally remains. Rollout now covers SWE and EM roles up through E7/M2. Candidates report the in-interview AI is weaker than in practice mode. Behavioral round weight increased, it can single-handedly downlevel E5 to E4. Candidates increasingly get *variants* of tagged problems rather than the originals. Two problems in 35 minutes for traditional rounds -- speed is king.
+> **2025-2026 Trends**: De-emphasis of DP, rise of expression parsing/stack problems, streaming and sparse data, speed and clean code prioritized over brute force. ~26% Easy, 60% Medium, 14% Hard. **New in 2026**: AI-Enabled Coding Round rolling out to all SWE roles, 60 min in a 3-panel CoderPad (file explorer, editor, AI chat; GPT-5, Claude Sonnet, Gemini, Llama 4 available; AI reads files but cannot edit). Three phases: (1) fix a non-algorithmic bug, (2) build a 120+ line feature with AI expected, (3) optimize for larger datasets. Scored on problem solving, code quality, **verification of AI output**, and communication, for E4-E5 it randomly replaces one of the two coding rounds; at E6 it also replaces one of two, so a traditional CoderPad round normally remains. Rollout now covers SWE and EM roles up through E7/M2. Reports differ for E7 and above: several 2026 guides say those loops have a single coding round and it is the AI-enabled one. Candidates report the in-interview AI is weaker than in practice mode. Behavioral round weight increased, it can single-handedly downlevel E5 to E4. Candidates increasingly get *variants* of tagged problems rather than the originals. Two problems in 35 minutes for traditional rounds -- speed is king.
 
 ### Meta Arrays and Strings
 
@@ -682,6 +682,7 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 20 | Players with fixed rankings | Coding, Aug 2026 | N players and directed match results; return the players whose rank is fully determined by transitive wins and losses; transitive closure or bitsets, plus the correctness argument |
 | 21 | Rectangle increments on a grid | Coding, Jul 2026 | Apply many inclusive rectangle +1 updates to an n x n grid and return final counts per cell; 2D difference array then prefix sums |
 | 22 | Three path tasks on a weighted binary grid | Senior onsite, Jul 2026 | Top-to-bottom reachability, deterministic enumeration of simple paths, then minimum-cost weighted path on a blocked grid (BFS, backtracking, Dijkstra) |
+| 23 | Timed train schedule reachability | In-person onsite, Oct 2026 | Trains are (from, to, departure, arrival). Decide whether you can get from station A to station B, where a train can only be boarded at or after you reach its departure station |
 
 ### Google System Design
 
@@ -695,6 +696,7 @@ Segment tree / BIT problems are a Google-distinctive category rarely seen at oth
 | 6 | AI/ML system design | Increasingly woven into L5+ loops |
 | 7 | Polite distributed web crawler for ~10B pages with periodic recrawl | Host-aware frontier, robots.txt, dedup, politeness limits (Senior, Aug 2026) |
 | 8 | Music recommendation system with an LLM agent in the loop | Candidate generation, ranking, feedback loops, cold start, diversity, offline and online evaluation (Aug 2026) |
+| 9 | Review ingestion platform that summarizes reviews with an LLM for an internal dashboard | Trust and safety, prompt injection, data sanitization, PII handling (in-person onsite, Oct 2026) |
 
 ---
 
@@ -922,6 +924,13 @@ These are unique to OpenAI and not standard LeetCode problems.
 | 30 | Dynamic Human Labeling Task Scheduler | Medium-Hard | Design / Scheduling | Assign labeling tasks to human labelers as both arrive; two graded parts in 60 min. Reporters cite sheer code volume as the main difficulty. 3 reports through Jul 2026 |
 | 31 | Bot Message Router Refactoring | Medium | Refactoring | Improve working but messy message-routing code for a chatbot while behavior stays fixed; related to the OOP chatbot prompt above. 15 reports through Sep 2026 |
 | 32 | Buggy Rate Limiter Fix | Medium | Debugging / Design | Given a buggy Python rate limiter for a ChatGPT-like API, find and fix the bugs, then discuss limits and concurrency. 4 reports through Jul 2026 |
+| 33 | Fault-Tolerant Task Queue (Oct 2026) | Hard | Concurrency / Design | Producers submit tasks and workers process them; a worker can crash or hang, so no task may be lost. Later variants add retries with cooldowns, a dead-letter queue and task dependencies |
+| 34 | malloc and free over Fixed Memory (Oct 2026) | Hard | Systems / Data Structures | Implement an allocator over a fixed buffer, then make both operations logarithmic |
+| 35 | Sliding-Window Chat Analytics (Oct 2026) | Medium-Hard | Streaming | Single-threaded service over a chat event stream: recent message counts, active chats per user, out-of-order events |
+| 36 | Follow One-Way Links to the Endpoint (Oct 2026) | Hard | Graph / Cycle Detection | Follow links between nodes to the endpoint, or return the last node before a loop closes |
+| 37 | Cheapest Daily Shirt Colors (Oct 2026) | Hard | Dynamic Programming | Minimise the total cost of one colour per day with no colour on consecutive days, a [Paint House](https://leetcode.com/problems/paint-house) variant |
+| 38 | Microorganism Eating Simulation (Oct 2026) | Hard | Simulation | Organisms eat their neighbours in left-to-right rounds; return the largest survivor |
+| 39 | Plant Infection Grid (Sep 2026) | Hard | Simulation / BFS | Infection spreads across a grid with immune plants and expiring immunity; count the days until it stabilises |
 
 **Progressive layers reported in 2026**: *Resumable Iterator* now runs up to 6 parts (lists -> multi-file with empty files -> async/coroutines -> 2D -> 3D iterators). *CD Directory Navigation* adds `~` home-dir handling and symlink resolution with cycle detection. *GPU Credit Allocation* uses half-open intervals `[start, expiration)`, consumes soonest-expiring first (heap/queue), and must answer balance queries at an arbitrary timestamp.
 
@@ -970,6 +979,8 @@ These are unique to OpenAI and not standard LeetCode problems.
 | 18 | Design a crossword / word-puzzle solver service | Dictionary indexing, constraint search, caching; 9 reports through Aug 2026 |
 | 19 | Design command dispatch and telemetry reconciliation for unreliable smart-grid devices | At-least-once delivery, acks, state reconciliation, offline devices; senior+ loops, Aug 2026 |
 | 20 | Design an image-sharing service with deduplication | Upload/download paths, content-hash dedup, CDN; reported Aug 2026 |
+| 21 | Design a real-time multiplayer typing race | Fair matchmaking for 2-8 players, typo freezes, live progress fan-out; reported Oct 2026 |
+| 22 | Design power-grid device monitoring over an unreliable public internet | Lost, delayed and duplicated status reports, idempotent ingestion, alerting; reported Sep 2026 |
 
 ### OpenAI ML and AI Technical
 
@@ -999,7 +1010,7 @@ These are unique to OpenAI and not standard LeetCode problems.
 
 ## Anthropic
 
-> **2025-2026 Trends**: CodeSignal OA (90 min) then a 4-6 hour onsite with 4-6 rounds. Python expected. Live rounds moved to **CodeSignal** (replacing Replit), screen-share via Google Meet, and code must actually run. **Split AI policy**: AI tools are strictly prohibited in all live interviews (candidates have been dropped for AI use), but **explicitly permitted on the performance take-home**. Google/Stack Overflow are allowed in live coding. Anthropic reportedly uses LLMs to analyze OA submissions for test-gaming patterns.
+> **2025-2026 Trends**: CodeSignal OA (90 min) then a 4-6 hour onsite with 4-6 rounds. Python expected. Live rounds moved to **CodeSignal** (replacing Replit), screen-share via Google Meet, and code must actually run. **Split AI policy**: AI tools are prohibited in most live interviews (candidates have been dropped for AI use), but **explicitly permitted on the performance take-home**. **New since mid-2026**: some onsites run an AI-assisted round in a VS Code-like environment with Claude Code available. You explain what each of four pull requests solves, comment on each, then pick one and improve it; one August 2026 report says TypeScript was required. On October 28, 2026 engineering manager Felix Rieseberg said he has stopped using traditional coding interviews for his team, scanning resumes and portfolios for prototypes instead. That is a team practice, not stated company policy. Google/Stack Overflow are allowed in live coding. Anthropic reportedly uses LLMs to analyze OA submissions for test-gaming patterns.
 >
 > **The performance take-home has been redesigned three times because Claude kept beating it** (Anthropic engineering blog + TechCrunch, Jan 2026): V1 (2024) was a 4-hour simulated-accelerator optimization (multicore, SIMD, VLIW); V2 (mid-2025) was cut to 2 hours after Claude Opus 4 outperformed most humans; V3 (late 2025) is a fully redesigned Zachtronics-puzzle-style constrained instruction set where you minimize instruction count with **no built-in debugging tools, building your own tooling is part of the test**. In Anthropic's words, "we no longer had a way to distinguish between the output of our top candidates and our most capable model." The original is open-sourced at [anthropics/original_performance_takehome](https://github.com/anthropics/original_performance_takehome).
 >
@@ -1034,6 +1045,7 @@ These are Anthropic's own custom problems. Not LeetCode. Each has multiple diffi
 | 21 | Cloud File Storage System (OA, through Jul 2026) | Medium | Progressive OA | Toy cloud storage simulation using only the standard library, four CodeSignal levels all visible from the start; sibling of the File System OA |
 | 22 | Streaming Token Usage Cost Calculator (Jul 2026) | Hard | Parsing / Numerics | Exact billing for LLM API requests with separate input and output token prices; treat streaming chunk deltas and non-streaming totals consistently, reject malformed counts, avoid floating-point drift, handle empty and very large workloads |
 | 23 | Distributed Sorting Around a Helper Contract (Aug 2026) | Hard | Distributed Systems | Onsite sibling of distributed mode/median: workers each hold a shard and a distributed-computation helper API whose signatures, data placement and delivery guarantees are deliberately unspecified. State assumptions, then cover partitioning, redistribution, local sort and merge, skew and duplicate handling, and failure behavior |
+| 24 | Review Four Pull Requests with Claude Code (Aug 2026) | Hard | AI-Assisted Code Review | Onsite: with an online VS Code environment, a GitHub-like site and Claude Code available, explain the problem each of four PRs solves and comment on it, then choose one and improve it. TypeScript required in the reported loop |
 
 **Progressive layers reported in 2026**: *Bank Ledger* now adds delayed cashback and spending-analytics levels. *LRU Cache* goes beyond the bugfix to demand durability, survive a process restart and restore usage order from disk. *Web Crawler* runs up to 7 follow-up levels: single-threaded BFS with `htmlParser.getUrls(url)` -> threads/processes/async -> a GIL discussion -> multi-machine scaling. *Greedy Tokenizer* uses longest-match tokenization against a vocabulary with unknown-token merging, and also appears as a code-review exercise. **Sep 2026 layers**: the *LRU Cache* durability step is now specified as a write-ahead log (on-disk format, write ordering relative to the in-memory update, recovery from a partially written record, compaction or snapshots with an atomic switch-over). *Web Crawler* adds a same-hostname constraint with URL fragments stripped before dedup; follow-ups ask why a thread-safe set can still be misused in a check-then-fetch sequence and why an empty work queue does not mean the crawl is finished. *Distributed Mode/Median* adds a full distributed sort while minimizing traffic across the 10 nodes.
 

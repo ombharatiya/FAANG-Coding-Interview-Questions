@@ -23,7 +23,7 @@
 
 - **✨ Curated by Industry Expert**: Selected by a former Google and Amazon engineer based on real interview experience
 - **🎯 Maximum Coverage**: Covers all major algorithmic patterns and data structures
-- **⚡ Efficient Preparation**: Focus on quality over quantity - 150 problems vs. 4,000+ on LeetCode (4,069 as of October 2026)
+- **⚡ Efficient Preparation**: Focus on quality over quantity - 150 problems vs. 4,000+ on LeetCode (4,100 as of November 2026)
 - **📈 Proven Success**: Used by thousands to land offers at top tech companies
 - **🎥 Video Solutions**: Comprehensive video explanations available for every problem
 
