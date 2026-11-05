@@ -33,6 +33,7 @@
 - [Latest Interview Questions at FAANG/MAANG+ Companies](./FAANG-Recent-Questions.md)
 - [AI Labs & AI Companies Interview Questions](./AI-Companies-Interview-Questions.md): DeepMind, xAI, Mistral, Perplexity, Scale AI, Cohere, Cursor, Waymo and 12 more
 - [System Design Interview Guide](./SYSTEM_DESIGN_INTERVIEW.md)
+- [InterviewLegend: Company-Specific Interview Guides](https://interviewlegend.com) - coding, system design, and behavioral rounds for 100+ companies, built from first-hand reports
 
 **AI & Machine Learning**
 - [LLM Papers Cheatsheet - Essential Research Papers](./LLM_PAPERS_CHEATSHEET.md)
